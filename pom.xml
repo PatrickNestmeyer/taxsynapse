@@ -19,5 +19,20 @@
   		<artifactId>hibernate-validator</artifactId>
   		<version>5.2.4.Final</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.deeplearning4j</groupId>
+  		<artifactId>deeplearning4j-core</artifactId>
+  		<version>0.5.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.datavec</groupId>
+  		<artifactId>datavec-api</artifactId>
+  		<version>0.5.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.nd4j</groupId>
+  		<artifactId>nd4j-native-platform</artifactId>
+  		<version>0.5.0</version>
+  	</dependency>
   </dependencies>
 </project>
