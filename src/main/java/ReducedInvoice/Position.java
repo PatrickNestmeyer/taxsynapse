@@ -6,6 +6,7 @@ public class Position {
 	{
 		this.Description = Description;
 		this.PositionPrice = PositionPrice;
+		this.Measurement = MeasureMent;
 		this.Amount = Amount;
 		this.Taxrate = Taxrate;
 	}

@@ -33,16 +33,12 @@ public class Run {
 		try{
 			zHandler.readInvoice(pathToFolder, InvoiceList, logSingleSteps, supressInvalid);
 			System.out.println("All Invoices successfully readed");
-		}catch(Exception e){
-			System.out.println("Exception while reading from file system");
-			System.out.println("Details: ");
-			System.out.println(e.getMessage());
-		}
-		
-		InvoiceReducer ir = InvoiceReducer.getInstance();
-		try{
-			ReducedInvoiceList = ir.ReduceInvoiceList(InvoiceList);
-			System.out.println("All Invoices successfully reduced");
+			InvoiceReducer ir = InvoiceReducer.getInstance();
+			ir.ReducedInvoiceList(InvoiceList, ReducedInvoiceList);
+			System.out.println("Successfully reduced Invoices");
+			System.out.println("Exceptioncounter: " + ir.getExceptionCounter());
+			
+			
 		}catch(Exception e){
 			System.out.print("Exception while reducing Invoices");
 			System.out.println("Details: ");
