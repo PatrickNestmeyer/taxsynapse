@@ -1,0 +1,91 @@
+\hypertarget{class_import_1_1zugferd_handler}{}\section{Import.\+zugferd\+Handler Class Reference}
+\label{class_import_1_1zugferd_handler}\index{Import.\+zugferd\+Handler@{Import.\+zugferd\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Invoice \hyperlink{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}{read\+Invoice} (String Path)  throws I\+O\+Exception
+\item 
+void \hyperlink{class_import_1_1zugferd_handler_a139f15033905c9e3a5d5fada5fb9e862}{read\+Invoice} (String Path, List$<$ Invoice $>$ Invoice\+List, final boolean set\+Logging, final boolean supress\+Invalid)  throws Exception 
+\item 
+void \hyperlink{class_import_1_1zugferd_handler_aa5fbab8b4a7835f2b13167452f9d17db}{remove\+Invalid} (List$<$ Invoice $>$ Invoice\+List)
+\item 
+boolean \hyperlink{class_import_1_1zugferd_handler_a6999d186193b120650a5d24a49d10c6c}{has\+Invalid} (List$<$ Invoice $>$ Invoice\+List)
+\item 
+Set$<$ Constraint\+Violation$<$ Invoice $>$ $>$ \hyperlink{class_import_1_1zugferd_handler_acf26740b73f820812fadb01ccf712dd2}{get\+Violations} (Invoice invoice)
+\item 
+void \hyperlink{class_import_1_1zugferd_handler_ae8ae1fcc05ebddf4d2b53c8daeda7b00}{print\+Violations} (List$<$ Invoice $>$ Invoice\+List)
+\item 
+void \hyperlink{class_import_1_1zugferd_handler_aadb33b773805373add19d92eb713831b}{print\+Single\+Invoice\+Violations} (Invoice invoice)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_import_1_1zugferd_handler}{zugferd\+Handler} \hyperlink{class_import_1_1zugferd_handler_ad3acd84340c8a5fcb2c01a2636979786}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf zugferd\+Handler} Import.\+zugferd\+Handler.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_import_1_1zugferd_handler_ad3acd84340c8a5fcb2c01a2636979786}{}\label{class_import_1_1zugferd_handler_ad3acd84340c8a5fcb2c01a2636979786}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!get\+Violations@{get\+Violations}}
+\index{get\+Violations@{get\+Violations}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Violations(\+Invoice invoice)}{getViolations(Invoice invoice)}}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$Constraint\+Violation$<$Invoice$>$ $>$ Import.\+zugferd\+Handler.\+get\+Violations (
+\begin{DoxyParamCaption}
+\item[{Invoice}]{invoice}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_acf26740b73f820812fadb01ccf712dd2}{}\label{class_import_1_1zugferd_handler_acf26740b73f820812fadb01ccf712dd2}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!has\+Invalid@{has\+Invalid}}
+\index{has\+Invalid@{has\+Invalid}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{has\+Invalid(\+List$<$ Invoice $>$ Invoice\+List)}{hasInvalid(List< Invoice > InvoiceList)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Import.\+zugferd\+Handler.\+has\+Invalid (
+\begin{DoxyParamCaption}
+\item[{List$<$ Invoice $>$}]{Invoice\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_a6999d186193b120650a5d24a49d10c6c}{}\label{class_import_1_1zugferd_handler_a6999d186193b120650a5d24a49d10c6c}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!print\+Single\+Invoice\+Violations@{print\+Single\+Invoice\+Violations}}
+\index{print\+Single\+Invoice\+Violations@{print\+Single\+Invoice\+Violations}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{print\+Single\+Invoice\+Violations(\+Invoice invoice)}{printSingleInvoiceViolations(Invoice invoice)}}]{\setlength{\rightskip}{0pt plus 5cm}void Import.\+zugferd\+Handler.\+print\+Single\+Invoice\+Violations (
+\begin{DoxyParamCaption}
+\item[{Invoice}]{invoice}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_aadb33b773805373add19d92eb713831b}{}\label{class_import_1_1zugferd_handler_aadb33b773805373add19d92eb713831b}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!print\+Violations@{print\+Violations}}
+\index{print\+Violations@{print\+Violations}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{print\+Violations(\+List$<$ Invoice $>$ Invoice\+List)}{printViolations(List< Invoice > InvoiceList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Import.\+zugferd\+Handler.\+print\+Violations (
+\begin{DoxyParamCaption}
+\item[{List$<$ Invoice $>$}]{Invoice\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_ae8ae1fcc05ebddf4d2b53c8daeda7b00}{}\label{class_import_1_1zugferd_handler_ae8ae1fcc05ebddf4d2b53c8daeda7b00}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!read\+Invoice@{read\+Invoice}}
+\index{read\+Invoice@{read\+Invoice}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{read\+Invoice(\+String Path)}{readInvoice(String Path)}}]{\setlength{\rightskip}{0pt plus 5cm}Invoice Import.\+zugferd\+Handler.\+read\+Invoice (
+\begin{DoxyParamCaption}
+\item[{String}]{Path}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}{}\label{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!read\+Invoice@{read\+Invoice}}
+\index{read\+Invoice@{read\+Invoice}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{read\+Invoice(\+String Path, List$<$ Invoice $>$ Invoice\+List, final boolean set\+Logging, final boolean supress\+Invalid)}{readInvoice(String Path, List< Invoice > InvoiceList, final boolean setLogging, final boolean supressInvalid)}}]{\setlength{\rightskip}{0pt plus 5cm}void Import.\+zugferd\+Handler.\+read\+Invoice (
+\begin{DoxyParamCaption}
+\item[{String}]{Path, }
+\item[{List$<$ Invoice $>$}]{Invoice\+List, }
+\item[{final boolean}]{set\+Logging, }
+\item[{final boolean}]{supress\+Invalid}
+\end{DoxyParamCaption}
+) throws Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_a139f15033905c9e3a5d5fada5fb9e862}{}\label{class_import_1_1zugferd_handler_a139f15033905c9e3a5d5fada5fb9e862}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!remove\+Invalid@{remove\+Invalid}}
+\index{remove\+Invalid@{remove\+Invalid}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{remove\+Invalid(\+List$<$ Invoice $>$ Invoice\+List)}{removeInvalid(List< Invoice > InvoiceList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Import.\+zugferd\+Handler.\+remove\+Invalid (
+\begin{DoxyParamCaption}
+\item[{List$<$ Invoice $>$}]{Invoice\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_aa5fbab8b4a7835f2b13167452f9d17db}{}\label{class_import_1_1zugferd_handler_aa5fbab8b4a7835f2b13167452f9d17db}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Import/\hyperlink{zugferd_handler_8java}{zugferd\+Handler.\+java}\end{DoxyCompactItemize}

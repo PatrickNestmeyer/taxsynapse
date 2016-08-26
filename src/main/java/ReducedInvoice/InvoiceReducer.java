@@ -71,6 +71,11 @@ public class InvoiceReducer {
 		return new Price(GrandTotal, TaxBasisTotal, TaxTotal);
 	}
 	
+	/**
+	 * @todo if elem.getDelivery().getBilled().getUnitCode() == null
+	 * @param invoice
+	 * @return
+	 */
 	@SuppressWarnings("deprecation")
 	public RInvoice ConvertInvoiceToRinvoice(Invoice invoice){
 		
@@ -128,6 +133,9 @@ public class InvoiceReducer {
 								}
 								else
 								{
+									/* 
+									 * @todo if elem.getDelivery().getBilled().getUnitCode() == null
+									 */
 									lastPositionName = elem.getProduct().getName();
 									returnValue.addPosition( new Position(
 											elem.getProduct().getName(),
