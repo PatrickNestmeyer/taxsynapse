@@ -36,7 +36,8 @@ public class Run {
 			InvoiceReducer ir = InvoiceReducer.getInstance();
 			ir.ReducedInvoiceList(InvoiceList, ReducedInvoiceList);
 			System.out.println("Successfully reduced Invoices");
-			System.out.println("Exceptioncounter: " + ir.getExceptionCounter());
+			System.out.println("MetaExceptionCounter: " + ir.getMetaExceptionCounter());
+			System.out.println("PositionExceptionCounter: " + ir.getPositionExceptionCounter());
 			
 			
 		}catch(Exception e){
