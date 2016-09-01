@@ -1,7 +1,8 @@
 var dir_1722c70e7dae146bf0f098f25e5dc212 =
 [
     [ "AInvoice.java", "_a_invoice_8java.html", [
-      [ "AInvoice", "class_reduced_invoice_1_1_a_invoice.html", "class_reduced_invoice_1_1_a_invoice" ]
+      [ "AInvoice", "class_reduced_invoice_1_1_a_invoice.html", "class_reduced_invoice_1_1_a_invoice" ],
+      [ "Error", "enum_reduced_invoice_1_1_a_invoice_1_1_error.html", "enum_reduced_invoice_1_1_a_invoice_1_1_error" ]
     ] ],
     [ "InvoiceReducer.java", "_invoice_reducer_8java.html", [
       [ "InvoiceReducer", "class_reduced_invoice_1_1_invoice_reducer.html", "class_reduced_invoice_1_1_invoice_reducer" ]

@@ -1,14 +1,17 @@
 package ReducedInvoice;
 
+import ReducedInvoice.AInvoice.Error;
+
 public class Position {
 	
-	public Position(String Description, Price PositionPrice, String MeasureMent, int Amount, int Taxrate)
+	public Position(String Description, Price PositionPrice, String MeasureMent, int Amount, int Taxrate, Error positionerror)
 	{
 		this.Description = Description;
 		this.PositionPrice = PositionPrice;
 		this.Measurement = MeasureMent;
 		this.Amount = Amount;
 		this.Taxrate = Taxrate;
+		this.PositionError = positionerror;
 	}
 	
 	private String Description;
@@ -20,6 +23,8 @@ public class Position {
 	private String Measurement;
 	
 	private int Taxrate;
+	
+	private Error PositionError;
 
 	public String getDescription() {
 		return Description;
@@ -60,4 +65,15 @@ public class Position {
 	private void setMeasurement(String measurement) {
 		Measurement = measurement;
 	}
+	
+	private Error getError()
+	{
+		return PositionError;
+	}
+	
+	private void setError(Error positionerror)
+	{
+		PositionError = positionerror;
+	}
+	
 }

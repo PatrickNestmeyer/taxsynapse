@@ -5,6 +5,7 @@ import io.konik.zugferd.entity.trade.MonetarySummation;
 import io.konik.zugferd.entity.trade.item.Item;
 import java.util.Date;
 import java.util.List;
+import ReducedInvoice.AInvoice.Error;
 
 public class InvoiceReducer {
 
@@ -52,6 +53,7 @@ public class InvoiceReducer {
 		RInvoice returnValue = new RInvoice();
 		AddMetaInformation(invoice, returnValue);
 		AddPositions(invoice, returnValue);
+		validateInvoice(returnValue);
 		return returnValue;	
 	}
 	
@@ -163,15 +165,27 @@ public class InvoiceReducer {
 				float lineTaxPerc = 0;
 				float lineSumNet = 0;
 				float lineSumGross = 0;
+				Error positionerror = Error.NO_ERROR;
 				
 				// Preis einer Position
 				if(elem.getSettlement() != null)
 				{
-					lineSumNet = elem.getSettlement().getMonetarySummation().getLineTotal().getValue().floatValue();
+					if(elem.getSettlement().getMonetarySummation() != null)
+					{
+						lineSumNet = elem.getSettlement().getMonetarySummation().getLineTotal().getValue().floatValue();
+					}
+					else
+					{
+						positionerror = Error.PRICE_ERROR;
+					}
 					if(elem.getSettlement().getTradeTax() != null  && elem.getSettlement().getTradeTax().size() >= 1)
 					{
 						lineTaxPerc = elem.getSettlement().getTradeTax().get(0).getPercentage().floatValue();
 						lineSumGross = lineSumNet + ( (lineSumNet * lineTaxPerc) / 100 );
+					}
+					else
+					{
+						positionerror = Error.PRICE_ERROR;
 					}
 				}
 				
@@ -193,7 +207,8 @@ public class InvoiceReducer {
 									new Price(lineSumGross, lineSumNet, lineTaxPerc),
 									Measurement,
 									amount,
-									(int)lineTaxPerc));
+									(int)(lineTaxPerc),
+									positionerror));
 							lastPosition++;
 						}
 						else
@@ -213,7 +228,8 @@ public class InvoiceReducer {
 										new Price(lineSumGross, lineSumNet, lineTaxPerc),
 										Measurement,
 										amount,
-										(int)lineTaxPerc));
+										(int)(lineTaxPerc),
+										positionerror));
 								lastPosition++;		
 							}
 
@@ -228,6 +244,42 @@ public class InvoiceReducer {
 		{
 			this.PositionExceptionCounter++;
 		}
+	}
+	
+	public void validateInvoice(RInvoice returnValue)
+	{
+		Error invoiceerror = Error.NO_ERROR;
+		float GrandTotal = 0;
+		float TaxBasisTotal = 0;
+		float TaxTotal = 0;
+		for(int i = 0; i < returnValue.getPositionsLength(); i++)
+		{
+			GrandTotal = GrandTotal + returnValue.getPosition(i).getPositionPrice().getBrutto();
+			TaxBasisTotal = TaxBasisTotal + returnValue.getPosition(i).getPositionPrice().getNetto();
+			TaxTotal = TaxTotal + (returnValue.getPosition(i).getPositionPrice().getBrutto() - returnValue.getPosition(i).getPositionPrice().getNetto());
+		}
+		GrandTotal = Runden(GrandTotal);
+		TaxBasisTotal = Runden(TaxBasisTotal);
+		TaxTotal = Runden(TaxTotal);
+		
+		if(GrandTotal != returnValue.getTotalPrice().getBrutto() || TaxBasisTotal != returnValue.getTotalPrice().getNetto() || TaxTotal != returnValue.getTotalPrice().getSteuer())
+		{
+			invoiceerror = Error.PRICE_ERROR;
+		}
+		returnValue.setInvoiceError(invoiceerror);
+	}
+	
+	public float Runden(float a)
+	{
+		if(((a*1000) % 10) > 4  )
+		{
+			a = (float)((int)(a*100+1))/100; 
+		}
+		else
+		{
+			a = (float)((int)(a*100))/100; 
+		}
+		return a;
 	}
 
 	public static int getMetaExceptionCounter() {

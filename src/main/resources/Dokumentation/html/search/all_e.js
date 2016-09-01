@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zugferdhandler',['zugferdHandler',['../class_import_1_1zugferd_handler.html',1,'Import']]],
-  ['zugferdhandler_2ejava',['zugferdHandler.java',['../zugferd_handler_8java.html',1,'']]]
+  ['todo_20list',['Todo List',['../todo.html',1,'']]],
+  ['totalprice',['TotalPrice',['../class_reduced_invoice_1_1_a_invoice.html#a72b831e7ee0b4501fc949f61aecdd498',1,'ReducedInvoice::AInvoice']]]
 ];

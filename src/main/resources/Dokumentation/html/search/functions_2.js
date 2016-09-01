@@ -8,6 +8,7 @@ var searchData=
   ['getdescription',['getDescription',['../class_reduced_invoice_1_1_position.html#ab4c6da1a734c40337974e76ea4491dbf',1,'ReducedInvoice::Position']]],
   ['getinstance',['getInstance',['../class_import_1_1zugferd_handler.html#ad3acd84340c8a5fcb2c01a2636979786',1,'Import.zugferdHandler.getInstance()'],['../class_reduced_invoice_1_1_invoice_reducer.html#ad4fafc7b331a78ef243c3e3ba88803da',1,'ReducedInvoice.InvoiceReducer.getInstance()']]],
   ['getinvoicedate',['getInvoiceDate',['../class_reduced_invoice_1_1_a_invoice.html#ac78ce56c3ae003ca87e8144546d7ec3f',1,'ReducedInvoice::AInvoice']]],
+  ['getinvoiceerror',['getInvoiceError',['../class_reduced_invoice_1_1_a_invoice.html#ac6335f5b80ba3514a205e46c7170ae5c',1,'ReducedInvoice::AInvoice']]],
   ['getinvoicenumber',['getInvoiceNumber',['../class_reduced_invoice_1_1_a_invoice.html#a09231d505794762ea8f363e4689392c8',1,'ReducedInvoice::AInvoice']]],
   ['getmetaexceptioncounter',['getMetaExceptionCounter',['../class_reduced_invoice_1_1_invoice_reducer.html#a987de6f3876284a7b456240f85dc066f',1,'ReducedInvoice::InvoiceReducer']]],
   ['getnetto',['getNetto',['../class_reduced_invoice_1_1_price.html#a691cd78d742511f2456c551ef4dc8a9c',1,'ReducedInvoice::Price']]],

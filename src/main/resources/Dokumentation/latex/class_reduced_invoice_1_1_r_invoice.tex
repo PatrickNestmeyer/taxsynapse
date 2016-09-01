@@ -13,7 +13,7 @@ Inheritance diagram for Reduced\+Invoice.\+R\+Invoice\+:\begin{figure}[H]
 \item 
 void \hyperlink{class_reduced_invoice_1_1_r_invoice_ae51bf96a9fc6c76ba5d79a813f4a1da0}{add\+Position} (\hyperlink{class_reduced_invoice_1_1_position}{Position} p)
 \item 
-void \hyperlink{class_reduced_invoice_1_1_r_invoice_aac8d8e74616bac5d81e446d47b31d5e7}{add\+Position} (String desc, \hyperlink{class_reduced_invoice_1_1_price}{Price} p, String mm, int amount, int tax)
+void \hyperlink{class_reduced_invoice_1_1_r_invoice_ac851aecb0cdd4da309d203f0dfc4b55f}{add\+Position} (String desc, \hyperlink{class_reduced_invoice_1_1_price}{Price} p, String mm, int amount, int tax, \hyperlink{enum_reduced_invoice_1_1_a_invoice_1_1_error}{Error} positionerror)
 \item 
 \hyperlink{class_reduced_invoice_1_1_position}{Position} \hyperlink{class_reduced_invoice_1_1_r_invoice_a552d88c5808181f8fe3ca72772b5aff6}{get\+Position} (int index)
 \item 
@@ -82,24 +82,25 @@ Definition at line 14 of file R\+Invoice.\+java.
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+R\+Invoice@{Reduced\+Invoice\+::\+R\+Invoice}!add\+Position@{add\+Position}}
 \index{add\+Position@{add\+Position}!Reduced\+Invoice\+::\+R\+Invoice@{Reduced\+Invoice\+::\+R\+Invoice}}
-\subsubsection[{\texorpdfstring{add\+Position(\+String desc, Price p, String mm, int amount, int tax)}{addPosition(String desc, Price p, String mm, int amount, int tax)}}]{\setlength{\rightskip}{0pt plus 5cm}void Reduced\+Invoice.\+R\+Invoice.\+add\+Position (
+\subsubsection[{\texorpdfstring{add\+Position(\+String desc, Price p, String mm, int amount, int tax, Error positionerror)}{addPosition(String desc, Price p, String mm, int amount, int tax, Error positionerror)}}]{\setlength{\rightskip}{0pt plus 5cm}void Reduced\+Invoice.\+R\+Invoice.\+add\+Position (
 \begin{DoxyParamCaption}
 \item[{String}]{desc, }
 \item[{{\bf Price}}]{p, }
 \item[{String}]{mm, }
 \item[{int}]{amount, }
-\item[{int}]{tax}
+\item[{int}]{tax, }
+\item[{{\bf Error}}]{positionerror}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_r_invoice_aac8d8e74616bac5d81e446d47b31d5e7}{}\label{class_reduced_invoice_1_1_r_invoice_aac8d8e74616bac5d81e446d47b31d5e7}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_r_invoice_ac851aecb0cdd4da309d203f0dfc4b55f}{}\label{class_reduced_invoice_1_1_r_invoice_ac851aecb0cdd4da309d203f0dfc4b55f}
 
 
 Definition at line 20 of file R\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-20                                                                                   \{
+20                                                                                                        \{
 21         
-22         \hyperlink{class_reduced_invoice_1_1_a_invoice_a5b51f1865386bd021580507c7133f69a}{Positions}.add(\textcolor{keyword}{new} Position(desc, p, mm, amount, tax));
+22         \hyperlink{class_reduced_invoice_1_1_a_invoice_a5b51f1865386bd021580507c7133f69a}{Positions}.add(\textcolor{keyword}{new} Position(desc, p, mm, amount, tax, positionerror));
 23     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+R\+Invoice@{Reduced\+Invoice\+::\+R\+Invoice}!get\+Position@{get\+Position}}

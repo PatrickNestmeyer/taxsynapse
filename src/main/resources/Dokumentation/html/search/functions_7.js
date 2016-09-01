@@ -7,6 +7,7 @@ var searchData=
   ['setcurrency',['setCurrency',['../class_reduced_invoice_1_1_a_invoice.html#a83a6ba629194d28ea32c24275d0e14ba',1,'ReducedInvoice::AInvoice']]],
   ['setdescription',['setDescription',['../class_reduced_invoice_1_1_position.html#a86b0bb99ef806d0e8298e8b5030f8964',1,'ReducedInvoice::Position']]],
   ['setinvoicedate',['setInvoiceDate',['../class_reduced_invoice_1_1_a_invoice.html#adefa18f4aec87c1d4b89233baf6ce9ee',1,'ReducedInvoice::AInvoice']]],
+  ['setinvoiceerror',['setInvoiceError',['../class_reduced_invoice_1_1_a_invoice.html#a625c87b0ecdcbf896e66e4ad1fe31681',1,'ReducedInvoice::AInvoice']]],
   ['setinvoicenumber',['setInvoiceNumber',['../class_reduced_invoice_1_1_a_invoice.html#a20d784a1da556e7bb3c5538c5a6701c4',1,'ReducedInvoice::AInvoice']]],
   ['setnetto',['setNetto',['../class_reduced_invoice_1_1_price.html#a6ab42d39a17504d35ae65b1cca9c7c65',1,'ReducedInvoice::Price']]],
   ['setposition',['setPosition',['../class_reduced_invoice_1_1_a_invoice.html#a3abfa40d89bdc9f56daaf73adafcca5e',1,'ReducedInvoice.AInvoice.setPosition()'],['../class_reduced_invoice_1_1_r_invoice.html#a263bac524d7b762b58c124def1a20325',1,'ReducedInvoice.RInvoice.setPosition()']]],

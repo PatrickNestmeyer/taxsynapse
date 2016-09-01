@@ -6,6 +6,11 @@ Inheritance diagram for Reduced\+Invoice.\+A\+Invoice\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{class_reduced_invoice_1_1_a_invoice}
 \end{center}
 \end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{enum_reduced_invoice_1_1_a_invoice_1_1_error}{Error}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -19,7 +24,7 @@ void \hyperlink{class_reduced_invoice_1_1_a_invoice_a45129f98801ec280c52c2de35b4
 \item 
 abstract void \hyperlink{class_reduced_invoice_1_1_a_invoice_a29b30209d39ee91edee303ba5d36fd81}{add\+Position} (\hyperlink{class_reduced_invoice_1_1_position}{Position} p)
 \item 
-abstract void \hyperlink{class_reduced_invoice_1_1_a_invoice_ae126e009135936362d30c61ea7b20b52}{add\+Position} (String desc, \hyperlink{class_reduced_invoice_1_1_price}{Price} p, String mm, int amount, int tax)
+abstract void \hyperlink{class_reduced_invoice_1_1_a_invoice_a0ccc4c6c378676635b552e12c6a7d690}{add\+Position} (String desc, \hyperlink{class_reduced_invoice_1_1_price}{Price} p, String mm, int amount, int tax, \hyperlink{enum_reduced_invoice_1_1_a_invoice_1_1_error}{Error} positionerror)
 \item 
 abstract \hyperlink{class_reduced_invoice_1_1_position}{Position} \hyperlink{class_reduced_invoice_1_1_a_invoice_a1264648436c734afc549b2d1adb20ff6}{get\+Position} (int index)
 \item 
@@ -52,6 +57,10 @@ void \hyperlink{class_reduced_invoice_1_1_a_invoice_a83a6ba629194d28ea32c24275d0
 \hyperlink{class_reduced_invoice_1_1_price}{Price} \hyperlink{class_reduced_invoice_1_1_a_invoice_aedc84169ce345d6f7c72b808c305c27b}{get\+Total\+Price} ()
 \item 
 void \hyperlink{class_reduced_invoice_1_1_a_invoice_ac5c395d78cb3bd54e8e40678bdb46bf0}{set\+Total\+Price} (\hyperlink{class_reduced_invoice_1_1_price}{Price} total\+Price)
+\item 
+\hyperlink{enum_reduced_invoice_1_1_a_invoice_1_1_error}{Error} \hyperlink{class_reduced_invoice_1_1_a_invoice_ac6335f5b80ba3514a205e46c7170ae5c}{get\+Invoice\+Error} ()
+\item 
+void \hyperlink{class_reduced_invoice_1_1_a_invoice_a625c87b0ecdcbf896e66e4ad1fe31681}{set\+Invoice\+Error} (\hyperlink{enum_reduced_invoice_1_1_a_invoice_1_1_error}{Error} invoiceerror)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -67,6 +76,8 @@ List$<$ \hyperlink{class_reduced_invoice_1_1_position}{Position} $>$ \hyperlink{
 \hyperlink{class_reduced_invoice_1_1_metadata}{Metadata} \hyperlink{class_reduced_invoice_1_1_a_invoice_a7561c82ce51807a2c48a9b80cf45b411}{Meta\+Data}
 \item 
 String \hyperlink{class_reduced_invoice_1_1_a_invoice_a6b6ef26c85bc07f70cb7b4c8eb057fe8}{Currency}
+\item 
+\hyperlink{enum_reduced_invoice_1_1_a_invoice_1_1_error}{Error} \hyperlink{class_reduced_invoice_1_1_a_invoice_a3ef6a3a4efa7e9b652f5399bc76e017a}{Invoice\+Error}
 \end{DoxyCompactItemize}
 
 
@@ -87,15 +98,16 @@ Definition at line 6 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [abstract]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a29b30209d39ee91edee303ba5d36fd81}{}\label{class_reduced_invoice_1_1_a_invoice_a29b30209d39ee91edee303ba5d36fd81}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!add\+Position@{add\+Position}}
 \index{add\+Position@{add\+Position}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
-\subsubsection[{\texorpdfstring{add\+Position(\+String desc, Price p, String mm, int amount, int tax)}{addPosition(String desc, Price p, String mm, int amount, int tax)}}]{\setlength{\rightskip}{0pt plus 5cm}abstract void Reduced\+Invoice.\+A\+Invoice.\+add\+Position (
+\subsubsection[{\texorpdfstring{add\+Position(\+String desc, Price p, String mm, int amount, int tax, Error positionerror)}{addPosition(String desc, Price p, String mm, int amount, int tax, Error positionerror)}}]{\setlength{\rightskip}{0pt plus 5cm}abstract void Reduced\+Invoice.\+A\+Invoice.\+add\+Position (
 \begin{DoxyParamCaption}
 \item[{String}]{desc, }
 \item[{{\bf Price}}]{p, }
 \item[{String}]{mm, }
 \item[{int}]{amount, }
-\item[{int}]{tax}
+\item[{int}]{tax, }
+\item[{{\bf Error}}]{positionerror}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [abstract]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_ae126e009135936362d30c61ea7b20b52}{}\label{class_reduced_invoice_1_1_a_invoice_ae126e009135936362d30c61ea7b20b52}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a0ccc4c6c378676635b552e12c6a7d690}{}\label{class_reduced_invoice_1_1_a_invoice_a0ccc4c6c378676635b552e12c6a7d690}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!get\+Buyer\+Name@{get\+Buyer\+Name}}
 \index{get\+Buyer\+Name@{get\+Buyer\+Name}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
 \subsubsection[{\texorpdfstring{get\+Buyer\+Name()}{getBuyerName()}}]{\setlength{\rightskip}{0pt plus 5cm}String Reduced\+Invoice.\+A\+Invoice.\+get\+Buyer\+Name (
@@ -105,13 +117,13 @@ Definition at line 6 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a0099d82cccbb09bc9240269c76c079d4}{}\label{class_reduced_invoice_1_1_a_invoice_a0099d82cccbb09bc9240269c76c079d4}
 
 
-Definition at line 31 of file A\+Invoice.\+java.
+Definition at line 35 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-31                                  \{
-32         \textcolor{keywordflow}{return} \hyperlink{class_reduced_invoice_1_1_a_invoice_ae75bdd20da8fa21dec01c2d032ac11c5}{buyerName};
-33     \}
+35                                  \{
+36         \textcolor{keywordflow}{return} \hyperlink{class_reduced_invoice_1_1_a_invoice_ae75bdd20da8fa21dec01c2d032ac11c5}{buyerName};
+37     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!get\+Currency@{get\+Currency}}
 \index{get\+Currency@{get\+Currency}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -122,13 +134,13 @@ Definition at line 31 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a2c0175f8fdd6c21504bdf6f8e3336cc2}{}\label{class_reduced_invoice_1_1_a_invoice_a2c0175f8fdd6c21504bdf6f8e3336cc2}
 
 
-Definition at line 84 of file A\+Invoice.\+java.
+Definition at line 88 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-84                                 \{
-85         \textcolor{keywordflow}{return} \hyperlink{class_reduced_invoice_1_1_a_invoice_a6b6ef26c85bc07f70cb7b4c8eb057fe8}{Currency};
-86     \}
+88                                 \{
+89         \textcolor{keywordflow}{return} \hyperlink{class_reduced_invoice_1_1_a_invoice_a6b6ef26c85bc07f70cb7b4c8eb057fe8}{Currency};
+90     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!get\+Invoice\+Date@{get\+Invoice\+Date}}
 \index{get\+Invoice\+Date@{get\+Invoice\+Date}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -139,13 +151,30 @@ Definition at line 84 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_ac78ce56c3ae003ca87e8144546d7ec3f}{}\label{class_reduced_invoice_1_1_a_invoice_ac78ce56c3ae003ca87e8144546d7ec3f}
 
 
-Definition at line 67 of file A\+Invoice.\+java.
+Definition at line 71 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-67                                  \{
-68         \textcolor{keywordflow}{return} invoiceDate;
-69     \}
+71                                  \{
+72         \textcolor{keywordflow}{return} invoiceDate;
+73     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!get\+Invoice\+Error@{get\+Invoice\+Error}}
+\index{get\+Invoice\+Error@{get\+Invoice\+Error}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
+\subsubsection[{\texorpdfstring{get\+Invoice\+Error()}{getInvoiceError()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error} Reduced\+Invoice.\+A\+Invoice.\+get\+Invoice\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_ac6335f5b80ba3514a205e46c7170ae5c}{}\label{class_reduced_invoice_1_1_a_invoice_ac6335f5b80ba3514a205e46c7170ae5c}
+
+
+Definition at line 107 of file A\+Invoice.\+java.
+
+
+\begin{DoxyCode}
+108     \{
+109         \textcolor{keywordflow}{return} \hyperlink{class_reduced_invoice_1_1_a_invoice_a3ef6a3a4efa7e9b652f5399bc76e017a}{InvoiceError};
+110     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!get\+Invoice\+Number@{get\+Invoice\+Number}}
 \index{get\+Invoice\+Number@{get\+Invoice\+Number}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -156,13 +185,13 @@ Definition at line 67 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a09231d505794762ea8f363e4689392c8}{}\label{class_reduced_invoice_1_1_a_invoice_a09231d505794762ea8f363e4689392c8}
 
 
-Definition at line 75 of file A\+Invoice.\+java.
+Definition at line 79 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-75                                      \{
-76         \textcolor{keywordflow}{return} invoiceNumber;
-77     \}
+79                                      \{
+80         \textcolor{keywordflow}{return} invoiceNumber;
+81     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -194,13 +223,13 @@ Definition at line 75 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_ac8973df8a999bc5556d697ed17c871f7}{}\label{class_reduced_invoice_1_1_a_invoice_ac8973df8a999bc5556d697ed17c871f7}
 
 
-Definition at line 39 of file A\+Invoice.\+java.
+Definition at line 43 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-39                                   \{
-40         \textcolor{keywordflow}{return} \hyperlink{class_reduced_invoice_1_1_a_invoice_ae00a97e1c74841fe0b0b43fccd1da24d}{sellerName};
-41     \}
+43                                   \{
+44         \textcolor{keywordflow}{return} \hyperlink{class_reduced_invoice_1_1_a_invoice_ae00a97e1c74841fe0b0b43fccd1da24d}{sellerName};
+45     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!get\+Total\+Price@{get\+Total\+Price}}
 \index{get\+Total\+Price@{get\+Total\+Price}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -211,13 +240,13 @@ Definition at line 39 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_aedc84169ce345d6f7c72b808c305c27b}{}\label{class_reduced_invoice_1_1_a_invoice_aedc84169ce345d6f7c72b808c305c27b}
 
 
-Definition at line 94 of file A\+Invoice.\+java.
+Definition at line 98 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-94                                  \{
-95         \textcolor{keywordflow}{return} \hyperlink{class_reduced_invoice_1_1_a_invoice_a72b831e7ee0b4501fc949f61aecdd498}{TotalPrice};
-96     \}
+98                                  \{
+99         \textcolor{keywordflow}{return} \hyperlink{class_reduced_invoice_1_1_a_invoice_a72b831e7ee0b4501fc949f61aecdd498}{TotalPrice};
+100     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!set\+Buyer\+Name@{set\+Buyer\+Name}}
 \index{set\+Buyer\+Name@{set\+Buyer\+Name}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -228,13 +257,13 @@ Definition at line 94 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_ab47710855319e2cf64a829d9bb37d243}{}\label{class_reduced_invoice_1_1_a_invoice_ab47710855319e2cf64a829d9bb37d243}
 
 
-Definition at line 35 of file A\+Invoice.\+java.
+Definition at line 39 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-35                                                \{
-36         this.\hyperlink{class_reduced_invoice_1_1_a_invoice_ae75bdd20da8fa21dec01c2d032ac11c5}{buyerName} = \hyperlink{class_reduced_invoice_1_1_a_invoice_ae75bdd20da8fa21dec01c2d032ac11c5}{buyerName};
-37     \}
+39                                                \{
+40         this.\hyperlink{class_reduced_invoice_1_1_a_invoice_ae75bdd20da8fa21dec01c2d032ac11c5}{buyerName} = \hyperlink{class_reduced_invoice_1_1_a_invoice_ae75bdd20da8fa21dec01c2d032ac11c5}{buyerName};
+41     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!set\+Currency@{set\+Currency}}
 \index{set\+Currency@{set\+Currency}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -245,13 +274,13 @@ Definition at line 35 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a83a6ba629194d28ea32c24275d0e14ba}{}\label{class_reduced_invoice_1_1_a_invoice_a83a6ba629194d28ea32c24275d0e14ba}
 
 
-Definition at line 89 of file A\+Invoice.\+java.
+Definition at line 93 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-89                                              \{
-90         \hyperlink{class_reduced_invoice_1_1_a_invoice_a6b6ef26c85bc07f70cb7b4c8eb057fe8}{Currency} = currency;
-91     \}
+93                                              \{
+94         \hyperlink{class_reduced_invoice_1_1_a_invoice_a6b6ef26c85bc07f70cb7b4c8eb057fe8}{Currency} = currency;
+95     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!set\+Invoice\+Date@{set\+Invoice\+Date}}
 \index{set\+Invoice\+Date@{set\+Invoice\+Date}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -262,13 +291,30 @@ Definition at line 89 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_adefa18f4aec87c1d4b89233baf6ce9ee}{}\label{class_reduced_invoice_1_1_a_invoice_adefa18f4aec87c1d4b89233baf6ce9ee}
 
 
-Definition at line 71 of file A\+Invoice.\+java.
+Definition at line 75 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-71                                                  \{
-72         this.invoiceDate = invoiceDate;
-73     \}
+75                                                  \{
+76         this.invoiceDate = invoiceDate;
+77     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!set\+Invoice\+Error@{set\+Invoice\+Error}}
+\index{set\+Invoice\+Error@{set\+Invoice\+Error}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
+\subsubsection[{\texorpdfstring{set\+Invoice\+Error(\+Error invoiceerror)}{setInvoiceError(Error invoiceerror)}}]{\setlength{\rightskip}{0pt plus 5cm}void Reduced\+Invoice.\+A\+Invoice.\+set\+Invoice\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Error}}]{invoiceerror}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a625c87b0ecdcbf896e66e4ad1fe31681}{}\label{class_reduced_invoice_1_1_a_invoice_a625c87b0ecdcbf896e66e4ad1fe31681}
+
+
+Definition at line 112 of file A\+Invoice.\+java.
+
+
+\begin{DoxyCode}
+113     \{
+114         \hyperlink{class_reduced_invoice_1_1_a_invoice_a3ef6a3a4efa7e9b652f5399bc76e017a}{InvoiceError} = invoiceerror;
+115     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!set\+Invoice\+Number@{set\+Invoice\+Number}}
 \index{set\+Invoice\+Number@{set\+Invoice\+Number}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -279,13 +325,13 @@ Definition at line 71 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a20d784a1da556e7bb3c5538c5a6701c4}{}\label{class_reduced_invoice_1_1_a_invoice_a20d784a1da556e7bb3c5538c5a6701c4}
 
 
-Definition at line 79 of file A\+Invoice.\+java.
+Definition at line 83 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-79                                                        \{
-80         this.invoiceNumber = invoiceNumber;
-81     \}
+83                                                        \{
+84         this.invoiceNumber = invoiceNumber;
+85     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!set\+Position@{set\+Position}}
 \index{set\+Position@{set\+Position}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -336,13 +382,13 @@ Definition at line 79 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a45129f98801ec280c52c2de35b48da0b}{}\label{class_reduced_invoice_1_1_a_invoice_a45129f98801ec280c52c2de35b48da0b}
 
 
-Definition at line 43 of file A\+Invoice.\+java.
+Definition at line 47 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-43                                                  \{
-44         this.\hyperlink{class_reduced_invoice_1_1_a_invoice_ae00a97e1c74841fe0b0b43fccd1da24d}{sellerName} = \hyperlink{class_reduced_invoice_1_1_a_invoice_ae00a97e1c74841fe0b0b43fccd1da24d}{sellerName};
-45     \}
+47                                                  \{
+48         this.\hyperlink{class_reduced_invoice_1_1_a_invoice_ae00a97e1c74841fe0b0b43fccd1da24d}{sellerName} = \hyperlink{class_reduced_invoice_1_1_a_invoice_ae00a97e1c74841fe0b0b43fccd1da24d}{sellerName};
+49     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!set\+Total\+Price@{set\+Total\+Price}}
 \index{set\+Total\+Price@{set\+Total\+Price}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -353,13 +399,13 @@ Definition at line 43 of file A\+Invoice.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_ac5c395d78cb3bd54e8e40678bdb46bf0}{}\label{class_reduced_invoice_1_1_a_invoice_ac5c395d78cb3bd54e8e40678bdb46bf0}
 
 
-Definition at line 99 of file A\+Invoice.\+java.
+Definition at line 103 of file A\+Invoice.\+java.
 
 
 \begin{DoxyCode}
-99                                                 \{
-100         \hyperlink{class_reduced_invoice_1_1_a_invoice_a72b831e7ee0b4501fc949f61aecdd498}{TotalPrice} = totalPrice;
-101     \}
+103                                                 \{
+104         \hyperlink{class_reduced_invoice_1_1_a_invoice_a72b831e7ee0b4501fc949f61aecdd498}{TotalPrice} = totalPrice;
+105     \}
 \end{DoxyCode}
 
 
@@ -369,42 +415,49 @@ Definition at line 99 of file A\+Invoice.\+java.
 \subsubsection[{\texorpdfstring{buyer\+Name}{buyerName}}]{\setlength{\rightskip}{0pt plus 5cm}String Reduced\+Invoice.\+A\+Invoice.\+buyer\+Name\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_ae75bdd20da8fa21dec01c2d032ac11c5}{}\label{class_reduced_invoice_1_1_a_invoice_ae75bdd20da8fa21dec01c2d032ac11c5}
 
 
-Definition at line 15 of file A\+Invoice.\+java.
+Definition at line 17 of file A\+Invoice.\+java.
 
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!Currency@{Currency}}
 \index{Currency@{Currency}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
 \subsubsection[{\texorpdfstring{Currency}{Currency}}]{\setlength{\rightskip}{0pt plus 5cm}String Reduced\+Invoice.\+A\+Invoice.\+Currency\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a6b6ef26c85bc07f70cb7b4c8eb057fe8}{}\label{class_reduced_invoice_1_1_a_invoice_a6b6ef26c85bc07f70cb7b4c8eb057fe8}
 
 
-Definition at line 29 of file A\+Invoice.\+java.
+Definition at line 31 of file A\+Invoice.\+java.
+
+\index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!Invoice\+Error@{Invoice\+Error}}
+\index{Invoice\+Error@{Invoice\+Error}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
+\subsubsection[{\texorpdfstring{Invoice\+Error}{InvoiceError}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error} Reduced\+Invoice.\+A\+Invoice.\+Invoice\+Error\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a3ef6a3a4efa7e9b652f5399bc76e017a}{}\label{class_reduced_invoice_1_1_a_invoice_a3ef6a3a4efa7e9b652f5399bc76e017a}
+
+
+Definition at line 33 of file A\+Invoice.\+java.
 
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!Meta\+Data@{Meta\+Data}}
 \index{Meta\+Data@{Meta\+Data}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
 \subsubsection[{\texorpdfstring{Meta\+Data}{MetaData}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Metadata} Reduced\+Invoice.\+A\+Invoice.\+Meta\+Data\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a7561c82ce51807a2c48a9b80cf45b411}{}\label{class_reduced_invoice_1_1_a_invoice_a7561c82ce51807a2c48a9b80cf45b411}
 
 
-Definition at line 27 of file A\+Invoice.\+java.
+Definition at line 29 of file A\+Invoice.\+java.
 
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!Positions@{Positions}}
 \index{Positions@{Positions}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
 \subsubsection[{\texorpdfstring{Positions}{Positions}}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Position}$>$ Reduced\+Invoice.\+A\+Invoice.\+Positions\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a5b51f1865386bd021580507c7133f69a}{}\label{class_reduced_invoice_1_1_a_invoice_a5b51f1865386bd021580507c7133f69a}
 
 
-Definition at line 24 of file A\+Invoice.\+java.
+Definition at line 26 of file A\+Invoice.\+java.
 
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!seller\+Name@{seller\+Name}}
 \index{seller\+Name@{seller\+Name}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
 \subsubsection[{\texorpdfstring{seller\+Name}{sellerName}}]{\setlength{\rightskip}{0pt plus 5cm}String Reduced\+Invoice.\+A\+Invoice.\+seller\+Name\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_ae00a97e1c74841fe0b0b43fccd1da24d}{}\label{class_reduced_invoice_1_1_a_invoice_ae00a97e1c74841fe0b0b43fccd1da24d}
 
 
-Definition at line 18 of file A\+Invoice.\+java.
+Definition at line 20 of file A\+Invoice.\+java.
 
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!Total\+Price@{Total\+Price}}
 \index{Total\+Price@{Total\+Price}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
 \subsubsection[{\texorpdfstring{Total\+Price}{TotalPrice}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Price} Reduced\+Invoice.\+A\+Invoice.\+Total\+Price\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a72b831e7ee0b4501fc949f61aecdd498}{}\label{class_reduced_invoice_1_1_a_invoice_a72b831e7ee0b4501fc949f61aecdd498}
 
 
-Definition at line 21 of file A\+Invoice.\+java.
+Definition at line 23 of file A\+Invoice.\+java.
 
 
 

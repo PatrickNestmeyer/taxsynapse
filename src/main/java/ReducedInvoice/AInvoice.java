@@ -5,6 +5,8 @@ import java.util.List;
 
 public abstract class AInvoice {
 	
+	public enum Error {PRICE_ERROR, NO_ERROR}; 
+	
 	//Date
 	private Date invoiceDate;
 	
@@ -27,6 +29,8 @@ public abstract class AInvoice {
 	protected Metadata MetaData;
 	
 	protected String Currency;
+	
+	protected Error InvoiceError;
 
 	public String getBuyerName() {
 		return buyerName;
@@ -46,7 +50,7 @@ public abstract class AInvoice {
 	
 	public abstract void addPosition(Position p);
 	
-	public abstract void addPosition(String desc, Price p, String mm, int amount, int tax);
+	public abstract void addPosition(String desc, Price p, String mm, int amount, int tax, Error positionerror);
 	
 	public abstract Position getPosition(int index);
 	
@@ -98,6 +102,16 @@ public abstract class AInvoice {
 	
 	public void setTotalPrice(Price totalPrice) {
 		TotalPrice = totalPrice;
+	}
+	
+	public Error getInvoiceError()
+	{
+		return InvoiceError;
+	}
+	
+	public void setInvoiceError(Error invoiceerror)
+	{
+		InvoiceError = invoiceerror;
 	}
 
 }

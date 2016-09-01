@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['settlementfactory',['SettlementFactory',['../class_invoice_1_1_settlement_factory.html',1,'Invoice']]]
+  ['zugferdhandler',['zugferdHandler',['../class_import_1_1zugferd_handler.html',1,'Import']]]
 ];
