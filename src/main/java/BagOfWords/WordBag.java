@@ -92,4 +92,32 @@ public class WordBag {
 
 		return word;
 	}
+	
+	private void clearWordBag()
+	{
+		for(int i = 0; i < Bag.size(); i++)
+		{
+			if(Bag.get(i).contains("\n"))
+			{
+				Bag.set(i, Bag.get(i).replace("\n", "").replace("\r", ""));
+			}
+			if(Bag.get(i).equals(""))
+			{
+				Bag.remove(i);
+			}
+		}
+	}
+	
+	public void createWordBag(List<AInvoice> ReducedInvoiceList,String pathToInvalidWords, String pathToInvalidTokens)
+	{
+		setPaths(pathToInvalidWords, pathToInvalidTokens);
+		for(AInvoice ai : ReducedInvoiceList)
+		{
+			for(int i = 0; i < ai.getPositionsLength(); i++)
+			{
+				addSentence(ai.getPosition(i).getDescription());
+			}
+		}
+		clearWordBag();
+	}
 }

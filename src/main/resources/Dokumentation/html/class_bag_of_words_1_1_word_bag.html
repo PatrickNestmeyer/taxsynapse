@@ -132,6 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a540190bee1fcf153d1a9f0bcb9fe2cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c60c49329b0ef68e47c7af85eccae00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bag_of_words_1_1_word_bag.html#a9c60c49329b0ef68e47c7af85eccae00">addSentence</a> (String sentence)</td></tr>
 <tr class="separator:a9c60c49329b0ef68e47c7af85eccae00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d453225cdd2a3c42488f4862e59cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bag_of_words_1_1_word_bag.html#af9d453225cdd2a3c42488f4862e59cb1">clearWordBag</a> ()</td></tr>
+<tr class="separator:af9d453225cdd2a3c42488f4862e59cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -241,8 +243,33 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_word_bag_8java_source.html#l00045">45</a> of file <a class="el" href="_word_bag_8java_source.html">WordBag.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                    {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(word.contains(<span class="stringliteral">&quot; &quot;</span>))</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this.<a class="code" href="class_bag_of_words_1_1_word_bag.html#a540190bee1fcf153d1a9f0bcb9fe2cd0">addSentence</a>(word);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        String clearedWord = this.clearWord(word);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        Boolean legal = <span class="keyword">true</span>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">for</span>(String illWord : IllegalWords){</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span>(clearedWord.toLowerCase() == illWord.toLowerCase()){</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                legal = <span class="keyword">false</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span>(legal &amp;&amp; !(this.Bag.contains(clearedWord.toLowerCase()) &amp;&amp; !StringUtils.isNumeric(clearedWord)))</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            this.Bag.add(word.toLowerCase());</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div><div class="ttc" id="class_bag_of_words_1_1_word_bag_html_a540190bee1fcf153d1a9f0bcb9fe2cd0"><div class="ttname"><a href="class_bag_of_words_1_1_word_bag.html#a540190bee1fcf153d1a9f0bcb9fe2cd0">BagOfWords.WordBag.addSentence</a></div><div class="ttdeci">void addSentence(Position p)</div><div class="ttdef"><b>Definition:</b> <a href="_word_bag_8java_source.html#l00075">WordBag.java:75</a></div></div>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                    {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(word.contains(<span class="stringliteral">&quot; &quot;</span>))</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this.<a class="code" href="class_bag_of_words_1_1_word_bag.html#a540190bee1fcf153d1a9f0bcb9fe2cd0">addSentence</a>(word);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        String clearedWord = this.clearWord(word);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        Boolean legal = <span class="keyword">true</span>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">for</span>(String illWord : IllegalWords){</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span>(clearedWord.toLowerCase().equals(illWord.toLowerCase())){</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                legal = <span class="keyword">false</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span>(legal &amp;&amp; !(this.Bag.contains(clearedWord.toLowerCase())))</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            this.Bag.add(clearedWord.toLowerCase());</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div><div class="ttc" id="class_bag_of_words_1_1_word_bag_html_a540190bee1fcf153d1a9f0bcb9fe2cd0"><div class="ttname"><a href="class_bag_of_words_1_1_word_bag.html#a540190bee1fcf153d1a9f0bcb9fe2cd0">BagOfWords.WordBag.addSentence</a></div><div class="ttdeci">void addSentence(Position p)</div><div class="ttdef"><b>Definition:</b> <a href="_word_bag_8java_source.html#l00075">WordBag.java:75</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af9d453225cdd2a3c42488f4862e59cb1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BagOfWords.WordBag.clearWordBag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_word_bag_8java_source.html#l00096">96</a> of file <a class="el" href="_word_bag_8java_source.html">WordBag.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Bag.size(); i++)</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span>(Bag.get(i).equals(<span class="stringliteral">&quot;&quot;</span>))</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                Bag.remove(i);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab2b3aa2a9ea3821cf365878f954a5abd"></a>

@@ -68,12 +68,7 @@ public class Run {
 		//Create Bag of Words
 		WordBag wb = new WordBag();
 		try{
-			wb.setPaths(pathToInvalidWords, pathToInvalidTokens);
-			for(AInvoice ai : ReducedInvoiceList){
-				for(int i = 0; i < ai.getPositionsLength(); i++){
-					wb.addSentence(ai.getPosition(i).getDescription());
-				}
-			}
+			wb.createWordBag(ReducedInvoiceList, pathToInvalidWords, pathToInvalidTokens);
 			//List<String> w = wb.getBag();
 			//System.out.println(w);
 			System.out.println("Bag of words sucessfully created");
