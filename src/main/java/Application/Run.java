@@ -3,12 +3,13 @@ package Application;
 import Import.*;
 import ReducedInvoice.*;
 import io.konik.zugferd.Invoice;
+import BagOfWords.WordBag;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import BagOfWords.WordBag;
+
 
 public class Run {
 

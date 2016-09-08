@@ -10,7 +10,7 @@ static void \hyperlink{class_application_1_1_run_a57a17174b40d7c0feba22e460fa615
 \subsection{Detailed Description}
 
 
-Definition at line 11 of file Run.\+java.
+Definition at line 13 of file Run.\+java.
 
 
 
@@ -26,45 +26,79 @@ Override Validation Counter
 
 Serialization 
 
-Definition at line 21 of file Run.\+java.
+Definition at line 23 of file Run.\+java.
 
 
 \begin{DoxyCode}
-21                                                               \{
-22         
-23         String pathToFolder = args[0];
-24         Boolean logSingleSteps = Boolean.valueOf(args[1]);
-25         Boolean supressInvalid = Boolean.valueOf(args[2]);
-26         
-27         \hyperlink{class_import_1_1zugferd_handler}{zugferdHandler} zHandler = \hyperlink{class_import_1_1zugferd_handler}{zugferdHandler}.
+23                                                               \{
+24         
+25         \textcolor{comment}{/*}
+26 \textcolor{comment}{        String pathToInvoices = args[0];}
+27 \textcolor{comment}{        Boolean logSingleSteps = Boolean.valueOf(args[1]);}
+28 \textcolor{comment}{        Boolean supressInvalid = Boolean.valueOf(args[2]);}
+29 \textcolor{comment}{        String pathToInvalidWords = args[3];}
+30 \textcolor{comment}{        String pathToInvalidTokens = args[4];}
+31 \textcolor{comment}{        */}
+32         
+33         String pathToInvoices = \textcolor{stringliteral}{"./src/main/resources/examples\_ferd/"};
+34         Boolean logSingleSteps = \textcolor{keyword}{false};
+35         Boolean supressInvalid = \textcolor{keyword}{false};
+36         String pathToInvalidWords = \textcolor{stringliteral}{"./src/main/resources/bag\_config/forbiddenInputNeurons"};
+37         String pathToInvalidTokens = \textcolor{stringliteral}{"./src/main/resources/bag\_config/forbiddenTokens"};
+38         
+39         \hyperlink{class_import_1_1zugferd_handler}{zugferdHandler} zHandler = \hyperlink{class_import_1_1zugferd_handler}{zugferdHandler}.
       \hyperlink{class_import_1_1zugferd_handler_ad3acd84340c8a5fcb2c01a2636979786}{getInstance}();
-28         List<Invoice> InvoiceList = \textcolor{keyword}{new} ArrayList<Invoice>();
-29         List<AInvoice> ReducedInvoiceList = \textcolor{keyword}{new} ArrayList<AInvoice>();
-30         
-31         System.out.println(\textcolor{stringliteral}{"Please ignore log4j Warnings"});
-32         \textcolor{comment}{//Read Invoices from Folder and add to List}
-33         \textcolor{keywordflow}{try}\{
-34             zHandler.\hyperlink{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}{readInvoice}(pathToFolder, InvoiceList, logSingleSteps, supressInvalid);
-35             System.out.println(\textcolor{stringliteral}{"All Invoices successfully readed"});
-36             \hyperlink{class_reduced_invoice_1_1_invoice_reducer}{InvoiceReducer} ir = \hyperlink{class_reduced_invoice_1_1_invoice_reducer}{InvoiceReducer}.
+40         List<Invoice> InvoiceList = \textcolor{keyword}{new} ArrayList<Invoice>();
+41         List<AInvoice> ReducedInvoiceList = \textcolor{keyword}{new} ArrayList<AInvoice>();
+42         
+43         \textcolor{comment}{//Read Invoices from Folder}
+44         \textcolor{keywordflow}{try}\{
+45             zHandler.\hyperlink{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}{readInvoice}(pathToInvoices, InvoiceList, logSingleSteps, supressInvalid);
+46             System.out.println(\textcolor{stringliteral}{"All Invoices successfully readed"});
+47         \}\textcolor{keywordflow}{catch}(Exception e)\{
+48             System.out.print(\textcolor{stringliteral}{"Exception while reading Invoices"});
+49             System.out.println(\textcolor{stringliteral}{"Details: "});
+50             System.out.println(e.getMessage());
+51         \}
+52         
+53         \textcolor{comment}{//Reduce Invoices to necessary Informations}
+54         \hyperlink{class_reduced_invoice_1_1_invoice_reducer}{InvoiceReducer} ir = \hyperlink{class_reduced_invoice_1_1_invoice_reducer}{InvoiceReducer}.
       \hyperlink{class_reduced_invoice_1_1_invoice_reducer_ad4fafc7b331a78ef243c3e3ba88803da}{getInstance}();
-37             ir.\hyperlink{class_reduced_invoice_1_1_invoice_reducer_af064188d62db15e810468e4811af6cc5}{ReducedInvoiceList}(InvoiceList, ReducedInvoiceList);
-38             System.out.println(\textcolor{stringliteral}{"Successfully reduced Invoices"});
-39             System.out.println(\textcolor{stringliteral}{"MetaExceptionCounter: "} + ir.
+55         \textcolor{keywordflow}{try}\{
+56             ir.\hyperlink{class_reduced_invoice_1_1_invoice_reducer_af064188d62db15e810468e4811af6cc5}{ReducedInvoiceList}(InvoiceList, ReducedInvoiceList);
+57             System.out.println(\textcolor{stringliteral}{"Successfully reduced Invoices"});
+58             System.out.println(\textcolor{stringliteral}{"MetaExceptionCounter: "} + ir.
       \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a987de6f3876284a7b456240f85dc066f}{getMetaExceptionCounter}());
-40             System.out.println(\textcolor{stringliteral}{"PositionExceptionCounter: "} + ir.
+59             System.out.println(\textcolor{stringliteral}{"PositionExceptionCounter: "} + ir.
       \hyperlink{class_reduced_invoice_1_1_invoice_reducer_ad5034d72d8eae0edc2026c9ca9e66465}{getPositionExceptionCounter}());
-41             
-42             
-43         \}\textcolor{keywordflow}{catch}(Exception e)\{
-44             System.out.print(\textcolor{stringliteral}{"Exception while reducing Invoices"});
-45             System.out.println(\textcolor{stringliteral}{"Details: "});
-46             System.out.println(e.getMessage());
-47         \}
-48         
-49         System.out.println(\textcolor{stringliteral}{"Breakpoint"});
-50         
-51     \}
+60             System.out.println(\textcolor{stringliteral}{"Invoices sucessfully reduced"});
+61         \}\textcolor{keywordflow}{catch}(Exception e)\{
+62             System.out.print(\textcolor{stringliteral}{"Exception while reducing Invoices"});
+63             System.out.println(\textcolor{stringliteral}{"Details: "});
+64             System.out.println(e.getMessage());
+65         \}
+66         
+67         \textcolor{comment}{//Create Bag of Words}
+68         WordBag wb = \textcolor{keyword}{new} WordBag();
+69         \textcolor{keywordflow}{try}\{
+70             wb.setPaths(pathToInvalidWords, pathToInvalidTokens);
+71             \textcolor{keywordflow}{for}(\hyperlink{class_reduced_invoice_1_1_a_invoice}{AInvoice} ai : ReducedInvoiceList)\{
+72                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < ai.getPositionsLength(); i++)\{
+73                     wb.addSentence(ai.getPosition(i).getDescription());
+74                 \}
+75             \}
+76             \textcolor{comment}{//List<String> w = wb.getBag();}
+77             \textcolor{comment}{//System.out.println(w);}
+78             System.out.println(\textcolor{stringliteral}{"Bag of words sucessfully created"});
+79         \}\textcolor{keywordflow}{catch}(Exception e)\{
+80             System.out.print(\textcolor{stringliteral}{"Exception while creating bag of words"});
+81             System.out.println(\textcolor{stringliteral}{"Details: "});
+82             System.out.println(e.getMessage());
+83         \}
+84         
+85         System.out.println(\textcolor{stringliteral}{"Breakpoint"});
+86         
+87     \}
 \end{DoxyCode}
 
 

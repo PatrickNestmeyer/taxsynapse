@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reducedinvoice',['ReducedInvoice',['../namespace_reduced_invoice.html',1,'']]]
+  ['import',['Import',['../namespace_import.html',1,'']]]
 ];

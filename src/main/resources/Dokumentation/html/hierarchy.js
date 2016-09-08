@@ -9,5 +9,6 @@ var hierarchy =
     [ "ReducedInvoice.Position", "class_reduced_invoice_1_1_position.html", null ],
     [ "ReducedInvoice.Price", "class_reduced_invoice_1_1_price.html", null ],
     [ "Application.Run", "class_application_1_1_run.html", null ],
+    [ "BagOfWords.WordBag", "class_bag_of_words_1_1_word_bag.html", null ],
     [ "Import.zugferdHandler", "class_import_1_1zugferd_handler.html", null ]
 ];

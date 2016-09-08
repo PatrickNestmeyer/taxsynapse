@@ -1,6 +1,7 @@
 var searchData=
 [
   ['getamount',['getAmount',['../class_reduced_invoice_1_1_position.html#a5f2aa6f49886d3186e53e76a55dfdf91',1,'ReducedInvoice::Position']]],
+  ['getbag',['getBag',['../class_bag_of_words_1_1_word_bag.html#ab2b3aa2a9ea3821cf365878f954a5abd',1,'BagOfWords::WordBag']]],
   ['getbranchkey',['getBranchKey',['../class_reduced_invoice_1_1_metadata.html#a9b90402cc29dfd00d2a99a60304eda4f',1,'ReducedInvoice::Metadata']]],
   ['getbrutto',['getBrutto',['../class_reduced_invoice_1_1_price.html#a84adde0f6b666f80decce07b972f1915',1,'ReducedInvoice::Price']]],
   ['getbuyername',['getBuyerName',['../class_reduced_invoice_1_1_a_invoice.html#a0099d82cccbb09bc9240269c76c079d4',1,'ReducedInvoice::AInvoice']]],

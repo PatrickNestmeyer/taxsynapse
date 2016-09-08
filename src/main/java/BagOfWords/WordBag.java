@@ -48,13 +48,13 @@ public class WordBag {
 		String clearedWord = this.clearWord(word);
 		Boolean legal = true;
 		for(String illWord : IllegalWords){
-			if(clearedWord.toLowerCase() == illWord.toLowerCase()){
+			if(clearedWord.toLowerCase().equals(illWord.toLowerCase())){
 				legal = false;
 				break;
 			}
 		}
-		if(legal && !(this.Bag.contains(clearedWord.toLowerCase()) && !StringUtils.isNumeric(clearedWord)))
-			this.Bag.add(word.toLowerCase());
+		if(legal && !(this.Bag.contains(clearedWord.toLowerCase())))
+			this.Bag.add(clearedWord.toLowerCase());
 	}
 	
 	public void removeWord(String word){
@@ -85,14 +85,11 @@ public class WordBag {
 	
 	private String clearWord(String word){
 		
-		for(String token : IllegalTokens){
-			if(word.contains(token))
-				word = word.replace(token, "");
+		for(String token : IllegalTokens)
+		{
+			word = word.replace(token, "");
 		}
-		word = word.replaceAll("ä", "ae");
-		word = word.replaceAll("ö", "oe");
-		word = word.replaceAll("ü", "ue");
-		word = word.replace("ß", "ss");
+
 		return word;
 	}
 }

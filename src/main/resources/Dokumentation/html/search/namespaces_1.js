@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['import',['Import',['../namespace_import.html',1,'']]]
+  ['bagofwords',['BagOfWords',['../namespace_bag_of_words.html',1,'']]]
 ];

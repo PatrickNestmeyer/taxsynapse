@@ -11,6 +11,7 @@ var searchData=
   ['setinvoiceerror',['setInvoiceError',['../class_reduced_invoice_1_1_a_invoice.html#a625c87b0ecdcbf896e66e4ad1fe31681',1,'ReducedInvoice::AInvoice']]],
   ['setinvoicenumber',['setInvoiceNumber',['../class_reduced_invoice_1_1_a_invoice.html#a20d784a1da556e7bb3c5538c5a6701c4',1,'ReducedInvoice::AInvoice']]],
   ['setnetto',['setNetto',['../class_reduced_invoice_1_1_price.html#a6ab42d39a17504d35ae65b1cca9c7c65',1,'ReducedInvoice::Price']]],
+  ['setpaths',['setPaths',['../class_bag_of_words_1_1_word_bag.html#ad96f1fd5eec992c63057662c5a89e0ef',1,'BagOfWords::WordBag']]],
   ['setposition',['setPosition',['../class_reduced_invoice_1_1_a_invoice.html#a3abfa40d89bdc9f56daaf73adafcca5e',1,'ReducedInvoice.AInvoice.setPosition()'],['../class_reduced_invoice_1_1_r_invoice.html#a263bac524d7b762b58c124def1a20325',1,'ReducedInvoice.RInvoice.setPosition()']]],
   ['setpositionamount',['setPositionAmount',['../class_reduced_invoice_1_1_a_invoice.html#aef6af27bf12024c16e8e5890243825eb',1,'ReducedInvoice.AInvoice.setPositionAmount()'],['../class_reduced_invoice_1_1_r_invoice.html#ac463aa248993dd296ba9ea81356726b4',1,'ReducedInvoice.RInvoice.setPositionAmount()']]],
   ['setpositiondescription',['setPositionDescription',['../class_reduced_invoice_1_1_a_invoice.html#a01a6d1c001117851fdcb6941a117c086',1,'ReducedInvoice.AInvoice.setPositionDescription()'],['../class_reduced_invoice_1_1_r_invoice.html#ab9c5e05457fa8a64a6ffcd8d6261e2a0',1,'ReducedInvoice.RInvoice.setPositionDescription()']]],

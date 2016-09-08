@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['zugferdhandler',['zugferdHandler',['../class_import_1_1zugferd_handler.html',1,'Import']]],
-  ['zugferdhandler_2ejava',['zugferdHandler.java',['../zugferd_handler_8java.html',1,'']]]
+  ['wordbag',['WordBag',['../class_bag_of_words_1_1_word_bag.html',1,'BagOfWords']]],
+  ['wordbag',['WordBag',['../class_bag_of_words_1_1_word_bag.html#a7464ca7b08fa51ee8f4967b017896a7e',1,'BagOfWords::WordBag']]],
+  ['wordbag_2ejava',['WordBag.java',['../_word_bag_8java.html',1,'']]]
 ];
