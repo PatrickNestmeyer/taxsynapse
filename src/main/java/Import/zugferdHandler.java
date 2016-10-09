@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -47,7 +48,7 @@ public class zugferdHandler {
 			return null;
 	}
 	
-	public void readInvoice(String Path, List<Invoice> InvoiceList, final boolean setLogging, final boolean supressInvalid) throws Exception {
+	public void readInvoice(String Path, HashMap<String, String> Filenames, List<Invoice> InvoiceList, final boolean setLogging, final boolean supressInvalid) throws Exception {
 		//Rekursive => elem can be a folder or a file 
 		Files.walk(Paths.get(Path)).forEach(elem -> {
 			String fileName = elem.getFileName().toString();
@@ -79,6 +80,7 @@ public class zugferdHandler {
 							if(add){
 								if(setLogging){ System.out.println(fileName + " is valid." ); }
 								InvoiceList.add(invoice);
+								Filenames.put((invoice.getTrade().getAgreement().getBuyer().getName()) + ":" + invoice.getHeader().getInvoiceNumber(), fileName);
 								if(setLogging){ System.out.println( fileName + " added to the list."); }
 							}
 		    			}

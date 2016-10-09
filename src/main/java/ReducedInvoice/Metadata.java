@@ -4,7 +4,9 @@ public class Metadata {
 
 	private String MandantKey;
 	
-	private String MandantName;
+	//private String MandantName;
+	
+	private String VoucherKey;
 	
 	private String BranchKey;
 
@@ -14,6 +16,14 @@ public class Metadata {
 
 	public void setBranchKey(String branchKey) {
 		BranchKey = branchKey;
+	}
+
+	public String getVoucherKey() {
+		return VoucherKey;
+	}
+
+	public void setVoucherKey(String voucherKey) {
+		VoucherKey = voucherKey;
 	}
 	
 }

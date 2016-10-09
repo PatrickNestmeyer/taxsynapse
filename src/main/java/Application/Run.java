@@ -4,54 +4,119 @@ import Import.*;
 import ReducedInvoice.*;
 import io.konik.zugferd.Invoice;
 import BagOfWords.WordBag;
+import Booking.Voucher;
+import Booking.CSVBookingImport;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
+import org.datavec.api.records.reader.RecordReader;
+import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
 
+/*
+ *
+ * TODO: 
+ *
+ * */
 
 public class Run {
-
-	/**
-	 * 
-	 * Override Validation Counter
-	 * 
-	 * Serialization
-	 * 
-	 */
 	
 	public static void main(String[] args) throws IOException {
 		
+		Boolean readOriginalInvoices = true;
+		
+		
+		List<Invoice> InvoiceList;
+		List<AInvoice> ReducedInvoiceList = new ArrayList<AInvoice>();
+		HashMap<String, String> Filenames = new HashMap<String, String>();
+		
+		if(readOriginalInvoices){
+			InvoiceList = new ArrayList<Invoice>();
+			readInvoicesFromFiles(InvoiceList, Filenames);
+			reduceInvoices(InvoiceList, ReducedInvoiceList);
+		}else{
+			
+		}
+		
+		try{
+			CSVBookingImport bImport = CSVBookingImport.getInstance();
+			List<Voucher> VoucherList = new ArrayList<Voucher>();
+			VoucherList = bImport.getVoucherInfoFromFile(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
+		}catch(FileNotFoundException e){
+			System.out.println(e.getMessage());
+		}
+		PrintWriter pw = new PrintWriter(new File("test.csv"));
+        StringBuilder sb = new StringBuilder();
+        sb.append(Config.VOLUME_ID);
+        sb.append(Config.VOUCHER_CSV_SEPERATOR);
+        sb.append(Config.DEBIT_ACCOUNT_ID);
+        sb.append(Config.VOUCHER_CSV_SEPERATOR);
+        sb.append(Config.TAX_KEY_ID);
+        sb.append(Config.VOUCHER_CSV_SEPERATOR);
+        sb.append("Buchungstext");
+        sb.append(Config.VOUCHER_CSV_SEPERATOR);
+        sb.append(Config.VOUCHER_ID);
+        for(int i = 0; i < ReducedInvoiceList.size(); i++){
+            for(int j = 0; j < ReducedInvoiceList.get(i).getPositionsLength(); j++){
+            	sb.append("\n");
+            	sb.append(ReducedInvoiceList.get(i).getPosition(j).getPositionPrice().getBrutto());
+            	sb.append(Config.VOUCHER_CSV_SEPERATOR);
+            	sb.append("");
+            	sb.append(Config.VOUCHER_CSV_SEPERATOR);
+            	sb.append(ReducedInvoiceList.get(i).getPosition(j).getTaxrate());
+            	sb.append(Config.VOUCHER_CSV_SEPERATOR);
+            	sb.append(Filenames.get(ReducedInvoiceList.get(i).getBuyerName() + ":" + ReducedInvoiceList.get(i).getInvoiceNumber()));
+            	sb.append(Config.VOUCHER_CSV_SEPERATOR);
+            	sb.append("\"" + ReducedInvoiceList.get(i).getPosition(j).getDescription().replace(";", ",") + "\"");
+            }
+        }
+        pw.write(sb.toString());
+        pw.close();
+		
+		//int numLinesToSkip = 0;
+		
+		//RecordReader featuresReader = new CSVRecordReader()
+		
+		//Create Bag of Words
 		/*
-		String pathToInvoices = args[0];
-		Boolean logSingleSteps = Boolean.valueOf(args[1]);
-		Boolean supressInvalid = Boolean.valueOf(args[2]);
-		String pathToInvalidWords = args[3];
-		String pathToInvalidTokens = args[4];
+		WordBag wb = new WordBag();
+		try{
+			wb.createWordBag(ReducedInvoiceList, pathToInvalidWords, pathToInvalidTokens);
+			//List<String> w = wb.getBag();
+			//System.out.println(w);
+			System.out.println("Bag of words sucessfully created");
+		}catch(Exception e){
+			System.out.print("Exception while creating bag of words");
+			System.out.println("Details: ");
+			System.out.println(e.getMessage());
+		}
 		*/
 		
-		String pathToInvoices = "./src/main/resources/examples_ferd/";
-		Boolean logSingleSteps = false;
-		Boolean supressInvalid = false;
-		String pathToInvalidWords = "./src/main/resources/bag_config/forbiddenInputNeurons";
-		String pathToInvalidTokens = "./src/main/resources/bag_config/forbiddenTokens";
+		System.out.println("FIN");
 		
+	}
+
+	private static void readInvoicesFromFiles(List<Invoice> InvoiceList, HashMap<String, String> Filenames){
+		String pathToInvoices = Config.PATH_TO_INVOICES;
+		Boolean logSingleSteps = Config.LOG_SINGLE_STEPS;
+		Boolean supressInvalid = Config.SUPRESS_INVALID_INVOICES;
 		zugferdHandler zHandler = zugferdHandler.getInstance();
-		List<Invoice> InvoiceList = new ArrayList<Invoice>();
-		List<AInvoice> ReducedInvoiceList = new ArrayList<AInvoice>();
-		
-		//Read Invoices from Folder
 		try{
-			zHandler.readInvoice(pathToInvoices, InvoiceList, logSingleSteps, supressInvalid);
+			zHandler.readInvoice(pathToInvoices, Filenames, InvoiceList, logSingleSteps, supressInvalid);
 			System.out.println("All Invoices successfully readed");
 		}catch(Exception e){
 			System.out.print("Exception while reading Invoices");
 			System.out.println("Details: ");
 			System.out.println(e.getMessage());
 		}
-		
-		//Reduce Invoices to necessary Informations
+	}
+	
+	private static void reduceInvoices(List<Invoice> InvoiceList, List<AInvoice> ReducedInvoiceList){
 		InvoiceReducer ir = InvoiceReducer.getInstance();
 		try{
 			ir.ReducedInvoiceList(InvoiceList, ReducedInvoiceList);
@@ -64,22 +129,6 @@ public class Run {
 			System.out.println("Details: ");
 			System.out.println(e.getMessage());
 		}
-		
-		//Create Bag of Words
-		WordBag wb = new WordBag();
-		try{
-			wb.createWordBag(ReducedInvoiceList, pathToInvalidWords, pathToInvalidTokens);
-			//List<String> w = wb.getBag();
-			//System.out.println(w);
-			System.out.println("Bag of words sucessfully created");
-		}catch(Exception e){
-			System.out.print("Exception while creating bag of words");
-			System.out.println("Details: ");
-			System.out.println(e.getMessage());
-		}
-		
-		System.out.println("Breakpoint");
-		
 	}
-
+	
 }

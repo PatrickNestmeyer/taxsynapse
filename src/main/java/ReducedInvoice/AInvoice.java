@@ -26,7 +26,7 @@ public abstract class AInvoice {
 	protected List<Position> Positions;
 	
 	//MetaData
-	protected Metadata MetaData;
+	private Metadata MetaData;
 	
 	protected String Currency;
 	
@@ -112,6 +112,14 @@ public abstract class AInvoice {
 	public void setInvoiceError(Error invoiceerror)
 	{
 		InvoiceError = invoiceerror;
+	}
+
+	public Metadata getMetaData() {
+		return MetaData;
+	}
+
+	public void setMetaData(Metadata metaData) {
+		MetaData = metaData;
 	}
 
 }
