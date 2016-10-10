@@ -3,20 +3,14 @@ package Application;
 import Import.*;
 import ReducedInvoice.*;
 import io.konik.zugferd.Invoice;
-import BagOfWords.WordBag;
 import Booking.Voucher;
-import Booking.CSVBookingImport;
+import Booking.CSVBookingHandler;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import org.datavec.api.records.reader.RecordReader;
-import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
 
 /*
  *
@@ -44,58 +38,13 @@ public class Run {
 		}
 		
 		try{
-			CSVBookingImport bImport = CSVBookingImport.getInstance();
+			CSVBookingHandler bHandler = CSVBookingHandler.getInstance();
 			List<Voucher> VoucherList = new ArrayList<Voucher>();
-			VoucherList = bImport.getVoucherInfoFromFile(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
+			VoucherList = bHandler.getVoucherInfoFromFile(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
+			bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList, Filenames, Config.VOUCHER_CSV_SEPERATOR);
 		}catch(FileNotFoundException e){
 			System.out.println(e.getMessage());
 		}
-		PrintWriter pw = new PrintWriter(new File("test.csv"));
-        StringBuilder sb = new StringBuilder();
-        sb.append(Config.VOLUME_ID);
-        sb.append(Config.VOUCHER_CSV_SEPERATOR);
-        sb.append(Config.DEBIT_ACCOUNT_ID);
-        sb.append(Config.VOUCHER_CSV_SEPERATOR);
-        sb.append(Config.TAX_KEY_ID);
-        sb.append(Config.VOUCHER_CSV_SEPERATOR);
-        sb.append("Buchungstext");
-        sb.append(Config.VOUCHER_CSV_SEPERATOR);
-        sb.append(Config.VOUCHER_ID);
-        for(int i = 0; i < ReducedInvoiceList.size(); i++){
-            for(int j = 0; j < ReducedInvoiceList.get(i).getPositionsLength(); j++){
-            	sb.append("\n");
-            	sb.append(ReducedInvoiceList.get(i).getPosition(j).getPositionPrice().getBrutto());
-            	sb.append(Config.VOUCHER_CSV_SEPERATOR);
-            	sb.append("");
-            	sb.append(Config.VOUCHER_CSV_SEPERATOR);
-            	sb.append(ReducedInvoiceList.get(i).getPosition(j).getTaxrate());
-            	sb.append(Config.VOUCHER_CSV_SEPERATOR);
-            	sb.append(Filenames.get(ReducedInvoiceList.get(i).getBuyerName() + ":" + ReducedInvoiceList.get(i).getInvoiceNumber()));
-            	sb.append(Config.VOUCHER_CSV_SEPERATOR);
-            	sb.append("\"" + ReducedInvoiceList.get(i).getPosition(j).getDescription().replace(";", ",") + "\"");
-            }
-        }
-        pw.write(sb.toString());
-        pw.close();
-		
-		//int numLinesToSkip = 0;
-		
-		//RecordReader featuresReader = new CSVRecordReader()
-		
-		//Create Bag of Words
-		/*
-		WordBag wb = new WordBag();
-		try{
-			wb.createWordBag(ReducedInvoiceList, pathToInvalidWords, pathToInvalidTokens);
-			//List<String> w = wb.getBag();
-			//System.out.println(w);
-			System.out.println("Bag of words sucessfully created");
-		}catch(Exception e){
-			System.out.print("Exception while creating bag of words");
-			System.out.println("Details: ");
-			System.out.println(e.getMessage());
-		}
-		*/
 		
 		System.out.println("FIN");
 		

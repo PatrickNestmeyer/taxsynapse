@@ -12,10 +12,12 @@ public final class Config {
 	public static String PATH_TO_INVALID_TOKENS = "./src/main/resources/bag_config/forbiddenTokens";
 	public static String PATH_TO_VOUCHERS = "./src/main/resources/vouchers/DTVF_Buchungsstapel.csv";
 	
-	
+	public static String VOUCHER_TEST_DUMP = "./src/main/resources/VoucherTestDump.csv";
 	public static String VOUCHER_ID = "Beleglink";
 	public static String VOLUME_ID = "Umsatz (ohne Soll/Haben-Kz)";
 	public static String DEBIT_ACCOUNT_ID = "Gegenkonto (ohne BU-Schlüssel)";
 	public static String TAX_KEY_ID = "BU-Schlüssel";
+	public static String BOOKING_NOTE = "Buchungstext";
 	public static char VOUCHER_CSV_SEPERATOR = ';';
+	public static char VOUCHER_CSV_REPLACEMENT = ',';
 }

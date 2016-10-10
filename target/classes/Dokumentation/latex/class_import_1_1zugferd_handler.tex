@@ -1,0 +1,285 @@
+\hypertarget{class_import_1_1zugferd_handler}{}\section{Import.\+zugferd\+Handler Class Reference}
+\label{class_import_1_1zugferd_handler}\index{Import.\+zugferd\+Handler@{Import.\+zugferd\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Invoice \hyperlink{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}{read\+Invoice} (String Path)  throws I\+O\+Exception
+\item 
+void \hyperlink{class_import_1_1zugferd_handler_a139f15033905c9e3a5d5fada5fb9e862}{read\+Invoice} (String Path, List$<$ Invoice $>$ Invoice\+List, final boolean set\+Logging, final boolean supress\+Invalid)  throws Exception 
+\item 
+void \hyperlink{class_import_1_1zugferd_handler_aa5fbab8b4a7835f2b13167452f9d17db}{remove\+Invalid} (List$<$ Invoice $>$ Invoice\+List)
+\item 
+boolean \hyperlink{class_import_1_1zugferd_handler_a6999d186193b120650a5d24a49d10c6c}{has\+Invalid} (List$<$ Invoice $>$ Invoice\+List)
+\item 
+Set$<$ Constraint\+Violation$<$ Invoice $>$ $>$ \hyperlink{class_import_1_1zugferd_handler_acf26740b73f820812fadb01ccf712dd2}{get\+Violations} (Invoice invoice)
+\item 
+void \hyperlink{class_import_1_1zugferd_handler_ae8ae1fcc05ebddf4d2b53c8daeda7b00}{print\+Violations} (List$<$ Invoice $>$ Invoice\+List)
+\item 
+void \hyperlink{class_import_1_1zugferd_handler_aadb33b773805373add19d92eb713831b}{print\+Single\+Invoice\+Violations} (Invoice invoice)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_import_1_1zugferd_handler}{zugferd\+Handler} \hyperlink{class_import_1_1zugferd_handler_ad3acd84340c8a5fcb2c01a2636979786}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file zugferd\+Handler.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf zugferd\+Handler} Import.\+zugferd\+Handler.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_import_1_1zugferd_handler_ad3acd84340c8a5fcb2c01a2636979786}{}\label{class_import_1_1zugferd_handler_ad3acd84340c8a5fcb2c01a2636979786}
+
+
+Definition at line 25 of file zugferd\+Handler.\+java.
+
+
+\begin{DoxyCode}
+25                                               \{
+26         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
+27             \textcolor{keyword}{synchronized}(zugferdHandler.class)\{
+28                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
+29                     uniqueInstance = \textcolor{keyword}{new} zugferdHandler();
+30                 \}
+31             \}
+32         \}
+33         \textcolor{keywordflow}{return} uniqueInstance;
+34     \}
+\end{DoxyCode}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!get\+Violations@{get\+Violations}}
+\index{get\+Violations@{get\+Violations}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Violations(\+Invoice invoice)}{getViolations(Invoice invoice)}}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$Constraint\+Violation$<$Invoice$>$ $>$ Import.\+zugferd\+Handler.\+get\+Violations (
+\begin{DoxyParamCaption}
+\item[{Invoice}]{invoice}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_acf26740b73f820812fadb01ccf712dd2}{}\label{class_import_1_1zugferd_handler_acf26740b73f820812fadb01ccf712dd2}
+
+
+Definition at line 125 of file zugferd\+Handler.\+java.
+
+
+\begin{DoxyCode}
+125                                                                             \{
+126         
+127         InvoiceValidator invoiceValidator = \textcolor{keyword}{new} InvoiceValidator();
+128        
+129         Set<ConstraintViolation<Invoice>> violations = invoiceValidator.validate(invoice);
+130         
+131         \textcolor{keywordflow}{return} violations;
+132     \}
+\end{DoxyCode}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!has\+Invalid@{has\+Invalid}}
+\index{has\+Invalid@{has\+Invalid}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{has\+Invalid(\+List$<$ Invoice $>$ Invoice\+List)}{hasInvalid(List< Invoice > InvoiceList)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Import.\+zugferd\+Handler.\+has\+Invalid (
+\begin{DoxyParamCaption}
+\item[{List$<$ Invoice $>$}]{Invoice\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_a6999d186193b120650a5d24a49d10c6c}{}\label{class_import_1_1zugferd_handler_a6999d186193b120650a5d24a49d10c6c}
+
+
+Definition at line 116 of file zugferd\+Handler.\+java.
+
+
+\begin{DoxyCode}
+116                                                         \{
+117         
+118         \textcolor{keywordflow}{for} (Invoice temp : InvoiceList) \{
+119             \textcolor{keywordflow}{if}(this.\hyperlink{class_import_1_1zugferd_handler_acf26740b73f820812fadb01ccf712dd2}{getViolations}(temp) != null)
+120                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+121         \}
+122         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+123     \}
+\end{DoxyCode}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!print\+Single\+Invoice\+Violations@{print\+Single\+Invoice\+Violations}}
+\index{print\+Single\+Invoice\+Violations@{print\+Single\+Invoice\+Violations}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{print\+Single\+Invoice\+Violations(\+Invoice invoice)}{printSingleInvoiceViolations(Invoice invoice)}}]{\setlength{\rightskip}{0pt plus 5cm}void Import.\+zugferd\+Handler.\+print\+Single\+Invoice\+Violations (
+\begin{DoxyParamCaption}
+\item[{Invoice}]{invoice}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_aadb33b773805373add19d92eb713831b}{}\label{class_import_1_1zugferd_handler_aadb33b773805373add19d92eb713831b}
+
+
+Definition at line 148 of file zugferd\+Handler.\+java.
+
+
+\begin{DoxyCode}
+148                                                              \{
+149         
+150         InvoiceValidator invoiceValidator = \textcolor{keyword}{new} InvoiceValidator();
+151         
+152         Set<ConstraintViolation<Invoice>> violations = invoiceValidator.validate(invoice);
+153         
+154         \textcolor{keywordflow}{for} (ConstraintViolation<Invoice> violation : violations) \{
+155              System.out.println((violation.getMessage() + \textcolor{stringliteral}{" at: "} + violation.getPropertyPath()));
+156            \}
+157     \}
+\end{DoxyCode}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!print\+Violations@{print\+Violations}}
+\index{print\+Violations@{print\+Violations}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{print\+Violations(\+List$<$ Invoice $>$ Invoice\+List)}{printViolations(List< Invoice > InvoiceList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Import.\+zugferd\+Handler.\+print\+Violations (
+\begin{DoxyParamCaption}
+\item[{List$<$ Invoice $>$}]{Invoice\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_ae8ae1fcc05ebddf4d2b53c8daeda7b00}{}\label{class_import_1_1zugferd_handler_ae8ae1fcc05ebddf4d2b53c8daeda7b00}
+
+
+Definition at line 134 of file zugferd\+Handler.\+java.
+
+
+\begin{DoxyCode}
+134                                                           \{
+135         
+136         InvoiceValidator invoiceValidator = \textcolor{keyword}{new} InvoiceValidator();
+137         
+138         Set<ConstraintViolation<Invoice>> violations;
+139         
+140         \textcolor{keywordflow}{for} (Invoice temp : InvoiceList) \{
+141             violations = invoiceValidator.validate(temp);
+142             \textcolor{keywordflow}{for} (ConstraintViolation<Invoice> violation : violations) \{
+143                  System.out.println((violation.getMessage() + \textcolor{stringliteral}{" at: "} + violation.getPropertyPath()));
+144             \}
+145         \}
+146     \}
+\end{DoxyCode}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!read\+Invoice@{read\+Invoice}}
+\index{read\+Invoice@{read\+Invoice}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{read\+Invoice(\+String Path)}{readInvoice(String Path)}}]{\setlength{\rightskip}{0pt plus 5cm}Invoice Import.\+zugferd\+Handler.\+read\+Invoice (
+\begin{DoxyParamCaption}
+\item[{String}]{Path}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}{}\label{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}
+
+
+Definition at line 36 of file zugferd\+Handler.\+java.
+
+
+\begin{DoxyCode}
+36                                                               \{
+37         
+38         PdfHandler handler = \textcolor{keyword}{new} PdfHandler();
+39         
+40         FileInputStream input = \textcolor{keyword}{new} FileInputStream(\textcolor{keyword}{new} File(Path));
+41         
+42         Invoice invoice = handler.extractInvoice(input);
+43         
+44         \textcolor{keywordflow}{if}(invoice != null)
+45             \textcolor{keywordflow}{return} invoice;
+46         \textcolor{keywordflow}{else}
+47             \textcolor{keywordflow}{return} null;
+48     \}
+\end{DoxyCode}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!read\+Invoice@{read\+Invoice}}
+\index{read\+Invoice@{read\+Invoice}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{read\+Invoice(\+String Path, List$<$ Invoice $>$ Invoice\+List, final boolean set\+Logging, final boolean supress\+Invalid)}{readInvoice(String Path, List< Invoice > InvoiceList, final boolean setLogging, final boolean supressInvalid)}}]{\setlength{\rightskip}{0pt plus 5cm}void Import.\+zugferd\+Handler.\+read\+Invoice (
+\begin{DoxyParamCaption}
+\item[{String}]{Path, }
+\item[{List$<$ Invoice $>$}]{Invoice\+List, }
+\item[{final boolean}]{set\+Logging, }
+\item[{final boolean}]{supress\+Invalid}
+\end{DoxyParamCaption}
+) throws Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_a139f15033905c9e3a5d5fada5fb9e862}{}\label{class_import_1_1zugferd_handler_a139f15033905c9e3a5d5fada5fb9e862}
+
+
+Definition at line 50 of file zugferd\+Handler.\+java.
+
+
+\begin{DoxyCode}
+50                                                                                                            
+                                        \{
+51         \textcolor{comment}{//Rekursive => elem can be a folder or a file }
+52         Files.walk(Paths.get(Path)).forEach(elem -> \{
+53             String fileName = elem.getFileName().toString();
+54             String path = elem.toString();
+55             \textcolor{keywordflow}{try}\{
+56                 \textcolor{keywordflow}{if} (Files.isDirectory(elem))\{
+57                     \textcolor{keywordflow}{if}(setLogging)\{ System.out.println(\textcolor{stringliteral}{"recursive entry. elem is just a directory."}); \}
+58                 \}\textcolor{keywordflow}{else}\{  \textcolor{keywordflow}{if}(Files.isRegularFile(elem))\{
+59                     \textcolor{keywordflow}{if}(Files.probeContentType(elem).intern() == \textcolor{stringliteral}{"application/pdf"})\{
+60                         Invoice invoice = this.\hyperlink{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}{readInvoice}(path);
+61                         \textcolor{keywordflow}{if}(invoice != null) \{
+62                             \textcolor{keywordtype}{boolean} add = \textcolor{keyword}{false};
+63                             \textcolor{keywordflow}{if}(supressInvalid)\{
+64                                 Set<ConstraintViolation<Invoice>> violations = this.
+      \hyperlink{class_import_1_1zugferd_handler_acf26740b73f820812fadb01ccf712dd2}{getViolations}(invoice);
+65                                 \textcolor{keywordflow}{if}((violations.size() > 0))\{
+66                                     \textcolor{keywordflow}{if}(setLogging)\{ System.out.println(\textcolor{stringliteral}{"Violatins found in: "} + fileName); 
+      \}
+67                                     \textcolor{keywordflow}{if}(setLogging)\{ 
+68                                         violations.forEach(vio -> \{
+69                                             System.out.println(vio.getExecutableReturnValue() + \textcolor{stringliteral}{"|"} + vio.
+      getLeafBean() + \textcolor{stringliteral}{"|"} + vio.getInvalidValue() + \textcolor{stringliteral}{"|"} + vio.getMessage());
+70                                         \});
+71                                     \}
+72                                     add = \textcolor{keyword}{false};
+73                                 \}\textcolor{keywordflow}{else}\{
+74                                     add = \textcolor{keyword}{true};
+75                                 \}
+76                             \}\textcolor{keywordflow}{else}\{
+77                                 add = \textcolor{keyword}{true};
+78                             \}
+79                             \textcolor{keywordflow}{if}(add)\{
+80                                 \textcolor{keywordflow}{if}(setLogging)\{ System.out.println(fileName + \textcolor{stringliteral}{" is valid."} ); \}
+81                                 InvoiceList.add(invoice);
+82                                 \textcolor{keywordflow}{if}(setLogging)\{ System.out.println( fileName + \textcolor{stringliteral}{" added to the list."}); \}
+83                             \}
+84                         \}
+85                     \}\textcolor{keywordflow}{else}\{
+86                         \textcolor{keywordflow}{if}(setLogging)\{ System.out.println(\textcolor{stringliteral}{"a non pdf file was found. Ignoring..."}); \}
+87                     \}
+88                 \}\textcolor{keywordflow}{else}\{
+89                     \textcolor{keywordflow}{if}(setLogging)\{ System.out.println(\textcolor{stringliteral}{"elem is neither a directory nor a file. Ignoring...
+      "}); \}
+90                 \}\}
+91             \}\textcolor{keywordflow}{catch}(TransformationException tfe)\{
+92                 \textcolor{keywordflow}{if}(setLogging)\{ 
+93                     System.out.println(fileName + \textcolor{stringliteral}{" caused an Exception while transforming PDF/ZUGFERD to
+       Java/Invoice"});
+94                     System.out.println(\textcolor{stringliteral}{"Message: "} + tfe.getMessage());
+95                 \}
+96             \}\textcolor{keywordflow}{catch}(IOException ioe)\{
+97                 \textcolor{keywordflow}{if}(setLogging)\{ 
+98                     System.out.println(fileName + \textcolor{stringliteral}{" caused an IOException."});
+99                     System.out.println(\textcolor{stringliteral}{"Message: "} + ioe.getMessage());
+100                 \}
+101             \}\textcolor{keywordflow}{catch}(Exception e)\{
+102                 \textcolor{keywordflow}{if}(setLogging)\{ 
+103                     System.out.println(fileName + \textcolor{stringliteral}{" caused an Exception."});
+104                     System.out.println(\textcolor{stringliteral}{"Message: "} + e.getMessage());
+105                 \}
+106             \}
+107         \});
+108     \}
+\end{DoxyCode}
+\index{Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}!remove\+Invalid@{remove\+Invalid}}
+\index{remove\+Invalid@{remove\+Invalid}!Import\+::zugferd\+Handler@{Import\+::zugferd\+Handler}}
+\subsubsection[{\texorpdfstring{remove\+Invalid(\+List$<$ Invoice $>$ Invoice\+List)}{removeInvalid(List< Invoice > InvoiceList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Import.\+zugferd\+Handler.\+remove\+Invalid (
+\begin{DoxyParamCaption}
+\item[{List$<$ Invoice $>$}]{Invoice\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1zugferd_handler_aa5fbab8b4a7835f2b13167452f9d17db}{}\label{class_import_1_1zugferd_handler_aa5fbab8b4a7835f2b13167452f9d17db}
+
+
+Definition at line 111 of file zugferd\+Handler.\+java.
+
+
+\begin{DoxyCode}
+111                                                         \{
+112         
+113         InvoiceList.removeIf(i -> \hyperlink{class_import_1_1zugferd_handler_acf26740b73f820812fadb01ccf712dd2}{getViolations}(i).size() <= 0);
+114     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Import/\hyperlink{zugferd_handler_8java}{zugferd\+Handler.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,269 @@
+\begin{theindex}
+
+  \item {Add\+Meta\+Information}
+    \subitem {Reduced\+Invoice\+::\+Invoice\+Reducer}, \hyperpage{23}
+  \item {add\+Position}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{20}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{33}
+  \item {Add\+Positions}
+    \subitem {Reduced\+Invoice\+::\+Invoice\+Reducer}, \hyperpage{24}
+  \item {Application}, \hyperpage{17}
+  \item {Application.\+Run}, \hyperpage{35}
+  \item {Application\+::\+Run}
+    \subitem {main}, \hyperpage{35}
+
+  \indexspace
+
+  \item {buyer\+Name}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{23}
+
+  \indexspace
+
+  \item {C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Application/\+Run.\+java}, 
+		\hyperpage{41}
+  \item {C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Import/zugferd\+Handler.\+java}, 
+		\hyperpage{41}
+  \item {C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Reduced\+Invoice/\+A\+Invoice.\+java}, 
+		\hyperpage{41}
+  \item {C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Reduced\+Invoice/\+Invoice\+Reducer.\+java}, 
+		\hyperpage{42}
+  \item {C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Reduced\+Invoice/\+Metadata.\+java}, 
+		\hyperpage{42}
+  \item {C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Reduced\+Invoice/\+Position.\+java}, 
+		\hyperpage{42}
+  \item {C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Reduced\+Invoice/\+Price.\+java}, 
+		\hyperpage{42}
+  \item {C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Reduced\+Invoice/\+R\+Invoice.\+java}, 
+		\hyperpage{43}
+  \item {check\+Monetary\+Summation}
+    \subitem {Reduced\+Invoice\+::\+Invoice\+Reducer}, \hyperpage{25}
+  \item {Convert\+Invoice\+To\+Rinvoice}
+    \subitem {Reduced\+Invoice\+::\+Invoice\+Reducer}, \hyperpage{26}
+  \item {Currency}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{23}
+
+  \indexspace
+
+  \item {get\+Amount}
+    \subitem {Reduced\+Invoice\+::\+Position}, \hyperpage{29}
+  \item {get\+Branch\+Key}
+    \subitem {Reduced\+Invoice\+::\+Metadata}, \hyperpage{27}
+  \item {get\+Brutto}
+    \subitem {Reduced\+Invoice\+::\+Price}, \hyperpage{31}
+  \item {get\+Buyer\+Name}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{20}
+  \item {get\+Currency}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{20}
+  \item {get\+Description}
+    \subitem {Reduced\+Invoice\+::\+Position}, \hyperpage{29}
+  \item {get\+Exception\+Counter}
+    \subitem {Reduced\+Invoice\+::\+Invoice\+Reducer}, \hyperpage{26}
+  \item {get\+Instance}
+    \subitem {Import\+::zugferd\+Handler}, \hyperpage{36}
+    \subitem {Reduced\+Invoice\+::\+Invoice\+Reducer}, \hyperpage{26}
+  \item {get\+Invoice\+Date}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{20}
+  \item {get\+Invoice\+Number}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{20}
+  \item {get\+Netto}
+    \subitem {Reduced\+Invoice\+::\+Price}, \hyperpage{31}
+  \item {get\+Position}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{21}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{33}
+  \item {get\+Position\+Price}
+    \subitem {Reduced\+Invoice\+::\+Position}, \hyperpage{29}
+  \item {get\+Positions}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{21}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{33}
+  \item {get\+Positions\+Length}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{21}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{33}
+  \item {get\+Seller\+Name}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{21}
+  \item {get\+Steuer}
+    \subitem {Reduced\+Invoice\+::\+Price}, \hyperpage{31}
+  \item {get\+Taxrate}
+    \subitem {Reduced\+Invoice\+::\+Position}, \hyperpage{29}
+  \item {get\+Total\+Price}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{21}
+  \item {get\+Violations}
+    \subitem {Import\+::zugferd\+Handler}, \hyperpage{36}
+
+  \indexspace
+
+  \item {has\+Invalid}
+    \subitem {Import\+::zugferd\+Handler}, \hyperpage{36}
+
+  \indexspace
+
+  \item {Import}, \hyperpage{17}
+  \item {Import.\+zugferd\+Handler}, \hyperpage{36}
+  \item {Import\+::zugferd\+Handler}
+    \subitem {get\+Instance}, \hyperpage{36}
+    \subitem {get\+Violations}, \hyperpage{36}
+    \subitem {has\+Invalid}, \hyperpage{36}
+    \subitem {print\+Single\+Invoice\+Violations}, \hyperpage{37}
+    \subitem {print\+Violations}, \hyperpage{37}
+    \subitem {read\+Invoice}, \hyperpage{37}
+    \subitem {remove\+Invalid}, \hyperpage{38}
+
+  \indexspace
+
+  \item {main}
+    \subitem {Application\+::\+Run}, \hyperpage{35}
+  \item {mainpage.\+txt}, \hyperpage{43}
+  \item {Meta\+Data}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{23}
+
+  \indexspace
+
+  \item {Position}
+    \subitem {Reduced\+Invoice\+::\+Position}, \hyperpage{28}
+  \item {Positions}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{23}
+  \item {Price}
+    \subitem {Reduced\+Invoice\+::\+Price}, \hyperpage{31}
+  \item {print\+Single\+Invoice\+Violations}
+    \subitem {Import\+::zugferd\+Handler}, \hyperpage{37}
+  \item {print\+Violations}
+    \subitem {Import\+::zugferd\+Handler}, \hyperpage{37}
+
+  \indexspace
+
+  \item {R\+Invoice}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{33}
+  \item {read\+Invoice}
+    \subitem {Import\+::zugferd\+Handler}, \hyperpage{37}
+  \item {Reduced\+Invoice}, \hyperpage{17}
+  \item {Reduced\+Invoice.\+A\+Invoice}, \hyperpage{19}
+  \item {Reduced\+Invoice.\+Invoice\+Reducer}, \hyperpage{23}
+  \item {Reduced\+Invoice.\+Metadata}, \hyperpage{27}
+  \item {Reduced\+Invoice.\+Position}, \hyperpage{28}
+  \item {Reduced\+Invoice.\+Price}, \hyperpage{30}
+  \item {Reduced\+Invoice.\+R\+Invoice}, \hyperpage{32}
+  \item {Reduced\+Invoice\+::\+A\+Invoice}
+    \subitem {add\+Position}, \hyperpage{20}
+    \subitem {buyer\+Name}, \hyperpage{23}
+    \subitem {Currency}, \hyperpage{23}
+    \subitem {get\+Buyer\+Name}, \hyperpage{20}
+    \subitem {get\+Currency}, \hyperpage{20}
+    \subitem {get\+Invoice\+Date}, \hyperpage{20}
+    \subitem {get\+Invoice\+Number}, \hyperpage{20}
+    \subitem {get\+Position}, \hyperpage{21}
+    \subitem {get\+Positions}, \hyperpage{21}
+    \subitem {get\+Positions\+Length}, \hyperpage{21}
+    \subitem {get\+Seller\+Name}, \hyperpage{21}
+    \subitem {get\+Total\+Price}, \hyperpage{21}
+    \subitem {Meta\+Data}, \hyperpage{23}
+    \subitem {Positions}, \hyperpage{23}
+    \subitem {seller\+Name}, \hyperpage{23}
+    \subitem {set\+Buyer\+Name}, \hyperpage{21}
+    \subitem {set\+Currency}, \hyperpage{21}
+    \subitem {set\+Invoice\+Date}, \hyperpage{21}
+    \subitem {set\+Invoice\+Number}, \hyperpage{22}
+    \subitem {set\+Position}, \hyperpage{22}
+    \subitem {set\+Position\+Amount}, \hyperpage{22}
+    \subitem {set\+Position\+Description}, \hyperpage{22}
+    \subitem {set\+Position\+Price}, \hyperpage{22}
+    \subitem {set\+Position\+Tax\+Rate}, \hyperpage{22}
+    \subitem {set\+Seller\+Name}, \hyperpage{22}
+    \subitem {set\+Total\+Price}, \hyperpage{22}
+    \subitem {Total\+Price}, \hyperpage{23}
+  \item {Reduced\+Invoice\+::\+Invoice\+Reducer}
+    \subitem {Add\+Meta\+Information}, \hyperpage{23}
+    \subitem {Add\+Positions}, \hyperpage{24}
+    \subitem {check\+Monetary\+Summation}, \hyperpage{25}
+    \subitem {Convert\+Invoice\+To\+Rinvoice}, \hyperpage{26}
+    \subitem {get\+Exception\+Counter}, \hyperpage{26}
+    \subitem {get\+Instance}, \hyperpage{26}
+    \subitem {Reduced\+Invoice\+List}, \hyperpage{26}
+  \item {Reduced\+Invoice\+::\+Metadata}
+    \subitem {get\+Branch\+Key}, \hyperpage{27}
+    \subitem {set\+Branch\+Key}, \hyperpage{27}
+  \item {Reduced\+Invoice\+::\+Position}
+    \subitem {get\+Amount}, \hyperpage{29}
+    \subitem {get\+Description}, \hyperpage{29}
+    \subitem {get\+Position\+Price}, \hyperpage{29}
+    \subitem {get\+Taxrate}, \hyperpage{29}
+    \subitem {Position}, \hyperpage{28}
+    \subitem {set\+Amount}, \hyperpage{29}
+    \subitem {set\+Description}, \hyperpage{29}
+    \subitem {set\+Position\+Price}, \hyperpage{30}
+    \subitem {set\+Taxrate}, \hyperpage{30}
+  \item {Reduced\+Invoice\+::\+Price}
+    \subitem {get\+Brutto}, \hyperpage{31}
+    \subitem {get\+Netto}, \hyperpage{31}
+    \subitem {get\+Steuer}, \hyperpage{31}
+    \subitem {Price}, \hyperpage{31}
+    \subitem {set\+Brutto}, \hyperpage{31}
+    \subitem {set\+Netto}, \hyperpage{31}
+    \subitem {set\+Steuer}, \hyperpage{32}
+  \item {Reduced\+Invoice\+::\+R\+Invoice}
+    \subitem {add\+Position}, \hyperpage{33}
+    \subitem {get\+Position}, \hyperpage{33}
+    \subitem {get\+Positions}, \hyperpage{33}
+    \subitem {get\+Positions\+Length}, \hyperpage{33}
+    \subitem {R\+Invoice}, \hyperpage{33}
+    \subitem {set\+Position}, \hyperpage{34}
+    \subitem {set\+Position\+Amount}, \hyperpage{34}
+    \subitem {set\+Position\+Description}, \hyperpage{34}
+    \subitem {set\+Position\+Price}, \hyperpage{34}
+    \subitem {set\+Position\+Tax\+Rate}, \hyperpage{34}
+  \item {Reduced\+Invoice\+List}
+    \subitem {Reduced\+Invoice\+::\+Invoice\+Reducer}, \hyperpage{26}
+  \item {remove\+Invalid}
+    \subitem {Import\+::zugferd\+Handler}, \hyperpage{38}
+
+  \indexspace
+
+  \item {seller\+Name}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{23}
+  \item {set\+Amount}
+    \subitem {Reduced\+Invoice\+::\+Position}, \hyperpage{29}
+  \item {set\+Branch\+Key}
+    \subitem {Reduced\+Invoice\+::\+Metadata}, \hyperpage{27}
+  \item {set\+Brutto}
+    \subitem {Reduced\+Invoice\+::\+Price}, \hyperpage{31}
+  \item {set\+Buyer\+Name}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{21}
+  \item {set\+Currency}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{21}
+  \item {set\+Description}
+    \subitem {Reduced\+Invoice\+::\+Position}, \hyperpage{29}
+  \item {set\+Invoice\+Date}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{21}
+  \item {set\+Invoice\+Number}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{22}
+  \item {set\+Netto}
+    \subitem {Reduced\+Invoice\+::\+Price}, \hyperpage{31}
+  \item {set\+Position}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{22}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{34}
+  \item {set\+Position\+Amount}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{22}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{34}
+  \item {set\+Position\+Description}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{22}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{34}
+  \item {set\+Position\+Price}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{22}
+    \subitem {Reduced\+Invoice\+::\+Position}, \hyperpage{30}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{34}
+  \item {set\+Position\+Tax\+Rate}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{22}
+    \subitem {Reduced\+Invoice\+::\+R\+Invoice}, \hyperpage{34}
+  \item {set\+Seller\+Name}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{22}
+  \item {set\+Steuer}
+    \subitem {Reduced\+Invoice\+::\+Price}, \hyperpage{32}
+  \item {set\+Taxrate}
+    \subitem {Reduced\+Invoice\+::\+Position}, \hyperpage{30}
+  \item {set\+Total\+Price}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{22}
+
+  \indexspace
+
+  \item {Total\+Price}
+    \subitem {Reduced\+Invoice\+::\+A\+Invoice}, \hyperpage{23}
+
+\end{theindex}

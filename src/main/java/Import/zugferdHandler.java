@@ -12,6 +12,7 @@ import java.util.Set;
 import javax.validation.ConstraintViolation;
 import javax.validation.Path;
 
+import Booking.CSVBookingHandler;
 import io.konik.*;
 import io.konik.exception.TransformationException;
 import io.konik.validation.InvoiceValidator;
@@ -80,7 +81,7 @@ public class zugferdHandler {
 							if(add){
 								if(setLogging){ System.out.println(fileName + " is valid." ); }
 								InvoiceList.add(invoice);
-								Filenames.put((invoice.getTrade().getAgreement().getBuyer().getName()) + ":" + invoice.getHeader().getInvoiceNumber(), fileName);
+								Filenames.put(CSVBookingHandler.getInstance().getFileNamesKey(invoice.getTrade().getAgreement().getBuyer().getName(), invoice.getHeader().getInvoiceNumber()), fileName);
 								if(setLogging){ System.out.println( fileName + " added to the list."); }
 							}
 		    			}

@@ -1,0 +1,459 @@
+\hypertarget{class_reduced_invoice_1_1_invoice_reducer}{}\section{Reduced\+Invoice.\+Invoice\+Reducer Class Reference}
+\label{class_reduced_invoice_1_1_invoice_reducer}\index{Reduced\+Invoice.\+Invoice\+Reducer@{Reduced\+Invoice.\+Invoice\+Reducer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_reduced_invoice_1_1_invoice_reducer_af064188d62db15e810468e4811af6cc5}{Reduced\+Invoice\+List} (List$<$ Invoice $>$ Invoice\+List, List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} $>$ Reduced\+Invoice\+List)
+\item 
+\hyperlink{class_reduced_invoice_1_1_r_invoice}{R\+Invoice} \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a424cf7731d065d541c0a1bc613f5834a}{Convert\+Invoice\+To\+Rinvoice} (Invoice invoice)
+\item 
+void \hyperlink{class_reduced_invoice_1_1_invoice_reducer_aefec8c846739b1fe168b3c8828f25f4c}{Add\+Meta\+Information} (Invoice invoice, \hyperlink{class_reduced_invoice_1_1_r_invoice}{R\+Invoice} return\+Value)
+\item 
+\hyperlink{class_reduced_invoice_1_1_price}{Price} \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a6caff41f142502c44cbeefc7b1e44c9d}{check\+Monetary\+Summation} (Monetary\+Summation gesamtpreis)
+\item 
+void \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a599dbd87601635791534a8624cb8f953}{Add\+Positions} (Invoice invoice, \hyperlink{class_reduced_invoice_1_1_r_invoice}{R\+Invoice} return\+Value)
+\item 
+void \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a47e121912714be2caea8d2619c10a2f0}{validate\+Invoice} (\hyperlink{class_reduced_invoice_1_1_r_invoice}{R\+Invoice} return\+Value)
+\item 
+float \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a4d9155f5cc7223ed2659a8567f9ba1ec}{Runden} (float a)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_reduced_invoice_1_1_invoice_reducer}{Invoice\+Reducer} \hyperlink{class_reduced_invoice_1_1_invoice_reducer_ad4fafc7b331a78ef243c3e3ba88803da}{get\+Instance} ()
+\item 
+static int \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a987de6f3876284a7b456240f85dc066f}{get\+Meta\+Exception\+Counter} ()
+\item 
+static int \hyperlink{class_reduced_invoice_1_1_invoice_reducer_ad5034d72d8eae0edc2026c9ca9e66465}{get\+Position\+Exception\+Counter} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Invoice\+Reducer.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!Add\+Meta\+Information@{Add\+Meta\+Information}}
+\index{Add\+Meta\+Information@{Add\+Meta\+Information}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{Add\+Meta\+Information(\+Invoice invoice, R\+Invoice return\+Value)}{AddMetaInformation(Invoice invoice, RInvoice returnValue)}}]{\setlength{\rightskip}{0pt plus 5cm}void Reduced\+Invoice.\+Invoice\+Reducer.\+Add\+Meta\+Information (
+\begin{DoxyParamCaption}
+\item[{Invoice}]{invoice, }
+\item[{{\bf R\+Invoice}}]{return\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_aefec8c846739b1fe168b3c8828f25f4c}{}\label{class_reduced_invoice_1_1_invoice_reducer_aefec8c846739b1fe168b3c8828f25f4c}
+
+\begin{DoxyParams}{Parameters}
+{\em invoice} & \\
+\hline
+{\em return\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+67     \{
+68         \textcolor{keywordflow}{try}
+69         \{
+70             \textcolor{keywordflow}{if}(invoice.getHeader().getIssued() != null)
+71             \{
+72                 returnValue.setInvoiceDate(\textcolor{keyword}{new} Date(
+73                         invoice.getHeader().getIssued().getYear(), 
+74                         invoice.getHeader().getIssued().getMonth(), 
+75                         invoice.getHeader().getIssued().getDay()));
+76             \}
+77             returnValue.setInvoiceNumber(invoice.getHeader().getInvoiceNumber());  \textcolor{comment}{//wichtig}
+78             returnValue.setBuyerName(invoice.getTrade().getAgreement().getBuyer().getName());
+79             returnValue.setSellerName(invoice.getTrade().getAgreement().getSeller().getName());
+80             returnValue.setCurrency(invoice.getTrade().getSettlement().getCurrency().getName());
+81             
+82             returnValue.setTotalPrice(\hyperlink{class_reduced_invoice_1_1_invoice_reducer_a6caff41f142502c44cbeefc7b1e44c9d}{checkMonetarySummation}(invoice.getTrade().
+      getSettlement().getMonetarySummation())); 
+83         \}
+84         \textcolor{keywordflow}{catch}(Exception e)
+85         \{
+86             this.MetaExceptionCounter++;
+87         \}
+88     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!Add\+Positions@{Add\+Positions}}
+\index{Add\+Positions@{Add\+Positions}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{Add\+Positions(\+Invoice invoice, R\+Invoice return\+Value)}{AddPositions(Invoice invoice, RInvoice returnValue)}}]{\setlength{\rightskip}{0pt plus 5cm}void Reduced\+Invoice.\+Invoice\+Reducer.\+Add\+Positions (
+\begin{DoxyParamCaption}
+\item[{Invoice}]{invoice, }
+\item[{{\bf R\+Invoice}}]{return\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_a599dbd87601635791534a8624cb8f953}{}\label{class_reduced_invoice_1_1_invoice_reducer_a599dbd87601635791534a8624cb8f953}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]if elem.\+get\+Delivery().get\+Billed().get\+Unit\+Code() == null \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em invoice} & \\
+\hline
+{\em return\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 152 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+153     \{
+154         \textcolor{keywordflow}{try}
+155         \{
+156         \textcolor{keywordtype}{int} lastPosition = -1;
+157         String lastPositionName = \textcolor{stringliteral}{""};
+158         
+159         \textcolor{keywordflow}{for}(Item elem : invoice.getTrade().getItems())
+160         \{
+161             \textcolor{keywordflow}{if}(elem != null)
+162             \{
+163                 String Measurement = \textcolor{stringliteral}{""};
+164                 \textcolor{keywordtype}{int} amount = 1;
+165                 \textcolor{keywordtype}{float} lineTaxPerc = 0;
+166                 \textcolor{keywordtype}{float} lineSumNet = 0;
+167                 \textcolor{keywordtype}{float} lineSumGross = 0;
+168                 Error positionerror = Error.NO\_ERROR;
+169                 
+170                 \textcolor{comment}{// Preis einer Position}
+171                 \textcolor{keywordflow}{if}(elem.getSettlement() != null)
+172                 \{
+173                     \textcolor{keywordflow}{if}(elem.getSettlement().getMonetarySummation() != null)
+174                     \{
+175                         lineSumNet = elem.getSettlement().getMonetarySummation().getLineTotal().getValue().
+      floatValue();
+176                     \}
+177                     \textcolor{keywordflow}{else}
+178                     \{
+179                         positionerror = Error.PRICE\_ERROR;
+180                     \}
+181                     \textcolor{keywordflow}{if}(elem.getSettlement().getTradeTax() != null  && elem.getSettlement().getTradeTax().
+      size() >= 1)
+182                     \{
+183                         lineTaxPerc = elem.getSettlement().getTradeTax().get(0).getPercentage().floatValue(
+      );
+184                         lineSumGross = lineSumNet + ( (lineSumNet * lineTaxPerc) / 100 );
+185                     \}
+186                     \textcolor{keywordflow}{else}
+187                     \{
+188                         positionerror = Error.PRICE\_ERROR;
+189                     \}
+190                 \}
+191                 
+192                 \textcolor{comment}{// Name der Position}
+193                 \textcolor{keywordflow}{if}(elem.getProduct() != null)
+194                 \{
+195                     \textcolor{keywordflow}{if}(elem.getProduct().getName() != null)
+196                     \{
+197                         \textcolor{keywordflow}{if}(elem.getDelivery().getBilled() != null)
+198                         \{
+199                             Measurement = elem.getDelivery().getBilled().getUnitCode();
+200                             amount = elem.getDelivery().getBilled().getValue().intValue();
+201                         \}
+202                         \textcolor{keywordflow}{if}(lastPosition == -1)
+203                         \{
+204                             lastPositionName = elem.getProduct().getName();
+205                             returnValue.addPosition( \textcolor{keyword}{new} Position(
+206                                     elem.getProduct().getName(),
+207                                     \textcolor{keyword}{new} Price(lineSumGross, lineSumNet, lineTaxPerc),
+208                                     Measurement,
+209                                     amount,
+210                                     (int)(lineTaxPerc),
+211                                     positionerror));
+212                             lastPosition++;
+213                         \}
+214                         \textcolor{keywordflow}{else}
+215                         \{
+216                             \textcolor{keywordflow}{if}(lastPositionName.equals(elem.getProduct().getName()))
+217                             \{
+218                                 returnValue.getPosition(lastPosition).setAmount(returnValue.getPosition(
+      lastPosition).getAmount() + elem.getDelivery().getBilled().getValue().intValue());
+219                             \}
+220                             \textcolor{keywordflow}{else}
+221                             \{
+222                                 \textcolor{comment}{/* }
+223 \textcolor{comment}{                                 * @todo if elem.getDelivery().getBilled().getUnitCode() == null}
+224 \textcolor{comment}{                                 */}
+225                                 lastPositionName = elem.getProduct().getName();
+226                                 returnValue.addPosition( \textcolor{keyword}{new} Position(
+227                                         elem.getProduct().getName(),
+228                                         \textcolor{keyword}{new} Price(lineSumGross, lineSumNet, lineTaxPerc),
+229                                         Measurement,
+230                                         amount,
+231                                         (int)(lineTaxPerc),
+232                                         positionerror));
+233                                 lastPosition++;     
+234                             \}
+235 
+236                         \}
+237                     \}
+238                 \}
+239                 
+240             \}
+241         \}
+242         \}
+243         \textcolor{keywordflow}{catch}(Exception e)
+244         \{
+245             this.PositionExceptionCounter++;
+246         \}
+247     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!check\+Monetary\+Summation@{check\+Monetary\+Summation}}
+\index{check\+Monetary\+Summation@{check\+Monetary\+Summation}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{check\+Monetary\+Summation(\+Monetary\+Summation gesamtpreis)}{checkMonetarySummation(MonetarySummation gesamtpreis)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Price} Reduced\+Invoice.\+Invoice\+Reducer.\+check\+Monetary\+Summation (
+\begin{DoxyParamCaption}
+\item[{Monetary\+Summation}]{gesamtpreis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_a6caff41f142502c44cbeefc7b1e44c9d}{}\label{class_reduced_invoice_1_1_invoice_reducer_a6caff41f142502c44cbeefc7b1e44c9d}
+
+
+Definition at line 90 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+91     \{
+92         \textcolor{keywordtype}{float} GrandTotal = 0;
+93         \textcolor{keywordtype}{float} TaxBasisTotal = 0;
+94         \textcolor{keywordtype}{float} TaxTotal = 0;
+95         \textcolor{keywordtype}{boolean}[] TotalPrice = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[3];
+96         \textcolor{keywordtype}{int} count = 0;
+97         
+98         \textcolor{keywordflow}{if}(gesamtpreis.getGrandTotal() != null)
+99         \{
+100             \textcolor{keywordflow}{if}(gesamtpreis.getGrandTotal().getValue() != null)
+101             \{
+102                 GrandTotal = gesamtpreis.getGrandTotal().getValue().floatValue();
+103                 TotalPrice[0] = \textcolor{keyword}{true};
+104                 count++;
+105             \}
+106         \}
+107         \textcolor{keywordflow}{if}(gesamtpreis.getTaxBasisTotal() != null)
+108         \{
+109             \textcolor{keywordflow}{if}(gesamtpreis.getTaxBasisTotal().getValue() != null)
+110             \{
+111                 TaxBasisTotal = gesamtpreis.getTaxBasisTotal().getValue().floatValue();
+112                 TotalPrice[1] = \textcolor{keyword}{true};
+113                 count++;
+114             \}
+115         \}
+116         \textcolor{keywordflow}{if}(gesamtpreis.getTaxTotal() != null)
+117         \{
+118             \textcolor{keywordflow}{if}(gesamtpreis.getTaxTotal().getValue() != null)
+119             \{
+120                 TaxTotal = gesamtpreis.getTaxTotal().getValue().floatValue();
+121                 TotalPrice[2] = \textcolor{keyword}{true};
+122                 count++;
+123             \}
+124         \}
+125         
+126         \textcolor{keywordflow}{if}(count == 2)
+127         \{
+128             \textcolor{keywordflow}{if}(TotalPrice[0] == \textcolor{keyword}{false})
+129             \{
+130                 GrandTotal = TaxBasisTotal + TaxTotal;              
+131             \}
+132             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(TotalPrice[1] == \textcolor{keyword}{false})
+133             \{
+134                 TaxBasisTotal = GrandTotal - TaxTotal;
+135             \}
+136             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(TotalPrice[2] == \textcolor{keyword}{false})
+137             \{
+138                 TaxTotal = GrandTotal - TaxBasisTotal;
+139             \}
+140         \}
+141         
+142         \textcolor{keywordflow}{return} \textcolor{keyword}{new} Price(GrandTotal, TaxBasisTotal, TaxTotal);
+143     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!Convert\+Invoice\+To\+Rinvoice@{Convert\+Invoice\+To\+Rinvoice}}
+\index{Convert\+Invoice\+To\+Rinvoice@{Convert\+Invoice\+To\+Rinvoice}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{Convert\+Invoice\+To\+Rinvoice(\+Invoice invoice)}{ConvertInvoiceToRinvoice(Invoice invoice)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+Invoice} Reduced\+Invoice.\+Invoice\+Reducer.\+Convert\+Invoice\+To\+Rinvoice (
+\begin{DoxyParamCaption}
+\item[{Invoice}]{invoice}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_a424cf7731d065d541c0a1bc613f5834a}{}\label{class_reduced_invoice_1_1_invoice_reducer_a424cf7731d065d541c0a1bc613f5834a}
+
+
+Definition at line 51 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+52     \{   
+53         RInvoice returnValue = \textcolor{keyword}{new} RInvoice();
+54         \hyperlink{class_reduced_invoice_1_1_invoice_reducer_aefec8c846739b1fe168b3c8828f25f4c}{AddMetaInformation}(invoice, returnValue);
+55         \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a599dbd87601635791534a8624cb8f953}{AddPositions}(invoice, returnValue);
+56         \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a47e121912714be2caea8d2619c10a2f0}{validateInvoice}(returnValue);
+57         \textcolor{keywordflow}{return} returnValue; 
+58     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Invoice\+Reducer} Reduced\+Invoice.\+Invoice\+Reducer.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_ad4fafc7b331a78ef243c3e3ba88803da}{}\label{class_reduced_invoice_1_1_invoice_reducer_ad4fafc7b331a78ef243c3e3ba88803da}
+
+
+Definition at line 20 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+20                                               \{
+21         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
+22             \textcolor{keyword}{synchronized}(InvoiceReducer.class)\{
+23                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
+24                     uniqueInstance = \textcolor{keyword}{new} InvoiceReducer();
+25                 \}
+26             \}
+27         \}
+28         \textcolor{keywordflow}{return} uniqueInstance;
+29     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!get\+Meta\+Exception\+Counter@{get\+Meta\+Exception\+Counter}}
+\index{get\+Meta\+Exception\+Counter@{get\+Meta\+Exception\+Counter}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{get\+Meta\+Exception\+Counter()}{getMetaExceptionCounter()}}]{\setlength{\rightskip}{0pt plus 5cm}static int Reduced\+Invoice.\+Invoice\+Reducer.\+get\+Meta\+Exception\+Counter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_a987de6f3876284a7b456240f85dc066f}{}\label{class_reduced_invoice_1_1_invoice_reducer_a987de6f3876284a7b456240f85dc066f}
+
+
+Definition at line 285 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+285                                                 \{
+286         \textcolor{keywordflow}{return} MetaExceptionCounter;
+287     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!get\+Position\+Exception\+Counter@{get\+Position\+Exception\+Counter}}
+\index{get\+Position\+Exception\+Counter@{get\+Position\+Exception\+Counter}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{get\+Position\+Exception\+Counter()}{getPositionExceptionCounter()}}]{\setlength{\rightskip}{0pt plus 5cm}static int Reduced\+Invoice.\+Invoice\+Reducer.\+get\+Position\+Exception\+Counter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_ad5034d72d8eae0edc2026c9ca9e66465}{}\label{class_reduced_invoice_1_1_invoice_reducer_ad5034d72d8eae0edc2026c9ca9e66465}
+
+
+Definition at line 289 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+289                                                    \{
+290         \textcolor{keywordflow}{return} PositionExceptionCounter;
+291     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!Reduced\+Invoice\+List@{Reduced\+Invoice\+List}}
+\index{Reduced\+Invoice\+List@{Reduced\+Invoice\+List}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{Reduced\+Invoice\+List(\+List$<$ Invoice $>$ Invoice\+List, List$<$ A\+Invoice $>$ Reduced\+Invoice\+List)}{ReducedInvoiceList(List< Invoice > InvoiceList, List< AInvoice > ReducedInvoiceList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Reduced\+Invoice.\+Invoice\+Reducer.\+Reduced\+Invoice\+List (
+\begin{DoxyParamCaption}
+\item[{List$<$ Invoice $>$}]{Invoice\+List, }
+\item[{List$<$ {\bf A\+Invoice} $>$}]{Reduced\+Invoice\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_af064188d62db15e810468e4811af6cc5}{}\label{class_reduced_invoice_1_1_invoice_reducer_af064188d62db15e810468e4811af6cc5}
+
+
+Definition at line 31 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+32     \{
+33         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < InvoiceList.size(); i++)
+34         \{
+35             \textcolor{keywordflow}{try}
+36             \{
+37                 \textcolor{keywordflow}{if}(InvoiceList.get(i) != null)
+38                 \{
+39                     RInvoice addToList = (\hyperlink{class_reduced_invoice_1_1_invoice_reducer_a424cf7731d065d541c0a1bc613f5834a}{ConvertInvoiceToRinvoice}(InvoiceList.get(
+      i)));
+40                     \textcolor{keywordflow}{if}(addToList != null)
+41                         \hyperlink{class_reduced_invoice_1_1_invoice_reducer_af064188d62db15e810468e4811af6cc5}{ReducedInvoiceList}.add(addToList);
+42                 \}
+43             \}
+44             \textcolor{keywordflow}{catch}(Exception e)
+45             \{
+46                 System.out.println(i + \textcolor{stringliteral}{" falsy"});
+47             \}
+48         \}
+49     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!Runden@{Runden}}
+\index{Runden@{Runden}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{Runden(float a)}{Runden(float a)}}]{\setlength{\rightskip}{0pt plus 5cm}float Reduced\+Invoice.\+Invoice\+Reducer.\+Runden (
+\begin{DoxyParamCaption}
+\item[{float}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_a4d9155f5cc7223ed2659a8567f9ba1ec}{}\label{class_reduced_invoice_1_1_invoice_reducer_a4d9155f5cc7223ed2659a8567f9ba1ec}
+
+
+Definition at line 272 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+273     \{
+274         \textcolor{keywordflow}{if}(((a*1000) % 10) > 4  )
+275         \{
+276             a = (float)((\textcolor{keywordtype}{int})(a*100+1))/100; 
+277         \}
+278         \textcolor{keywordflow}{else}
+279         \{
+280             a = (float)((\textcolor{keywordtype}{int})(a*100))/100; 
+281         \}
+282         \textcolor{keywordflow}{return} a;
+283     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}!validate\+Invoice@{validate\+Invoice}}
+\index{validate\+Invoice@{validate\+Invoice}!Reduced\+Invoice\+::\+Invoice\+Reducer@{Reduced\+Invoice\+::\+Invoice\+Reducer}}
+\subsubsection[{\texorpdfstring{validate\+Invoice(\+R\+Invoice return\+Value)}{validateInvoice(RInvoice returnValue)}}]{\setlength{\rightskip}{0pt plus 5cm}void Reduced\+Invoice.\+Invoice\+Reducer.\+validate\+Invoice (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+Invoice}}]{return\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_invoice_reducer_a47e121912714be2caea8d2619c10a2f0}{}\label{class_reduced_invoice_1_1_invoice_reducer_a47e121912714be2caea8d2619c10a2f0}
+
+
+Definition at line 249 of file Invoice\+Reducer.\+java.
+
+
+\begin{DoxyCode}
+250     \{
+251         Error invoiceerror = Error.NO\_ERROR;
+252         \textcolor{keywordtype}{float} GrandTotal = 0;
+253         \textcolor{keywordtype}{float} TaxBasisTotal = 0;
+254         \textcolor{keywordtype}{float} TaxTotal = 0;
+255         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < returnValue.getPositionsLength(); i++)
+256         \{
+257             GrandTotal = GrandTotal + returnValue.getPosition(i).getPositionPrice().getBrutto();
+258             TaxBasisTotal = TaxBasisTotal + returnValue.getPosition(i).getPositionPrice().getNetto();
+259             TaxTotal = TaxTotal + (returnValue.getPosition(i).getPositionPrice().getBrutto() - returnValue.
+      getPosition(i).getPositionPrice().getNetto());
+260         \}
+261         GrandTotal = \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a4d9155f5cc7223ed2659a8567f9ba1ec}{Runden}(GrandTotal);
+262         TaxBasisTotal = \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a4d9155f5cc7223ed2659a8567f9ba1ec}{Runden}(TaxBasisTotal);
+263         TaxTotal = \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a4d9155f5cc7223ed2659a8567f9ba1ec}{Runden}(TaxTotal);
+264         
+265         \textcolor{keywordflow}{if}(GrandTotal != returnValue.getTotalPrice().getBrutto() || TaxBasisTotal != returnValue.
+      getTotalPrice().getNetto() || TaxTotal != returnValue.getTotalPrice().getSteuer())
+266         \{
+267             invoiceerror = Error.PRICE\_ERROR;
+268         \}
+269         returnValue.setInvoiceError(invoiceerror);
+270     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Reduced\+Invoice/\hyperlink{_invoice_reducer_8java}{Invoice\+Reducer.\+java}\end{DoxyCompactItemize}
