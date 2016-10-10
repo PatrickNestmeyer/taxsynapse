@@ -1,54 +1,5 @@
-Account,Description
-
-00,Immaterielle Vermoegensgegenstaende
-01,Sachanlagen
-02,Finanzanlagen
-
-10,Vorraete
-11,Forderungen und sonstige Vermoegensgegenstaende
-12,Wertpapiere
-13,Kasse und Bank
-14,Abgrenzungsposten
-
-20,Eigenkapital
-21,Privat
-22,Gezeichnetes Kapital
-23,Kapitalruecklage
-24,Gewinnruecklagen
-25,Gewinnvortrag/Verlustvortrag vor Verwendung
-26,Sonderposten mit Ruecklageanteil
-
-30,Rueckstellungen
-31,Verbindlichkeiten
-32,Rechnungsabgrenzungsposten
-
-40,Umsatzerloese
-41,Sonderbetriebseinnahmen
-42,Statistische EUR
-43,Bestandsaenderung FE und UFE
-44,Andere aktivierte Eigenleistungen
-45,Sonstige betriebliche Ertraege
-
-50,Materialverbrauch
-51,Materialaufwand
-52,Wareneingang
-53,Aufwendungen fuer bezogene Leistungen
-54,Umsaetze aus Leistungsempfang aus Steuerschuld
-
-60,Personalaufwand
-61,Abschreibungen
-62,Sonstige betriebliche Aufwendungen
-63,Kalkulatorische Kosten
-64,Kosten bei Anwendung des Umsatzkostenverfahrens
-
-70,Weitere Ertraege
-71,Weitere Aufwendungen
-72,Sonstige betriebliche Ertraege
-73,Sonstige betriebliche Aufwendungen
-74,Steuern vom Einkommen und Ertrag
-75,Sonstige Steuern
-
-91,Vortragskonten
-92,Statistische Konten
-93,Andere Kapitalkonten
-94,Ruecklagen Gewinn- und Verlustvortrag
+Account;Description
+A;Anlagevermögen
+B;Wareneingang
+C;Sonstige betriebliche Aufwendungen
+D;Privatentnahme
