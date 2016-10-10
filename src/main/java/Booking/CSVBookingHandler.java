@@ -62,7 +62,7 @@ public class CSVBookingHandler {
 	}
 	
 	public void printVoucherListWithoutDebitAccount(List<AInvoice> aList, HashMap<String, String> fNames, char Seperator) throws IOException{
-		CSVWriter writer = new CSVWriter(new FileWriter(Config.VOUCHER_TEST_DUMP), Seperator);
+		CSVWriter writer = new CSVWriter(new FileWriter(Config.PATH_TO_VOUCHER_TEST_DUMP), Seperator);
 		String outStream = "";
 		outStream += Config.VOLUME_ID + Seperator
 				+ Config.DEBIT_ACCOUNT_ID + Seperator

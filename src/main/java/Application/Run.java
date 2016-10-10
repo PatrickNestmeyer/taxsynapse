@@ -12,6 +12,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.datavec.api.records.reader.SequenceRecordReader;
+import org.datavec.api.records.reader.impl.csv.CSVSequenceRecordReader;
+import org.datavec.api.split.NumberedFileInputSplit;
+import org.deeplearning4j.datasets.datavec.SequenceRecordReaderDataSetIterator;
+import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
+
 /*
  *
  * TODO: 
@@ -20,36 +26,82 @@ import java.util.List;
 
 public class Run {
 	
+	/**
+	 * The main entry point of the application
+	 * Here are two paths possible
+	 * a) the preperation of the data. 
+	 * b) the configuration and run of the convolutinal neural netwrok
+	 * 
+	 */
+	
 	public static void main(String[] args) throws IOException {
 		
-		Boolean readOriginalInvoices = true;
+		switch(args[0].toLowerCase()){
+		case "data":
+			runDataPreprocessing();
+			break;
+		case "network":
+			runNetwork();
+			break;
+		default:
+			System.out.println("The command " + args[0] + " was not found.");
+			System.out.println("Please check for typo.");
+			System.out.println("Legal parameters are data and network.");
+			break;
+		}
 		
+		System.out.println("FIN");
 		
+	}
+	
+	/**
+	 * The core call functions of the data preprocessing
+	 */
+	
+	public static void runDataPreprocessing(){
 		List<Invoice> InvoiceList;
 		List<AInvoice> ReducedInvoiceList = new ArrayList<AInvoice>();
 		HashMap<String, String> Filenames = new HashMap<String, String>();
 		
-		if(readOriginalInvoices){
-			InvoiceList = new ArrayList<Invoice>();
-			readInvoicesFromFiles(InvoiceList, Filenames);
-			reduceInvoices(InvoiceList, ReducedInvoiceList);
-		}else{
-			
-		}
+		InvoiceList = new ArrayList<Invoice>();
+		readInvoicesFromFiles(InvoiceList, Filenames);
+		reduceInvoices(InvoiceList, ReducedInvoiceList);
 		
 		try{
 			CSVBookingHandler bHandler = CSVBookingHandler.getInstance();
 			List<Voucher> VoucherList = new ArrayList<Voucher>();
 			VoucherList = bHandler.getVoucherInfoFromFile(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
 			bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList, Filenames, Config.VOUCHER_CSV_SEPERATOR);
-		}catch(FileNotFoundException e){
+		}catch(Exception e){
 			System.out.println(e.getMessage());
 		}
-		
-		System.out.println("FIN");
-		
 	}
 
+	/**
+	 * The core call functions of the neural network
+	 */
+	
+	public static void runNetwork(){
+		
+		int minibatchSize = 128;
+		int numPossibleLables = 4;
+		int labelIndex = 1;
+		boolean regression = false;
+		
+		SequenceRecordReader reader = new CSVSequenceRecordReader(1, Character.toString(Config.VOUCHER_CSV_SEPERATOR));
+		try {
+			reader.initialize(new NumberedFileInputSplit(Config.PATH_TO_LABELED_DATA, 0 , 0));
+		} catch (IOException | InterruptedException e) {
+			e.getMessage();
+		}
+		
+		
+		
+		DataSetIterator iterClassification = new SequenceRecordReaderDataSetIterator(reader, minibatchSize, numPossibleLables, labelIndex, regression);
+		
+		regression = false;
+	}
+	
 	private static void readInvoicesFromFiles(List<Invoice> InvoiceList, HashMap<String, String> Filenames){
 		String pathToInvoices = Config.PATH_TO_INVOICES;
 		Boolean logSingleSteps = Config.LOG_SINGLE_STEPS;
