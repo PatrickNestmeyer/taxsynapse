@@ -83,12 +83,13 @@ public class Run {
 	
 	public static void runNetwork(){
 		
+		int numLinesToSkip = 1;
 		int minibatchSize = 128;
 		int numPossibleLables = 4;
 		int labelIndex = 1;
 		boolean regression = false;
 		
-		SequenceRecordReader reader = new CSVSequenceRecordReader(1, Character.toString(Config.VOUCHER_CSV_SEPERATOR));
+		SequenceRecordReader reader = new CSVSequenceRecordReader(numLinesToSkip, Character.toString(Config.VOUCHER_CSV_SEPERATOR));
 		try {
 			reader.initialize(new NumberedFileInputSplit(Config.PATH_TO_LABELED_DATA, 0 , 0));
 		} catch (IOException | InterruptedException e) {
@@ -97,7 +98,7 @@ public class Run {
 		
 		
 		
-		DataSetIterator iterClassification = new SequenceRecordReaderDataSetIterator(reader, minibatchSize, numPossibleLables, labelIndex, regression);
+		//DataSetIterator iterClassification = new SequenceRecordReaderDataSetIterator(reader, minibatchSize, numPossibleLables, labelIndex, regression);
 		
 		regression = false;
 	}

@@ -4,7 +4,7 @@ public final class Config {
 	//Simulating static class
 	private Config(){}
 	
-	public static boolean LOG_SINGLE_STEPS = false;
+	public static boolean LOG_SINGLE_STEPS = true;
 	public static boolean SUPRESS_INVALID_INVOICES = false;
 	public static String PATH_TO_INVOICES = "./src/main/resources/examples_ferd/";
 	

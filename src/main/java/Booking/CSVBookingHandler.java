@@ -74,8 +74,9 @@ public class CSVBookingHandler {
 		
 		for(int i = 0; i < aList.size(); i++){
             for(int j = 0; j < aList.get(i).getPositionsLength(); j++){
+            	
             	outStream = "";
-            	outStream += Float.toString(aList.get(i).getPosition(j).getPositionPrice().getBrutto()) + Seperator;
+            	outStream += Float.toString(aList.get(i).getPosition(j).getPositionPrice().getBrutto()).replace(".", ",") + Seperator;
             	outStream += Seperator;
             	outStream += Float.toString(aList.get(i).getPosition(j).getTaxrate()) + Seperator;
             	outStream += aList.get(i).getPosition(j).getDescription().replace(Seperator, Config.VOUCHER_CSV_REPLACEMENT) + Seperator;
