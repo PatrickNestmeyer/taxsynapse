@@ -93,7 +93,7 @@ public class CSVBookingHandler {
 	
 	public static List<Label> createReducedInvoiceVoucherList(List<AInvoice> ReducedInvoiceList, List<Voucher> VoucherList)
 	{
-		int[] temp = { 0,1,1,1};
+		int[] temp = { 0,1,1,1,2};
 		List<Label> LabelList = new ArrayList<Label>();
 		List<Label> RandoLabelList = new ArrayList<Label>();
 		int ReducedInvoiceListItem = 0;
