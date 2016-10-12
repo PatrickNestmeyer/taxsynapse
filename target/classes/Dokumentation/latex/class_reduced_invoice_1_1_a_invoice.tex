@@ -61,6 +61,10 @@ void \hyperlink{class_reduced_invoice_1_1_a_invoice_ac5c395d78cb3bd54e8e40678bdb
 \hyperlink{enum_reduced_invoice_1_1_a_invoice_1_1_error}{Error} \hyperlink{class_reduced_invoice_1_1_a_invoice_ac6335f5b80ba3514a205e46c7170ae5c}{get\+Invoice\+Error} ()
 \item 
 void \hyperlink{class_reduced_invoice_1_1_a_invoice_a625c87b0ecdcbf896e66e4ad1fe31681}{set\+Invoice\+Error} (\hyperlink{enum_reduced_invoice_1_1_a_invoice_1_1_error}{Error} invoiceerror)
+\item 
+\hyperlink{class_reduced_invoice_1_1_metadata}{Metadata} \hyperlink{class_reduced_invoice_1_1_a_invoice_a27064d52b653a15a81485e72b54fd687}{get\+Meta\+Data} ()
+\item 
+void \hyperlink{class_reduced_invoice_1_1_a_invoice_a67f0ef58970f9aff38098d079e738596}{set\+Meta\+Data} (\hyperlink{class_reduced_invoice_1_1_metadata}{Metadata} meta\+Data)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -72,8 +76,6 @@ String \hyperlink{class_reduced_invoice_1_1_a_invoice_ae00a97e1c74841fe0b0b43fcc
 \hyperlink{class_reduced_invoice_1_1_price}{Price} \hyperlink{class_reduced_invoice_1_1_a_invoice_a72b831e7ee0b4501fc949f61aecdd498}{Total\+Price}
 \item 
 List$<$ \hyperlink{class_reduced_invoice_1_1_position}{Position} $>$ \hyperlink{class_reduced_invoice_1_1_a_invoice_a5b51f1865386bd021580507c7133f69a}{Positions}
-\item 
-\hyperlink{class_reduced_invoice_1_1_metadata}{Metadata} \hyperlink{class_reduced_invoice_1_1_a_invoice_a7561c82ce51807a2c48a9b80cf45b411}{Meta\+Data}
 \item 
 String \hyperlink{class_reduced_invoice_1_1_a_invoice_a6b6ef26c85bc07f70cb7b4c8eb057fe8}{Currency}
 \item 
@@ -192,6 +194,23 @@ Definition at line 79 of file A\+Invoice.\+java.
 79                                      \{
 80         \textcolor{keywordflow}{return} invoiceNumber;
 81     \}
+\end{DoxyCode}
+\index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!get\+Meta\+Data@{get\+Meta\+Data}}
+\index{get\+Meta\+Data@{get\+Meta\+Data}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
+\subsubsection[{\texorpdfstring{get\+Meta\+Data()}{getMetaData()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Metadata} Reduced\+Invoice.\+A\+Invoice.\+get\+Meta\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a27064d52b653a15a81485e72b54fd687}{}\label{class_reduced_invoice_1_1_a_invoice_a27064d52b653a15a81485e72b54fd687}
+
+
+Definition at line 117 of file A\+Invoice.\+java.
+
+
+\begin{DoxyCode}
+117                                   \{
+118         \textcolor{keywordflow}{return} MetaData;
+119     \}
 \end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
@@ -333,6 +352,23 @@ Definition at line 83 of file A\+Invoice.\+java.
 84         this.invoiceNumber = invoiceNumber;
 85     \}
 \end{DoxyCode}
+\index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!set\+Meta\+Data@{set\+Meta\+Data}}
+\index{set\+Meta\+Data@{set\+Meta\+Data}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
+\subsubsection[{\texorpdfstring{set\+Meta\+Data(\+Metadata meta\+Data)}{setMetaData(Metadata metaData)}}]{\setlength{\rightskip}{0pt plus 5cm}void Reduced\+Invoice.\+A\+Invoice.\+set\+Meta\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Metadata}}]{meta\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a67f0ef58970f9aff38098d079e738596}{}\label{class_reduced_invoice_1_1_a_invoice_a67f0ef58970f9aff38098d079e738596}
+
+
+Definition at line 121 of file A\+Invoice.\+java.
+
+
+\begin{DoxyCode}
+121                                                \{
+122         MetaData = metaData;
+123     \}
+\end{DoxyCode}
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!set\+Position@{set\+Position}}
 \index{set\+Position@{set\+Position}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
 \subsubsection[{\texorpdfstring{set\+Position(\+Position position, int index)}{setPosition(Position position, int index)}}]{\setlength{\rightskip}{0pt plus 5cm}abstract void Reduced\+Invoice.\+A\+Invoice.\+set\+Position (
@@ -430,13 +466,6 @@ Definition at line 31 of file A\+Invoice.\+java.
 
 
 Definition at line 33 of file A\+Invoice.\+java.
-
-\index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!Meta\+Data@{Meta\+Data}}
-\index{Meta\+Data@{Meta\+Data}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}
-\subsubsection[{\texorpdfstring{Meta\+Data}{MetaData}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Metadata} Reduced\+Invoice.\+A\+Invoice.\+Meta\+Data\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_reduced_invoice_1_1_a_invoice_a7561c82ce51807a2c48a9b80cf45b411}{}\label{class_reduced_invoice_1_1_a_invoice_a7561c82ce51807a2c48a9b80cf45b411}
-
-
-Definition at line 29 of file A\+Invoice.\+java.
 
 \index{Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}!Positions@{Positions}}
 \index{Positions@{Positions}!Reduced\+Invoice\+::\+A\+Invoice@{Reduced\+Invoice\+::\+A\+Invoice}}

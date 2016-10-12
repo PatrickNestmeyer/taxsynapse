@@ -132,8 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a540190bee1fcf153d1a9f0bcb9fe2cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c60c49329b0ef68e47c7af85eccae00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bag_of_words_1_1_word_bag.html#a9c60c49329b0ef68e47c7af85eccae00">addSentence</a> (String sentence)</td></tr>
 <tr class="separator:a9c60c49329b0ef68e47c7af85eccae00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9d453225cdd2a3c42488f4862e59cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bag_of_words_1_1_word_bag.html#af9d453225cdd2a3c42488f4862e59cb1">clearWordBag</a> ()</td></tr>
-<tr class="separator:af9d453225cdd2a3c42488f4862e59cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44ab1194be23aee5c5b8f7d37658158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bag_of_words_1_1_word_bag.html#ae44ab1194be23aee5c5b8f7d37658158">createWordBag</a> (List&lt; <a class="el" href="class_reduced_invoice_1_1_a_invoice.html">AInvoice</a> &gt; ReducedInvoiceList, String pathToInvalidWords, String pathToInvalidTokens)</td></tr>
+<tr class="separator:ae44ab1194be23aee5c5b8f7d37658158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -247,7 +247,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="af9d453225cdd2a3c42488f4862e59cb1"></a>
+<a class="anchor" id="ae44ab1194be23aee5c5b8f7d37658158"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -255,10 +255,27 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void BagOfWords.WordBag.clearWordBag </td>
+          <td class="memname">void BagOfWords.WordBag.createWordBag </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_reduced_invoice_1_1_a_invoice.html">AInvoice</a> &gt;&#160;</td>
+          <td class="paramname"><em>ReducedInvoiceList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>pathToInvalidWords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>pathToInvalidTokens</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -268,8 +285,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_word_bag_8java_source.html#l00096">96</a> of file <a class="el" href="_word_bag_8java_source.html">WordBag.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Bag.size(); i++)</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span>(Bag.get(i).equals(<span class="stringliteral">&quot;&quot;</span>))</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                Bag.remove(i);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_word_bag_8java_source.html#l00111">111</a> of file <a class="el" href="_word_bag_8java_source.html">WordBag.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="class_bag_of_words_1_1_word_bag.html#ad96f1fd5eec992c63057662c5a89e0ef">setPaths</a>(pathToInvalidWords, pathToInvalidTokens);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="class_reduced_invoice_1_1_a_invoice.html">AInvoice</a> ai : ReducedInvoiceList)</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; ai.getPositionsLength(); i++)</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="class_bag_of_words_1_1_word_bag.html#a540190bee1fcf153d1a9f0bcb9fe2cd0">addSentence</a>(ai.getPosition(i).getDescription());</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        clearWordBag();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div><div class="ttc" id="class_bag_of_words_1_1_word_bag_html_ad96f1fd5eec992c63057662c5a89e0ef"><div class="ttname"><a href="class_bag_of_words_1_1_word_bag.html#ad96f1fd5eec992c63057662c5a89e0ef">BagOfWords.WordBag.setPaths</a></div><div class="ttdeci">boolean setPaths(String IllegalWordsPath, String IllegalTokensPath)</div><div class="ttdef"><b>Definition:</b> <a href="_word_bag_8java_source.html#l00026">WordBag.java:26</a></div></div>
+<div class="ttc" id="class_reduced_invoice_1_1_a_invoice_html"><div class="ttname"><a href="class_reduced_invoice_1_1_a_invoice.html">ReducedInvoice.AInvoice</a></div><div class="ttdef"><b>Definition:</b> <a href="_a_invoice_8java_source.html#l00006">AInvoice.java:6</a></div></div>
+<div class="ttc" id="class_bag_of_words_1_1_word_bag_html_a540190bee1fcf153d1a9f0bcb9fe2cd0"><div class="ttname"><a href="class_bag_of_words_1_1_word_bag.html#a540190bee1fcf153d1a9f0bcb9fe2cd0">BagOfWords.WordBag.addSentence</a></div><div class="ttdeci">void addSentence(Position p)</div><div class="ttdef"><b>Definition:</b> <a href="_word_bag_8java_source.html#l00075">WordBag.java:75</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab2b3aa2a9ea3821cf365878f954a5abd"></a>

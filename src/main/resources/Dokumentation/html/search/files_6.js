@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zugferdhandler_2ejava',['zugferdHandler.java',['../zugferd_handler_8java.html',1,'']]]
+  ['voucher_2ejava',['Voucher.java',['../_voucher_8java.html',1,'']]]
 ];

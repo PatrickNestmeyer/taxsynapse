@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['import',['Import',['../namespace_import.html',1,'']]],
-  ['invoiceerror',['InvoiceError',['../class_reduced_invoice_1_1_a_invoice.html#a3ef6a3a4efa7e9b652f5399bc76e017a',1,'ReducedInvoice::AInvoice']]],
-  ['invoicereducer',['InvoiceReducer',['../class_reduced_invoice_1_1_invoice_reducer.html',1,'ReducedInvoice']]],
-  ['invoicereducer_2ejava',['InvoiceReducer.java',['../_invoice_reducer_8java.html',1,'']]]
+  ['hasinvalid',['hasInvalid',['../class_import_1_1zugferd_handler.html#a6999d186193b120650a5d24a49d10c6c',1,'Import::zugferdHandler']]],
+  ['hasword',['hasWord',['../class_bag_of_words_1_1_word_bag.html#a1b34ea94ef1ecf6428d321b2fd5e0359',1,'BagOfWords::WordBag']]]
 ];

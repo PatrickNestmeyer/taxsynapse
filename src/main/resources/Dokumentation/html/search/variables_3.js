@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['metadata',['MetaData',['../class_reduced_invoice_1_1_a_invoice.html#a7561c82ce51807a2c48a9b80cf45b411',1,'ReducedInvoice::AInvoice']]]
+  ['invoiceerror',['InvoiceError',['../class_reduced_invoice_1_1_a_invoice.html#a3ef6a3a4efa7e9b652f5399bc76e017a',1,'ReducedInvoice::AInvoice']]]
 ];

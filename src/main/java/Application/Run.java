@@ -71,6 +71,7 @@ public class Run {
 			CSVBookingHandler bHandler = CSVBookingHandler.getInstance();
 			List<Voucher> VoucherList = new ArrayList<Voucher>();
 			VoucherList = bHandler.getVoucherInfoFromFile(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
+			CSVBookingHandler.getInstance().createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList);
 			bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList, Filenames, Config.VOUCHER_CSV_SEPERATOR);
 		}catch(Exception e){
 			System.out.println(e.getMessage());

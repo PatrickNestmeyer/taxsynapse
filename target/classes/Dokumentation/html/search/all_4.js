@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['framework_20deeplearning4j',['Framework Deeplearning4j',['../Framework.html',1,'']]]
+  ['eingabedaten',['Eingabedaten',['../Eingabedaten.html',1,'Arbeitsweise']]],
+  ['error',['Error',['../enum_reduced_invoice_1_1_a_invoice_1_1_error.html',1,'ReducedInvoice::AInvoice']]]
 ];

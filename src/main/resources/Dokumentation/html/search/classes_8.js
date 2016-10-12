@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zugferdhandler',['zugferdHandler',['../class_import_1_1zugferd_handler.html',1,'Import']]]
+  ['wordbag',['WordBag',['../class_bag_of_words_1_1_word_bag.html',1,'BagOfWords']]]
 ];

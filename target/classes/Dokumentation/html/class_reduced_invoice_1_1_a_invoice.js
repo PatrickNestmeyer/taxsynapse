@@ -8,6 +8,7 @@ var class_reduced_invoice_1_1_a_invoice =
     [ "getInvoiceDate", "class_reduced_invoice_1_1_a_invoice.html#ac78ce56c3ae003ca87e8144546d7ec3f", null ],
     [ "getInvoiceError", "class_reduced_invoice_1_1_a_invoice.html#ac6335f5b80ba3514a205e46c7170ae5c", null ],
     [ "getInvoiceNumber", "class_reduced_invoice_1_1_a_invoice.html#a09231d505794762ea8f363e4689392c8", null ],
+    [ "getMetaData", "class_reduced_invoice_1_1_a_invoice.html#a27064d52b653a15a81485e72b54fd687", null ],
     [ "getPosition", "class_reduced_invoice_1_1_a_invoice.html#a1264648436c734afc549b2d1adb20ff6", null ],
     [ "getPositions", "class_reduced_invoice_1_1_a_invoice.html#a62a407f4bec81c5dbd392f68ecff6582", null ],
     [ "getPositionsLength", "class_reduced_invoice_1_1_a_invoice.html#a109ff7a484de183356ebe38737556f11", null ],
@@ -18,6 +19,7 @@ var class_reduced_invoice_1_1_a_invoice =
     [ "setInvoiceDate", "class_reduced_invoice_1_1_a_invoice.html#adefa18f4aec87c1d4b89233baf6ce9ee", null ],
     [ "setInvoiceError", "class_reduced_invoice_1_1_a_invoice.html#a625c87b0ecdcbf896e66e4ad1fe31681", null ],
     [ "setInvoiceNumber", "class_reduced_invoice_1_1_a_invoice.html#a20d784a1da556e7bb3c5538c5a6701c4", null ],
+    [ "setMetaData", "class_reduced_invoice_1_1_a_invoice.html#a67f0ef58970f9aff38098d079e738596", null ],
     [ "setPosition", "class_reduced_invoice_1_1_a_invoice.html#a3abfa40d89bdc9f56daaf73adafcca5e", null ],
     [ "setPositionAmount", "class_reduced_invoice_1_1_a_invoice.html#aef6af27bf12024c16e8e5890243825eb", null ],
     [ "setPositionDescription", "class_reduced_invoice_1_1_a_invoice.html#a01a6d1c001117851fdcb6941a117c086", null ],
@@ -28,7 +30,6 @@ var class_reduced_invoice_1_1_a_invoice =
     [ "buyerName", "class_reduced_invoice_1_1_a_invoice.html#ae75bdd20da8fa21dec01c2d032ac11c5", null ],
     [ "Currency", "class_reduced_invoice_1_1_a_invoice.html#a6b6ef26c85bc07f70cb7b4c8eb057fe8", null ],
     [ "InvoiceError", "class_reduced_invoice_1_1_a_invoice.html#a3ef6a3a4efa7e9b652f5399bc76e017a", null ],
-    [ "MetaData", "class_reduced_invoice_1_1_a_invoice.html#a7561c82ce51807a2c48a9b80cf45b411", null ],
     [ "Positions", "class_reduced_invoice_1_1_a_invoice.html#a5b51f1865386bd021580507c7133f69a", null ],
     [ "sellerName", "class_reduced_invoice_1_1_a_invoice.html#ae00a97e1c74841fe0b0b43fccd1da24d", null ],
     [ "TotalPrice", "class_reduced_invoice_1_1_a_invoice.html#a72b831e7ee0b4501fc949f61aecdd498", null ]

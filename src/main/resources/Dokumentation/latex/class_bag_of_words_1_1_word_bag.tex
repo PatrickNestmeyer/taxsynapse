@@ -19,7 +19,7 @@ void \hyperlink{class_bag_of_words_1_1_word_bag_a540190bee1fcf153d1a9f0bcb9fe2cd
 \item 
 void \hyperlink{class_bag_of_words_1_1_word_bag_a9c60c49329b0ef68e47c7af85eccae00}{add\+Sentence} (String sentence)
 \item 
-void \hyperlink{class_bag_of_words_1_1_word_bag_af9d453225cdd2a3c42488f4862e59cb1}{clear\+Word\+Bag} ()
+void \hyperlink{class_bag_of_words_1_1_word_bag_ae44ab1194be23aee5c5b8f7d37658158}{create\+Word\+Bag} (List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} $>$ Reduced\+Invoice\+List, String path\+To\+Invalid\+Words, String path\+To\+Invalid\+Tokens)
 \end{DoxyCompactItemize}
 
 
@@ -119,28 +119,32 @@ Definition at line 45 of file Word\+Bag.\+java.
 57             this.Bag.add(clearedWord.toLowerCase());
 58     \}
 \end{DoxyCode}
-\index{Bag\+Of\+Words\+::\+Word\+Bag@{Bag\+Of\+Words\+::\+Word\+Bag}!clear\+Word\+Bag@{clear\+Word\+Bag}}
-\index{clear\+Word\+Bag@{clear\+Word\+Bag}!Bag\+Of\+Words\+::\+Word\+Bag@{Bag\+Of\+Words\+::\+Word\+Bag}}
-\subsubsection[{\texorpdfstring{clear\+Word\+Bag()}{clearWordBag()}}]{\setlength{\rightskip}{0pt plus 5cm}void Bag\+Of\+Words.\+Word\+Bag.\+clear\+Word\+Bag (
+\index{Bag\+Of\+Words\+::\+Word\+Bag@{Bag\+Of\+Words\+::\+Word\+Bag}!create\+Word\+Bag@{create\+Word\+Bag}}
+\index{create\+Word\+Bag@{create\+Word\+Bag}!Bag\+Of\+Words\+::\+Word\+Bag@{Bag\+Of\+Words\+::\+Word\+Bag}}
+\subsubsection[{\texorpdfstring{create\+Word\+Bag(\+List$<$ A\+Invoice $>$ Reduced\+Invoice\+List, String path\+To\+Invalid\+Words, String path\+To\+Invalid\+Tokens)}{createWordBag(List< AInvoice > ReducedInvoiceList, String pathToInvalidWords, String pathToInvalidTokens)}}]{\setlength{\rightskip}{0pt plus 5cm}void Bag\+Of\+Words.\+Word\+Bag.\+create\+Word\+Bag (
 \begin{DoxyParamCaption}
-{}
+\item[{List$<$ {\bf A\+Invoice} $>$}]{Reduced\+Invoice\+List, }
+\item[{String}]{path\+To\+Invalid\+Words, }
+\item[{String}]{path\+To\+Invalid\+Tokens}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_bag_of_words_1_1_word_bag_af9d453225cdd2a3c42488f4862e59cb1}{}\label{class_bag_of_words_1_1_word_bag_af9d453225cdd2a3c42488f4862e59cb1}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_bag_of_words_1_1_word_bag_ae44ab1194be23aee5c5b8f7d37658158}{}\label{class_bag_of_words_1_1_word_bag_ae44ab1194be23aee5c5b8f7d37658158}
 
 
-Definition at line 96 of file Word\+Bag.\+java.
+Definition at line 111 of file Word\+Bag.\+java.
 
 
 \begin{DoxyCode}
-97     \{
-98         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < Bag.size(); i++)
-99         \{
-100             \textcolor{keywordflow}{if}(Bag.get(i).equals(\textcolor{stringliteral}{""}))
-101             \{
-102                 Bag.remove(i);
-103             \}
-104         \}
-105     \}
+112     \{
+113         \hyperlink{class_bag_of_words_1_1_word_bag_ad96f1fd5eec992c63057662c5a89e0ef}{setPaths}(pathToInvalidWords, pathToInvalidTokens);
+114         \textcolor{keywordflow}{for}(\hyperlink{class_reduced_invoice_1_1_a_invoice}{AInvoice} ai : ReducedInvoiceList)
+115         \{
+116             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < ai.getPositionsLength(); i++)
+117             \{
+118                 \hyperlink{class_bag_of_words_1_1_word_bag_a540190bee1fcf153d1a9f0bcb9fe2cd0}{addSentence}(ai.getPosition(i).getDescription());
+119             \}
+120         \}
+121         clearWordBag();
+122     \}
 \end{DoxyCode}
 \index{Bag\+Of\+Words\+::\+Word\+Bag@{Bag\+Of\+Words\+::\+Word\+Bag}!get\+Bag@{get\+Bag}}
 \index{get\+Bag@{get\+Bag}!Bag\+Of\+Words\+::\+Word\+Bag@{Bag\+Of\+Words\+::\+Word\+Bag}}

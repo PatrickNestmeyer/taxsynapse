@@ -4,13 +4,17 @@
 \begin{DoxyCompactItemize}
 \item 
 static void \hyperlink{class_application_1_1_run_a57a17174b40d7c0feba22e460fa6158c}{main} (String\mbox{[}$\,$\mbox{]} args)  throws I\+O\+Exception 
+\item 
+static void \hyperlink{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}{run\+Data\+Preprocessing} ()
+\item 
+static void \hyperlink{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}{run\+Network} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 14 of file Run.\+java.
+Definition at line 27 of file Run.\+java.
 
 
 
@@ -22,84 +26,103 @@ Definition at line 14 of file Run.\+java.
 \item[{String\mbox{[}$\,$\mbox{]}}]{args}
 \end{DoxyParamCaption}
 ) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_application_1_1_run_a57a17174b40d7c0feba22e460fa6158c}{}\label{class_application_1_1_run_a57a17174b40d7c0feba22e460fa6158c}
-Override Validation Counter
+The main entry point of the application Here are two paths possible a) the preperation of the data. b) the configuration and run of the convolutinal neural netwrok 
 
-Serialization 
-
-Definition at line 24 of file Run.\+java.
+Definition at line 37 of file Run.\+java.
 
 
 \begin{DoxyCode}
-24                                                               \{
-25         
-26         \textcolor{comment}{/*}
-27 \textcolor{comment}{        String pathToInvoices = args[0];}
-28 \textcolor{comment}{        Boolean logSingleSteps = Boolean.valueOf(args[1]);}
-29 \textcolor{comment}{        Boolean supressInvalid = Boolean.valueOf(args[2]);}
-30 \textcolor{comment}{        String pathToInvalidWords = args[3];}
-31 \textcolor{comment}{        String pathToInvalidTokens = args[4];}
-32 \textcolor{comment}{        */}
-33         
-34         String pathToInvoices = \textcolor{stringliteral}{"./src/main/resources/examples\_ferd/"};
-35         Boolean logSingleSteps = \textcolor{keyword}{false};
-36         Boolean supressInvalid = \textcolor{keyword}{false};
-37         String pathToInvalidWords = \textcolor{stringliteral}{"./src/main/resources/bag\_config/forbiddenInputNeurons"};
-38         String pathToInvalidTokens = \textcolor{stringliteral}{"./src/main/resources/bag\_config/forbiddenTokens"};
-39         
-40         \hyperlink{class_import_1_1zugferd_handler}{zugferdHandler} zHandler = \hyperlink{class_import_1_1zugferd_handler}{zugferdHandler}.
-      \hyperlink{class_import_1_1zugferd_handler_ad3acd84340c8a5fcb2c01a2636979786}{getInstance}();
-41         List<Invoice> InvoiceList = \textcolor{keyword}{new} ArrayList<Invoice>();
-42         List<AInvoice> ReducedInvoiceList = \textcolor{keyword}{new} ArrayList<AInvoice>();
-43         
-44         \textcolor{comment}{//Read Invoices from Folder}
-45         \textcolor{keywordflow}{try}\{
-46             zHandler.\hyperlink{class_import_1_1zugferd_handler_aea79c23595f003c943e908c95276ecf9}{readInvoice}(pathToInvoices, InvoiceList, logSingleSteps, supressInvalid);
-47             System.out.println(\textcolor{stringliteral}{"All Invoices successfully readed"});
-48         \}\textcolor{keywordflow}{catch}(Exception e)\{
-49             System.out.print(\textcolor{stringliteral}{"Exception while reading Invoices"});
-50             System.out.println(\textcolor{stringliteral}{"Details: "});
-51             System.out.println(e.getMessage());
-52         \}
-53         
-54         \textcolor{comment}{//Reduce Invoices to necessary Informations}
-55         \hyperlink{class_reduced_invoice_1_1_invoice_reducer}{InvoiceReducer} ir = \hyperlink{class_reduced_invoice_1_1_invoice_reducer}{InvoiceReducer}.
-      \hyperlink{class_reduced_invoice_1_1_invoice_reducer_ad4fafc7b331a78ef243c3e3ba88803da}{getInstance}();
-56         \textcolor{keywordflow}{try}\{
-57             ir.\hyperlink{class_reduced_invoice_1_1_invoice_reducer_af064188d62db15e810468e4811af6cc5}{ReducedInvoiceList}(InvoiceList, ReducedInvoiceList);
-58             System.out.println(\textcolor{stringliteral}{"Successfully reduced Invoices"});
-59             System.out.println(\textcolor{stringliteral}{"MetaExceptionCounter: "} + ir.
-      \hyperlink{class_reduced_invoice_1_1_invoice_reducer_a987de6f3876284a7b456240f85dc066f}{getMetaExceptionCounter}());
-60             System.out.println(\textcolor{stringliteral}{"PositionExceptionCounter: "} + ir.
-      \hyperlink{class_reduced_invoice_1_1_invoice_reducer_ad5034d72d8eae0edc2026c9ca9e66465}{getPositionExceptionCounter}());
-61             System.out.println(\textcolor{stringliteral}{"Invoices sucessfully reduced"});
-62         \}\textcolor{keywordflow}{catch}(Exception e)\{
-63             System.out.print(\textcolor{stringliteral}{"Exception while reducing Invoices"});
-64             System.out.println(\textcolor{stringliteral}{"Details: "});
-65             System.out.println(e.getMessage());
-66         \}
-67         
-68         \textcolor{comment}{//Create Bag of Words}
-69         WordBag wb = \textcolor{keyword}{new} WordBag();
+37                                                               \{
+38         
+39         \textcolor{keywordflow}{switch}(args[0].toLowerCase())\{
+40         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"data"}:
+41             \hyperlink{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}{runDataPreprocessing}();
+42             \textcolor{keywordflow}{break};
+43         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"network"}:
+44             \hyperlink{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}{runNetwork}();
+45             \textcolor{keywordflow}{break};
+46         \textcolor{keywordflow}{default}:
+47             System.out.println(\textcolor{stringliteral}{"The command "} + args[0] + \textcolor{stringliteral}{" was not found."});
+48             System.out.println(\textcolor{stringliteral}{"Please check for typo."});
+49             System.out.println(\textcolor{stringliteral}{"Legal parameters are data and network."});
+50             \textcolor{keywordflow}{break};
+51         \}
+52         
+53         System.out.println(\textcolor{stringliteral}{"FIN"});
+54         
+55     \}
+\end{DoxyCode}
+\index{Application\+::\+Run@{Application\+::\+Run}!run\+Data\+Preprocessing@{run\+Data\+Preprocessing}}
+\index{run\+Data\+Preprocessing@{run\+Data\+Preprocessing}!Application\+::\+Run@{Application\+::\+Run}}
+\subsubsection[{\texorpdfstring{run\+Data\+Preprocessing()}{runDataPreprocessing()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Application.\+Run.\+run\+Data\+Preprocessing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}{}\label{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}
+The core call functions of the data preprocessing 
+
+Definition at line 61 of file Run.\+java.
+
+
+\begin{DoxyCode}
+61                                              \{
+62         List<Invoice> InvoiceList;
+63         List<AInvoice> ReducedInvoiceList = \textcolor{keyword}{new} ArrayList<AInvoice>();
+64         HashMap<String, String> Filenames = \textcolor{keyword}{new} HashMap<String, String>();
+65         
+66         InvoiceList = \textcolor{keyword}{new} ArrayList<Invoice>();
+67         readInvoicesFromFiles(InvoiceList, Filenames);
+68         reduceInvoices(InvoiceList, ReducedInvoiceList);
+69         
 70         \textcolor{keywordflow}{try}\{
-71             wb.setPaths(pathToInvalidWords, pathToInvalidTokens);
-72             \textcolor{keywordflow}{for}(\hyperlink{class_reduced_invoice_1_1_a_invoice}{AInvoice} ai : ReducedInvoiceList)\{
-73                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < ai.getPositionsLength(); i++)\{
-74                     wb.addSentence(ai.getPosition(i).getDescription());
-75                 \}
-76             \}
-77             wb.clearWordBag();
-78             \textcolor{comment}{//List<String> w = wb.getBag();}
-79             \textcolor{comment}{//System.out.println(w);}
-80             System.out.println(\textcolor{stringliteral}{"Bag of words sucessfully created"});
-81         \}\textcolor{keywordflow}{catch}(Exception e)\{
-82             System.out.print(\textcolor{stringliteral}{"Exception while creating bag of words"});
-83             System.out.println(\textcolor{stringliteral}{"Details: "});
-84             System.out.println(e.getMessage());
-85         \}
-86         
-87         System.out.println(\textcolor{stringliteral}{"Breakpoint"});
-88         
-89     \}
+71             \hyperlink{class_booking_1_1_c_s_v_booking_handler}{CSVBookingHandler} bHandler = \hyperlink{class_booking_1_1_c_s_v_booking_handler}{CSVBookingHandler}.
+      \hyperlink{class_booking_1_1_c_s_v_booking_handler_a7b9f19a1917141d43d2eadf01f4c51e8}{getInstance}();
+72             List<Voucher> VoucherList = \textcolor{keyword}{new} ArrayList<Voucher>();
+73             VoucherList = bHandler.\hyperlink{class_booking_1_1_c_s_v_booking_handler_ad9ffa72c3554080d3b2383805116ca29}{getVoucherInfoFromFile}(Config.PATH\_TO\_VOUCHERS, 
+      Config.VOLUME\_ID, Config.DEBIT\_ACCOUNT\_ID, Config.TAX\_KEY\_ID, Config.VOUCHER\_ID, Config.VOUCHER\_CSV\_SEPERATOR)
+      ;
+74             bHandler.\hyperlink{class_booking_1_1_c_s_v_booking_handler_a6e4ea9a0c47bb915dc9c33f82ba34b16}{printVoucherListWithoutDebitAccount}(
+      ReducedInvoiceList, Filenames, Config.VOUCHER\_CSV\_SEPERATOR);
+75         \}\textcolor{keywordflow}{catch}(Exception e)\{
+76             System.out.println(e.getMessage());
+77         \}
+78     \}
+\end{DoxyCode}
+\index{Application\+::\+Run@{Application\+::\+Run}!run\+Network@{run\+Network}}
+\index{run\+Network@{run\+Network}!Application\+::\+Run@{Application\+::\+Run}}
+\subsubsection[{\texorpdfstring{run\+Network()}{runNetwork()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Application.\+Run.\+run\+Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}{}\label{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}
+The core call functions of the neural network 
+
+Definition at line 84 of file Run.\+java.
+
+
+\begin{DoxyCode}
+84                                    \{
+85         
+86         \textcolor{keywordtype}{int} minibatchSize = 128;
+87         \textcolor{keywordtype}{int} numPossibleLables = 4;
+88         \textcolor{keywordtype}{int} labelIndex = 1;
+89         \textcolor{keywordtype}{boolean} regression = \textcolor{keyword}{false};
+90         
+91         SequenceRecordReader reader = \textcolor{keyword}{new} CSVSequenceRecordReader(1, Character.toString(Config.
+      VOUCHER\_CSV\_SEPERATOR));
+92         \textcolor{keywordflow}{try} \{
+93             reader.initialize(\textcolor{keyword}{new} NumberedFileInputSplit(Config.PATH\_TO\_LABELED\_DATA, 0 , 0));
+94         \} \textcolor{keywordflow}{catch} (IOException | InterruptedException e) \{
+95             e.getMessage();
+96         \}
+97         
+98         
+99         
+100         DataSetIterator iterClassification = \textcolor{keyword}{new} SequenceRecordReaderDataSetIterator(reader, minibatchSize,
+       numPossibleLables, labelIndex, regression);
+101         
+102         regression = \textcolor{keyword}{false};
+103     \}
 \end{DoxyCode}
 
 

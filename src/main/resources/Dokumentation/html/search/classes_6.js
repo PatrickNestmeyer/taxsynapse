@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['wordbag',['WordBag',['../class_bag_of_words_1_1_word_bag.html',1,'BagOfWords']]]
+  ['rinvoice',['RInvoice',['../class_reduced_invoice_1_1_r_invoice.html',1,'ReducedInvoice']]],
+  ['run',['Run',['../class_application_1_1_run.html',1,'Application']]]
 ];
