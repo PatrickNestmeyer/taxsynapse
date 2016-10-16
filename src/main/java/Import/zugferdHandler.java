@@ -13,6 +13,8 @@ import javax.validation.ConstraintViolation;
 import javax.validation.Path;
 
 import Booking.CSVBookingHandler;
+import ReducedInvoice.AInvoice;
+import ReducedInvoice.InvoiceReducer;
 import io.konik.*;
 import io.konik.exception.TransformationException;
 import io.konik.validation.InvoiceValidator;
@@ -49,7 +51,9 @@ public class zugferdHandler {
 			return null;
 	}
 	
-	public void readInvoice(String Path, HashMap<String, String> Filenames, List<Invoice> InvoiceList, final boolean setLogging, final boolean supressInvalid) throws Exception {
+	public void readInvoice(String Path, List<AInvoice> ReducedInvoiceList , final boolean setLogging, final boolean supressInvalid) throws Exception
+	{
+		InvoiceReducer ir = InvoiceReducer.getInstance();
 		//Rekursive => elem can be a folder or a file 
 		Files.walk(Paths.get(Path)).forEach(elem -> {
 			String fileName = elem.getFileName().toString();
@@ -80,8 +84,7 @@ public class zugferdHandler {
 							}
 							if(add){
 								if(setLogging){ System.out.println(fileName + " is valid." ); }
-								InvoiceList.add(invoice);
-								Filenames.put(CSVBookingHandler.getInstance().getFileNamesKey(invoice.getTrade().getAgreement().getBuyer().getName(), invoice.getHeader().getInvoiceNumber()), fileName);
+								ReducedInvoiceList.add(ir.ConvertInvoiceToRinvoice(invoice, fileName));
 								if(setLogging){ System.out.println( fileName + " added to the list."); }
 							}
 		    			}

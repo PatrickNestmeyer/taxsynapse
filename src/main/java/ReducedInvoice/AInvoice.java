@@ -10,6 +10,9 @@ public abstract class AInvoice {
 	//Date
 	private Date invoiceDate;
 	
+	//Beleglink
+	private String Beleglink;
+	
 	//Number
 	private String invoiceNumber;
 	
@@ -67,6 +70,16 @@ public abstract class AInvoice {
 	public abstract void setPositionTaxRate(int taxrate, int index);
 	
 	public abstract int getPositionsLength();
+	
+	public String getBeleglink()
+	{
+		return Beleglink;
+	}
+	
+	public void setBeleglink(String Beleglink)
+	{
+		this.Beleglink = Beleglink;
+	}
 
 	public Date getInvoiceDate() {
 		return invoiceDate;

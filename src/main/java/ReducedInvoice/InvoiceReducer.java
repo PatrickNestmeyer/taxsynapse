@@ -28,30 +28,38 @@ public class InvoiceReducer {
 		return uniqueInstance;
 	}
 
-	public void ReducedInvoiceList(List<Invoice> InvoiceList, List<AInvoice> ReducedInvoiceList)
-	{
-		for(int i = 0; i < InvoiceList.size(); i++)
-		{
-			try
-			{
-				if(InvoiceList.get(i) != null)
-				{
-					RInvoice addToList = (ConvertInvoiceToRinvoice(InvoiceList.get(i)));
-					if(addToList != null)
-						ReducedInvoiceList.add(addToList);
-				}
-			}
-			catch(Exception e)
-			{
-				System.out.println(i + " falsy");
-			}
-		}
-	}
+	/**
+	 * veraltet
+	 * 
+	 * @param InvoiceList
+	 * @param ReducedInvoiceList
+	 *
+	 *	public void ReducedInvoiceList(List<Invoice> InvoiceList, List<AInvoice> ReducedInvoiceList)
+	 *	{
+	 *		for(int i = 0; i < InvoiceList.size(); i++)
+	 *		{
+	 *			try
+	 *			{
+	 *				if(InvoiceList.get(i) != null)
+	 *				{
+	 *					RInvoice addToList = (ConvertInvoiceToRinvoice(InvoiceList.get(i)));
+	 *					if(addToList != null)
+	 *						ReducedInvoiceList.add(addToList);
+	 *				}
+	 *			}
+	 *			catch(Exception e)
+	 *			{
+	 *				System.out.println(i + " falsy");
+	 *			}
+	 *		}
+	 *	}
+	 *
+	 */
 	
-	public RInvoice ConvertInvoiceToRinvoice(Invoice invoice)
+	public RInvoice ConvertInvoiceToRinvoice(Invoice invoice, String Beleglink)
 	{	
 		RInvoice returnValue = new RInvoice();
-		AddMetaInformation(invoice, returnValue);
+		AddMetaInformation(invoice, returnValue, Beleglink);
 		AddPositions(invoice, returnValue);
 		validateInvoice(returnValue);
 		return returnValue;	
@@ -63,10 +71,11 @@ public class InvoiceReducer {
 	 * @return
 	 */
 	@SuppressWarnings("deprecation")
-	public void AddMetaInformation(Invoice invoice, RInvoice returnValue)
+	public void AddMetaInformation(Invoice invoice, RInvoice returnValue, String Beleglink)
 	{
 		try
 		{
+			returnValue.setBeleglink(Beleglink);
 			if(invoice.getHeader().getIssued() != null)
 			{
 				returnValue.setInvoiceDate(new Date(

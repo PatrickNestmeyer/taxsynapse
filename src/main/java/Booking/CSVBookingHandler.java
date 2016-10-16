@@ -20,7 +20,8 @@ public class CSVBookingHandler {
 	
 	private CSVBookingHandler(){};
 	
-	public static CSVBookingHandler getInstance(){
+	public static CSVBookingHandler getInstance()
+	{
 		if(uniqueInstance == null) {
 			synchronized(CSVBookingHandler.class){
 				if(uniqueInstance == null){
@@ -62,7 +63,8 @@ public class CSVBookingHandler {
 		return returnValue;
 	}
 	
-	public void printVoucherListWithoutDebitAccount(List<AInvoice> aList, HashMap<String, String> fNames, char Seperator) throws IOException{
+	public void printVoucherListWithoutDebitAccount(List<AInvoice> aList, char Seperator) throws IOException
+	{
 		CSVWriter writer = new CSVWriter(new FileWriter(Config.PATH_TO_VOUCHER_TEST_DUMP), Seperator);
 		String outStream = "";
 		outStream += Config.VOLUME_ID + Seperator
@@ -81,7 +83,7 @@ public class CSVBookingHandler {
             	outStream += Seperator;
             	outStream += Float.toString(aList.get(i).getPosition(j).getTaxrate()) + Seperator;
             	outStream += aList.get(i).getPosition(j).getDescription().replace(Seperator, Config.VOUCHER_CSV_REPLACEMENT) + Seperator;
-            	outStream += fNames.get(this.getFileNamesKey(aList.get(i).getBuyerName(), aList.get(i).getInvoiceNumber()));
+            	outStream += aList.get(i).getBeleglink();
             	
             	entries = outStream.split(Character.toString(Seperator));
             	writer.writeNext(entries);
@@ -93,13 +95,12 @@ public class CSVBookingHandler {
 	
 	public static List<Label> createReducedInvoiceVoucherList(List<AInvoice> ReducedInvoiceList, List<Voucher> VoucherList)
 	{
-		int[] temp = { 0,1,1,1,2};
 		List<Label> LabelList = new ArrayList<Label>();
 		List<Label> RandoLabelList = new ArrayList<Label>();
 		int ReducedInvoiceListItem = 0;
 		for (int i = 0; i < VoucherList.size();i++)
 		{
-			ReducedInvoiceListItem = temp[i];//searchReducedInvoiceListItem(ReducedInvoiceList,VoucherList.get(i).getVoucherID());
+			ReducedInvoiceListItem = searchReducedInvoiceListItem(ReducedInvoiceList,VoucherList.get(i).getVoucherID());
 			LabelList.add(Rückrechnung(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i)));
 			RandoLabelList.add(Rando_Rückrechnung(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i),10));
 		}
@@ -179,7 +180,7 @@ public class CSVBookingHandler {
 			}
 		}
 		
-		int wiederholungen = steuerklasse.size() * steuerklasse.size() * c;
+		int wiederholungen = 2 * steuerklasse.size() * steuerklasse.size() * c;
 		for(int i = 0; i < wiederholungen; i++)
 		{
 			rand = randInt(0, steuerklasse.size()-1);
@@ -206,7 +207,7 @@ public class CSVBookingHandler {
 	{
 		for(int i = 0; i < ReducedInvoiceList.size(); i++)
 		{
-			if(VoucherID.equals(CSVBookingHandler.getInstance().getFileNamesKey(ReducedInvoiceList.get(i).getBuyerName(), ReducedInvoiceList.get(i).getInvoiceNumber())))
+			if(VoucherID.equals(ReducedInvoiceList.get(i).getBeleglink()))
 			{
 				return i;
 			}
@@ -233,7 +234,16 @@ public class CSVBookingHandler {
 		return a;
 	}
 	
-	public String getFileNamesKey(String Name, String Number){
-		return Name + ":" + Number;
-	}
+	/**
+	 * veraltet
+	 * 
+	 * @param Name
+	 * @param Number
+	 * @return
+	 *
+	 *	public String getFileNamesKey(String Name, String Number)
+	 *	{
+	 *		return Name + ":" + Number;
+	 *	}
+	 */
 }
