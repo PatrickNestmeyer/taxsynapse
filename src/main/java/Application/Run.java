@@ -1,37 +1,23 @@
 package Application;
 
 import Import.*;
+import NeuralNetwork.NetworkFacade;
 import ReducedInvoice.*;
-import io.konik.zugferd.Invoice;
 import Booking.Voucher;
 import Booking.Label;
 import Booking.CSVBookingHandler;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-
-import org.datavec.api.records.reader.SequenceRecordReader;
-import org.datavec.api.records.reader.impl.csv.CSVSequenceRecordReader;
-import org.datavec.api.split.NumberedFileInputSplit;
-import org.deeplearning4j.datasets.datavec.SequenceRecordReaderDataSetIterator;
-import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
-
-/*
- *
- * TODO: 
- *
- * */
 
 public class Run {
 	
 	/**
 	 * The main entry point of the application
 	 * Here are two paths possible
-	 * a) the preperation of the data. 
-	 * b) the configuration and run of the convolutinal neural netwrok
+	 * a) the preparation of the data. 
+	 * b) the configuration and run of the convolutinal neural network
 	 * 
 	 */
 	
@@ -80,33 +66,6 @@ public class Run {
 			System.out.println(e.getMessage());
 		}
 	}
-
-	/**
-	 * The core call functions of the neural network
-	 */
-	
-	public static void runNetwork()
-	{
-		
-		int numLinesToSkip = 1;
-		int minibatchSize = 128;
-		int numPossibleLables = 4;
-		int labelIndex = 1;
-		boolean regression = false;
-		
-		SequenceRecordReader reader = new CSVSequenceRecordReader(numLinesToSkip, Character.toString(Config.VOUCHER_CSV_SEPERATOR));
-		try {
-			reader.initialize(new NumberedFileInputSplit(Config.PATH_TO_LABELED_DATA, 0 , 0));
-		} catch (IOException | InterruptedException e) {
-			e.getMessage();
-		}
-		
-		
-		
-		//DataSetIterator iterClassification = new SequenceRecordReaderDataSetIterator(reader, minibatchSize, numPossibleLables, labelIndex, regression);
-		
-		regression = false;
-	}
 	
 	private static void readInvoicesFromFiles(List<AInvoice> ReducedInvoiceList)
 	{
@@ -125,6 +84,25 @@ public class Run {
 			System.out.println("Details: ");
 			System.out.println(e.getMessage());
 		}
+	}
+
+	/**
+	 * The core call functions of the neural network
+	 */
+	
+	public static void runNetwork()
+	{
+		String alphabet = "abcdefghijklmnopqrstuvwxyz !\"§$%&/()=?+-#<>.,;:_'*´{[]}";
+		int frameSize = 1017;
+		int minibatchSize = 128;
+		int numPossibleLabels = 4;
+		boolean regression = false;
+		String labelsPath = "./src/main/resources/labeled_data/labels.txt";
+		String featuresPath = "./src/main/resources/labeled_data/data.txt";
+		
+		NetworkFacade nf = NetworkFacade.getInstance();
+		nf.setConfigurationParameters(featuresPath, labelsPath, frameSize, alphabet, minibatchSize);
+		nf.readData();
 	}
 	
 	/**
