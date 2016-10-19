@@ -14,12 +14,12 @@ DATEVnet Netz
 DATEVnet Einzelplatz WBS
 Handbuch FIBU II m.Ordner
 Abrechnungsgrundpreis
-DATEV online-Geb�hr
+DATEV online-Gebï¿½hr
 Rechnungsein-/ ausgangbuch Int.
-Mandantengrundgeb�hr ANLAG
+Mandantengrundgebï¿½hr ANLAG
 LOVOR Internet
 ESt classic
-PI 3/2 Geb�hr Kammer e:secure Erst
+PI 3/2 Gebï¿½hr Kammer e:secure Erst
 Abrechnungsgrundpreis
 Druck-Einzelleistung
 Abrechnungsgrundpreis
@@ -31,23 +31,22 @@ Auftragsvers. an AN Porto 20g(LOHN)
 251 - 500 Arbeitnehmer
 1 - 250 Arbeitnehmer
 251 - 500 Arbeitnehmer
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 100 cm L�nge
-Kunstrasen gr�n 3m breit
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Kunstrasen grï¿½n 3m breit
 Schweinesteak
-"Mineralwasser Medium 
 12 x 1,0l PET"
 Pfand
 Superdrachen
@@ -57,17 +56,17 @@ Eisvogel
 Storch
 Adler
 Kostenlose Zugabe
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 100 cm L�nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
 Auftragsvers. an AN Porto 20g (LuG)
 Kanzlei online
 Versandpauschale
 LEXinform aktuell Mitglieder
 Auftragsversand Portokosten
-Versandpauschale erm��igte MWSt
+Versandpauschale ermï¿½ï¿½igte MWSt
 Auftragsversand Portokosten
 B/N-Abrechnung LOHN
 Auftragsvers. an AN Porto 50g (LuG)
@@ -79,117 +78,117 @@ LEXinform aktuell Mitglieder
 Kanzlei online
 Versandpauschale
 Einschreiben
-verauslagte Portogeb�hren(INFO-P.)
-Versandpauschale erm��igte MWSt
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Kunstrasen gr�n 3m breit
+verauslagte Portogebï¿½hren(INFO-P.)
+Versandpauschale ermï¿½ï¿½igte MWSt
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Kunstrasen grï¿½n 3m breit
 Schweinesteak
 Mineralwasser Medium 12 x 1,0l PET
 Pfand
-Kunstrasen gr�n 3m breit
+Kunstrasen grï¿½n 3m breit
 Schweinesteak
 Mineralwasser Medium 12 x 1,0l PET
 Pfand
@@ -205,60 +204,51 @@ Musterposten 2 CIB doXisafe
 Musterposten 1 CIB workbench
 Musterposten CIB001
 Musterposten CIB002
-Unterst�tzungsleistung
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Furnier Eiche 200 cm L�nge
-Furnier Eiche 150 cm L�nge
-Furnier Eiche 100 cm L�nge
-Furnier Eiche 50 cm L�nge
-Kunstrasen gr�n 3m breit
+Unterstï¿½tzungsleistung
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Furnier Eiche 200 cm Lï¿½nge
+Furnier Eiche 150 cm Lï¿½nge
+Furnier Eiche 100 cm Lï¿½nge
+Furnier Eiche 50 cm Lï¿½nge
+Kunstrasen grï¿½n 3m breit
 Schweinesteak
-"Mineralwasser Medium 
 12 x 1,0l PET"
 Pfand
-"GTIN 4123456000014
-Art-Nr-Lieferant ZS9997
-Zitronens�ure 100ml
-Verpackung: Flasche
 VKE/Geb: 1"
-"GTIN 4123456000021
-Art-Nr-Lieferant GZ250
-Gelierzucker Extra 250g
-Verpackung: Karton
 VKE/Geb: 1"
-Zitronens�ure 100ml
+Zitronensï¿½ure 100ml
 Gelierzucker Extra 250g
-Zitronens�ure 100ml
+Zitronensï¿½ure 100ml
 Gelierzucker Extra 250g
 Wirkarbeit HT
-�kosteuer Lieferant
+ï¿½kosteuer Lieferant
 Kommissionierer 1250032 D. Muster
 FALTENBEUTEL 16x6x28 CM
 Kopierpapier A4
-Zitronens�ure 100ml
+Zitronensï¿½ure 100ml
 Gelierzucker Extra 250g
 Bierbrau Pils 20/0500
 Leergutpfand 20 x 0,5l
@@ -266,20 +256,18 @@ Mischpalette Joghurt Karton 3 x 20
 beschichtete Platte Ahorn
 Kundendienst Firmenwagen 1
 Kundendienst Firmenwagen 2
-Bereitstellungspreis f�r 7-stellige Basisnummer
-J�hrlicher Nutzungspreis Umsatzstufe 1
-Trennbl�tter A4
+Bereitstellungspreis fï¿½r 7-stellige Basisnummer
+Jï¿½hrlicher Nutzungspreis Umsatzstufe 1
+Trennblï¿½tter A4
 Joghurt Banane
-"GTIN: 4012345001235
-Unsere Art.-Nr.: TB100A4
-Trennbl�tter A4"
-Trennbl�tter A4
+Trennblï¿½tter A4"
+Trennblï¿½tter A4
 Joghurt Banane
 Privathaftpflicht
-Lebensgef�hrte/in zur Privathaftpflicht
+Lebensgefï¿½hrte/in zur Privathaftpflicht
 Kfz-Haftpflicht SF25 (30 %) Typkl. 18 Regio R9
 Vollkasko SF25 (30 %) Typkl. 21 Regio R4
-Verbundene Wohngeb�udeversicherung
+Verbundene Wohngebï¿½udeversicherung
 Beschreibung Artikel 2
 Beschreibung Artikel 1
 Beispielprodukt
@@ -287,43 +275,32 @@ Beispielprodukt
 Position 1
 Position 1
 Position 1
-"GTIN: 4012345001235
-Unsere Art.-Nr.: TB100A4
-Trennbl�tter A4"
-"GTIN 4123456000014
-Art-Nr-Lieferant ZS9997
-Zitronens�ure 100ml
-Verpackung: Flasche
+Trennblï¿½tter A4"
 VKE/Geb: 1"
-"GTIN 4123456000021
-Art-Nr-Lieferant GZ250
-Gelierzucker Extra 250g
-Verpackung: Karton
 VKE/Geb: 1"
-Trennbl�tter A4
+Trennblï¿½tter A4
 Joghurt Banane
 Privathaftpflicht
-Lebensgef�hrte/in zur Privathaftpflicht
+Lebensgefï¿½hrte/in zur Privathaftpflicht
 Kfz-Haftpflicht SF25 (30 %) Typkl. 18 Regio R9
 Vollkasko SF25 (30 %) Typkl. 21 Regio R4
-Kunstrasen gr�n 3m breit
+Kunstrasen grï¿½n 3m breit
 Schweinesteak
-"Mineralwasser Medium 
 12 x 1,0l PET"
 Pfand
-Zitronens�ure 100ml
+Zitronensï¿½ure 100ml
 Gelierzucker Extra 250g
-Verbundene Wohngeb�udeversicherung
-Trennbl�tter A4
+Verbundene Wohngebï¿½udeversicherung
+Trennblï¿½tter A4
 Joghurt Banane
 Wirkarbeit HT
-�kosteuer Lieferant
+ï¿½kosteuer Lieferant
 Kommissionierer 1250032 D. Muster
 FALTENBEUTEL 16x6x28 CM
 Kopierpapier A4
-Zitronens�ure 100ml
+Zitronensï¿½ure 100ml
 Gelierzucker Extra 250g
-Zitronens�ure 100ml
+Zitronensï¿½ure 100ml
 Gelierzucker Extra 250g
 Bierbrau Pils 20/0500
 Leergutpfand 20 x 0,5l

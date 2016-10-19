@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.deeplearning4j.ui.weights.ConvolutionalIterationListener;
+
 public class Run {
 	
 	/**
@@ -92,17 +94,22 @@ public class Run {
 	
 	public static void runNetwork()
 	{
-		String alphabet = "abcdefghijklmnopqrstuvwxyz !\"§$%&/()=?+-#<>.,;:_'*´{[]}";
-		int frameSize = 1017;
+		String alphabet = "abcdefghijklmnopqrstuvwxyz0123456789 @€!\"§$%&/()=?+-#<>.,;:_'*´{[]}";
+		int frameSize = 258;
 		int minibatchSize = 128;
 		int numPossibleLabels = 4;
 		boolean regression = false;
 		String labelsPath = "./src/main/resources/labeled_data/labels.txt";
 		String featuresPath = "./src/main/resources/labeled_data/data.txt";
 		
+		//String activationFunction = "relu";
+		
+		
 		NetworkFacade nf = NetworkFacade.getInstance();
 		nf.setConfigurationParameters(featuresPath, labelsPath, frameSize, alphabet, minibatchSize);
-		nf.readData();
+		if(nf.readData()){
+			nf.runNetwork();
+		}
 	}
 	
 	/**

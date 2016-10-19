@@ -1,6 +1,7 @@
 package NeuralNetwork;
 
-import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
+//import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
+import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 
 public class NetworkFacade {
 
@@ -41,7 +42,9 @@ public class NetworkFacade {
 	
 	private LabeledInputSeries input;
 	
-	private ListDataSetIterator iterator;
+	private DataSetIterator iterator;
+	
+	private NeuralNetwork network;
 	
 	/**
 	 * TODO: Change to Builder Pattern
@@ -67,6 +70,8 @@ public class NetworkFacade {
 	}
 	
 	public void runNetwork(){
-		
+		this.network = NeuralNetwork.getInstance();
+		network.setupNetworkConfigurationSmall();
+		network.run(iterator);
 	}
 }

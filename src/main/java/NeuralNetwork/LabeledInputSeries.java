@@ -7,8 +7,10 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Collections;
 
 import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
+import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.factory.Nd4j;
@@ -53,9 +55,8 @@ public class LabeledInputSeries {
 			int InputFileLength = this.countLines(PathToInputFile);
 			int LabelFileLength = this.countLines(PathToLabels);
 			if(InputFileLength == this.countLines(PathToLabels)){
-				
-				input = Nd4j.zeros(FrameLength, InputFileLength);
-				labels = Nd4j.zeros(1, InputFileLength);
+				input = Nd4j.zeros(InputFileLength, FrameLength);
+				labels = Nd4j.zeros(InputFileLength, 1);
 				this.transformInputToINDArray(PathToInputFile, PathToLabels, InputFileLength);
 				return true;
 			}else{
@@ -72,16 +73,17 @@ public class LabeledInputSeries {
 		BufferedReader brI = new BufferedReader(new FileReader(new File(PathI)));
 		BufferedReader brL = new BufferedReader(new FileReader(new File(PathL)));
 		String InputLine = "";
+		
 		for(int i = 0; i < length; i++){
 			InputLine = brI.readLine().toLowerCase();
 			for(int j = 0; j < InputLine.length(); j++){
-				this.input.putScalar(new int[] {j, i}, this.encodeCharacterEmbedding(InputLine.charAt(j)));
+				this.input.putScalar(new int[] {i, j}, this.encodeCharacterEmbedding(InputLine.charAt(j)));
 			}
-			this.labels.putScalar(new int[] {1, i}, Float.parseFloat(brL.readLine()));
+			this.labels.putScalar(new int[] {i, 0}, Float.parseFloat(brL.readLine()));
 		}
 	}
 	
-	public ListDataSetIterator giveInputAsDataSetIterator(int batchSize){
+	public DataSetIterator giveInputAsDataSetIterator(int batchSize){
 		DataSet dataSet = new DataSet(this.input, this.labels);
 		return new ListDataSetIterator(dataSet.asList(), batchSize);
 	}
