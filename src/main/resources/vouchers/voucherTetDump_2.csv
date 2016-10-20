@@ -1,7 +1,24 @@
 Umsatz (ohne Soll/Haben-Kz);Gegenkonto (ohne BU-Schlüssel);BU-Schlüssel;Buchungstext;Beleglink
 6241,788;2;19.0;Wareneingang;1001_ZFD_1P0_SIZE_00300KB.PDF
-11,9;4;19.0;Kunstrasen grï¿½n 3m breit;1100_ZFD_RCD_FORMAT_NAMES.PDF
+11,9;4;19.0;Privatentnahme;1100_ZFD_RCD_FORMAT_NAMES.PDF
 146,911;3;7.0;Sonstige;1100_ZFD_RCD_FORMAT_NAMES.PDF
 65,9974;3;19.0;Sonstige;1100_ZFD_RCD_FORMAT_NAMES.PDF
-1005,55;4;19.0;Kostenlose Zugabe;1101_ZFD_RCD_FORMAT_KIDS.PDF
+1005,55;2;19.0;Wareneingang;1101_ZFD_RCD_FORMAT_KIDS.PDF
 349,39;2;19.0;Wareneingang;2015_02_DIBU_ER_Kreditort_3.ZUGFeRD.pdf
+763,56;2;19.0;Wareneingang;2015_01_DIBU_ER_Holz_1.ZUGFeRD.pdf
+146,92;2;7.0;Wareneingang;2014-04-07-Beispielrechnung-ZUGFeRD.pdf
+77,83;4;19.0;Privatentnahme;2014-04-07-Beispielrechnung-ZUGFeRD.pdf
+1206,36;2;19.0;Wareneingang;Beispielrechnung_Handel_Kostenrechnung_extended.pdf
+58,13;4;19.0;Privatentnahme;Beispielrechnung_Handel_Kostenrechnung_extended.pdf
+388,54;2;19.0;Wareneingang;ZUGFeRD_1p0_EXTENDED_Warenrechnung.pdf
+139,85;2;7.0;Wareneingang;ZUGFeRD_1p0_EXTENDED_Warenrechnung.pdf
+809,2;2;19.0;Wareneingang;GS.1 Rechnung 301837-33611204.pdf
+367,89;3;1.0;Sonstige;R20140203-13.05.2014-Erika_Mustermann.pdf
+2708,44;2;19.0;Wareneingang;2015_02_DIBU_ER_Farben.ZUGFeRD.pdf
+1844,5;2;19.0;Wareneingang;2016-03-31 CIB-Rechnung - CIB InvoicE.pdf
+1264,49;2;19.0;Wareneingang;ZUGFeRD_1p0_EXTENDED_Kostenrechnung.pdf
+388,54;2;19.0;Wareneingang;Beispielrechnung_Handel_Warenrechnung.pdf
+139,85;3;7.0;Sonstige;Beispielrechnung_Handel_Warenrechnung.pdf
+2360,21;2;19.0;Wareneingang;1000_ZFD_1P0_SIZE_00100KB.PDF
+480,42;3;16.0;Sonstige;1000_ZFD_1P0_SIZE_00100KB.PDF
+12,43;1;0.0;Anlagevermögen;1000_ZFD_1P0_SIZE_00100KB.PDF
