@@ -96,17 +96,33 @@ public class CSVBookingHandler {
 	public static List<Label> createReducedInvoiceVoucherList(List<AInvoice> ReducedInvoiceList, List<Voucher> VoucherList)
 	{
 		List<Label> LabelList = new ArrayList<Label>();
-		List<Label> RandoLabelList = new ArrayList<Label>();
+		Label temp;
+		
 		int ReducedInvoiceListItem = 0;
 		for (int i = 0; i < VoucherList.size();i++)
 		{
 			ReducedInvoiceListItem = searchReducedInvoiceListItem(ReducedInvoiceList,VoucherList.get(i).getVoucherID());
-			LabelList.add(Rückrechnung(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i)));
-			RandoLabelList.add(Rando_Rückrechnung(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i),10));
+			temp = rando_reconstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i),10000);
+			if(temp.Beleglink != null)
+			{
+				LabelList.add(temp);
+			}
+			else
+			{
+				LabelList.add(reconstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i)));
+			}
 		}
-		return compareAlgo(LabelList,RandoLabelList);
+		return LabelList;
 	}
 	
+	
+	/**
+	 * veraltet
+	 * 
+	 * @param LabelList
+	 * @param RandoLabelList
+	 * @return
+	 */
 	public static List<Label> compareAlgo(List<Label> LabelList, List<Label> RandoLabelList)
 	{
 		int countLabelList = 0;
@@ -132,7 +148,7 @@ public class CSVBookingHandler {
 		}
 	}
 	
-	public static Label Rückrechnung(AInvoice invoice, Voucher voucher)
+	public static Label reconstruct_voucher(AInvoice invoice, Voucher voucher)
 	{
 		Label returnValue = null;
 		float BuchungsUmsatz;
@@ -165,7 +181,7 @@ public class CSVBookingHandler {
 		return returnValue;
 	}
 	
-	public static Label Rando_Rückrechnung(AInvoice invoice, Voucher voucher, int c)
+	public static Label rando_reconstruct_voucher(AInvoice invoice, Voucher voucher, int c)
 	{
 		List<Integer> steuerklasse = new ArrayList<Integer>();
 		float BuchungsUmsatz = Runden(Float.parseFloat(voucher.getVolume().replace(",", ".")));
@@ -184,7 +200,7 @@ public class CSVBookingHandler {
 		for(int i = 0; i < wiederholungen; i++)
 		{
 			rand = randInt(0, steuerklasse.size()-1);
-			BuchungsUmsatz = Runden(BuchungsUmsatz) - Runden(invoice.getPosition(steuerklasse.get(rand)).getPositionPrice().getBrutto());
+			BuchungsUmsatz = Runden(Runden(BuchungsUmsatz) - Runden(invoice.getPosition(steuerklasse.get(rand)).getPositionPrice().getBrutto()));
 			returnValue.position_number.add(steuerklasse.get(rand));
 			returnValue.description.add(invoice.getPosition(steuerklasse.get(rand)).getDescription());
 			if(BuchungsUmsatz < 0.00)
