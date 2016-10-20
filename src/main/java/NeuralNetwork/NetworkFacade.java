@@ -71,7 +71,8 @@ public class NetworkFacade {
 	
 	public void runNetwork(){
 		this.network = NeuralNetwork.getInstance();
-		network.setupNetworkConfigurationSmall();
-		network.run(iterator);
+		//System.out.println(iterator);
+		//network.setupNetworkConfigurationReduced();
+		//network.run(iterator);
 	}
 }

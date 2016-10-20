@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
 import java.util.Collections;
 
 import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
@@ -77,14 +78,18 @@ public class LabeledInputSeries {
 		for(int i = 0; i < length; i++){
 			InputLine = brI.readLine().toLowerCase();
 			for(int j = 0; j < InputLine.length(); j++){
-				this.input.putScalar(new int[] {i, j}, this.encodeCharacterEmbedding(InputLine.charAt(j)));
+				//this.input.putScalar(new int[] {i, j}, this.encodeCharacterEmbedding(InputLine.charAt(j)));
+				this.input.put(i, j, this.encodeCharacterEmbedding(InputLine.charAt(j)));
 			}
-			this.labels.putScalar(new int[] {i, 0}, Float.parseFloat(brL.readLine()));
+			//this.labels.putScalar(new int[] {i, 0}, Float.parseFloat(brL.readLine()));
+			this.labels.putScalar(i, Float.parseFloat(brL.readLine()));
 		}
 	}
 	
 	public DataSetIterator giveInputAsDataSetIterator(int batchSize){
+		System.out.println(Arrays.toString(input.shape()));
 		DataSet dataSet = new DataSet(this.input, this.labels);
+		//System.out.println(dataSet);
 		return new ListDataSetIterator(dataSet.asList(), batchSize);
 	}
 	
