@@ -359,16 +359,16 @@ public class CSVBookingHandler {
 	
 	/**
 	 * 
-	 * @param a
-	 * @param b
+	 * @param source the source
+	 * @param clone the copy of the source
 	 */
-	public static int copyArrayList(List<Integer> a, List <Integer> b)
+	public static int copyArrayList(List<Integer> source, List <Integer> clone)
 	{
-		b.clear();
+		clone.clear();
 		int i = 0;
-		for(; i < a.size(); i++)
+		for(; i < source.size(); i++)
 		{
-			b.add(a.get(i));
+			clone.add(source.get(i));
 		}
 		return i;
 	}
