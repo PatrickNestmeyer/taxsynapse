@@ -20,6 +20,10 @@ public class CSVBookingHandler {
 	
 	private CSVBookingHandler(){};
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public static CSVBookingHandler getInstance()
 	{
 		if(uniqueInstance == null) {
@@ -32,6 +36,17 @@ public class CSVBookingHandler {
 		return uniqueInstance;
 	}
 	
+	/**
+	 * 
+	 * @param Path
+	 * @param volumeKey
+	 * @param debitAccountKey
+	 * @param taxkKey
+	 * @param idKey
+	 * @param Seperator
+	 * @return
+	 * @throws IOException
+	 */
 	public List<Voucher> getVoucherInfoFromFile(String Path, String volumeKey, String debitAccountKey, String taxkKey, String idKey, char Seperator) throws IOException{
 		
 		String[] Line;
@@ -63,6 +78,12 @@ public class CSVBookingHandler {
 		return returnValue;
 	}
 	
+	/**
+	 * 
+	 * @param aList
+	 * @param Seperator
+	 * @throws IOException
+	 */
 	public void printVoucherListWithoutDebitAccount(List<AInvoice> aList, char Seperator) throws IOException
 	{
 		CSVWriter writer = new CSVWriter(new FileWriter(Config.PATH_TO_VOUCHER_TEST_DUMP), Seperator);
@@ -93,7 +114,49 @@ public class CSVBookingHandler {
 		writer.close();
 	}
 	
-	public static List<Label> createReducedInvoiceVoucherList(List<AInvoice> ReducedInvoiceList, List<Voucher> VoucherList)
+	/**
+	 * Print LabelList
+	 * 
+	 * @param LabelList
+	 * @param Seperator
+	 * @throws IOException
+	 */
+	public void printLabelList(List<Label> LabelList, char Seperator) throws IOException
+	{
+		CSVWriter writer = new CSVWriter(new FileWriter(Config.PATH_TO_LABEL_LIST), Seperator);
+		String outStream = "";
+		outStream += Config.VOUCHER_ID + Seperator
+				+Config.TAX_KEY_ID + Seperator
+				+Config.BOOKING_NOTE;
+				
+		String[] entries = outStream.split(Character.toString(Seperator));
+		writer.writeNext(entries);
+		
+		for(int i = 0; i < LabelList.size(); i++)
+		{
+            for(int j = 0; j < LabelList.get(i).getDescriptionSize(); j++)
+            {
+            	outStream = "";
+            	outStream += LabelList.get(i).getBeleglink() + Seperator;
+            	outStream += LabelList.get(i).getlabel_ID() + Seperator;
+            	outStream += LabelList.get(i).getDescription(j) + Seperator;
+            	
+            	entries = outStream.split(Character.toString(Seperator));
+            	writer.writeNext(entries);
+            }
+		}
+		
+		writer.close();
+	}
+	
+	/**
+	 * 
+	 * @param ReducedInvoiceList
+	 * @param VoucherList
+	 * @param LabelError 
+	 * @return
+	 */
+	public static List<Label> createReducedInvoiceVoucherList(List<AInvoice> ReducedInvoiceList, List<Voucher> VoucherList, boolean RemoveLabelError)
 	{
 		List<Label> LabelList = new ArrayList<Label>();
 		Label temp;
@@ -102,8 +165,9 @@ public class CSVBookingHandler {
 		for (int i = 0; i < VoucherList.size();i++)
 		{
 			ReducedInvoiceListItem = searchReducedInvoiceListItem(ReducedInvoiceList,VoucherList.get(i).getVoucherID());
-			temp = rando_reconstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i),10000);
-			if(temp.Beleglink != null)
+			System.out.println("Buchung " + i); // Laufzeit
+			temp = fast_rando_recounstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i),100);
+			if(temp.getBeleglink() != null)
 			{
 				LabelList.add(temp);
 			}
@@ -112,42 +176,36 @@ public class CSVBookingHandler {
 				LabelList.add(reconstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i)));
 			}
 		}
+		if(RemoveLabelError == true)
+		{
+			RemoveLabel(LabelList);
+		}
+		
 		return LabelList;
 	}
 	
-	
 	/**
-	 * veraltet
+	 * Remove the Labels which could not be reconstructed 
 	 * 
 	 * @param LabelList
-	 * @param RandoLabelList
-	 * @return
 	 */
-	public static List<Label> compareAlgo(List<Label> LabelList, List<Label> RandoLabelList)
+	public static void RemoveLabel(List<Label> LabelList)
 	{
-		int countLabelList = 0;
-		int countRandoLabelList = 0;
-		for(int i = 0; i < RandoLabelList.size(); i++)
+		for(int i = 0; i < LabelList.size(); i++)
 		{
-			if(LabelList.get(i).label_ID != null)
+			if(LabelList.get(i).getBeleglink() == null)
 			{
-				countLabelList++;
+				LabelList.remove(i);
 			}
-			if(RandoLabelList.get(i).label_ID != null)
-			{
-				countRandoLabelList++;
-			}
-		}
-		if(countLabelList > countRandoLabelList)
-		{
-			return LabelList;
-		}
-		else
-		{
-			return RandoLabelList;
 		}
 	}
 	
+	/**
+	 * 
+	 * @param invoice
+	 * @param voucher
+	 * @return
+	 */
 	public static Label reconstruct_voucher(AInvoice invoice, Voucher voucher)
 	{
 		Label returnValue = null;
@@ -156,18 +214,18 @@ public class CSVBookingHandler {
 		for(int i = 0; i < invoice.getPositionsLength(); i++)
 		{
 			returnValue = new Label();
-			BuchungsUmsatz = Runden(Float.parseFloat(voucher.getVolume().replace(",", "."))); 
+			BuchungsUmsatz = rounding(Float.parseFloat(voucher.getVolume().replace(",", "."))); 
 			for(int j = i; j < invoice.getPositionsLength(); j++ )
 			{
 				if(Float.parseFloat(voucher.getTaxKey()) == ((float) invoice.getPosition(j).getTaxrate()))
 				{
-					BuchungsUmsatz = Runden(BuchungsUmsatz) - Runden(invoice.getPosition(j).getPositionPrice().getBrutto());
-					returnValue.position_number.add(j);
-					returnValue.description.add(invoice.getPosition(j).getDescription());
+					BuchungsUmsatz = rounding(BuchungsUmsatz) - rounding(invoice.getPosition(j).getPositionPrice().getBrutto());
+					returnValue.addPosition(j);
+					returnValue.addDescription(invoice.getPosition(j).getDescription());
 					if(BuchungsUmsatz == 0.00)
 					{
-						returnValue.label_ID = voucher.getDebitAccount();
-						returnValue.Beleglink = voucher.getVoucherID();
+						returnValue.setlabel_ID(voucher.getDebitAccount());
+						returnValue.setBeleglink(voucher.getVoucherID());
 						Rückrechnung = true;
 						break;
 					}
@@ -181,12 +239,21 @@ public class CSVBookingHandler {
 		return returnValue;
 	}
 	
+	/**
+	 * veraltet
+	 * 
+	 * @param invoice
+	 * @param voucher
+	 * @param c
+	 * @return
+	 */
 	public static Label rando_reconstruct_voucher(AInvoice invoice, Voucher voucher, int c)
 	{
 		List<Integer> steuerklasse = new ArrayList<Integer>();
-		float BuchungsUmsatz = Runden(Float.parseFloat(voucher.getVolume().replace(",", ".")));
+		float BuchungsUmsatz = rounding(Float.parseFloat(voucher.getVolume().replace(",", ".")));
 		Label returnValue = new Label();
 		int rand = 0;
+		int count = 0;
 		
 		for(int i = 0; i < invoice.getPositionsLength(); i++)
 		{
@@ -200,25 +267,118 @@ public class CSVBookingHandler {
 		for(int i = 0; i < wiederholungen; i++)
 		{
 			rand = randInt(0, steuerklasse.size()-1);
-			BuchungsUmsatz = Runden(Runden(BuchungsUmsatz) - Runden(invoice.getPosition(steuerklasse.get(rand)).getPositionPrice().getBrutto()));
-			returnValue.position_number.add(steuerklasse.get(rand));
-			returnValue.description.add(invoice.getPosition(steuerklasse.get(rand)).getDescription());
+			BuchungsUmsatz = rounding(rounding(BuchungsUmsatz) - rounding(invoice.getPosition(steuerklasse.get(rand)).getPositionPrice().getBrutto()));
+			
+			returnValue.addPosition(steuerklasse.get(rand));
+			returnValue.addDescription(invoice.getPosition(steuerklasse.get(rand)).getDescription());
+			count++;
 			if(BuchungsUmsatz < 0.00)
 			{
 				returnValue = new Label();
-				BuchungsUmsatz = Runden(Float.parseFloat(voucher.getVolume().replace(",", ".")));
+				BuchungsUmsatz = rounding(Float.parseFloat(voucher.getVolume().replace(",", ".")));
 			}
 			if(BuchungsUmsatz == 0.00)
 			{
-				returnValue.label_ID = voucher.getDebitAccount();
-				returnValue.Beleglink = voucher.getVoucherID();
+				returnValue.setlabel_ID(voucher.getDebitAccount());
+				returnValue.setBeleglink(voucher.getVoucherID());
 				break;
 			}
 		}
-		
+		System.out.println("Old Rando Algo Iteration: "+ count); // Iteration
 		return returnValue;
 	}
 	
+	/**
+	 * 
+	 * @param invoice 
+	 * @param voucher the accounting record
+	 * @param c boost the probability to find the valid accounting record
+	 * @return
+	 */
+	public static Label fast_rando_recounstruct_voucher(AInvoice invoice, Voucher voucher, int c)
+	{
+		List<Integer> steuerklasse = new ArrayList<Integer>();
+		List<Integer> temp = new ArrayList<Integer>();
+		float BuchungsUmsatz = rounding(Float.parseFloat(voucher.getVolume().replace(",", ".")));
+		Label returnValue = new Label();
+		int rand = 0;
+		int count = 0;
+		
+		for(int i = 0; i < invoice.getPositionsLength(); i++)
+		{
+			if(Float.parseFloat(voucher.getTaxKey()) == ((float) invoice.getPosition(i).getTaxrate()))
+			{
+				steuerklasse.add(i);
+				temp.add(i);
+			}
+		}
+		
+		int wiederholungen = 2 * steuerklasse.size() * steuerklasse.size() * c;
+		for(int i = 0; i < wiederholungen; i++)
+		{
+			if(temp.size() <= 0)
+			{
+				returnValue = new Label();
+				BuchungsUmsatz = rounding(Float.parseFloat(voucher.getVolume().replace(",", ".")));
+				copyArrayList(steuerklasse, temp);
+				
+				rand = randInt(0, temp.size()-1);
+				BuchungsUmsatz = rounding(rounding(BuchungsUmsatz) - rounding(invoice.getPosition(temp.get(rand)).getPositionPrice().getBrutto()));
+				
+				returnValue.addPosition(temp.get(rand));
+				returnValue.addDescription(invoice.getPosition(temp.get(rand)).getDescription());
+				temp.remove(rand);
+			}
+			else
+			{
+				rand = randInt(0, temp.size()-1);
+				BuchungsUmsatz = rounding(rounding(BuchungsUmsatz) - rounding(invoice.getPosition(temp.get(rand)).getPositionPrice().getBrutto()));
+				
+				returnValue.addPosition(temp.get(rand));
+				returnValue.addDescription(invoice.getPosition(temp.get(rand)).getDescription());
+				temp.remove(rand);
+			}
+			count++;
+			
+			if(BuchungsUmsatz < 0.00)
+			{
+				returnValue = new Label();
+				BuchungsUmsatz = rounding(Float.parseFloat(voucher.getVolume().replace(",", ".")));
+				copyArrayList(steuerklasse, temp);
+			}
+			if(BuchungsUmsatz == 0.00)
+			{
+				returnValue.setlabel_ID(voucher.getDebitAccount());
+				returnValue.setBeleglink(voucher.getVoucherID());
+				break;
+			}
+		}
+		System.out.println("New Rando Algo Iteration: "+ count + "\n"); // Iteration
+		return returnValue;
+	}
+	
+	/**
+	 * 
+	 * @param a
+	 * @param b
+	 */
+	public static int copyArrayList(List<Integer> a, List <Integer> b)
+	{
+		b.clear();
+		int i = 0;
+		for(; i < a.size(); i++)
+		{
+			b.add(a.get(i));
+		}
+		return i;
+	}
+	
+	/**
+	 * 
+	 * @param ReducedInvoiceList
+	 * @param VoucherID
+	 * @return
+	 */
 	public static int searchReducedInvoiceListItem(List<AInvoice> ReducedInvoiceList, String VoucherID)
 	{
 		for(int i = 0; i < ReducedInvoiceList.size(); i++)
@@ -231,35 +391,33 @@ public class CSVBookingHandler {
 		return 0;
 	}
 	
+	/**
+	 * 
+	 * @param min
+	 * @param max
+	 * @return
+	 */
 	private static int randInt(int min, int max) 
 	{
 		Random r = new Random();
 		return r.nextInt((max - min) + 1) + min;
 	}
 	
-	public static float Runden(float a)
+	/**
+	 * 
+	 * @param value
+	 * @return
+	 */
+	public static float rounding(float value)
 	{
-		if(((a*1000) % 10) > 4 )
+		if(((value*1000) % 10) > 4 )
 		{
-			a = (float)((int)(a*100+1))/100; 
+			value = (float)((int)(value*100+1))/100; 
 		}
 		else
 		{
-			a = (float)((int)(a*100))/100; 
+			value = (float)((int)(value*100))/100; 
 		}
-		return a;
+		return value;
 	}
-	
-	/**
-	 * veraltet
-	 * 
-	 * @param Name
-	 * @param Number
-	 * @return
-	 *
-	 *	public String getFileNamesKey(String Name, String Number)
-	 *	{
-	 *		return Name + ":" + Number;
-	 *	}
-	 */
 }

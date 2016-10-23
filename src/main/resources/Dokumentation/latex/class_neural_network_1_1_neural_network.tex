@@ -1,0 +1,260 @@
+\hypertarget{class_neural_network_1_1_neural_network}{\section{Neural\-Network.\-Neural\-Network Class Reference}
+\label{class_neural_network_1_1_neural_network}\index{Neural\-Network.\-Neural\-Network@{Neural\-Network.\-Neural\-Network}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_ab78cfc2ca78f23dd21b07082a2a73bf6}{setup\-Network\-Configuration\-Reduced} ()
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_a06ad59af1ef9b750a0b54c9e242b66d9}{setup\-Network\-Configuration\-Small} ()
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_aca5ac7917bb1f2f9f8c32b60eb4efd1b}{run} (Data\-Set\-Iterator iterator)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_neural_network_1_1_neural_network}{Neural\-Network} \hyperlink{class_neural_network_1_1_neural_network_a3644b86f84197b1acd2660e63f0b4da3}{get\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Neural\-Network.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_network_1_1_neural_network_a3644b86f84197b1acd2660e63f0b4da3}{\index{Neural\-Network\-::\-Neural\-Network@{Neural\-Network\-::\-Neural\-Network}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!NeuralNetwork::NeuralNetwork@{Neural\-Network\-::\-Neural\-Network}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Neural\-Network} Neural\-Network.\-Neural\-Network.\-get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_neural_network_1_1_neural_network_a3644b86f84197b1acd2660e63f0b4da3}
+
+
+Definition at line 33 of file Neural\-Network.\-java.
+
+
+\begin{DoxyCode}
+33                                              \{
+34         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
+35             \textcolor{keyword}{synchronized}(NeuralNetwork.class)\{
+36                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
+37                     uniqueInstance = \textcolor{keyword}{new} NeuralNetwork();
+38                 \}
+39             \}
+40         \}
+41         \textcolor{keywordflow}{return} uniqueInstance;
+42     \}
+\end{DoxyCode}
+\hypertarget{class_neural_network_1_1_neural_network_aca5ac7917bb1f2f9f8c32b60eb4efd1b}{\index{Neural\-Network\-::\-Neural\-Network@{Neural\-Network\-::\-Neural\-Network}!run@{run}}
+\index{run@{run}!NeuralNetwork::NeuralNetwork@{Neural\-Network\-::\-Neural\-Network}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-Network.\-Neural\-Network.\-run (
+\begin{DoxyParamCaption}
+\item[{Data\-Set\-Iterator}]{iterator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_neural_network_aca5ac7917bb1f2f9f8c32b60eb4efd1b}
+
+
+Definition at line 198 of file Neural\-Network.\-java.
+
+
+\begin{DoxyCode}
+198                                              \{
+199         
+200         network.init();
+201         network.setListeners(\textcolor{keyword}{new} ScoreIterationListener(1));
+202         iterator.reset();
+203         network.fit(iterator);
+204         \textcolor{comment}{//network.setListeners(new ScoreIterationListener(1));}
+205     \}
+\end{DoxyCode}
+\hypertarget{class_neural_network_1_1_neural_network_ab78cfc2ca78f23dd21b07082a2a73bf6}{\index{Neural\-Network\-::\-Neural\-Network@{Neural\-Network\-::\-Neural\-Network}!setup\-Network\-Configuration\-Reduced@{setup\-Network\-Configuration\-Reduced}}
+\index{setup\-Network\-Configuration\-Reduced@{setup\-Network\-Configuration\-Reduced}!NeuralNetwork::NeuralNetwork@{Neural\-Network\-::\-Neural\-Network}}
+\subsubsection[{setup\-Network\-Configuration\-Reduced}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-Network.\-Neural\-Network.\-setup\-Network\-Configuration\-Reduced (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_neural_network_ab78cfc2ca78f23dd21b07082a2a73bf6}
+
+
+Definition at line 46 of file Neural\-Network.\-java.
+
+
+\begin{DoxyCode}
+46                                                   \{
+47         
+48         \textcolor{keywordtype}{int} seed = 123;
+49         \textcolor{keywordtype}{int} iterations = 1;
+50         
+51         \textcolor{keywordtype}{int} kernelSize = 7;
+52         \textcolor{keywordtype}{int} stride = 1;
+53         
+54         \textcolor{keywordtype}{int} numberOfChannels = 1;
+55         
+56         
+57         conf = \textcolor{keyword}{new} NeuralNetConfiguration.Builder()
+58                 .seed(seed)
+59                 .iterations(1)
+60                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC\_GRADIENT\_DESCENT)
+61                 .learningRate(0.1)
+62                 .updater(Updater.NESTEROVS)
+63                 .momentum(0.9)
+64                 .list()
+65                 .layer(0, \textcolor{keyword}{new} DenseLayer.Builder().nIn(258).nOut(1000)
+66                         .weightInit(WeightInit.XAVIER)
+67                         .activation(\textcolor{stringliteral}{"relu"})
+68                         .build())
+69                 .layer(1, \textcolor{keyword}{new} OutputLayer.Builder(LossFunction.NEGATIVELOGLIKELIHOOD)
+70                         .weightInit(WeightInit.XAVIER)
+71                         .activation(\textcolor{stringliteral}{"softmax"})
+72                         .nIn(1000).nOut(4).build())
+73                 .pretrain(\textcolor{keyword}{false}).backprop(\textcolor{keyword}{true}).build();
+74                 
+75         this.network = \textcolor{keyword}{new} MultiLayerNetwork(conf);
+76     \}
+\end{DoxyCode}
+\hypertarget{class_neural_network_1_1_neural_network_a06ad59af1ef9b750a0b54c9e242b66d9}{\index{Neural\-Network\-::\-Neural\-Network@{Neural\-Network\-::\-Neural\-Network}!setup\-Network\-Configuration\-Small@{setup\-Network\-Configuration\-Small}}
+\index{setup\-Network\-Configuration\-Small@{setup\-Network\-Configuration\-Small}!NeuralNetwork::NeuralNetwork@{Neural\-Network\-::\-Neural\-Network}}
+\subsubsection[{setup\-Network\-Configuration\-Small}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-Network.\-Neural\-Network.\-setup\-Network\-Configuration\-Small (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_neural_network_a06ad59af1ef9b750a0b54c9e242b66d9}
+
+
+Definition at line 79 of file Neural\-Network.\-java.
+
+
+\begin{DoxyCode}
+79                                                 \{
+80         
+81         \textcolor{keywordtype}{int} seed = 123;
+82         \textcolor{keywordtype}{int} iterations = 1;
+83         
+84         \textcolor{keywordtype}{int} kernelSize = 7;
+85         \textcolor{keywordtype}{int} stride = 1;
+86         
+87         \textcolor{keywordtype}{int} numberOfChannels = 1;
+88         
+89         conf = \textcolor{keyword}{new} NeuralNetConfiguration.Builder()
+90                 .seed(seed)
+91                 .weightInit(WeightInit.DISTRIBUTION)
+92                 .dist(\textcolor{keyword}{new} NormalDistribution(0.0, 0.02))
+93                 .activation(\textcolor{stringliteral}{"relu"})
+94                 .updater(Updater.NESTEROVS)
+95                 .iterations(iterations)
+96                 \textcolor{comment}{//.gradientNormalization(GradientNormalization.RenormalizeL2PerLayer)}
+97                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC\_GRADIENT\_DESCENT)
+98                 .learningRate(1e-2)
+99                 \textcolor{comment}{//.biasLearningRate(1e-2*2)}
+100                 \textcolor{comment}{//.learningRateDecayPolicy(LearningRatePolicy.Step)}
+101                 \textcolor{comment}{//.lrPolicyDecayRate(0.1)}
+102                 \textcolor{comment}{//.lrpolicySteps(100000)}
+103                 .regularization(\textcolor{keyword}{true})
+104                 .l2(0.005)
+105                 .momentum(0.9)
+106                 .miniBatch(\textcolor{keyword}{false})
+107                 .list()
+108                 
+109                 \textcolor{comment}{/*}
+110 \textcolor{comment}{                .layer(0, new ConvolutionLayer.Builder(1, 7)}
+111 \textcolor{comment}{                        .name("ConvInit")}
+112 \textcolor{comment}{                        .stride(1,1)}
+113 \textcolor{comment}{                        .nIn(1)}
+114 \textcolor{comment}{                        .nOut(252)}
+115 \textcolor{comment}{                        .activation("relu")}
+116 \textcolor{comment}{                        .build())}
+117 \textcolor{comment}{                .layer(1, new SubsamplingLayer.Builder(SubsamplingLayer.PoolingType.MAX)}
+118 \textcolor{comment}{                        .name("Pooling1")}
+119 \textcolor{comment}{                        .kernelSize(1,3)}
+120 \textcolor{comment}{                        .stride(1,3)}
+121 \textcolor{comment}{                        .build())}
+122 \textcolor{comment}{                }
+123 \textcolor{comment}{                .layer(2, new ConvolutionLayer.Builder(new int[] \{7, 1\}, new int[] \{1, 1\} , new int[] \{0,
+       0\})}
+124 \textcolor{comment}{                        .name("Conv2")}
+125 \textcolor{comment}{                        .nOut(78)}
+126 \textcolor{comment}{                        .activation("relu")}
+127 \textcolor{comment}{                        .build())}
+128 \textcolor{comment}{                .layer(3, new SubsamplingLayer.Builder(SubsamplingLayer.PoolingType.MAX)}
+129 \textcolor{comment}{                        .name("Pooling2")}
+130 \textcolor{comment}{                        .kernelSize(3,1)}
+131 \textcolor{comment}{                        .stride(3,1)}
+132 \textcolor{comment}{                        .build())}
+133 \textcolor{comment}{                }
+134 \textcolor{comment}{                .layer(4, new ConvolutionLayer.Builder(new int[] \{3, 1\}, new int[] \{1, 1\} , new int[] \{0,
+       0\})}
+135 \textcolor{comment}{                        .name("Conv3")}
+136 \textcolor{comment}{                        .nOut(24)}
+137 \textcolor{comment}{                        .activation("relu")}
+138 \textcolor{comment}{                        .build())}
+139 \textcolor{comment}{                .layer(5, new ConvolutionLayer.Builder(new int[] \{3, 1\}, new int[] \{1, 1\} , new int[] \{0,
+       0\})}
+140 \textcolor{comment}{                        .name("Conv3")}
+141 \textcolor{comment}{                        .nOut(22)}
+142 \textcolor{comment}{                        .activation("relu")}
+143 \textcolor{comment}{                        .build())}
+144 \textcolor{comment}{                .layer(6, new ConvolutionLayer.Builder(new int[] \{3, 1\}, new int[] \{1, 1\} , new int[] \{0,
+       0\})}
+145 \textcolor{comment}{                        .name("Conv3")}
+146 \textcolor{comment}{                        .nOut(20)}
+147 \textcolor{comment}{                        .activation("relu")}
+148 \textcolor{comment}{                        .build())}
+149 \textcolor{comment}{                }
+150 \textcolor{comment}{                .layer(7, new ConvolutionLayer.Builder(new int[] \{3, 1\}, new int[] \{1, 1\} , new int[] \{0,
+       0\})}
+151 \textcolor{comment}{                        .name("Conv2")}
+152 \textcolor{comment}{                        .nOut(18)}
+153 \textcolor{comment}{                        .activation("relu")}
+154 \textcolor{comment}{                        .build())}
+155 \textcolor{comment}{                .layer(8, new SubsamplingLayer.Builder(SubsamplingLayer.PoolingType.MAX)}
+156 \textcolor{comment}{                        .name("Pooling2")}
+157 \textcolor{comment}{                        .kernelSize(3,1)}
+158 \textcolor{comment}{                        .stride(3,1)}
+159 \textcolor{comment}{                        .build())}
+160 \textcolor{comment}{                }
+161 \textcolor{comment}{                .layer(9, new DenseLayer.Builder()}
+162 \textcolor{comment}{                        .name("Reshape")}
+163 \textcolor{comment}{                        .nOut(1536)}
+164 \textcolor{comment}{                        .build())}
+165 \textcolor{comment}{                }
+166 \textcolor{comment}{                .layer(10, new DenseLayer.Builder()}
+167 \textcolor{comment}{                        .name("Fully1")}
+168 \textcolor{comment}{                        .nOut(256)}
+169 \textcolor{comment}{                        .dropOut(0.5)}
+170 \textcolor{comment}{                        .build())}
+171 \textcolor{comment}{                }
+172 \textcolor{comment}{                .layer(11, new DenseLayer.Builder()}
+173 \textcolor{comment}{                        .name("Fully2")}
+174 \textcolor{comment}{                        .nOut(256)}
+175 \textcolor{comment}{                        .dropOut(0.5)}
+176 \textcolor{comment}{                        .build())}
+177 \textcolor{comment}{                */}
+178                 .layer(0, \textcolor{keyword}{new} DenseLayer.Builder()
+179                         .nIn(258)
+180                         .nOut(258)
+181                         .weightInit(WeightInit.XAVIER)
+182                         .activation(\textcolor{stringliteral}{"relu"})
+183                         .build())
+184                 .layer(1, \textcolor{keyword}{new} OutputLayer.Builder()
+185                         .nIn(258)
+186                         .nOut(4)
+187                         .activation(\textcolor{stringliteral}{"softmax"})
+188                         .build())
+189                         
+190                 .backprop(\textcolor{keyword}{true})
+191                 .pretrain(\textcolor{keyword}{false})
+192                 .build();
+193                 \textcolor{comment}{//.cnnInputSize(1, 258, 1)}
+194         
+195         this.network = \textcolor{keyword}{new} MultiLayerNetwork(conf);
+196     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+H\-:/\-Programmierungen/\-Java/taxsynapse/src/main/java/\-Neural\-Network/\hyperlink{_neural_network_8java}{Neural\-Network.\-java}\end{DoxyCompactItemize}

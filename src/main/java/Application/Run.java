@@ -60,8 +60,9 @@ public class Run {
 			CSVBookingHandler bHandler = CSVBookingHandler.getInstance();
 			List<Voucher> VoucherList = new ArrayList<Voucher>();
 			VoucherList = bHandler.getVoucherInfoFromFile(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
-			LabelList = CSVBookingHandler.getInstance().createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList);
+			LabelList = CSVBookingHandler.getInstance().createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList, true);
 			bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList, Config.VOUCHER_CSV_SEPERATOR);
+			bHandler.printLabelList(LabelList, Config.VOUCHER_CSV_SEPERATOR);
 		}
 		catch(Exception e)
 		{
@@ -112,22 +113,4 @@ public class Run {
 		}
 	}
 	
-	/**
-	 * veraltet
-	 *
-	 *	private static void reduceInvoices(List<Invoice> InvoiceList, List<AInvoice> ReducedInvoiceList){
-	 *		InvoiceReducer ir = InvoiceReducer.getInstance();
-	 *		try{
-	 *			ir.ReducedInvoiceList(InvoiceList, ReducedInvoiceList);
-	 *			System.out.println("Successfully reduced Invoices");
-	 *			System.out.println("MetaExceptionCounter: " + ir.getMetaExceptionCounter());
-	 *			System.out.println("PositionExceptionCounter: " + ir.getPositionExceptionCounter());
-	 *			System.out.println("Invoices sucessfully reduced");
-	 *		}catch(Exception e){
-	 *			System.out.print("Exception while reducing Invoices");
-	 *			System.out.println("Details: ");
-	 *			System.out.println(e.getMessage());
-	 *		}
-	 *	}
-	 */
 }

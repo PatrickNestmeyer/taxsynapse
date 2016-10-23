@@ -1,131 +1,131 @@
-\hypertarget{class_application_1_1_run}{}\section{Application.\+Run Class Reference}
-\label{class_application_1_1_run}\index{Application.\+Run@{Application.\+Run}}
+\hypertarget{class_application_1_1_run}{\section{Application.\-Run Class Reference}
+\label{class_application_1_1_run}\index{Application.\-Run@{Application.\-Run}}
+}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{class_application_1_1_run_a57a17174b40d7c0feba22e460fa6158c}{main} (String\mbox{[}$\,$\mbox{]} args)  throws I\+O\+Exception 
+static void \hyperlink{class_application_1_1_run_a57a17174b40d7c0feba22e460fa6158c}{main} (String\mbox{[}$\,$\mbox{]} args)  throws I\-O\-Exception  	
 \item 
-static void \hyperlink{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}{run\+Data\+Preprocessing} ()
+static void \hyperlink{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}{run\-Data\-Preprocessing} ()
 \item 
-static void \hyperlink{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}{run\+Network} ()
+static void \hyperlink{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}{run\-Network} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 27 of file Run.\+java.
+Definition at line 16 of file Run.\-java.
 
 
 
 \subsection{Member Function Documentation}
-\index{Application\+::\+Run@{Application\+::\+Run}!main@{main}}
-\index{main@{main}!Application\+::\+Run@{Application\+::\+Run}}
-\subsubsection[{\texorpdfstring{main(\+String[] args)}{main(String[] args)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Application.\+Run.\+main (
+\hypertarget{class_application_1_1_run_a57a17174b40d7c0feba22e460fa6158c}{\index{Application\-::\-Run@{Application\-::\-Run}!main@{main}}
+\index{main@{main}!Application::Run@{Application\-::\-Run}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void Application.\-Run.\-main (
 \begin{DoxyParamCaption}
 \item[{String\mbox{[}$\,$\mbox{]}}]{args}
 \end{DoxyParamCaption}
-) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_application_1_1_run_a57a17174b40d7c0feba22e460fa6158c}{}\label{class_application_1_1_run_a57a17174b40d7c0feba22e460fa6158c}
-The main entry point of the application Here are two paths possible a) the preperation of the data. b) the configuration and run of the convolutinal neural netwrok 
+) throws I\-O\-Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_application_1_1_run_a57a17174b40d7c0feba22e460fa6158c}
+The main entry point of the application Here are two paths possible a) the preparation of the data. b) the configuration and run of the convolutinal neural network 
 
-Definition at line 37 of file Run.\+java.
+Definition at line 26 of file Run.\-java.
 
 
 \begin{DoxyCode}
-37                                                               \{
-38         
-39         \textcolor{keywordflow}{switch}(args[0].toLowerCase())\{
-40         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"data"}:
-41             \hyperlink{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}{runDataPreprocessing}();
-42             \textcolor{keywordflow}{break};
-43         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"network"}:
-44             \hyperlink{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}{runNetwork}();
-45             \textcolor{keywordflow}{break};
-46         \textcolor{keywordflow}{default}:
-47             System.out.println(\textcolor{stringliteral}{"The command "} + args[0] + \textcolor{stringliteral}{" was not found."});
-48             System.out.println(\textcolor{stringliteral}{"Please check for typo."});
-49             System.out.println(\textcolor{stringliteral}{"Legal parameters are data and network."});
-50             \textcolor{keywordflow}{break};
-51         \}
-52         
-53         System.out.println(\textcolor{stringliteral}{"FIN"});
-54         
-55     \}
+27     \{
+28         
+29         \textcolor{keywordflow}{switch}(args[0].toLowerCase())\{
+30         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"data"}:
+31             \hyperlink{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}{runDataPreprocessing}();
+32             \textcolor{keywordflow}{break};
+33         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"network"}:
+34             \hyperlink{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}{runNetwork}();
+35             \textcolor{keywordflow}{break};
+36         \textcolor{keywordflow}{default}:
+37             System.out.println(\textcolor{stringliteral}{"The command "} + args[0] + \textcolor{stringliteral}{" was not found."});
+38             System.out.println(\textcolor{stringliteral}{"Please check for typo."});
+39             System.out.println(\textcolor{stringliteral}{"Legal parameters are data and network."});
+40             \textcolor{keywordflow}{break};
+41         \}
+42         
+43         System.out.println(\textcolor{stringliteral}{"FIN"});
+44         
+45     \}
 \end{DoxyCode}
-\index{Application\+::\+Run@{Application\+::\+Run}!run\+Data\+Preprocessing@{run\+Data\+Preprocessing}}
-\index{run\+Data\+Preprocessing@{run\+Data\+Preprocessing}!Application\+::\+Run@{Application\+::\+Run}}
-\subsubsection[{\texorpdfstring{run\+Data\+Preprocessing()}{runDataPreprocessing()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Application.\+Run.\+run\+Data\+Preprocessing (
+\hypertarget{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}{\index{Application\-::\-Run@{Application\-::\-Run}!run\-Data\-Preprocessing@{run\-Data\-Preprocessing}}
+\index{run\-Data\-Preprocessing@{run\-Data\-Preprocessing}!Application::Run@{Application\-::\-Run}}
+\subsubsection[{run\-Data\-Preprocessing}]{\setlength{\rightskip}{0pt plus 5cm}static void Application.\-Run.\-run\-Data\-Preprocessing (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}{}\label{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_application_1_1_run_a0cf4e56fa71aa275647826a011e99a8c}
 The core call functions of the data preprocessing 
 
-Definition at line 61 of file Run.\+java.
+Definition at line 51 of file Run.\-java.
 
 
 \begin{DoxyCode}
-61                                              \{
-62         List<Invoice> InvoiceList;
-63         List<AInvoice> ReducedInvoiceList = \textcolor{keyword}{new} ArrayList<AInvoice>();
-64         HashMap<String, String> Filenames = \textcolor{keyword}{new} HashMap<String, String>();
-65         
-66         InvoiceList = \textcolor{keyword}{new} ArrayList<Invoice>();
-67         readInvoicesFromFiles(InvoiceList, Filenames);
-68         reduceInvoices(InvoiceList, ReducedInvoiceList);
-69         
-70         \textcolor{keywordflow}{try}\{
-71             \hyperlink{class_booking_1_1_c_s_v_booking_handler}{CSVBookingHandler} bHandler = \hyperlink{class_booking_1_1_c_s_v_booking_handler}{CSVBookingHandler}.
-      \hyperlink{class_booking_1_1_c_s_v_booking_handler_a7b9f19a1917141d43d2eadf01f4c51e8}{getInstance}();
-72             List<Voucher> VoucherList = \textcolor{keyword}{new} ArrayList<Voucher>();
-73             VoucherList = bHandler.\hyperlink{class_booking_1_1_c_s_v_booking_handler_ad9ffa72c3554080d3b2383805116ca29}{getVoucherInfoFromFile}(Config.PATH\_TO\_VOUCHERS, 
-      Config.VOLUME\_ID, Config.DEBIT\_ACCOUNT\_ID, Config.TAX\_KEY\_ID, Config.VOUCHER\_ID, Config.VOUCHER\_CSV\_SEPERATOR)
-      ;
-74             bHandler.\hyperlink{class_booking_1_1_c_s_v_booking_handler_a6e4ea9a0c47bb915dc9c33f82ba34b16}{printVoucherListWithoutDebitAccount}(
-      ReducedInvoiceList, Filenames, Config.VOUCHER\_CSV\_SEPERATOR);
-75         \}\textcolor{keywordflow}{catch}(Exception e)\{
-76             System.out.println(e.getMessage());
-77         \}
-78     \}
+52     \{
+53         List<AInvoice> ReducedInvoiceList = \textcolor{keyword}{new} ArrayList<AInvoice>();
+54         List<Label> LabelList;
+55 
+56         readInvoicesFromFiles(ReducedInvoiceList);
+57         
+58         \textcolor{keywordflow}{try}
+59         \{
+60             CSVBookingHandler bHandler = CSVBookingHandler.getInstance();
+61             List<Voucher> VoucherList = \textcolor{keyword}{new} ArrayList<Voucher>();
+62             VoucherList = bHandler.getVoucherInfoFromFile(
+      \hyperlink{class_application_1_1_config_ad72e58f8512f2f5196de0d8d8db75f63}{Config.PATH\_TO\_VOUCHERS}, \hyperlink{class_application_1_1_config_a98245bf73e483f8b9e7205b902b8efe2}{Config.VOLUME\_ID}, 
+      \hyperlink{class_application_1_1_config_a349a18b530aa521632f8e48bb0b14fed}{Config.DEBIT\_ACCOUNT\_ID}, \hyperlink{class_application_1_1_config_ab18380be887bad8de5dd50d47677a1d1}{Config.TAX\_KEY\_ID}, 
+      \hyperlink{class_application_1_1_config_addfac1a6727d1d065ad3ccf88ed8a043}{Config.VOUCHER\_ID}, \hyperlink{class_application_1_1_config_a6baf30990200df3d72d4b04672d3dff2}{Config.VOUCHER\_CSV\_SEPERATOR});
+63             LabelList = CSVBookingHandler.getInstance().createReducedInvoiceVoucherList(ReducedInvoiceList,
+      VoucherList, \textcolor{keyword}{true});
+64             bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList, 
+      \hyperlink{class_application_1_1_config_a6baf30990200df3d72d4b04672d3dff2}{Config.VOUCHER\_CSV\_SEPERATOR});
+65             bHandler.printLabelList(LabelList, \hyperlink{class_application_1_1_config_a6baf30990200df3d72d4b04672d3dff2}{Config.VOUCHER\_CSV\_SEPERATOR});
+66         \}
+67         \textcolor{keywordflow}{catch}(Exception e)
+68         \{
+69             System.out.println(e.getMessage());
+70         \}
+71     \}
 \end{DoxyCode}
-\index{Application\+::\+Run@{Application\+::\+Run}!run\+Network@{run\+Network}}
-\index{run\+Network@{run\+Network}!Application\+::\+Run@{Application\+::\+Run}}
-\subsubsection[{\texorpdfstring{run\+Network()}{runNetwork()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Application.\+Run.\+run\+Network (
+\hypertarget{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}{\index{Application\-::\-Run@{Application\-::\-Run}!run\-Network@{run\-Network}}
+\index{run\-Network@{run\-Network}!Application::Run@{Application\-::\-Run}}
+\subsubsection[{run\-Network}]{\setlength{\rightskip}{0pt plus 5cm}static void Application.\-Run.\-run\-Network (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}{}\label{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_application_1_1_run_a63b4f96d05c759a147039eeaee223f05}
 The core call functions of the neural network 
 
-Definition at line 84 of file Run.\+java.
+Definition at line 96 of file Run.\-java.
 
 
 \begin{DoxyCode}
-84                                    \{
-85         
-86         \textcolor{keywordtype}{int} minibatchSize = 128;
-87         \textcolor{keywordtype}{int} numPossibleLables = 4;
-88         \textcolor{keywordtype}{int} labelIndex = 1;
-89         \textcolor{keywordtype}{boolean} regression = \textcolor{keyword}{false};
-90         
-91         SequenceRecordReader reader = \textcolor{keyword}{new} CSVSequenceRecordReader(1, Character.toString(Config.
-      VOUCHER\_CSV\_SEPERATOR));
-92         \textcolor{keywordflow}{try} \{
-93             reader.initialize(\textcolor{keyword}{new} NumberedFileInputSplit(Config.PATH\_TO\_LABELED\_DATA, 0 , 0));
-94         \} \textcolor{keywordflow}{catch} (IOException | InterruptedException e) \{
-95             e.getMessage();
-96         \}
-97         
-98         
-99         
-100         DataSetIterator iterClassification = \textcolor{keyword}{new} SequenceRecordReaderDataSetIterator(reader, minibatchSize,
-       numPossibleLables, labelIndex, regression);
-101         
-102         regression = \textcolor{keyword}{false};
-103     \}
+97     \{
+98         String alphabet = \textcolor{stringliteral}{"abcdefghijklmnopqrstuvwxyz0123456789 @€!\(\backslash\)"§$%&/()=?+-#<>.,;:\_'*´\{[]\}"};
+99         \textcolor{keywordtype}{int} frameSize = 258;
+100         \textcolor{keywordtype}{int} minibatchSize = 128;
+101         \textcolor{keywordtype}{int} numPossibleLabels = 4;
+102         \textcolor{keywordtype}{boolean} regression = \textcolor{keyword}{false};
+103         String labelsPath = \textcolor{stringliteral}{"./src/main/resources/labeled\_data/labels.txt"};
+104         String featuresPath = \textcolor{stringliteral}{"./src/main/resources/labeled\_data/data.txt"};
+105         
+106         \textcolor{comment}{//String activationFunction = "relu";}
+107         
+108         
+109         NetworkFacade nf = NetworkFacade.getInstance();
+110         nf.setConfigurationParameters(featuresPath, labelsPath, frameSize, alphabet, minibatchSize);
+111         \textcolor{keywordflow}{if}(nf.readData())\{
+112             nf.runNetwork();
+113         \}
+114     \}
 \end{DoxyCode}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Application/\hyperlink{_run_8java}{Run.\+java}\end{DoxyCompactItemize}
+H\-:/\-Programmierungen/\-Java/taxsynapse/src/main/java/\-Application/\hyperlink{_run_8java}{Run.\-java}\end{DoxyCompactItemize}

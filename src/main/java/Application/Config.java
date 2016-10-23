@@ -11,6 +11,7 @@ public final class Config {
 	public static String PATH_TO_INVALID_WORDS = "./src/main/resources/bag_config/forbiddenInputNeurons";
 	public static String PATH_TO_INVALID_TOKENS = "./src/main/resources/bag_config/forbiddenTokens";
 	public static String PATH_TO_VOUCHERS = "./src/main/resources/vouchers/voucherTetDump_2.csv";
+	public static String PATH_TO_LABEL_LIST = "./src/main/resources/vouchers/traingNeuralNetwerk.csv";
 	
 	public static String PATH_TO_VOUCHER_TEST_DUMP = "./src/main/resources/VoucherTestDump.csv";
 	public static String VOUCHER_ID = "Beleglink";

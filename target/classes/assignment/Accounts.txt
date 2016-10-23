@@ -1,5 +1,0 @@
-Account;Description
-1;Anlagevermögen
-2;Wareneingang
-3;Sonstige betriebliche Aufwendungen
-4;Privatentnahme
