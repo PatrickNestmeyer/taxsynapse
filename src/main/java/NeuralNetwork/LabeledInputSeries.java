@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -39,6 +40,8 @@ public class LabeledInputSeries {
 	
 	private INDArray labels;
 	
+	private int frameLength;
+	
 	public void setAlphabet(String alphabet){
 		this.alphabet = alphabet.toCharArray();
 	}
@@ -52,11 +55,12 @@ public class LabeledInputSeries {
 	}
 	
 	public boolean readFiles(String PathToInputFile, String PathToLabels, int FrameLength){
+		this.frameLength = FrameLength;
 		try{
 			int InputFileLength = this.countLines(PathToInputFile);
 			int LabelFileLength = this.countLines(PathToLabels);
 			if(InputFileLength == this.countLines(PathToLabels)){
-				input = Nd4j.zeros(InputFileLength, FrameLength);
+				input = Nd4j.zeros(InputFileLength, this.frameLength);
 				labels = Nd4j.zeros(InputFileLength, 1);
 				this.transformInputToINDArray(PathToInputFile, PathToLabels, InputFileLength);
 				return true;
@@ -79,10 +83,10 @@ public class LabeledInputSeries {
 			InputLine = brI.readLine().toLowerCase();
 			for(int j = 0; j < InputLine.length(); j++){
 				//this.input.putScalar(new int[] {i, j}, this.encodeCharacterEmbedding(InputLine.charAt(j)));
-				this.input.put(i, j, this.encodeCharacterEmbedding(InputLine.charAt(j)));
+				this.input.put(i, j, this.encodeCharacterOneHot(((InputLine.charAt(j)))));
 			}
 			//this.labels.putScalar(new int[] {i, 0}, Float.parseFloat(brL.readLine()));
-			this.labels.putScalar(i, Float.parseFloat(brL.readLine()));
+			this.labels.putScalar(i, Double.parseDouble((brL.readLine())));
 		}
 	}
 	
@@ -93,7 +97,7 @@ public class LabeledInputSeries {
 		return new ListDataSetIterator(dataSet.asList(), batchSize);
 	}
 	
-	private float encodeCharacterEmbedding(char c){
+	private float encodeCharacterOneHot(char c){
 		for(int i = 0; i < this.alphabet.length; i++){
 			if(this.alphabet[i] == c)
 				//Character found in alphabet => return encoding value
@@ -123,5 +127,4 @@ public class LabeledInputSeries {
 	        is.close();
 	    }
 	}
-
 }

@@ -59,6 +59,8 @@ public class NetworkFacade {
 	}
 	
 	public boolean readData(){
+		
+		/*
 		input = LabeledInputSeries.getInstance();
 		input.setAlphabet(this.alphabet);
 		if(input.readFiles(this.featuresPath, this.labelsPath, this.frameLength))
@@ -66,13 +68,24 @@ public class NetworkFacade {
 			this.iterator = input.giveInputAsDataSetIterator(this.batchSize);
 			return true;
 		}
-		return false;
+		return false;*/
+		
+		try{
+			InputToOneHot encoder = InputToOneHot.getInstance();
+			
+			this.iterator = encoder.readFiles(this.featuresPath, this.labelsPath, this.frameLength, this.alphabet);
+			return (this.iterator == null) ? false : true;
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		
 	}
 	
 	public void runNetwork(){
 		this.network = NeuralNetwork.getInstance();
 		//System.out.println(iterator);
-		//network.setupNetworkConfigurationReduced();
-		//network.run(iterator);
+		network.setupNetworkConfigurationReduced();
+		network.run(iterator);
 	}
 }
