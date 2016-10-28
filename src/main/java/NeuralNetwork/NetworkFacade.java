@@ -1,6 +1,13 @@
 package NeuralNetwork;
 
-//import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
+import org.nd4j.linalg.dataset.DataSet;
+
+import java.util.Collection;
+
+import org.deeplearning4j.datasets.datavec.RecordReaderDataSetIterator;
+import org.deeplearning4j.datasets.iterator.INDArrayDataSetIterator;
+import org.deeplearning4j.datasets.iterator.IteratorDataSetIterator;
+import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 
 public class NetworkFacade {
@@ -40,7 +47,7 @@ public class NetworkFacade {
 	 * properties of the neural network
 	 */
 	
-	private LabeledInputSeries input;
+	private DataSet dataset;
 	
 	private DataSetIterator iterator;
 	
@@ -72,9 +79,10 @@ public class NetworkFacade {
 		
 		try{
 			InputToOneHot encoder = InputToOneHot.getInstance();
-			
-			this.iterator = encoder.readFiles(this.featuresPath, this.labelsPath, this.frameLength, this.alphabet);
-			return (this.iterator == null) ? false : true;
+			encoder.setAlphabet(this.alphabet);
+			encoder.setFrameLength(this.frameLength);
+			this.dataset = encoder.readFiles2D(this.featuresPath, this.labelsPath);
+			return (this.dataset == null) ? false : true;
 		}catch(Exception e){
 			e.printStackTrace();
 			return false;
@@ -83,9 +91,10 @@ public class NetworkFacade {
 	}
 	
 	public void runNetwork(){
+		
 		this.network = NeuralNetwork.getInstance();
-		//System.out.println(iterator);
-		network.setupNetworkConfigurationReduced();
+		iterator = new ListDataSetIterator(dataset.asList(), 500);
+		network.setupNetworkConfigurationSmall();
 		network.run(iterator);
 	}
 }

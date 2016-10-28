@@ -34,39 +34,106 @@ static private InputToOneHot uniqueInstance = null;
 	
 	private int frameLength;
 	
-	public ListDataSetIterator readFiles(String PathToInputFile, String PathToLabels, int FrameLength, String Alphabet) throws IOException{
-		
-		this.alphabet = Alphabet.toCharArray();
-		
-		this.frameLength = FrameLength;
+	public void setAlphabet(String alphabet){
+		this.alphabet = alphabet.toCharArray();
+	}
+	
+	public void setAlphabet(char[] alphabet){
+		this.alphabet = alphabet;
+	}
+	
+	public void setFrameLength(int frameLength){
+		this.frameLength = frameLength;
+	}
+	
+	public DataSet readFiles3D(String PathToInputFile, String PathToLabels) throws IOException{
 		int InputFileLength = this.countLines(PathToInputFile);
 		int LabelFileLength = this.countLines(PathToLabels);
-		if(InputFileLength == this.countLines(PathToLabels)){
+		if(InputFileLength == LabelFileLength){
 			
 			BufferedReader brI = new BufferedReader(new FileReader(new File(PathToInputFile)));
 			BufferedReader brL = new BufferedReader(new FileReader(new File(PathToLabels)));
 			String InputLineI = "";
 			String InputLineL = "";
 			
-			INDArray input = Nd4j.zeros(InputFileLength, this.alphabet.length, this.frameLength);
-			INDArray labels = Nd4j.zeros(InputFileLength, this.alphabet.length, this.frameLength);
+			INDArray input = Nd4j.zeros(InputFileLength, (this.frameLength*this.alphabet.length));
+			INDArray labels = Nd4j.zeros(InputFileLength);
 			
+			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
+				
+				InputLineI = brI.readLine().toLowerCase();
+				InputLineL = brL.readLine().toLowerCase();
+				
+				labels.putScalar(lineCounter, Character.getNumericValue(InputLineL.charAt(0)));
+				
+				int position = 0;
+				while(position < InputLineI.length()){
+					for (int alphabetIndex = 0; alphabetIndex < alphabet.length; alphabetIndex++){
+						if(InputLineI.charAt(position) == alphabet[alphabetIndex]){
+							input.putScalar(new int[] { lineCounter, (position*alphabet.length+alphabetIndex) }, 1 );
+						}
+					}
+					position++;
+				}
+				
+				
+				
+				/*
+				for(int positionCounter = 0; positionCounter < InputLineI.length(); positionCounter++){
+					
+					for(int alphabetCounter = 0; alphabetCounter < alphabet.length; alphabetCounter++){
+						
+						if(InputLineI.charAt(positionCounter) == this.alphabet[alphabetCounter]){
+							input.putScalar(new int[] { lineCounter, ((positionCounter*alphabet.length)+alphabetCounter) }, 1);
+						}
+						
+					}
+					
+				}*/
+			}
+			return new DataSet(input, labels);
+		}else{
+			return null;
+		}
+	}
+	
+	public DataSet readFiles2D(String PathToInputFile, String PathToLabels) throws IOException{
+		
+		int InputFileLength = this.countLines(PathToInputFile);
+		int LabelFileLength = this.countLines(PathToLabels);
+		if(InputFileLength == LabelFileLength){
+			
+			BufferedReader brI = new BufferedReader(new FileReader(new File(PathToInputFile)));
+			BufferedReader brL = new BufferedReader(new FileReader(new File(PathToLabels)));
+			String InputLineI = "";
+			String InputLineL = "";
+			
+			INDArray input = Nd4j.zeros(InputFileLength, this.frameLength);
+			//INDArray labels = Nd4j.zeros(InputFileLength, this.frameLength);
+			INDArray labels = Nd4j.zeros(InputFileLength, 1);
+			
+			//Step over each example
 			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
 				InputLineI = brI.readLine().toLowerCase();
 				InputLineL = brL.readLine().toLowerCase();
+				
 				char cL = InputLineL.charAt(0);
 				for(int alphabetCounter = 0; alphabetCounter < alphabet.length; alphabetCounter++){ 
-					if(cL == alphabet[alphabetCounter]) labels.putScalar(new int[] {lineCounter, alphabetCounter, 0}, 1 );
+					if(cL == alphabet[alphabetCounter]) 
+						labels.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(cL));
 				}
+				
+				//Step over each character in features file
 				for(int characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++){
 					char cI = InputLineI.charAt(characterCounter);
 					for(int alphabetCounter = 0; alphabetCounter < alphabet.length; alphabetCounter++){ 
-						if(cI == alphabet[alphabetCounter]) labels.putScalar(new int[] {lineCounter, alphabetCounter, characterCounter}, 1 );
+						if(cI == alphabet[alphabetCounter]) 
+							input.putScalar(new int[] {lineCounter, characterCounter}, alphabetCounter );
 					}
 				}
 			}
 			
-			return new ListDataSetIterator(new DataSet(input, labels).asList());
+			return new DataSet(input, labels);
 			
 		}else{
 			return null;

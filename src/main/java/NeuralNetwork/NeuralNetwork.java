@@ -5,13 +5,16 @@ import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
 import org.deeplearning4j.nn.conf.Updater;
 import org.deeplearning4j.nn.conf.distribution.NormalDistribution;
+import org.deeplearning4j.nn.conf.inputs.InputType;
 import org.deeplearning4j.nn.conf.layers.ConvolutionLayer;
 import org.deeplearning4j.nn.conf.layers.DenseLayer;
 import org.deeplearning4j.nn.conf.layers.OutputLayer;
+import org.deeplearning4j.nn.conf.layers.RnnOutputLayer;
 import org.deeplearning4j.nn.conf.layers.SubsamplingLayer;
 import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
+import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
 
@@ -106,20 +109,34 @@ public class NeuralNetwork {
 				.miniBatch(false)
 				.list()
 				
-				/*
-				.layer(0, new ConvolutionLayer.Builder(1, 7)
+				//size of kernel is 7 
+				.layer(0, new ConvolutionLayer.Builder(1,7)
 						.name("ConvInit")
 						.stride(1,1)
+						//Number of Channels in our example is just one
 						.nIn(1)
-						.nOut(252)
+						//Number of Filters in our example is just one
+						.nOut(1)
 						.activation("relu")
 						.build())
 				.layer(1, new SubsamplingLayer.Builder(SubsamplingLayer.PoolingType.MAX)
 						.name("Pooling1")
+						//kernel and stride for pooling is 3 means a reduction from 3 to 1
 						.kernelSize(1,3)
 						.stride(1,3)
 						.build())
-				
+				.layer(2, new OutputLayer.Builder()
+						.name("Output")
+						.nIn(84)
+						//Number of outcomes (Network should make only one suggestion)
+						.nOut(1)
+						.activation("softmax")
+						.build())
+				.setInputType(InputType.convolutionalFlat(1, 258, 1))
+                .backprop(true)
+                .pretrain(false)
+                .build();
+				/*
 				.layer(2, new ConvolutionLayer.Builder(new int[] {7, 1}, new int[] {1, 1} , new int[] {0, 0})
 						.name("Conv2")
 						.nOut(78)
@@ -175,6 +192,7 @@ public class NeuralNetwork {
 						.dropOut(0.5)
 						.build())
 				*/
+				/*
 				.layer(0, new DenseLayer.Builder()
 						.nIn(258)
 						.nOut(258)
@@ -186,11 +204,8 @@ public class NeuralNetwork {
 						.nOut(4)
 						.activation("softmax")
 						.build())
-						
-				.backprop(true)
-				.pretrain(false)
-				.build();
-				//.cnnInputSize(1, 258, 1)
+				*/	
+				
 		
 		this.network = new MultiLayerNetwork(conf);
 	}
@@ -198,8 +213,6 @@ public class NeuralNetwork {
 	public void run(DataSetIterator iterator){
 		
 		network.init();
-		network.setListeners(new ScoreIterationListener(1));
-		iterator.reset();
 		network.fit(iterator);
 		//network.setListeners(new ScoreIterationListener(1));
 	}
