@@ -1,5 +1,6 @@
 package NeuralNetwork;
 
+import org.deeplearning4j.datasets.iterator.MultipleEpochsIterator;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
@@ -8,6 +9,7 @@ import org.deeplearning4j.nn.conf.distribution.NormalDistribution;
 import org.deeplearning4j.nn.conf.inputs.InputType;
 import org.deeplearning4j.nn.conf.layers.ConvolutionLayer;
 import org.deeplearning4j.nn.conf.layers.DenseLayer;
+import org.deeplearning4j.nn.conf.layers.Layer;
 import org.deeplearning4j.nn.conf.layers.OutputLayer;
 import org.deeplearning4j.nn.conf.layers.RnnOutputLayer;
 import org.deeplearning4j.nn.conf.layers.SubsamplingLayer;
@@ -78,37 +80,51 @@ public class NeuralNetwork {
 		this.network = new MultiLayerNetwork(conf);
 	}
 	
-	@SuppressWarnings("deprecation")
-	public void setupNetworkConfigurationSmall(){
+	public void setupNetworkConfiguration(){
 		
+		int numberOfInputs = 258;
+		//Random number generator seed, for ability to reproduce
 		int seed = 123;
+		//This means not the number of iterations per epoch
 		int iterations = 1;
+		int convBigKernelSize = 7;
+		int convSmallKernelSize = 3;
+		int convStride = 1;
+		int poolKernelSize = 3;
+		int poolStride = 3;
+		double normalDistributionLower = 0.00;
+		double normalDistributionUpper = 0.02;
+		String activationFunction = "relu";
+		double learningRate = 0.01;
+		double momentum = 0.9;
 		
-		int kernelSize = 7;
-		int stride = 1;
-		
-		int numberOfChannels = 1;
 		
 		conf = new NeuralNetConfiguration.Builder()
 				.seed(seed)
 				.weightInit(WeightInit.DISTRIBUTION)
-				.dist(new NormalDistribution(0.0, 0.02))
-				.activation("relu")
+				.dist(new NormalDistribution(normalDistributionLower, normalDistributionUpper))
+				.activation(activationFunction)
 				.updater(Updater.NESTEROVS)
 				.iterations(iterations)
 				//.gradientNormalization(GradientNormalization.RenormalizeL2PerLayer)
 				.optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
-				.learningRate(1e-2)
-				//.biasLearningRate(1e-2*2)
-				//.learningRateDecayPolicy(LearningRatePolicy.Step)
-				//.lrPolicyDecayRate(0.1)
-				//.lrpolicySteps(100000)
+				//TODO: start learning rate and momentum. Half it every three epochs but not implemented yet
+				.learningRate(learningRate)
+				.momentum(momentum)
 				.regularization(true)
-				.l2(0.005)
-				.momentum(0.9)
 				.miniBatch(false)
 				.list()
-				
+				// 258 - 7 + 1 = 252
+				.layer(0, this.createConvolutionLayer("Conv1", convBigKernelSize, convStride))
+				// 252 : 3 = 84
+				.layer(1, this.createPoolingLayer("Pool1", poolKernelSize, poolStride))
+				// = 84
+				.layer(2, this.createOutputLayer("Output", 84))
+		        .backprop(true)
+		        .pretrain(false)
+		        .setInputType(InputType.convolutionalFlat(1, numberOfInputs, 1))
+				.build();
+				/*
 				//size of kernel is 7 
 				.layer(0, new ConvolutionLayer.Builder(1,7)
 						.name("ConvInit")
@@ -117,7 +133,6 @@ public class NeuralNetwork {
 						.nIn(1)
 						//Number of Filters in our example is just one
 						.nOut(1)
-						.activation("relu")
 						.build())
 				.layer(1, new SubsamplingLayer.Builder(SubsamplingLayer.PoolingType.MAX)
 						.name("Pooling1")
@@ -132,10 +147,9 @@ public class NeuralNetwork {
 						.nOut(1)
 						.activation("softmax")
 						.build())
-				.setInputType(InputType.convolutionalFlat(1, 258, 1))
-                .backprop(true)
-                .pretrain(false)
+				
                 .build();
+                */
 				/*
 				.layer(2, new ConvolutionLayer.Builder(new int[] {7, 1}, new int[] {1, 1} , new int[] {0, 0})
 						.name("Conv2")
@@ -210,10 +224,42 @@ public class NeuralNetwork {
 		this.network = new MultiLayerNetwork(conf);
 	}
 	
-	public void run(DataSetIterator iterator){
+	public void run(MultipleEpochsIterator iterator){
 		
 		network.init();
 		network.fit(iterator);
-		//network.setListeners(new ScoreIterationListener(1));
+	}
+	
+	private ConvolutionLayer createConvolutionLayer(String Name, int KernelSize, int Stride){
+		//nIn = number of channels. 1 if 2-D Data, 3 for RGB-Pictures. No other parameter values are possible.
+		//nOut = number of filters. In this context nOut means the number of filter-maps.
+		//Both are 1 in this example
+		//IMPORTANT: Do not change nIn or nOut
+		return new ConvolutionLayer.Builder()
+				.name(Name)
+				.kernelSize(new int[] {1,KernelSize})
+				.stride(new int[] {1,Stride})
+				.nIn(1)
+				.nOut(1)
+				.build();
+	}
+	
+	private SubsamplingLayer createPoolingLayer(String Name, int KernelSize, int Stride){
+		return new SubsamplingLayer.Builder(SubsamplingLayer.PoolingType.MAX)
+				.name(Name)
+				.kernelSize(new int[] {1,KernelSize})
+				.stride(new int[] {1,Stride})
+				.build();
+	}
+	
+	private OutputLayer createOutputLayer(String Name, int InputSize){
+		//Number of outcomes (Network should make only one suggestion)
+		//IMPORTANT: This is the number of predictions per unit not the number of possible outcomes.
+		return new OutputLayer.Builder()
+				.name(Name)
+				.nIn(InputSize)
+				.nOut(1)
+				.activation("softmax")
+				.build();
 	}
 }

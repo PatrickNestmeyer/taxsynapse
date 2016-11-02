@@ -7,7 +7,9 @@ import java.util.Collection;
 import org.deeplearning4j.datasets.datavec.RecordReaderDataSetIterator;
 import org.deeplearning4j.datasets.iterator.INDArrayDataSetIterator;
 import org.deeplearning4j.datasets.iterator.IteratorDataSetIterator;
+import org.deeplearning4j.datasets.iterator.MultipleEpochsIterator;
 import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
+import org.deeplearning4j.eval.Evaluation;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 
 public class NetworkFacade {
@@ -23,8 +25,6 @@ public class NetworkFacade {
 	private int frameLength;
 	
 	private String alphabet;
-	
-	private int batchSize;
 	
 	/**
 	 * Singleton properties and methods
@@ -47,9 +47,23 @@ public class NetworkFacade {
 	 * properties of the neural network
 	 */
 	
-	private DataSet dataset;
+	private int nCores;
+	
+	private int epochs = 30;
+	
+	private int halfInit = 3;
+	
+	private int miniBatchSize;
+	
+	private DataSet trainDataset;
+	
+	private DataSet testDataSet;
+	
+	private Evaluation eval;
 	
 	private DataSetIterator iterator;
+	
+	private MultipleEpochsIterator trainIterator;
 	
 	private NeuralNetwork network;
 	
@@ -57,32 +71,24 @@ public class NetworkFacade {
 	 * TODO: Change to Builder Pattern
 	 */
 	
-	public void setConfigurationParameters(String FeaturesPath, String LabelsPath, int FrameLength, String Alphabet, int BatchSize){
+	public void setConfigurationParameters(String FeaturesPath, String LabelsPath, int FrameLength, String Alphabet, int BatchSize, int NumberOfCores, int NumberOfEpochs){
 		this.featuresPath = FeaturesPath;
 		this.labelsPath = LabelsPath;
 		this.frameLength = FrameLength;
 		this.alphabet = Alphabet;
-		this.batchSize = BatchSize;
+		this.miniBatchSize = BatchSize;
+		this.nCores = NumberOfCores;
+		this.epochs = NumberOfEpochs;
+		this.halfInit = epochs/10;
 	}
 	
 	public boolean readData(){
-		
-		/*
-		input = LabeledInputSeries.getInstance();
-		input.setAlphabet(this.alphabet);
-		if(input.readFiles(this.featuresPath, this.labelsPath, this.frameLength))
-		{
-			this.iterator = input.giveInputAsDataSetIterator(this.batchSize);
-			return true;
-		}
-		return false;*/
-		
 		try{
 			InputToOneHot encoder = InputToOneHot.getInstance();
 			encoder.setAlphabet(this.alphabet);
 			encoder.setFrameLength(this.frameLength);
-			this.dataset = encoder.readFiles2D(this.featuresPath, this.labelsPath);
-			return (this.dataset == null) ? false : true;
+			this.trainDataset = encoder.readFiles2D(this.featuresPath, this.labelsPath);
+			return (this.trainDataset == null) ? false : true;
 		}catch(Exception e){
 			e.printStackTrace();
 			return false;
@@ -90,11 +96,19 @@ public class NetworkFacade {
 		
 	}
 	
-	public void runNetwork(){
+	public void trainNetwork(){
+		this.network = network.getInstance();
+		iterator = new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize);
+		trainIterator = new MultipleEpochsIterator(this.epochs, this.iterator, this.nCores);
+		network.run(trainIterator);
+	}
+	
+	public double testNetwork(){
+		double hitRatio = 0.00;
 		
-		this.network = NeuralNetwork.getInstance();
-		iterator = new ListDataSetIterator(dataset.asList(), 500);
-		network.setupNetworkConfigurationSmall();
-		network.run(iterator);
+		iterator.reset();
+		//TestData should be its own dataset untouched from training set
+		
+		return hitRatio;
 	}
 }
