@@ -71,25 +71,11 @@ static private InputToOneHot uniqueInstance = null;
 					for (int alphabetIndex = 0; alphabetIndex < alphabet.length; alphabetIndex++){
 						if(InputLineI.charAt(position) == alphabet[alphabetIndex]){
 							input.putScalar(new int[] { lineCounter, (position*alphabet.length+alphabetIndex) }, 1 );
+							
 						}
 					}
 					position++;
 				}
-				
-				
-				
-				/*
-				for(int positionCounter = 0; positionCounter < InputLineI.length(); positionCounter++){
-					
-					for(int alphabetCounter = 0; alphabetCounter < alphabet.length; alphabetCounter++){
-						
-						if(InputLineI.charAt(positionCounter) == this.alphabet[alphabetCounter]){
-							input.putScalar(new int[] { lineCounter, ((positionCounter*alphabet.length)+alphabetCounter) }, 1);
-						}
-						
-					}
-					
-				}*/
 			}
 			return new DataSet(input, labels);
 		}else{
@@ -97,7 +83,10 @@ static private InputToOneHot uniqueInstance = null;
 		}
 	}
 	
-	public DataSet readFiles2D(String PathToInputFile, String PathToLabels) throws IOException{
+	public DataSet readFiles2D(String Path) throws IOException{
+		
+		String PathToInputFile = Path + "data.txt";
+		String PathToLabels = Path + "labels.txt";
 		
 		int InputFileLength = this.countLines(PathToInputFile);
 		int LabelFileLength = this.countLines(PathToLabels);

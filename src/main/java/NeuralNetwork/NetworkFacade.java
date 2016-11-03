@@ -18,11 +18,9 @@ public class NetworkFacade {
 	 * Configuration Parameters
 	 */
 	
-	private String featuresPath;
+	private String path;
 	
-	private String labelsPath;
-	
-	private int frameLength;
+	private int inputLength;
 	
 	private String alphabet;
 	
@@ -51,19 +49,17 @@ public class NetworkFacade {
 	
 	private int epochs = 30;
 	
-	private int halfInit = 3;
+	//private int halfInit = 3;
 	
 	private int miniBatchSize;
 	
 	private DataSet trainDataset;
 	
-	private DataSet testDataSet;
-	
-	private Evaluation eval;
-	
-	private DataSetIterator iterator;
+	private DataSet testDataset;
 	
 	private MultipleEpochsIterator trainIterator;
+	
+	private DataSetIterator testIterator;
 	
 	private NeuralNetwork network;
 	
@@ -71,44 +67,67 @@ public class NetworkFacade {
 	 * TODO: Change to Builder Pattern
 	 */
 	
-	public void setConfigurationParameters(String FeaturesPath, String LabelsPath, int FrameLength, String Alphabet, int BatchSize, int NumberOfCores, int NumberOfEpochs){
-		this.featuresPath = FeaturesPath;
-		this.labelsPath = LabelsPath;
-		this.frameLength = FrameLength;
+	public void setConfigurationParameters(String Path, int InputLength, String Alphabet, int BatchSize, int NumberOfCores, int NumberOfEpochs){
+		
+		/* Structure of data must in the shape of:
+		 * 
+		 * Path => train	=> data.txt
+		 * 					=> labels.txt
+		 * 
+		 * 		=> test		=> data.txt
+		 * 					=> labels.txt
+		 */
+		
+		this.path = Path;
+		this.inputLength = InputLength;
 		this.alphabet = Alphabet;
 		this.miniBatchSize = BatchSize;
 		this.nCores = NumberOfCores;
 		this.epochs = NumberOfEpochs;
-		this.halfInit = epochs/10;
+		//this.halfInit = epochs/10;
 	}
 	
 	public boolean readData(){
 		try{
 			InputToOneHot encoder = InputToOneHot.getInstance();
+			
 			encoder.setAlphabet(this.alphabet);
-			encoder.setFrameLength(this.frameLength);
-			this.trainDataset = encoder.readFiles2D(this.featuresPath, this.labelsPath);
+			encoder.setFrameLength(this.inputLength);
+			
+			this.trainDataset = encoder.readFiles2D(this.path+"train/");
+			this.testDataset = encoder.readFiles2D(this.path+"test/");
+			
+			
 			return (this.trainDataset == null) ? false : true;
+			
 		}catch(Exception e){
 			e.printStackTrace();
 			return false;
 		}
-		
+	}
+	
+	public void configNetwork(){
+		this.network = network.getInstance();
+		this.network.setupNetworkConfiguration();
 	}
 	
 	public void trainNetwork(){
+		
 		this.network = network.getInstance();
-		iterator = new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize);
-		trainIterator = new MultipleEpochsIterator(this.epochs, this.iterator, this.nCores);
+		
+		trainIterator = new MultipleEpochsIterator(this.epochs, new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize), this.nCores);
+		
+		
+		
 		network.run(trainIterator);
 	}
 	
 	public double testNetwork(){
-		double hitRatio = 0.00;
+		this.network = network.getInstance();
 		
-		iterator.reset();
-		//TestData should be its own dataset untouched from training set
+		this.testIterator = new ListDataSetIterator(this.testDataset.asList(), miniBatchSize);
 		
-		return hitRatio;
+				
+		return network.test(this.testIterator);
 	}
 }

@@ -100,16 +100,19 @@ public class Run {
 		int minibatchSize = 128;
 		int numPossibleLabels = 4;
 		boolean regression = false;
-		String labelsPath = "./src/main/resources/labeled_data/labels.txt";
-		String featuresPath = "./src/main/resources/labeled_data/data.txt";
+		String path = "./src/main/resources/labeled_data/";
+		int numberOfCores = 2;
+		int numberOfEpochs = 30;
 		
 		//String activationFunction = "relu";
 		
 		
 		NetworkFacade nf = NetworkFacade.getInstance();
-		nf.setConfigurationParameters(featuresPath, labelsPath, frameSize, alphabet, minibatchSize);
+		nf.setConfigurationParameters(path, frameSize, alphabet, minibatchSize, numberOfCores, numberOfEpochs);
 		if(nf.readData()){
-			nf.runNetwork();
+			nf.configNetwork();
+			nf.trainNetwork();
+			System.out.println(nf.testNetwork());
 		}
 	}
 	
