@@ -104,9 +104,6 @@ public class Run {
 		int numberOfCores = 2;
 		int numberOfEpochs = 30;
 		
-		//String activationFunction = "relu";
-		
-		
 		NetworkFacade nf = NetworkFacade.getInstance();
 		nf.setConfigurationParameters(path, frameSize, alphabet, minibatchSize, numberOfCores, numberOfEpochs);
 		if(nf.readData()){
@@ -115,5 +112,4 @@ public class Run {
 			System.out.println(nf.testNetwork());
 		}
 	}
-	
 }

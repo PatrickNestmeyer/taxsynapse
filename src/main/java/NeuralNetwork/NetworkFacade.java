@@ -2,14 +2,10 @@ package NeuralNetwork;
 
 import org.nd4j.linalg.dataset.DataSet;
 
-import java.util.Collection;
-
-import org.deeplearning4j.datasets.datavec.RecordReaderDataSetIterator;
-import org.deeplearning4j.datasets.iterator.INDArrayDataSetIterator;
-import org.deeplearning4j.datasets.iterator.IteratorDataSetIterator;
+import java.util.Arrays;
+import java.util.List;
 import org.deeplearning4j.datasets.iterator.MultipleEpochsIterator;
 import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
-import org.deeplearning4j.eval.Evaluation;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 
 public class NetworkFacade {
@@ -114,20 +110,14 @@ public class NetworkFacade {
 	public void trainNetwork(){
 		
 		this.network = network.getInstance();
-		
 		trainIterator = new MultipleEpochsIterator(this.epochs, new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize), this.nCores);
-		
-		
 		
 		network.run(trainIterator);
 	}
 	
 	public double testNetwork(){
 		this.network = network.getInstance();
-		
-		this.testIterator = new ListDataSetIterator(this.testDataset.asList(), miniBatchSize);
-		
-				
-		return network.test(this.testIterator);
+		testDataset = InputToOneHot.getInstance().setTestLabelNames(testDataset);
+		return network.test(testDataset);
 	}
 }

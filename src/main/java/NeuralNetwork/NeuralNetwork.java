@@ -103,21 +103,20 @@ public class NeuralNetwork {
 		network.fit(iterator);
 	}
 	
-	public double test(DataSetIterator testIterator){
-		double hitRatio = 0.00;
+	public double test(DataSet testSet){
+		int outComes = testSet.numOutcomes();
+		List<String> columnNames = testSet.getColumnNames();
+		List<String> labelNames = testSet.getLabelNames();
+		List<String> predict = network.predict(testSet);
 		
-		int counter = 0;
-		while(testIterator.hasNext()){
-			DataSet elem = testIterator.next().get(counter);
-			
-			String label = elem.get(0).getLabels().toString();
-			List<String> predict = this.network.predict(elem);
-			if(label == predict.get(0))
-				hitRatio++;
-			counter++;
+		double hit=0;
+		for(int i = 0; i < testSet.numExamples(); i++){
+			String label = testSet.getLabelName(i);
+			if(predict.get(i) == label)
+				hit++;
 		}
 		
-		return (hitRatio/counter);
+		return (hit/predict.size());
 	}
 	
 	private ConvolutionLayer createConvolutionLayer(String Name, int KernelSize, int Stride){

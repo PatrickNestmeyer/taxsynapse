@@ -7,8 +7,8 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-
-import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
+import java.util.ArrayList;
+import java.util.List;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.factory.Nd4j;
@@ -46,41 +46,15 @@ static private InputToOneHot uniqueInstance = null;
 		this.frameLength = frameLength;
 	}
 	
-	public DataSet readFiles3D(String PathToInputFile, String PathToLabels) throws IOException{
-		int InputFileLength = this.countLines(PathToInputFile);
-		int LabelFileLength = this.countLines(PathToLabels);
-		if(InputFileLength == LabelFileLength){
-			
-			BufferedReader brI = new BufferedReader(new FileReader(new File(PathToInputFile)));
-			BufferedReader brL = new BufferedReader(new FileReader(new File(PathToLabels)));
-			String InputLineI = "";
-			String InputLineL = "";
-			
-			INDArray input = Nd4j.zeros(InputFileLength, (this.frameLength*this.alphabet.length));
-			INDArray labels = Nd4j.zeros(InputFileLength);
-			
-			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
-				
-				InputLineI = brI.readLine().toLowerCase();
-				InputLineL = brL.readLine().toLowerCase();
-				
-				labels.putScalar(lineCounter, Character.getNumericValue(InputLineL.charAt(0)));
-				
-				int position = 0;
-				while(position < InputLineI.length()){
-					for (int alphabetIndex = 0; alphabetIndex < alphabet.length; alphabetIndex++){
-						if(InputLineI.charAt(position) == alphabet[alphabetIndex]){
-							input.putScalar(new int[] { lineCounter, (position*alphabet.length+alphabetIndex) }, 1 );
-							
-						}
-					}
-					position++;
-				}
-			}
-			return new DataSet(input, labels);
-		}else{
-			return null;
+	public DataSet setTestLabelNames(DataSet trainset){
+		
+		List<String> labelNames = new ArrayList<String>();
+		for(int i = 0; i < trainset.numExamples(); i++){
+			labelNames.add(trainset.getLabels().getInt(i)+"");
 		}
+		trainset.setLabelNames(labelNames);
+		return trainset;
+		
 	}
 	
 	public DataSet readFiles2D(String Path) throws IOException{
