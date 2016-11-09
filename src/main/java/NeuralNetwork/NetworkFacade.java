@@ -1,5 +1,6 @@
 package NeuralNetwork;
 
+import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 
 import java.util.Arrays;
@@ -49,6 +50,10 @@ public class NetworkFacade {
 	
 	private int miniBatchSize;
 	
+	private INDArray trainLabels;
+	
+	private INDArray trainFeatures;
+	
 	private DataSet trainDataset;
 	
 	private DataSet testDataset;
@@ -93,6 +98,8 @@ public class NetworkFacade {
 			this.trainDataset = encoder.readFiles2D(this.path+"train/");
 			this.testDataset = encoder.readFiles2D(this.path+"test/");
 			
+			this.trainLabels = this.trainDataset.getLabels();
+			this.trainFeatures = this.trainDataset.getFeatures();
 			
 			return (this.trainDataset == null) ? false : true;
 			
@@ -110,9 +117,10 @@ public class NetworkFacade {
 	public void trainNetwork(){
 		
 		this.network = network.getInstance();
-		trainIterator = new MultipleEpochsIterator(this.epochs, new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize), this.nCores);
+		//trainIterator = new MultipleEpochsIterator(this.epochs, new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize), this.nCores);
 		
-		network.run(trainIterator);
+		//network.run(trainIterator);
+		network.run(trainFeatures, trainLabels);
 	}
 	
 	public double testNetwork(){

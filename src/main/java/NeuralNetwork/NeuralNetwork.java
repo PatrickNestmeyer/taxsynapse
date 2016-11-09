@@ -19,6 +19,9 @@ import org.deeplearning4j.nn.conf.layers.SubsamplingLayer;
 import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
+import org.deeplearning4j.ui.flow.FlowIterationListener;
+import org.deeplearning4j.ui.weights.HistogramIterationListener;
+import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
@@ -84,12 +87,32 @@ public class NeuralNetwork {
 				.regularization(true)
 				.miniBatch(false)
 				.list()
+				
 				// 258 - 7 + 1 = 252
-				.layer(0, this.createConvolutionLayer("Conv1", convBigKernelSize, convStride))
+				.layer(0, this.createConvolutionInitLayer("Conv1", convBigKernelSize, convStride))
 				// 252 : 3 = 84
 				.layer(1, this.createPoolingLayer("Pool1", poolKernelSize, poolStride))
-				// = 84
-				.layer(2, this.createOutputLayer("Output", 84))
+				
+				// 84 - 7 + 1 = 78
+				.layer(2, this.createConvolutionLayer("Conv2", convBigKernelSize, convStride))
+				// 78 : 3 = 26
+				.layer(3, this.createPoolingLayer("Pool2", poolKernelSize, poolStride))
+				
+				// 26 - 3 + 1 = 24
+				.layer(4, this.createConvolutionLayer("Conv3", convSmallKernelSize, convStride))
+				// 24 - 3 + 1 = 22
+				.layer(5, this.createConvolutionLayer("Conv4", convSmallKernelSize, convStride))
+				// 22 - 3 + 1 = 20
+				.layer(6, this.createConvolutionLayer("Conv5", convSmallKernelSize, convStride))
+				// 20 - 3 + 1 = 18
+				.layer(7, this.createConvolutionLayer("Conv6", convSmallKernelSize, convStride))
+				
+				// 18 : 3 = 6
+				.layer(8, this.createPoolingLayer("Pool3", poolKernelSize, poolStride))
+				
+				.layer(9, new DenseLayer.Builder().nOut(1024).build())
+				.layer(10, new DenseLayer.Builder().nOut(1024).build())
+				.layer(11, this.createOutputLayer("Output", 1024))
 		        .backprop(true)
 		        .pretrain(false)
 		        .setInputType(InputType.convolutionalFlat(1, numberOfInputs, 1))
@@ -100,23 +123,73 @@ public class NeuralNetwork {
 	public void run(MultipleEpochsIterator iterator){
 		
 		network.init();
+		INDArray a = network.params(true);
+		//network.setListeners(new FlowIterationListener(1));
 		network.fit(iterator);
+		
+		
+		INDArray b = network.params(true);
+		
+		if(a.equals(b))
+			System.out.println("Skandal");
+	}
+	
+	public void run(INDArray features, INDArray labels){
+		network.init();
+		INDArray a = network.params(true);
+		network.fit(features, labels);
+		int elements = a.length();
+		int dims = a.rows();
+		
+		
+		if(a.equals(network.params(true)))
+			System.out.println("Skandal");
+		
 	}
 	
 	public double test(DataSet testSet){
+		
+		/*
 		int outComes = testSet.numOutcomes();
 		List<String> columnNames = testSet.getColumnNames();
 		List<String> labelNames = testSet.getLabelNames();
 		List<String> predict = network.predict(testSet);
+		//network.pred
 		
 		double hit=0;
+		int count = 0;
 		for(int i = 0; i < testSet.numExamples(); i++){
 			String label = testSet.getLabelName(i);
-			if(predict.get(i) == label)
+			System.out.println("Vorhersage: " + predict.get(i) + " - Label: " + label);
+			if(predict.get(i).equals(label))
 				hit++;
+			count++;
 		}
 		
 		return (hit/predict.size());
+		*/
+		
+		int[] predict = network.predict(testSet.getFeatures());
+		
+		INDArray originLabels = testSet.getLabels();
+		//List<String> l = testSet.getLabelNames();
+		
+		return predict[0];
+	}
+	
+	private ConvolutionLayer createConvolutionInitLayer(String Name, int KernelSize, int Stride){
+		//nIn = number of channels. 1 if 2-D Data, 3 for RGB-Pictures. No other parameter values are possible.
+		//nOut = number of filters. In this context nOut means the number of filter-maps.
+		//Both are 1 in this example
+		//IMPORTANT: Do not change nIn or nOut
+		return new ConvolutionLayer.Builder()
+				.name(Name)
+				.kernelSize(new int[] {1,KernelSize})
+				.stride(new int[] {1,Stride})
+				.nIn(1)
+				.nOut(1)
+				.weightInit(WeightInit.RELU)
+				.build();
 	}
 	
 	private ConvolutionLayer createConvolutionLayer(String Name, int KernelSize, int Stride){
@@ -128,8 +201,8 @@ public class NeuralNetwork {
 				.name(Name)
 				.kernelSize(new int[] {1,KernelSize})
 				.stride(new int[] {1,Stride})
-				.nIn(1)
 				.nOut(1)
+				.weightInit(WeightInit.RELU)
 				.build();
 	}
 	
