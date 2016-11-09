@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.deeplearning4j.datasets.iterator.MultipleEpochsIterator;
 import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
+import org.deeplearning4j.eval.Evaluation;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
@@ -36,6 +37,8 @@ public class NeuralNetwork {
 	
 	private MultiLayerNetwork network;
 	
+	private int alphabetSize;
+	
 	/**
 	 * Singleton properties and methods
 	 */
@@ -53,7 +56,11 @@ public class NeuralNetwork {
 	}
 	private NeuralNetwork(){}
 	
-	public void setupNetworkConfiguration(){
+	public void setAlphabetSize(int size){
+		this.alphabetSize = size;
+	}
+	
+	public void setupNetworkConfiguration3D(){
 		
 		int numberOfInputs = 258;
 		//Random number generator seed, for ability to reproduce
@@ -85,34 +92,104 @@ public class NeuralNetwork {
 				.learningRate(learningRate)
 				.momentum(momentum)
 				.regularization(true)
+				.l2(1e-3)
 				.miniBatch(false)
 				.list()
 				
 				// 258 - 7 + 1 = 252
-				.layer(0, this.createConvolutionInitLayer("Conv1", convBigKernelSize, convStride))
+				.layer(0, this.createConvolutionInitLayer3D("Conv1", convBigKernelSize, convStride))
 				// 252 : 3 = 84
-				.layer(1, this.createPoolingLayer("Pool1", poolKernelSize, poolStride))
-				
+				.layer(1, this.createPoolingLayer3D("Pool1", poolKernelSize, poolStride))
+				/*
 				// 84 - 7 + 1 = 78
-				.layer(2, this.createConvolutionLayer("Conv2", convBigKernelSize, convStride))
+				.layer(2, this.createConvolutionLayer3D("Conv2", convBigKernelSize, convStride))
 				// 78 : 3 = 26
-				.layer(3, this.createPoolingLayer("Pool2", poolKernelSize, poolStride))
+				.layer(3, this.createPoolingLayer3D("Pool2", poolKernelSize, poolStride))
 				
 				// 26 - 3 + 1 = 24
-				.layer(4, this.createConvolutionLayer("Conv3", convSmallKernelSize, convStride))
+				.layer(4, this.createConvolutionLayer3D("Conv3", convSmallKernelSize, convStride))
 				// 24 - 3 + 1 = 22
-				.layer(5, this.createConvolutionLayer("Conv4", convSmallKernelSize, convStride))
+				.layer(5, this.createConvolutionLayer3D("Conv4", convSmallKernelSize, convStride))
 				// 22 - 3 + 1 = 20
-				.layer(6, this.createConvolutionLayer("Conv5", convSmallKernelSize, convStride))
+				.layer(6, this.createConvolutionLayer3D("Conv5", convSmallKernelSize, convStride))
 				// 20 - 3 + 1 = 18
-				.layer(7, this.createConvolutionLayer("Conv6", convSmallKernelSize, convStride))
+				.layer(7, this.createConvolutionLayer3D("Conv6", convSmallKernelSize, convStride))
 				
 				// 18 : 3 = 6
-				.layer(8, this.createPoolingLayer("Pool3", poolKernelSize, poolStride))
+				.layer(8, this.createPoolingLayer3D("Pool3", poolKernelSize, poolStride))
 				
-				.layer(9, new DenseLayer.Builder().nOut(1024).build())
-				.layer(10, new DenseLayer.Builder().nOut(1024).build())
-				.layer(11, this.createOutputLayer("Output", 1024))
+				.layer(9, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
+				.layer(10, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
+				*/
+				.layer(2, this.createOutputLayer3D("Output", 84))
+		        .backprop(true)
+		        .pretrain(false)
+		        .setInputType(InputType.convolutionalFlat(alphabetSize, numberOfInputs, 1))
+				.build();
+		this.network = new MultiLayerNetwork(conf);
+	}
+	
+	public void setupNetworkConfiguration2D(){
+		
+		int numberOfInputs = 258;
+		//Random number generator seed, for ability to reproduce
+		int seed = 123;
+		//This means not the number of iterations per epoch
+		int iterations = 1;
+		int convBigKernelSize = 7;
+		int convSmallKernelSize = 3;
+		int convStride = 1;
+		int poolKernelSize = 3;
+		int poolStride = 3;
+		double normalDistributionLower = 0.00;
+		double normalDistributionUpper = 0.05;
+		String activationFunction = "relu";
+		double learningRate = 0.01;
+		double momentum = 0.9;
+		
+		
+		conf = new NeuralNetConfiguration.Builder()
+				.seed(seed)
+				.weightInit(WeightInit.DISTRIBUTION)
+				.dist(new NormalDistribution(normalDistributionLower, normalDistributionUpper))
+				.activation(activationFunction)
+				.updater(Updater.NESTEROVS)
+				.iterations(iterations)
+				//.gradientNormalization(GradientNormalization.RenormalizeL2PerLayer)
+				.optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
+				//TODO: start learning rate and momentum. Half it every three epochs but not implemented yet
+				.learningRate(learningRate)
+				.momentum(momentum)
+				.regularization(true)
+				.l2(1e-3)
+				.miniBatch(false)
+				.list()
+				
+				// 258 - 7 + 1 = 252
+				.layer(0, this.createConvolutionInitLayer2D("Conv1", convBigKernelSize, convStride))
+				// 252 : 3 = 84
+				.layer(1, this.createPoolingLayer2D("Pool1", poolKernelSize, poolStride))
+				
+				// 84 - 7 + 1 = 78
+				.layer(2, this.createConvolutionLayer2D("Conv2", convBigKernelSize, convStride))
+				// 78 : 3 = 26
+				.layer(3, this.createPoolingLayer2D("Pool2", poolKernelSize, poolStride))
+				
+				// 26 - 3 + 1 = 24
+				.layer(4, this.createConvolutionLayer2D("Conv3", convSmallKernelSize, convStride))
+				// 24 - 3 + 1 = 22
+				.layer(5, this.createConvolutionLayer2D("Conv4", convSmallKernelSize, convStride))
+				// 22 - 3 + 1 = 20
+				.layer(6, this.createConvolutionLayer2D("Conv5", convSmallKernelSize, convStride))
+				// 20 - 3 + 1 = 18
+				.layer(7, this.createConvolutionLayer2D("Conv6", convSmallKernelSize, convStride))
+				
+				// 18 : 3 = 6
+				.layer(8, this.createPoolingLayer2D("Pool3", poolKernelSize, poolStride))
+				
+				.layer(9, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
+				.layer(10, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
+				.layer(11, this.createOutputLayer2D("Output", 1024))
 		        .backprop(true)
 		        .pretrain(false)
 		        .setInputType(InputType.convolutionalFlat(1, numberOfInputs, 1))
@@ -123,61 +200,34 @@ public class NeuralNetwork {
 	public void run(MultipleEpochsIterator iterator){
 		
 		network.init();
-		INDArray a = network.params(true);
+		network.setListeners(new ScoreIterationListener(1));
 		//network.setListeners(new FlowIterationListener(1));
 		network.fit(iterator);
-		
-		
-		INDArray b = network.params(true);
-		
-		if(a.equals(b))
-			System.out.println("Skandal");
 	}
 	
 	public void run(INDArray features, INDArray labels){
 		network.init();
-		INDArray a = network.params(true);
+		network.setListeners(new ScoreIterationListener(1));
 		network.fit(features, labels);
-		int elements = a.length();
-		int dims = a.rows();
-		
-		
-		if(a.equals(network.params(true)))
-			System.out.println("Skandal");
 		
 	}
 	
 	public double test(DataSet testSet){
+		int[] predict = network.predict(testSet.getFeatures());
+		INDArray labels = testSet.getLabels();
 		
-		/*
-		int outComes = testSet.numOutcomes();
-		List<String> columnNames = testSet.getColumnNames();
-		List<String> labelNames = testSet.getLabelNames();
-		List<String> predict = network.predict(testSet);
-		//network.pred
-		
-		double hit=0;
-		int count = 0;
+		double hit = 0;
 		for(int i = 0; i < testSet.numExamples(); i++){
-			String label = testSet.getLabelName(i);
-			System.out.println("Vorhersage: " + predict.get(i) + " - Label: " + label);
-			if(predict.get(i).equals(label))
+			if(predict[i] == labels.getInt(i))
 				hit++;
-			count++;
 		}
 		
-		return (hit/predict.size());
-		*/
-		
-		int[] predict = network.predict(testSet.getFeatures());
-		
-		INDArray originLabels = testSet.getLabels();
-		//List<String> l = testSet.getLabelNames();
-		
-		return predict[0];
+		double returnValue = hit / testSet.numExamples(); 
+
+		return returnValue;
 	}
 	
-	private ConvolutionLayer createConvolutionInitLayer(String Name, int KernelSize, int Stride){
+	private ConvolutionLayer createConvolutionInitLayer2D(String Name, int KernelSize, int Stride){
 		//nIn = number of channels. 1 if 2-D Data, 3 for RGB-Pictures. No other parameter values are possible.
 		//nOut = number of filters. In this context nOut means the number of filter-maps.
 		//Both are 1 in this example
@@ -188,11 +238,11 @@ public class NeuralNetwork {
 				.stride(new int[] {1,Stride})
 				.nIn(1)
 				.nOut(1)
-				.weightInit(WeightInit.RELU)
+				.weightInit(WeightInit.DISTRIBUTION)
 				.build();
 	}
 	
-	private ConvolutionLayer createConvolutionLayer(String Name, int KernelSize, int Stride){
+	private ConvolutionLayer createConvolutionLayer2D(String Name, int KernelSize, int Stride){
 		//nIn = number of channels. 1 if 2-D Data, 3 for RGB-Pictures. No other parameter values are possible.
 		//nOut = number of filters. In this context nOut means the number of filter-maps.
 		//Both are 1 in this example
@@ -202,11 +252,11 @@ public class NeuralNetwork {
 				.kernelSize(new int[] {1,KernelSize})
 				.stride(new int[] {1,Stride})
 				.nOut(1)
-				.weightInit(WeightInit.RELU)
+				.weightInit(WeightInit.DISTRIBUTION)
 				.build();
 	}
 	
-	private SubsamplingLayer createPoolingLayer(String Name, int KernelSize, int Stride){
+	private SubsamplingLayer createPoolingLayer2D(String Name, int KernelSize, int Stride){
 		return new SubsamplingLayer.Builder(SubsamplingLayer.PoolingType.MAX)
 				.name(Name)
 				.kernelSize(new int[] {1,KernelSize})
@@ -214,7 +264,55 @@ public class NeuralNetwork {
 				.build();
 	}
 	
-	private OutputLayer createOutputLayer(String Name, int InputSize){
+	private OutputLayer createOutputLayer2D(String Name, int InputSize){
+		//Number of outcomes (Network should make only one suggestion)
+		//IMPORTANT: This is the number of predictions per unit not the number of possible outcomes.
+		return new OutputLayer.Builder()
+				.name(Name)
+				.nIn(InputSize)
+				.nOut(1)
+				.activation("softmax")
+				.build();
+	}
+	
+	private ConvolutionLayer createConvolutionInitLayer3D(String Name, int KernelSize, int Stride){
+		//nIn = number of channels. 1 if 2-D Data, 3 for RGB-Pictures. No other parameter values are possible.
+		//nOut = number of filters. In this context nOut means the number of filter-maps.
+		//Both are 1 in this example
+		//IMPORTANT: Do not change nIn or nOut
+		return new ConvolutionLayer.Builder()
+				.name(Name)
+				.kernelSize(new int[] {this.alphabetSize, KernelSize})
+				.stride(new int[] {this.alphabetSize, Stride})
+				.nIn(1)
+				.nOut(1)
+				.weightInit(WeightInit.DISTRIBUTION)
+				.build();
+	}
+	
+	private ConvolutionLayer createConvolutionLayer3D(String Name, int KernelSize, int Stride){
+		//nIn = number of channels. 1 if 2-D Data, 3 for RGB-Pictures. No other parameter values are possible.
+		//nOut = number of filters. In this context nOut means the number of filter-maps.
+		//Both are 1 in this example
+		//IMPORTANT: Do not change nIn or nOut
+		return new ConvolutionLayer.Builder()
+				.name(Name)
+				.kernelSize(new int[] {this.alphabetSize, KernelSize})
+				.stride(new int[] {this.alphabetSize, Stride})
+				.nOut(1)
+				.weightInit(WeightInit.DISTRIBUTION)
+				.build();
+	}
+	
+	private SubsamplingLayer createPoolingLayer3D(String Name, int KernelSize, int Stride){
+		return new SubsamplingLayer.Builder(SubsamplingLayer.PoolingType.MAX)
+				.name(Name)
+				.kernelSize(new int[] {1,KernelSize})
+				.stride(new int[] {1,Stride})
+				.build();
+	}
+	
+	private OutputLayer createOutputLayer3D(String Name, int InputSize){
 		//Number of outcomes (Network should make only one suggestion)
 		//IMPORTANT: This is the number of predictions per unit not the number of possible outcomes.
 		return new OutputLayer.Builder()

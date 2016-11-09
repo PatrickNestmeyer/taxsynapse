@@ -1,10 +1,7 @@
 package NeuralNetwork;
 
-import org.nd4j.linalg.api.ndarray.INDArray;
-import org.nd4j.linalg.dataset.DataSet;
 
-import java.util.Arrays;
-import java.util.List;
+import org.nd4j.linalg.dataset.DataSet;
 import org.deeplearning4j.datasets.iterator.MultipleEpochsIterator;
 import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
@@ -42,6 +39,8 @@ public class NetworkFacade {
 	 * properties of the neural network
 	 */
 	
+	private boolean use3D = false;
+	
 	private int nCores;
 	
 	private int epochs = 30;
@@ -49,10 +48,6 @@ public class NetworkFacade {
 	//private int halfInit = 3;
 	
 	private int miniBatchSize;
-	
-	private INDArray trainLabels;
-	
-	private INDArray trainFeatures;
 	
 	private DataSet trainDataset;
 	
@@ -88,6 +83,10 @@ public class NetworkFacade {
 		//this.halfInit = epochs/10;
 	}
 	
+	public void train3DModel(){
+		this.use3D = true;
+	}
+	
 	public boolean readData(){
 		try{
 			InputToOneHot encoder = InputToOneHot.getInstance();
@@ -95,12 +94,14 @@ public class NetworkFacade {
 			encoder.setAlphabet(this.alphabet);
 			encoder.setFrameLength(this.inputLength);
 			
-			this.trainDataset = encoder.readFiles2D(this.path+"train/");
-			this.testDataset = encoder.readFiles2D(this.path+"test/");
-			
-			this.trainLabels = this.trainDataset.getLabels();
-			this.trainFeatures = this.trainDataset.getFeatures();
-			
+			if(this.use3D){
+				this.trainDataset = encoder.readFiles3D(this.path+"train/");
+				this.testDataset = encoder.readFiles3D(this.path+"test/");
+			}else{
+				this.trainDataset = encoder.readFiles2D(this.path+"train/");
+				this.testDataset = encoder.readFiles2D(this.path+"test/");
+			}
+
 			return (this.trainDataset == null) ? false : true;
 			
 		}catch(Exception e){
@@ -111,16 +112,19 @@ public class NetworkFacade {
 	
 	public void configNetwork(){
 		this.network = network.getInstance();
-		this.network.setupNetworkConfiguration();
+		if(this.use3D){
+			this.network.setAlphabetSize(InputToOneHot.getInstance().getAlphabet().length);
+			this.network.setupNetworkConfiguration3D();
+		}else{
+			this.network.setupNetworkConfiguration2D();
+		}
 	}
 	
 	public void trainNetwork(){
 		
 		this.network = network.getInstance();
-		//trainIterator = new MultipleEpochsIterator(this.epochs, new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize), this.nCores);
-		
-		//network.run(trainIterator);
-		network.run(trainFeatures, trainLabels);
+		trainIterator = new MultipleEpochsIterator(this.epochs, new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize), this.nCores);
+		network.run(trainIterator);
 	}
 	
 	public double testNetwork(){

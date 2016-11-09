@@ -42,6 +42,10 @@ static private InputToOneHot uniqueInstance = null;
 		this.alphabet = alphabet;
 	}
 	
+	public char[] getAlphabet(){
+		return this.alphabet;
+	}
+	
 	public void setFrameLength(int frameLength){
 		this.frameLength = frameLength;
 	}
@@ -49,9 +53,16 @@ static private InputToOneHot uniqueInstance = null;
 	public DataSet setTestLabelNames(DataSet trainset){
 		
 		List<String> labelNames = new ArrayList<String>();
+		/*
 		for(int i = 0; i < trainset.numExamples(); i++){
 			labelNames.add(trainset.getLabels().getInt(i)+"");
-		}
+		}*/
+		
+		labelNames.add("AV");
+		labelNames.add("WE");
+		labelNames.add("SBA");
+		labelNames.add("PE");
+		
 		trainset.setLabelNames(labelNames);
 		return trainset;
 		
@@ -80,11 +91,8 @@ static private InputToOneHot uniqueInstance = null;
 				InputLineI = brI.readLine().toLowerCase();
 				InputLineL = brL.readLine().toLowerCase();
 				
-				char cL = InputLineL.charAt(0);
-				for(int alphabetCounter = 0; alphabetCounter < alphabet.length; alphabetCounter++){ 
-					if(cL == alphabet[alphabetCounter]) 
-						labels.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(cL));
-				}
+				//Put character at the first position in labels file. It represents the class (0-4)
+				labels.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
 				
 				//Step over each character in features file
 				for(int characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++){
@@ -92,6 +100,50 @@ static private InputToOneHot uniqueInstance = null;
 					for(int alphabetCounter = 0; alphabetCounter < alphabet.length; alphabetCounter++){ 
 						if(cI == alphabet[alphabetCounter]) 
 							input.putScalar(new int[] {lineCounter, characterCounter}, alphabetCounter );
+					}
+				}
+			}
+			
+			return new DataSet(input, labels);
+			
+		}else{
+			return null;
+		}
+	}
+	
+	public DataSet readFiles3D(String Path) throws IOException{
+		
+		String PathToInputFile = Path + "data.txt";
+		String PathToLabels = Path + "labels.txt";
+		
+		int InputFileLength = this.countLines(PathToInputFile);
+		int LabelFileLength = this.countLines(PathToLabels);
+		if(InputFileLength == LabelFileLength){
+			
+			BufferedReader brI = new BufferedReader(new FileReader(new File(PathToInputFile)));
+			BufferedReader brL = new BufferedReader(new FileReader(new File(PathToLabels)));
+			String InputLineI = "";
+			String InputLineL = "";
+			
+			INDArray input = Nd4j.zeros(InputFileLength, this.frameLength, this.alphabet.length);
+			//INDArray labels = Nd4j.zeros(InputFileLength, this.frameLength);
+			INDArray labels = Nd4j.zeros(InputFileLength, 1);
+			
+			//Step over each example
+			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
+				InputLineI = brI.readLine().toLowerCase();
+				InputLineL = brL.readLine().toLowerCase();
+				
+				//Put character at the first position in labels file. It represents the class (0-4)
+				labels.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
+				
+				//Step over each character in features file
+				for(int characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++){
+					char cI = InputLineI.charAt(characterCounter);
+					
+					for(int alphabetPosition = 0; alphabetPosition < alphabet.length; alphabetPosition++){
+						if(cI == alphabet[alphabetPosition])
+							input.putScalar(new int[] {lineCounter, characterCounter, alphabetPosition}, 1);
 					}
 				}
 			}
