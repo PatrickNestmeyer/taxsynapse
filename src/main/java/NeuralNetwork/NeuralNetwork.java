@@ -92,7 +92,7 @@ public class NeuralNetwork {
 				.learningRate(learningRate)
 				.momentum(momentum)
 				.regularization(true)
-				.l2(1e-3)
+				.l1(1e-3)
 				.miniBatch(false)
 				.list()
 				
@@ -100,11 +100,12 @@ public class NeuralNetwork {
 				.layer(0, this.createConvolutionInitLayer3D("Conv1", convBigKernelSize, convStride))
 				// 252 : 3 = 84
 				.layer(1, this.createPoolingLayer3D("Pool1", poolKernelSize, poolStride))
-				/*
+				
 				// 84 - 7 + 1 = 78
 				.layer(2, this.createConvolutionLayer3D("Conv2", convBigKernelSize, convStride))
 				// 78 : 3 = 26
 				.layer(3, this.createPoolingLayer3D("Pool2", poolKernelSize, poolStride))
+				
 				
 				// 26 - 3 + 1 = 24
 				.layer(4, this.createConvolutionLayer3D("Conv3", convSmallKernelSize, convStride))
@@ -120,8 +121,8 @@ public class NeuralNetwork {
 				
 				.layer(9, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
 				.layer(10, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
-				*/
-				.layer(2, this.createOutputLayer3D("Output", 84))
+
+				.layer(11, this.createOutputLayer3D("Output", 1024))
 		        .backprop(true)
 		        .pretrain(false)
 		        .setInputType(InputType.convolutionalFlat(alphabetSize, numberOfInputs, 1))
@@ -164,7 +165,6 @@ public class NeuralNetwork {
 				.l2(1e-3)
 				.miniBatch(false)
 				.list()
-				
 				// 258 - 7 + 1 = 252
 				.layer(0, this.createConvolutionInitLayer2D("Conv1", convBigKernelSize, convStride))
 				// 252 : 3 = 84
@@ -202,7 +202,23 @@ public class NeuralNetwork {
 		network.init();
 		network.setListeners(new ScoreIterationListener(1));
 		//network.setListeners(new FlowIterationListener(1));
+		
+		System.out.println(network.numParams());
+		INDArray params = network.params();
+		
+		float p1 = params.getFloat(new int[] {0, 0});
+		float p2 = params.getFloat(new int[] {0, 1});
+		float p3 = params.getFloat(new int[] {0, 2});
+		
 		network.fit(iterator);
+		
+		params = network.params();
+		
+		float p1n = params.getFloat(new int[] {0, 0});
+		float p2n = params.getFloat(new int[] {0, 1});
+		float p3n = params.getFloat(new int[] {0, 2});
+		
+		System.out.println("");
 	}
 	
 	public void run(INDArray features, INDArray labels){
@@ -213,6 +229,9 @@ public class NeuralNetwork {
 	}
 	
 	public double test(DataSet testSet){
+		
+		//List<INDArray> a = network.feedForward(testSet.getFeatures().getRow(0), false);
+		
 		int[] predict = network.predict(testSet.getFeatures());
 		INDArray labels = testSet.getLabels();
 		
@@ -223,7 +242,7 @@ public class NeuralNetwork {
 		}
 		
 		double returnValue = hit / testSet.numExamples(); 
-
+			
 		return returnValue;
 	}
 	
@@ -270,6 +289,8 @@ public class NeuralNetwork {
 		return new OutputLayer.Builder()
 				.name(Name)
 				.nIn(InputSize)
+				.weightInit(WeightInit.DISTRIBUTION)
+				.lossFunction(LossFunction.MCXENT)
 				.nOut(1)
 				.activation("softmax")
 				.build();
@@ -297,8 +318,8 @@ public class NeuralNetwork {
 		//IMPORTANT: Do not change nIn or nOut
 		return new ConvolutionLayer.Builder()
 				.name(Name)
-				.kernelSize(new int[] {this.alphabetSize, KernelSize})
-				.stride(new int[] {this.alphabetSize, Stride})
+				.kernelSize(new int[] {1, KernelSize})
+				.stride(new int[] {1, Stride})
 				.nOut(1)
 				.weightInit(WeightInit.DISTRIBUTION)
 				.build();

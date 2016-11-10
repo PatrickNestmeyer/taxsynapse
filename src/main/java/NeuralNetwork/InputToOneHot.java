@@ -155,6 +155,52 @@ static private InputToOneHot uniqueInstance = null;
 		}
 	}
 	
+	public DataSet readFiles3DFlat(String Path) throws IOException{
+		
+		String PathToInputFile = Path + "data.txt";
+		String PathToLabels = Path + "labels.txt";
+		
+		int InputFileLength = this.countLines(PathToInputFile);
+		int LabelFileLength = this.countLines(PathToLabels);
+		if(InputFileLength == LabelFileLength){
+			
+			BufferedReader brI = new BufferedReader(new FileReader(new File(PathToInputFile)));
+			BufferedReader brL = new BufferedReader(new FileReader(new File(PathToLabels)));
+			
+			INDArray input = Nd4j.zeros(InputFileLength, (this.frameLength * this.alphabet.length));
+			//INDArray labels = Nd4j.zeros(InputFileLength, this.frameLength);
+			INDArray labels = Nd4j.zeros(InputFileLength, 1);
+			
+			//Step over each example
+			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
+				//Feature
+				String InputLineI = brI.readLine().toLowerCase();
+				//Label
+				String InputLineL = brL.readLine().toLowerCase();
+				
+				//Put character at the first position in labels file. It represents the class (0-4)
+				labels.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
+				
+				int totalPosCounter = 0;
+				//Step over each character in features file
+				for(int characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++){
+					char cI = InputLineI.charAt(characterCounter);
+					
+					for(int alphabetPosition = 0; alphabetPosition < alphabet.length; alphabetPosition++){
+						if(cI == alphabet[alphabetPosition])
+							input.putScalar(new int[] {lineCounter, totalPosCounter}, 1);
+						totalPosCounter++;
+					}
+				}
+			}
+			
+			return new DataSet(input, labels);
+			
+		}else{
+			return null;
+		}
+	}
+	
 	private int countLines(String filename) throws IOException {
 	    InputStream is = new BufferedInputStream(new FileInputStream(filename));
 	    try {
