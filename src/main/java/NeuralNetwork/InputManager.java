@@ -13,26 +13,57 @@ import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.factory.Nd4j;
 
-public class InputToOneHot {
+public class InputManager {
 	
-static private InputToOneHot uniqueInstance = null;
+	/**
+	 * 
+	 * Singleton Attributes an Methods
+	 *  
+	 */
 	
-	public static InputToOneHot getInstance(){
+	static private InputManager uniqueInstance = null;
+	
+	public static InputManager getInstance(){
 		if(uniqueInstance == null) {
-			synchronized(InputToOneHot.class){
+			synchronized(InputManager.class){
 				if(uniqueInstance == null){
-					uniqueInstance = new InputToOneHot();
+					uniqueInstance = new InputManager();
 				}
 			}
 		}
 		return uniqueInstance;
 	}
 	
-	private InputToOneHot(){}
+	private InputManager(){}
 	
+	/**
+	 * 
+	 * Attributes
+	 * 
+	 */
+	
+	//Bunch of characters representing the allowed input features
 	private char[] alphabet;
 	
-	private int frameLength;
+	//Featurelength 
+	private int inputLength;
+	
+	//Each label represent an account number or a class of account numbers
+	private List<String> labels;
+	
+	//The account description or text representing the label in natural language 
+	//Need to be hashmap (expl: "4" => "AV")
+	//private List<String> representation;
+	
+	/**
+	 * 
+	 * Getter and Setter
+	 * 
+	 */
+	
+	public void setLabels(List<String> labels){
+		this.labels = labels;
+	}
 	
 	public void setAlphabet(String alphabet){
 		this.alphabet = alphabet.toCharArray();
@@ -46,26 +77,23 @@ static private InputToOneHot uniqueInstance = null;
 		return this.alphabet;
 	}
 	
-	public void setFrameLength(int frameLength){
-		this.frameLength = frameLength;
+	public void setInputLength(int frameLength){
+		this.inputLength = frameLength;
 	}
 	
-	public DataSet setTestLabelNames(DataSet trainset){
-		
+	/**
+	 * Apply labels on the dataset LabelNames
+	 * @param the DataSet where the labels will be applied on
+	 * @return the DataSet where the labels are applied on
+	 */
+	
+	public DataSet setTestLabelNames(DataSet set){
 		List<String> labelNames = new ArrayList<String>();
-		/*
-		for(int i = 0; i < trainset.numExamples(); i++){
-			labelNames.add(trainset.getLabels().getInt(i)+"");
-		}*/
-		
-		labelNames.add("AV");
-		labelNames.add("WE");
-		labelNames.add("SBA");
-		labelNames.add("PE");
-		
-		trainset.setLabelNames(labelNames);
-		return trainset;
-		
+		for (String label : this.labels) {
+			labelNames.add(label);
+		}
+		set.setLabelNames(labelNames);
+		return set;
 	}
 	
 	public DataSet readFiles2D(String Path) throws IOException{
@@ -82,7 +110,7 @@ static private InputToOneHot uniqueInstance = null;
 			String InputLineI = "";
 			String InputLineL = "";
 			
-			INDArray input = Nd4j.zeros(InputFileLength, this.frameLength);
+			INDArray input = Nd4j.zeros(InputFileLength, this.inputLength);
 			//INDArray labels = Nd4j.zeros(InputFileLength, this.frameLength);
 			INDArray labels = Nd4j.zeros(InputFileLength, 1);
 			
@@ -125,9 +153,9 @@ static private InputToOneHot uniqueInstance = null;
 			String InputLineI = "";
 			String InputLineL = "";
 			
-			INDArray input = Nd4j.zeros(InputFileLength, this.frameLength, this.alphabet.length);
+			INDArray input = Nd4j.zeros(InputFileLength, this.inputLength, this.alphabet.length);
 			//INDArray labels = Nd4j.zeros(InputFileLength, this.frameLength);
-			INDArray labels = Nd4j.zeros(InputFileLength, 1);
+			INDArray labels = Nd4j.zeros(InputFileLength, 4);
 			
 			//Step over each example
 			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
@@ -154,7 +182,7 @@ static private InputToOneHot uniqueInstance = null;
 			return null;
 		}
 	}
-	
+
 	public DataSet readFiles3DFlat(String Path) throws IOException{
 		
 		String PathToInputFile = Path + "data.txt";
@@ -167,25 +195,31 @@ static private InputToOneHot uniqueInstance = null;
 			BufferedReader brI = new BufferedReader(new FileReader(new File(PathToInputFile)));
 			BufferedReader brL = new BufferedReader(new FileReader(new File(PathToLabels)));
 			
-			INDArray input = Nd4j.zeros(InputFileLength, (this.frameLength * this.alphabet.length));
+			INDArray input = Nd4j.zeros(InputFileLength, (this.inputLength * this.alphabet.length));
 			//INDArray labels = Nd4j.zeros(InputFileLength, this.frameLength);
-			INDArray labels = Nd4j.zeros(InputFileLength, 1);
+			INDArray classes = Nd4j.zeros(InputFileLength, this.labels.size());
 			
 			//Step over each example
 			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
+				
 				//Feature
 				String InputLineI = brI.readLine().toLowerCase();
 				//Label
 				String InputLineL = brL.readLine().toLowerCase();
 				
 				//Put character at the first position in labels file. It represents the class (0-4)
-				labels.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
+				classes.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
+				for(int labelCounter = 0; labelCounter < labels.size(); labelCounter++){
+					if(InputLineL.charAt(0) == this.labels.get(labelCounter).toCharArray()[0])
+						classes.putScalar(new int[] {lineCounter, labelCounter}, 1);
+				}
 				
 				int totalPosCounter = 0;
 				//Step over each character in features file
 				for(int characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++){
 					char cI = InputLineI.charAt(characterCounter);
 					
+					//Step over each alphabet character per character in features file
 					for(int alphabetPosition = 0; alphabetPosition < alphabet.length; alphabetPosition++){
 						if(cI == alphabet[alphabetPosition])
 							input.putScalar(new int[] {lineCounter, totalPosCounter}, 1);
@@ -194,7 +228,7 @@ static private InputToOneHot uniqueInstance = null;
 				}
 			}
 			
-			return new DataSet(input, labels);
+			return new DataSet(input, classes);
 			
 		}else{
 			return null;

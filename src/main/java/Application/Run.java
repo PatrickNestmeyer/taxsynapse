@@ -9,6 +9,7 @@ import Booking.CSVBookingHandler;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.deeplearning4j.ui.weights.ConvolutionalIterationListener;
@@ -102,11 +103,12 @@ public class Run {
 		boolean regression = false;
 		String path = "./src/main/resources/labeled_data/";
 		int numberOfCores = 2;
-		int numberOfEpochs = 30;
+		int numberOfEpochs = 1;
+		List<String> labels = Arrays.asList("0","1","2","3");
 		
 		NetworkFacade nf = NetworkFacade.getInstance();
-		nf.setConfigurationParameters(path, frameSize, alphabet, minibatchSize, numberOfCores, numberOfEpochs);
-		//nf.train3DModel();
+		nf.setConfigurationParameters(path, frameSize, alphabet, minibatchSize, numberOfCores, numberOfEpochs, labels);
+		nf.train3DModel();
 		if(nf.readData()){
 			nf.configNetwork();
 			nf.trainNetwork();

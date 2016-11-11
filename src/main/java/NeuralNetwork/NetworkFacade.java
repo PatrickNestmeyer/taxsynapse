@@ -2,6 +2,9 @@ package NeuralNetwork;
 
 
 import org.nd4j.linalg.dataset.DataSet;
+
+import java.util.List;
+
 import org.deeplearning4j.datasets.iterator.MultipleEpochsIterator;
 import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
@@ -59,11 +62,13 @@ public class NetworkFacade {
 	
 	private NeuralNetwork network;
 	
+	private List<String> labels;
+	
 	/**
 	 * TODO: Change to Builder Pattern
 	 */
 	
-	public void setConfigurationParameters(String Path, int InputLength, String Alphabet, int BatchSize, int NumberOfCores, int NumberOfEpochs){
+	public void setConfigurationParameters(String Path, int InputLength, String Alphabet, int BatchSize, int NumberOfCores, int NumberOfEpochs, List<String> Labels){
 		
 		/* Structure of data must in the shape of:
 		 * 
@@ -80,6 +85,7 @@ public class NetworkFacade {
 		this.miniBatchSize = BatchSize;
 		this.nCores = NumberOfCores;
 		this.epochs = NumberOfEpochs;
+		this.labels = Labels;
 		//this.halfInit = epochs/10;
 	}
 	
@@ -89,10 +95,10 @@ public class NetworkFacade {
 	
 	public boolean readData(){
 		try{
-			InputToOneHot encoder = InputToOneHot.getInstance();
-			
+			InputManager encoder = InputManager.getInstance();
+			encoder.setLabels(this.labels);
 			encoder.setAlphabet(this.alphabet);
-			encoder.setFrameLength(this.inputLength);
+			encoder.setInputLength(this.inputLength);
 			
 			if(this.use3D){
 				this.trainDataset = encoder.readFiles3DFlat(this.path+"train/");
@@ -113,7 +119,7 @@ public class NetworkFacade {
 	public void configNetwork(){
 		this.network = network.getInstance();
 		if(this.use3D){
-			this.network.setAlphabetSize(InputToOneHot.getInstance().getAlphabet().length);
+			this.network.setAlphabetSize(InputManager.getInstance().getAlphabet().length);
 			this.network.setupNetworkConfiguration3D();
 		}else{
 			this.network.setupNetworkConfiguration2D();
@@ -132,11 +138,13 @@ public class NetworkFacade {
 		System.out.println("total examples: " + trainIterator.totalExamples());
 		
 		network.run(trainIterator);
+		
+		network.printNetwork();
 	}
 	
 	public double testNetwork(){
 		this.network = network.getInstance();
-		testDataset = InputToOneHot.getInstance().setTestLabelNames(testDataset);
+		testDataset = InputManager.getInstance().setTestLabelNames(testDataset);
 		return network.test(testDataset);
 	}
 }

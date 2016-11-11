@@ -75,7 +75,7 @@ public class NeuralNetwork {
 		double normalDistributionLower = 0.00;
 		double normalDistributionUpper = 0.05;
 		String activationFunction = "relu";
-		double learningRate = 0.01;
+		double learningRate = 1e-6;
 		double momentum = 0.9;
 		
 		
@@ -92,7 +92,7 @@ public class NeuralNetwork {
 				.learningRate(learningRate)
 				.momentum(momentum)
 				.regularization(true)
-				.l1(1e-3)
+				.l2(1e-3)
 				.miniBatch(false)
 				.list()
 				
@@ -145,14 +145,14 @@ public class NeuralNetwork {
 		double normalDistributionLower = 0.00;
 		double normalDistributionUpper = 0.05;
 		String activationFunction = "relu";
-		double learningRate = 0.01;
+		double learningRate = 0.5;
 		double momentum = 0.9;
 		
 		
 		conf = new NeuralNetConfiguration.Builder()
 				.seed(seed)
-				.weightInit(WeightInit.DISTRIBUTION)
-				.dist(new NormalDistribution(normalDistributionLower, normalDistributionUpper))
+				.weightInit(WeightInit.XAVIER)
+				//.dist(new NormalDistribution(normalDistributionLower, normalDistributionUpper))
 				.activation(activationFunction)
 				.updater(Updater.NESTEROVS)
 				.iterations(iterations)
@@ -228,17 +228,28 @@ public class NeuralNetwork {
 		
 	}
 	
+	public void printNetwork(){
+		INDArray l1 = network.getLayer(0).input();
+		INDArray l2 = network.getLayer(1).input();
+		INDArray l3 = network.getLayer(2).input();
+		INDArray l4 = network.getLayer(3).input();
+		INDArray l5 = network.getLayer(4).input();
+	}
+	
 	public double test(DataSet testSet){
 		
-		//List<INDArray> a = network.feedForward(testSet.getFeatures().getRow(0), false);
+		List<INDArray> a = network.feedForward();
 		
-		int[] predict = network.predict(testSet.getFeatures());
 		INDArray labels = testSet.getLabels();
 		
 		double hit = 0;
 		for(int i = 0; i < testSet.numExamples(); i++){
-			if(predict[i] == labels.getInt(i))
-				hit++;
+			INDArray exampleI = testSet.getFeatures().getRow(i);
+			INDArray output = network.output(exampleI);
+			int[] predict = network.predict(exampleI);
+			//if(predict[0] == labels.getInt(i))
+			//	hit++;
+			System.out.println("");
 		}
 		
 		double returnValue = hit / testSet.numExamples(); 
@@ -257,7 +268,6 @@ public class NeuralNetwork {
 				.stride(new int[] {1,Stride})
 				.nIn(1)
 				.nOut(1)
-				.weightInit(WeightInit.DISTRIBUTION)
 				.build();
 	}
 	
@@ -271,7 +281,6 @@ public class NeuralNetwork {
 				.kernelSize(new int[] {1,KernelSize})
 				.stride(new int[] {1,Stride})
 				.nOut(1)
-				.weightInit(WeightInit.DISTRIBUTION)
 				.build();
 	}
 	
@@ -289,8 +298,6 @@ public class NeuralNetwork {
 		return new OutputLayer.Builder()
 				.name(Name)
 				.nIn(InputSize)
-				.weightInit(WeightInit.DISTRIBUTION)
-				.lossFunction(LossFunction.MCXENT)
 				.nOut(1)
 				.activation("softmax")
 				.build();
@@ -307,7 +314,6 @@ public class NeuralNetwork {
 				.stride(new int[] {this.alphabetSize, Stride})
 				.nIn(1)
 				.nOut(1)
-				.weightInit(WeightInit.DISTRIBUTION)
 				.build();
 	}
 	
@@ -321,7 +327,6 @@ public class NeuralNetwork {
 				.kernelSize(new int[] {1, KernelSize})
 				.stride(new int[] {1, Stride})
 				.nOut(1)
-				.weightInit(WeightInit.DISTRIBUTION)
 				.build();
 	}
 	
@@ -339,7 +344,7 @@ public class NeuralNetwork {
 		return new OutputLayer.Builder()
 				.name(Name)
 				.nIn(InputSize)
-				.nOut(1)
+				.nOut(4)
 				.activation("softmax")
 				.build();
 	}
