@@ -86,7 +86,17 @@ public class jsonHandler
 							
 							System.out.println(jsonObject.get("credit_note"));
 
-							JSONArray arr = new JSONArray();
+							JSONArray arr = (JSONArray) jsonObject.get("line_items");
+							
+							String[] temp;
+							for (int i = 0; i < arr.size(); i++)
+							{
+								temp = arr.get(i).toString().split("line_amount");
+								for(int j = 0; j < temp.length; j++)
+								{
+									System.out.println(temp[j]);
+								}
+							}
 							
 						}
 					}
