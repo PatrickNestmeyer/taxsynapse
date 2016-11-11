@@ -95,8 +95,8 @@ public class NetworkFacade {
 			encoder.setFrameLength(this.inputLength);
 			
 			if(this.use3D){
-				this.trainDataset = encoder.readFiles3D(this.path+"train/");
-				this.testDataset = encoder.readFiles3D(this.path+"test/");
+				this.trainDataset = encoder.readFiles3DFlat(this.path+"train/");
+				this.testDataset = encoder.readFiles3DFlat(this.path+"test/");
 			}else{
 				this.trainDataset = encoder.readFiles2D(this.path+"train/");
 				this.testDataset = encoder.readFiles2D(this.path+"test/");
@@ -122,8 +122,15 @@ public class NetworkFacade {
 	
 	public void trainNetwork(){
 		
+		System.out.println("rows " + trainDataset.getFeatures().size(0)); //number of Examples
+		System.out.println("columns: " + trainDataset.getFeatures().size(1)); //number of Characters
+		
 		this.network = network.getInstance();
 		trainIterator = new MultipleEpochsIterator(this.epochs, new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize), this.nCores);
+		
+		System.out.println("total outcomes: " + trainIterator.totalOutcomes());
+		System.out.println("total examples: " + trainIterator.totalExamples());
+		
 		network.run(trainIterator);
 	}
 	

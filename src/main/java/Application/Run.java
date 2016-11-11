@@ -106,7 +106,7 @@ public class Run {
 		
 		NetworkFacade nf = NetworkFacade.getInstance();
 		nf.setConfigurationParameters(path, frameSize, alphabet, minibatchSize, numberOfCores, numberOfEpochs);
-		nf.train3DModel();
+		//nf.train3DModel();
 		if(nf.readData()){
 			nf.configNetwork();
 			nf.trainNetwork();
