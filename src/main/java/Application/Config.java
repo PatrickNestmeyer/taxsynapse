@@ -6,7 +6,8 @@ public final class Config {
 	
 	public static boolean LOG_SINGLE_STEPS = true;
 	public static boolean SUPRESS_INVALID_INVOICES = false;
-	public static String PATH_TO_INVOICES = "./src/main/resources/examples_ferd/";
+	public static String PATH_TO_ZUGFERD_INVOICES = "./src/main/resources/examples_ferd/";
+	public static String PATH_TO_JSON_INVOICES = "./src/main/resources/examples_json/";
 	
 	public static String PATH_TO_INVALID_WORDS = "./src/main/resources/bag_config/forbiddenInputNeurons";
 	public static String PATH_TO_INVALID_TOKENS = "./src/main/resources/bag_config/forbiddenTokens";

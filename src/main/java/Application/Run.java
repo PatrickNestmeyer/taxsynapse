@@ -60,6 +60,7 @@ public class Run {
 		{
 			CSVBookingHandler bHandler = CSVBookingHandler.getInstance();
 			List<Voucher> VoucherList = new ArrayList<Voucher>();
+			jsonHandler.getInstance().readReducedInvoice(Config.PATH_TO_JSON_INVOICES, ReducedInvoiceList);
 			VoucherList = bHandler.getVoucherInfoFromFile(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
 			LabelList = CSVBookingHandler.getInstance().createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList, true);
 			bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList, Config.VOUCHER_CSV_SEPERATOR);
@@ -73,7 +74,7 @@ public class Run {
 	
 	private static void readInvoicesFromFiles(List<AInvoice> ReducedInvoiceList)
 	{
-		String pathToInvoices = Config.PATH_TO_INVOICES;
+		String pathToInvoices = Config.PATH_TO_ZUGFERD_INVOICES;
 		Boolean logSingleSteps = Config.LOG_SINGLE_STEPS;
 		Boolean supressInvalid = Config.SUPRESS_INVALID_INVOICES;
 		zugferdHandler zHandler = zugferdHandler.getInstance();

@@ -17,6 +17,12 @@ public class RInvoice extends AInvoice{
 	}
 
 	@Override
+	public void addPosition(String desc, Price p, String mm, int amount, int tax) {
+		
+		Positions.add(new Position(desc, p, mm, amount, tax));
+	}
+	
+	@Override
 	public void addPosition(String desc, Price p, String mm, int amount, int tax, Error positionerror) {
 		
 		Positions.add(new Position(desc, p, mm, amount, tax, positionerror));

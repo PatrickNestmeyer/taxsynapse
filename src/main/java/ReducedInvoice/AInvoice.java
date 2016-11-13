@@ -53,6 +53,8 @@ public abstract class AInvoice {
 	
 	public abstract void addPosition(Position p);
 	
+	public abstract void addPosition(String desc, Price p, String mm, int amount, int tax);
+	
 	public abstract void addPosition(String desc, Price p, String mm, int amount, int tax, Error positionerror);
 	
 	public abstract Position getPosition(int index);

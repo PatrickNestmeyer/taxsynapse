@@ -4,6 +4,15 @@ import ReducedInvoice.AInvoice.Error;
 
 public class Position {
 	
+	public Position(String Description, Price PositionPrice, String MeasureMent, int Amount, int Taxrate)
+	{
+		this.Description = Description;
+		this.PositionPrice = PositionPrice;
+		this.Measurement = MeasureMent;
+		this.Amount = Amount;
+		this.Taxrate = Taxrate;
+	}
+	
 	public Position(String Description, Price PositionPrice, String MeasureMent, int Amount, int Taxrate, Error positionerror)
 	{
 		this.Description = Description;
