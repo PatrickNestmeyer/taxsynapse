@@ -119,7 +119,7 @@ public class NetworkFacade {
 	public void configNetwork(){
 		this.network = network.getInstance();
 		if(this.use3D){
-			this.network.setAlphabetSize(InputManager.getInstance().getAlphabet().length);
+			this.network.setAlphabetSize(this.alphabet.length());
 			this.network.setupNetworkConfiguration3D();
 		}else{
 			this.network.setupNetworkConfiguration2D();

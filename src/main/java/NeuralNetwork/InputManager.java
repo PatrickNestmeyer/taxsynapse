@@ -208,7 +208,7 @@ public class InputManager {
 				String InputLineL = brL.readLine().toLowerCase();
 				
 				//Put character at the first position in labels file. It represents the class (0-4)
-				classes.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
+				//classes.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
 				for(int labelCounter = 0; labelCounter < labels.size(); labelCounter++){
 					if(InputLineL.charAt(0) == this.labels.get(labelCounter).toCharArray()[0])
 						classes.putScalar(new int[] {lineCounter, labelCounter}, 1);

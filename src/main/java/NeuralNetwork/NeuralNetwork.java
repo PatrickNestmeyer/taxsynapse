@@ -93,36 +93,36 @@ public class NeuralNetwork {
 				.momentum(momentum)
 				.regularization(true)
 				.l2(1e-3)
-				.miniBatch(false)
+				//.miniBatch(false)
 				.list()
 				
 				// 258 - 7 + 1 = 252
-				.layer(0, this.createConvolutionInitLayer3D("Conv1", convBigKernelSize, convStride))
+				.layer(0, this.createConvolutionInitLayer3D("Conv1", convBigKernelSize, convStride, 256, 1))
 				// 252 : 3 = 84
 				.layer(1, this.createPoolingLayer3D("Pool1", poolKernelSize, poolStride))
 				
+				
 				// 84 - 7 + 1 = 78
-				.layer(2, this.createConvolutionLayer3D("Conv2", convBigKernelSize, convStride))
+				.layer(2, this.createConvolutionLayer3D("Conv2", convBigKernelSize, convStride, 1, 256))
 				// 78 : 3 = 26
 				.layer(3, this.createPoolingLayer3D("Pool2", poolKernelSize, poolStride))
-				
-				
+				/*
 				// 26 - 3 + 1 = 24
-				.layer(4, this.createConvolutionLayer3D("Conv3", convSmallKernelSize, convStride))
+				.layer(4, this.createConvolutionLayer3D("Conv3", convSmallKernelSize, convStride, 256))
 				// 24 - 3 + 1 = 22
-				.layer(5, this.createConvolutionLayer3D("Conv4", convSmallKernelSize, convStride))
+				.layer(5, this.createConvolutionLayer3D("Conv4", convSmallKernelSize, convStride, 256))
 				// 22 - 3 + 1 = 20
-				.layer(6, this.createConvolutionLayer3D("Conv5", convSmallKernelSize, convStride))
+				.layer(6, this.createConvolutionLayer3D("Conv5", convSmallKernelSize, convStride, 256))
 				// 20 - 3 + 1 = 18
-				.layer(7, this.createConvolutionLayer3D("Conv6", convSmallKernelSize, convStride))
-				
+				.layer(7, this.createConvolutionLayer3D("Conv6", convSmallKernelSize, convStride, 256))
+				*/
 				// 18 : 3 = 6
-				.layer(8, this.createPoolingLayer3D("Pool3", poolKernelSize, poolStride))
+				//.layer(8, this.createPoolingLayer3D("Pool3", poolKernelSize, poolStride))
 				
-				.layer(9, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
-				.layer(10, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
+				//.layer(9, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
+				.layer(4, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
 
-				.layer(11, this.createOutputLayer3D("Output", 1024))
+				.layer(5, this.createOutputLayer3D("Output", 1024))
 		        .backprop(true)
 		        .pretrain(false)
 		        .setInputType(InputType.convolutionalFlat(alphabetSize, numberOfInputs, 1))
@@ -198,27 +198,10 @@ public class NeuralNetwork {
 	}
 	
 	public void run(MultipleEpochsIterator iterator){
-		
 		network.init();
 		network.setListeners(new ScoreIterationListener(1));
 		//network.setListeners(new FlowIterationListener(1));
-		
-		System.out.println(network.numParams());
-		INDArray params = network.params();
-		
-		float p1 = params.getFloat(new int[] {0, 0});
-		float p2 = params.getFloat(new int[] {0, 1});
-		float p3 = params.getFloat(new int[] {0, 2});
-		
 		network.fit(iterator);
-		
-		params = network.params();
-		
-		float p1n = params.getFloat(new int[] {0, 0});
-		float p2n = params.getFloat(new int[] {0, 1});
-		float p3n = params.getFloat(new int[] {0, 2});
-		
-		System.out.println("");
 	}
 	
 	public void run(INDArray features, INDArray labels){
@@ -229,27 +212,31 @@ public class NeuralNetwork {
 	}
 	
 	public void printNetwork(){
+		INDArray m1 = network.getInput();
+		INDArray m2 = network.input();
+		
 		INDArray l1 = network.getLayer(0).input();
+		int l11 = network.getLayer(0).getInputMiniBatchSize();
 		INDArray l2 = network.getLayer(1).input();
 		INDArray l3 = network.getLayer(2).input();
 		INDArray l4 = network.getLayer(3).input();
-		INDArray l5 = network.getLayer(4).input();
+		System.out.print("");
 	}
 	
 	public double test(DataSet testSet){
 		
-		List<INDArray> a = network.feedForward();
-		
-		INDArray labels = testSet.getLabels();
-		
 		double hit = 0;
+		INDArray realLabelOneHot = testSet.getLabels();
 		for(int i = 0; i < testSet.numExamples(); i++){
-			INDArray exampleI = testSet.getFeatures().getRow(i);
-			INDArray output = network.output(exampleI);
-			int[] predict = network.predict(exampleI);
-			//if(predict[0] == labels.getInt(i))
-			//	hit++;
-			System.out.println("");
+			int realLabel = 0;
+			int predict = network.predict(testSet.getFeatures().getRow(i))[0];
+			for(int j = 0; j < realLabelOneHot.getRow(i).length(); j++){
+				if(realLabelOneHot.getDouble(i, j) == 1.00)
+					realLabel = j;
+			}
+			//System.out.println("For Input " + i + ", " + predict + " was predicted. The real label is " + realLabel);
+			if(realLabel == predict)
+				hit++;
 		}
 		
 		double returnValue = hit / testSet.numExamples(); 
@@ -303,7 +290,7 @@ public class NeuralNetwork {
 				.build();
 	}
 	
-	private ConvolutionLayer createConvolutionInitLayer3D(String Name, int KernelSize, int Stride){
+	private ConvolutionLayer createConvolutionInitLayer3D(String Name, int KernelSize, int Stride, int Out, int In){
 		//nIn = number of channels. 1 if 2-D Data, 3 for RGB-Pictures. No other parameter values are possible.
 		//nOut = number of filters. In this context nOut means the number of filter-maps.
 		//Both are 1 in this example
@@ -312,12 +299,12 @@ public class NeuralNetwork {
 				.name(Name)
 				.kernelSize(new int[] {this.alphabetSize, KernelSize})
 				.stride(new int[] {this.alphabetSize, Stride})
-				.nIn(1)
-				.nOut(1)
+				.nIn(In)
+				.nOut(Out)
 				.build();
 	}
 	
-	private ConvolutionLayer createConvolutionLayer3D(String Name, int KernelSize, int Stride){
+	private ConvolutionLayer createConvolutionLayer3D(String Name, int KernelSize, int Stride, int Out, int In){
 		//nIn = number of channels. 1 if 2-D Data, 3 for RGB-Pictures. No other parameter values are possible.
 		//nOut = number of filters. In this context nOut means the number of filter-maps.
 		//Both are 1 in this example
@@ -326,13 +313,15 @@ public class NeuralNetwork {
 				.name(Name)
 				.kernelSize(new int[] {1, KernelSize})
 				.stride(new int[] {1, Stride})
-				.nOut(1)
+				.nIn(In)
+				.nOut(Out)
 				.build();
 	}
 	
 	private SubsamplingLayer createPoolingLayer3D(String Name, int KernelSize, int Stride){
 		return new SubsamplingLayer.Builder(SubsamplingLayer.PoolingType.MAX)
 				.name(Name)
+				//= 1 x 252
 				.kernelSize(new int[] {1,KernelSize})
 				.stride(new int[] {1,Stride})
 				.build();
