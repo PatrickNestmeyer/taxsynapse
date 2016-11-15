@@ -138,8 +138,6 @@ public class NetworkFacade {
 		System.out.println("total examples: " + trainIterator.totalExamples());
 		
 		network.run(trainIterator);
-		
-		network.printNetwork();
 	}
 	
 	public double testNetwork(){

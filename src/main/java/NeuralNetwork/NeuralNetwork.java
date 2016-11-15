@@ -75,7 +75,7 @@ public class NeuralNetwork {
 		double normalDistributionLower = 0.00;
 		double normalDistributionUpper = 0.05;
 		String activationFunction = "relu";
-		double learningRate = 1e-6;
+		double learningRate = 0.01;
 		double momentum = 0.9;
 		
 		
@@ -103,26 +103,27 @@ public class NeuralNetwork {
 				
 				
 				// 84 - 7 + 1 = 78
-				.layer(2, this.createConvolutionLayer3D("Conv2", convBigKernelSize, convStride, 1, 256))
+				.layer(2, this.createConvolutionLayer3D("Conv2", convBigKernelSize, convStride, 256, 256))
 				// 78 : 3 = 26
 				.layer(3, this.createPoolingLayer3D("Pool2", poolKernelSize, poolStride))
-				/*
-				// 26 - 3 + 1 = 24
-				.layer(4, this.createConvolutionLayer3D("Conv3", convSmallKernelSize, convStride, 256))
-				// 24 - 3 + 1 = 22
-				.layer(5, this.createConvolutionLayer3D("Conv4", convSmallKernelSize, convStride, 256))
-				// 22 - 3 + 1 = 20
-				.layer(6, this.createConvolutionLayer3D("Conv5", convSmallKernelSize, convStride, 256))
-				// 20 - 3 + 1 = 18
-				.layer(7, this.createConvolutionLayer3D("Conv6", convSmallKernelSize, convStride, 256))
-				*/
-				// 18 : 3 = 6
-				//.layer(8, this.createPoolingLayer3D("Pool3", poolKernelSize, poolStride))
 				
-				//.layer(9, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
-				.layer(4, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
+				// 26 - 3 + 1 = 24
+				.layer(4, this.createConvolutionLayer3D("Conv3", convSmallKernelSize, convStride, 256, 256))
+				
+				// 24 - 3 + 1 = 22
+				.layer(5, this.createConvolutionLayer3D("Conv4", convSmallKernelSize, convStride, 256, 256))
+				// 22 - 3 + 1 = 20
+				.layer(6, this.createConvolutionLayer3D("Conv5", convSmallKernelSize, convStride, 256, 256))
+				// 20 - 3 + 1 = 18
+				.layer(7, this.createConvolutionLayer3D("Conv6", convSmallKernelSize, convStride, 256, 256))
+				
+				// 18 : 3 = 6
+				.layer(8, this.createPoolingLayer3D("Pool3", poolKernelSize, poolStride))
+				
+				.layer(9, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
+				.layer(10, new DenseLayer.Builder().nOut(1024).dropOut(0.5).build())
 
-				.layer(5, this.createOutputLayer3D("Output", 1024))
+				.layer(11, this.createOutputLayer3D("Output", 1024))
 		        .backprop(true)
 		        .pretrain(false)
 		        .setInputType(InputType.convolutionalFlat(alphabetSize, numberOfInputs, 1))
@@ -209,18 +210,6 @@ public class NeuralNetwork {
 		network.setListeners(new ScoreIterationListener(1));
 		network.fit(features, labels);
 		
-	}
-	
-	public void printNetwork(){
-		INDArray m1 = network.getInput();
-		INDArray m2 = network.input();
-		
-		INDArray l1 = network.getLayer(0).input();
-		int l11 = network.getLayer(0).getInputMiniBatchSize();
-		INDArray l2 = network.getLayer(1).input();
-		INDArray l3 = network.getLayer(2).input();
-		INDArray l4 = network.getLayer(3).input();
-		System.out.print("");
 	}
 	
 	public double test(DataSet testSet){

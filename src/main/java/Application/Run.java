@@ -104,7 +104,7 @@ public class Run {
 		boolean regression = false;
 		String path = "./src/main/resources/labeled_data/";
 		int numberOfCores = 2;
-		int numberOfEpochs = 1;
+		int numberOfEpochs = 3;
 		List<String> labels = Arrays.asList("0","1","2","3");
 		
 		NetworkFacade nf = NetworkFacade.getInstance();
