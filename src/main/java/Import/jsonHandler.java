@@ -63,7 +63,7 @@ public class jsonHandler
 	
 	public void readReducedInvoice(String Path, List<AInvoice> ReducedInvoiceList) throws Exception
 	{
-		//Rekursive => elem can be a folder or a file 
+		//Recursive => elem can be a folder or a file 
 		Files.walk(Paths.get(Path)).forEach(elem ->
 		{
 			String fileName = elem.getFileName().toString();
@@ -103,6 +103,7 @@ public class jsonHandler
 										, 19);							
 							}
 							ReducedInvoiceList.add(returnValue);
+							System.out.println("json invoice added");
 						}
 					}
 				}

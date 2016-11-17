@@ -54,7 +54,7 @@ public class zugferdHandler {
 	public void readInvoice(String Path, List<AInvoice> ReducedInvoiceList , final boolean setLogging, final boolean supressInvalid) throws Exception
 	{
 		InvoiceReducer ir = InvoiceReducer.getInstance();
-		//Rekursive => elem can be a folder or a file 
+		//Recursive => elem can be a folder or a file 
 		Files.walk(Paths.get(Path)).forEach(elem -> {
 			String fileName = elem.getFileName().toString();
 			String path = elem.toString();

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beleginfos>
+  <beleginfo>
+    <adressat>
+      <name>MARGOT SCHMIDT-MUELLER</name>
+      <strasse>MUENCHNER STRASSE</strasse>
+      <hausNummer>22c</hausNummer>
+      <plz>91655</plz>
+      <ort>NUERNBERG</ort>
+      <kundenNummer>98556</kundenNummer>
+    </adressat>
+    <amounts>
+      <gesamtBrutto>1330,17</gesamtBrutto>
+      <gesamtNetto>1117,79</gesamtNetto>
+      <ust190>212,38</ust190>
+    </amounts>
+    <belegNummer>036589</belegNummer>
+    <belegDatum>03.08.2013</belegDatum>
+    <gutschrift>False</gutschrift>
+    <zahlungsBedingungen>Zahlbar sofort rein netto -&gt; sofort ohne Skonto</zahlungsBedingungen>
+    <adressant>
+      <konto>
+        <IBAN>DE83370694292542863172</IBAN>
+      </konto>
+      <steuerId>DE180213490</steuerId>
+    </adressant>
+    <line_items>
+      <line_item>
+        <text>Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49</text>
+        <Amount>812,49</Amount>
+        <UnitPrice>5,11</UnitPrice>
+        <Quantity>159,00</Quantity>
+      </line_item>
+      <line_item>
+        <text>Kleinmaterial (Öl, Schauben, Entsorgung von	1	5,30	5,30</text>
+        <Amount>5,30</Amount>
+        <UnitPrice>5,30</UnitPrice>
+        <Quantity>1</Quantity>
+      </line_item>
+      <line_item>
+        <text>Entsorgung von Altpanzer pauschal	1	25,00	25,00</text>
+        <Amount>25,00</Amount>
+        <UnitPrice>25,00</UnitPrice>
+        <Quantity>1</Quantity>
+      </line_item>
+      <line_item>
+        <text>Arbeitszeit	5	50,00	250,00</text>
+        <Amount>250,00</Amount>
+        <UnitPrice>50,00</UnitPrice>
+        <Quantity>5</Quantity>
+      </line_item>
+      <line_item>
+        <text>Anfahrtspauschale für 2 Monteure	1	25,00	25,00</text>
+        <Amount>25,00</Amount>
+        <UnitPrice>25,00</UnitPrice>
+        <Quantity>1</Quantity>
+      </line_item>
+    </line_items>
+  </beleginfo>
+</beleginfos>

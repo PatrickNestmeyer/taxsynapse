@@ -51,20 +51,41 @@ public class Run {
 	
 	public static void runDataPreprocessing()
 	{
+		/**
+		 * Lists for the Invoices, vouchers (bookingtable data) and labels (positions+account info)
+		 */
 		List<AInvoice> ReducedInvoiceList = new ArrayList<AInvoice>();
+		List<Voucher> VoucherList = new ArrayList<Voucher>();
 		List<Label> LabelList;
-
+		
+		
+		//read ZUGFERDs, reduce them to necessary informations and add them to the List
 		readInvoicesFromFiles(ReducedInvoiceList);
 		
 		try
 		{
+			//Get File-Manager for csv
 			CSVBookingHandler bHandler = CSVBookingHandler.getInstance();
-			List<Voucher> VoucherList = new ArrayList<Voucher>();
-			jsonHandler.getInstance().readReducedInvoice(Config.PATH_TO_JSON_INVOICES, ReducedInvoiceList);
-			VoucherList = bHandler.getVoucherInfoFromFile(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
-			LabelList = CSVBookingHandler.getInstance().createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList, true);
-			bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList, Config.VOUCHER_CSV_SEPERATOR);
-			bHandler.printLabelList(LabelList, Config.VOUCHER_CSV_SEPERATOR);
+			
+			//Read vouchers 
+			VoucherList = bHandler.getVoucherInfoFromFolder(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
+			
+			//Creates a List with both information voucher and invoice
+			//TODO: The createReducedInvoiceVoucherList fails 
+			LabelList = bHandler.createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList, true);
+			
+			//TODO: This file is probably not necessary
+			bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList,Config.PATH_TO_VOUCHER_TEST_DUMP, Config.VOUCHER_CSV_SEPERATOR);
+			
+			/**
+			 * TODO: This has to be changed by the following:
+			 * TODO: 1. scramble the list
+			 * TODO: 2. Divide the list 9:1 into two list
+			 * TODO: 3. print the greater list as training data and the smaller list as testdata
+			 * TODO: 4. print two diffrent files of same length for each of training and test, 
+			 *          one for the labels and one for the descriptions. This Makes in total 4 files.
+			 */
+			bHandler.printLabelList(LabelList, Config.PATH_TO_LABEL_LIST, Config.VOUCHER_CSV_SEPERATOR);
 		}
 		catch(Exception e)
 		{
@@ -73,21 +94,22 @@ public class Run {
 	}
 	
 	private static void readInvoicesFromFiles(List<AInvoice> ReducedInvoiceList)
-	{
-		String pathToInvoices = Config.PATH_TO_ZUGFERD_INVOICES;
+	{ 
 		Boolean logSingleSteps = Config.LOG_SINGLE_STEPS;
 		Boolean supressInvalid = Config.SUPRESS_INVALID_INVOICES;
 		zugferdHandler zHandler = zugferdHandler.getInstance();
+		jsonHandler jHandler = jsonHandler.getInstance();
 		try
 		{
-			zHandler.readInvoice(pathToInvoices, ReducedInvoiceList, logSingleSteps, supressInvalid);
+			zHandler.readInvoice(Config.PATH_TO_ZUGFERD_INVOICES, ReducedInvoiceList, logSingleSteps, supressInvalid);
+			jHandler.readReducedInvoice(Config.PATH_TO_JSON_INVOICES, ReducedInvoiceList);
 			System.out.println("All Invoices successfully readed");
 		}
 		catch(Exception e)
 		{
-			System.out.print("Exception while reading Invoices");
+			System.out.println("Exception while reading Invoices");
 			System.out.println("Details: ");
-			System.out.println(e.getMessage());
+			System.out.print(e.getMessage());
 		}
 	}
 
@@ -97,7 +119,7 @@ public class Run {
 	
 	public static void runNetwork()
 	{
-		String alphabet = "abcdefghijklmnopqrstuvwxyz0123456789 @€!\"§$%&/()=?+-#<>.,;:_'*´{[]}";
+		String alphabet = "abcdefghijklmnopqrstuvwxyz0123456789 @ï¿½!\"ï¿½$%&/()=?+-#<>.,;:_'*ï¿½{[]}";
 		int frameSize = 258;
 		int minibatchSize = 128;
 		int numPossibleLabels = 4;

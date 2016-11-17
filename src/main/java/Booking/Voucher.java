@@ -6,7 +6,7 @@ public class Voucher {
 	private String debitAccount;
 	//Gesamtbetrag der Buchung
 	private String volume;
-	//Steuerschlüssel
+	//Steuerschlussel
 	private String taxKey;
 	//Beleglink
 	private String voucherID;

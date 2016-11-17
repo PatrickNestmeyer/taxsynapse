@@ -3,6 +3,8 @@ package Booking;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -36,8 +38,42 @@ public class CSVBookingHandler {
 		return uniqueInstance;
 	}
 	
+	public List<Voucher> getVoucherInfoFromFolder(String Path, String volumeKey, String debitAccountKey, String taxKey, String idKey, char Seperator) throws IOException{
+		
+		List<Voucher> returnValue = new ArrayList<Voucher>();
+		
+		//Rekursive => elem can be a folder or a file 
+		Files.walk(Paths.get(Path)).forEach(elem ->
+		{
+			String fileName = elem.getFileName().toString();
+			String path = elem.toString();
+			try
+			{
+				if (Files.isDirectory(elem))
+				{
+					System.out.println("test");
+				}
+				else
+				{	
+					if(Files.isRegularFile(elem))
+					{
+						if(fileName.toLowerCase().contains(".csv"))
+						{
+							String PathToFile = Path + "/" + fileName;
+							returnValue.addAll(this.getVoucherInfoFromFile(PathToFile, volumeKey, debitAccountKey, taxKey, idKey, Seperator));
+						}
+					}
+				}
+			}catch(Exception e){
+				System.out.println(fileName + " caused an Exception.");
+				System.out.println("Message: " + e.getMessage());
+			}
+		});
+		
+		return returnValue;
+	}
+	
 	/**
-	 * 
 	 * @param Path
 	 * @param volumeKey
 	 * @param debitAccountKey
@@ -47,6 +83,7 @@ public class CSVBookingHandler {
 	 * @return
 	 * @throws IOException
 	 */
+	
 	public List<Voucher> getVoucherInfoFromFile(String Path, String volumeKey, String debitAccountKey, String taxkKey, String idKey, char Seperator) throws IOException{
 		
 		String[] Line;
@@ -84,9 +121,9 @@ public class CSVBookingHandler {
 	 * @param Seperator
 	 * @throws IOException
 	 */
-	public void printVoucherListWithoutDebitAccount(List<AInvoice> aList, char Seperator) throws IOException
+	public void printVoucherListWithoutDebitAccount(List<AInvoice> aList, String Path, char Seperator) throws IOException
 	{
-		CSVWriter writer = new CSVWriter(new FileWriter(Config.PATH_TO_VOUCHER_TEST_DUMP), Seperator);
+		CSVWriter writer = new CSVWriter(new FileWriter(Path), Seperator);
 		String outStream = "";
 		outStream += Config.VOLUME_ID + Seperator
 				+ Config.DEBIT_ACCOUNT_ID + Seperator
@@ -121,9 +158,9 @@ public class CSVBookingHandler {
 	 * @param Seperator
 	 * @throws IOException
 	 */
-	public void printLabelList(List<Label> LabelList, char Seperator) throws IOException
+	public void printLabelList(List<Label> LabelList, String Path, char Seperator) throws IOException
 	{
-		CSVWriter writer = new CSVWriter(new FileWriter(Config.PATH_TO_LABEL_LIST), Seperator);
+		CSVWriter writer = new CSVWriter(new FileWriter(Path), Seperator);
 		String outStream = "";
 		outStream += Config.VOUCHER_ID + Seperator
 				+Config.TAX_KEY_ID + Seperator
@@ -210,7 +247,7 @@ public class CSVBookingHandler {
 	{
 		Label returnValue = null;
 		float BuchungsUmsatz;
-		boolean Rückrechnung = false;
+		boolean Ruckrechnung = false;
 		for(int i = 0; i < invoice.getPositionsLength(); i++)
 		{
 			returnValue = new Label();
@@ -226,12 +263,12 @@ public class CSVBookingHandler {
 					{
 						returnValue.setlabel_ID(voucher.getDebitAccount());
 						returnValue.setBeleglink(voucher.getVoucherID());
-						Rückrechnung = true;
+						Ruckrechnung = true;
 						break;
 					}
 				}
 			}
-			if(Rückrechnung == true)
+			if(Ruckrechnung == true)
 			{
 				break;
 			}
