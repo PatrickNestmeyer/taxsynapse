@@ -72,8 +72,8 @@ public class InputManager {
 
 	public DataSet readFiles(String Path) throws IOException{
 		
-		String PathToInputFile = Path + "data.txt";
-		String PathToLabels = Path + "labels.txt";
+		String PathToInputFile = Path + "/data.txt";
+		String PathToLabels = Path + "/labels.txt";
 		int InputFileLength = this.countLines(PathToInputFile);
 		int LabelFileLength = this.countLines(PathToLabels);
 		if(InputFileLength == LabelFileLength){

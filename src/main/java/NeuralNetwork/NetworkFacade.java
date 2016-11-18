@@ -78,8 +78,8 @@ public class NetworkFacade {
 			encoder.setAlphabet(this.alphabet);
 			encoder.setInputLength(this.inputLength);
 			encoder.setNumberOfLabels(outputLength);
-			this.trainDataset = encoder.readFiles(Path+"train/");
-			this.testDataset = encoder.readFiles(Path+"test/");
+			this.trainDataset = encoder.readFiles(Path+"/train");
+			this.testDataset = encoder.readFiles(Path+"/test");
 			return (this.trainDataset == null) ? false : true;
 		}catch(Exception e){
 			e.printStackTrace();
