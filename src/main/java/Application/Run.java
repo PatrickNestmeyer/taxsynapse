@@ -117,6 +117,8 @@ public class Run {
 	 * The core call functions of the neural network
 	 */
 	
+	//TODO: Use independent data of DBPedia to evaluate network
+	
 	public static void runNetwork()
 	{
 		String alphabet = "abcdefghijklmnopqrstuvwxyz0123456789 @�!\"�$%&/()=?+-#<>.,;:_'*�{[]}";
@@ -134,7 +136,7 @@ public class Run {
 		networkManager.setProperties(alphabet, inputLength, outputLength, "small");
 		if(networkManager.readData(path_to_data)){
 			networkManager.build(leraningRate, momentum, regularization);
-			networkManager.train(minibatch, epochs, cores);
+			networkManager.trainFixed(minibatch, epochs, cores);
 			System.out.println(networkManager.test());
 		}
 	}

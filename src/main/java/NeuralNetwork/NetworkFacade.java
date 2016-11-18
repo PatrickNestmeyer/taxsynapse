@@ -29,8 +29,6 @@ public class NetworkFacade {
 	
 	private DataSet testDataset;
 	
-	private MultipleEpochsIterator trainIterator;
-	
 	/**
 	 * Singleton properties and methods
 	 */
@@ -94,9 +92,12 @@ public class NetworkFacade {
 		this.network.setupNetworkConfiguration();
 	}
 	
-	public void train(int Minibatch, int Epochs, int NumberOfCores){
-		trainIterator = new MultipleEpochsIterator(Epochs, new ListDataSetIterator(trainDataset.asList(), Minibatch), NumberOfCores);
-		network.run(trainIterator);
+	public void trainFixed(int Minibatch, int Epochs, int NumberOfCores){
+		network.run( new MultipleEpochsIterator(Epochs, new ListDataSetIterator(trainDataset.asList(), Minibatch), NumberOfCores));
+	}
+	
+	public void trainArbitary(int Minibatch, int maxEpochs, int NumberOfCores, double stoppingCriteria){
+		network.run(maxEpochs, Minibatch, NumberOfCores, stoppingCriteria);
 	}
 	
 	public double test(){

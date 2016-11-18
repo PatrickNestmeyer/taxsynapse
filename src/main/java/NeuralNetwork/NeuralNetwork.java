@@ -217,6 +217,16 @@ public class NeuralNetwork {
 		network.fit(iterator);
 	}
 	
+	public void run(int maxEpochs, int miniBatch, int cores, double StoppingCriteria){
+		//TODO: Implement early stopping
+	}
+	
+	public void saveNetworkParameters(){
+		//TODO: Create folder output in resources
+		//TODO: Create folder structure: for each run a folder with timestamp
+		//TODO: Inside: Create a txt-file with metadata (learning parameters, results and duration of training) and a xml with the serialization of the network after each epoch.
+	}
+	
 	public double test(DataSet testSet){
 		
 		double hit = 0;
