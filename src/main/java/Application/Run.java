@@ -120,22 +120,22 @@ public class Run {
 	public static void runNetwork()
 	{
 		String alphabet = "abcdefghijklmnopqrstuvwxyz0123456789 @�!\"�$%&/()=?+-#<>.,;:_'*�{[]}";
-		int frameSize = 258;
-		int minibatchSize = 128;
-		int numPossibleLabels = 4;
-		boolean regression = false;
-		String path = "./src/main/resources/labeled_data/";
-		int numberOfCores = 2;
-		int numberOfEpochs = 3;
-		List<String> labels = Arrays.asList("0","1","2","3");
+		int inputLength = 258;
+		int outputLength = 4;
+		int minibatch = 64;
+		String path_to_data = "./src/main/resources/labeled_data/";
+		int cores = Runtime.getRuntime().availableProcessors();
+		int epochs = 1;
+		double leraningRate = 1e-3; //0.1 to 1e-6 || try 1e-1, 1e-3 and 1e-6
+		double regularization = 1e-6; //1e-3 to 1e-6
+		double momentum = 0.9; //common value is 0.9
 		
-		NetworkFacade nf = NetworkFacade.getInstance();
-		nf.setConfigurationParameters(path, frameSize, alphabet, minibatchSize, numberOfCores, numberOfEpochs, labels);
-		nf.train3DModel();
-		if(nf.readData()){
-			nf.configNetwork();
-			nf.trainNetwork();
-			System.out.println(nf.testNetwork());
+		NetworkFacade networkManager = NetworkFacade.getInstance();
+		networkManager.setProperties(alphabet, inputLength, outputLength, "small");
+		if(networkManager.readData(path_to_data)){
+			networkManager.build(leraningRate, momentum, regularization);
+			networkManager.train(minibatch, epochs, cores);
+			System.out.println(networkManager.test());
 		}
 	}
 }

@@ -37,32 +37,21 @@ public class InputManager {
 	private InputManager(){}
 	
 	/**
-	 * 
-	 * Attributes
-	 * 
+	 * Properties
 	 */
 	
-	//Bunch of characters representing the allowed input features
 	private char[] alphabet;
 	
-	//Featurelength 
 	private int inputLength;
 	
-	//Each label represent an account number or a class of account numbers
-	private List<String> labels;
-	
-	//The account description or text representing the label in natural language 
-	//Need to be hashmap (expl: "4" => "AV")
-	//private List<String> representation;
+	private int numberOfLabels;
 	
 	/**
-	 * 
 	 * Getter and Setter
-	 * 
 	 */
 	
-	public void setLabels(List<String> labels){
-		this.labels = labels;
+	public void setNumberOfLabels(int size){
+		this.numberOfLabels = size;
 	}
 	
 	public void setAlphabet(String alphabet){
@@ -80,142 +69,30 @@ public class InputManager {
 	public void setInputLength(int frameLength){
 		this.inputLength = frameLength;
 	}
-	
-	/**
-	 * Apply labels on the dataset LabelNames
-	 * @param the DataSet where the labels will be applied on
-	 * @return the DataSet where the labels are applied on
-	 */
-	
-	public DataSet setTestLabelNames(DataSet set){
-		List<String> labelNames = new ArrayList<String>();
-		for (String label : this.labels) {
-			labelNames.add(label);
-		}
-		set.setLabelNames(labelNames);
-		return set;
-	}
-	
-	public DataSet readFiles2D(String Path) throws IOException{
-		
-		String PathToInputFile = Path + "data.txt";
-		String PathToLabels = Path + "labels.txt";
-		
-		int InputFileLength = this.countLines(PathToInputFile);
-		int LabelFileLength = this.countLines(PathToLabels);
-		if(InputFileLength == LabelFileLength){
-			
-			BufferedReader brI = new BufferedReader(new FileReader(new File(PathToInputFile)));
-			BufferedReader brL = new BufferedReader(new FileReader(new File(PathToLabels)));
-			String InputLineI = "";
-			String InputLineL = "";
-			
-			INDArray input = Nd4j.zeros(InputFileLength, this.inputLength);
-			//INDArray labels = Nd4j.zeros(InputFileLength, this.frameLength);
-			INDArray labels = Nd4j.zeros(InputFileLength, 1);
-			
-			//Step over each example
-			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
-				InputLineI = brI.readLine().toLowerCase();
-				InputLineL = brL.readLine().toLowerCase();
-				
-				//Put character at the first position in labels file. It represents the class (0-4)
-				labels.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
-				
-				//Step over each character in features file
-				for(int characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++){
-					char cI = InputLineI.charAt(characterCounter);
-					for(int alphabetCounter = 0; alphabetCounter < alphabet.length; alphabetCounter++){ 
-						if(cI == alphabet[alphabetCounter]) 
-							input.putScalar(new int[] {lineCounter, characterCounter}, alphabetCounter );
-					}
-				}
-			}
-			
-			return new DataSet(input, labels);
-			
-		}else{
-			return null;
-		}
-	}
-	
-	public DataSet readFiles3D(String Path) throws IOException{
-		
-		String PathToInputFile = Path + "data.txt";
-		String PathToLabels = Path + "labels.txt";
-		
-		int InputFileLength = this.countLines(PathToInputFile);
-		int LabelFileLength = this.countLines(PathToLabels);
-		if(InputFileLength == LabelFileLength){
-			
-			BufferedReader brI = new BufferedReader(new FileReader(new File(PathToInputFile)));
-			BufferedReader brL = new BufferedReader(new FileReader(new File(PathToLabels)));
-			String InputLineI = "";
-			String InputLineL = "";
-			
-			INDArray input = Nd4j.zeros(InputFileLength, this.inputLength, this.alphabet.length);
-			//INDArray labels = Nd4j.zeros(InputFileLength, this.frameLength);
-			INDArray labels = Nd4j.zeros(InputFileLength, 4);
-			
-			//Step over each example
-			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
-				InputLineI = brI.readLine().toLowerCase();
-				InputLineL = brL.readLine().toLowerCase();
-				
-				//Put character at the first position in labels file. It represents the class (0-4)
-				labels.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
-				
-				//Step over each character in features file
-				for(int characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++){
-					char cI = InputLineI.charAt(characterCounter);
-					
-					for(int alphabetPosition = 0; alphabetPosition < alphabet.length; alphabetPosition++){
-						if(cI == alphabet[alphabetPosition])
-							input.putScalar(new int[] {lineCounter, characterCounter, alphabetPosition}, 1);
-					}
-				}
-			}
-			
-			return new DataSet(input, labels);
-			
-		}else{
-			return null;
-		}
-	}
 
-	public DataSet readFiles3DFlat(String Path) throws IOException{
+	public DataSet readFiles(String Path) throws IOException{
 		
 		String PathToInputFile = Path + "data.txt";
 		String PathToLabels = Path + "labels.txt";
-		
 		int InputFileLength = this.countLines(PathToInputFile);
 		int LabelFileLength = this.countLines(PathToLabels);
 		if(InputFileLength == LabelFileLength){
-			
 			BufferedReader brI = new BufferedReader(new FileReader(new File(PathToInputFile)));
 			BufferedReader brL = new BufferedReader(new FileReader(new File(PathToLabels)));
-			
 			INDArray input = Nd4j.zeros(InputFileLength, (this.inputLength * this.alphabet.length));
-			//INDArray labels = Nd4j.zeros(InputFileLength, this.frameLength);
-			INDArray classes = Nd4j.zeros(InputFileLength, this.labels.size());
-			
+			INDArray classes = Nd4j.zeros(InputFileLength, this.numberOfLabels);			
 			//Step over each example
 			for(int lineCounter = 0; lineCounter < InputFileLength; lineCounter++){
-				
 				//Feature
 				String InputLineI = brI.readLine().toLowerCase();
 				//Label
 				String InputLineL = brL.readLine().toLowerCase();
-				
 				//Put character at the first position in labels file. It represents the class (0-4)
-				//classes.putScalar(new int[] {lineCounter, 0}, Character.getNumericValue(InputLineL.charAt(0)));
-				for(int labelCounter = 0; labelCounter < labels.size(); labelCounter++){
-					if(InputLineL.charAt(0) == this.labels.get(labelCounter).toCharArray()[0])
-						classes.putScalar(new int[] {lineCounter, labelCounter}, 1);
-				}
-				
-				int totalPosCounter = 0;
+				int labelIdx = Character.getNumericValue(InputLineL.charAt(0));
+				//Put a 1 at the index of the line and the index of the label
+				classes.putScalar(new int[] {lineCounter, labelIdx}, 1);
 				//Step over each character in features file
+				int totalPosCounter = 0;
 				for(int characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++){
 					char cI = InputLineI.charAt(characterCounter);
 					
@@ -227,7 +104,8 @@ public class InputManager {
 					}
 				}
 			}
-			
+			brI.close();
+			brL.close();
 			return new DataSet(input, classes);
 			
 		}else{

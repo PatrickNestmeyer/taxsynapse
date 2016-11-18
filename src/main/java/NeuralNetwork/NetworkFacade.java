@@ -10,16 +10,26 @@ import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 
 public class NetworkFacade {
-
+	
 	/**
-	 * Configuration Parameters
+	 * Private Members
 	 */
 	
-	private String path;
+	private InputManager encoder;
+	
+	private NeuralNetwork network;
+	
+	private String alphabet;
 	
 	private int inputLength;
 	
-	private String alphabet;
+	private int outputLength;
+	
+	private DataSet trainDataset;
+	
+	private DataSet testDataset;
+	
+	private MultipleEpochsIterator trainIterator;
 	
 	/**
 	 * Singleton properties and methods
@@ -38,38 +48,24 @@ public class NetworkFacade {
 	}
 	private NetworkFacade(){}
 	
-	/**
-	 * properties of the neural network
-	 */
-	
-	private boolean use3D = false;
-	
-	private int nCores;
-	
-	private int epochs = 30;
-	
-	//private int halfInit = 3;
-	
-	private int miniBatchSize;
-	
-	private DataSet trainDataset;
-	
-	private DataSet testDataset;
-	
-	private MultipleEpochsIterator trainIterator;
-	
-	private DataSetIterator testIterator;
-	
-	private NeuralNetwork network;
-	
-	private List<String> labels;
-	
-	/**
-	 * TODO: Change to Builder Pattern
-	 */
-	
-	public void setConfigurationParameters(String Path, int InputLength, String Alphabet, int BatchSize, int NumberOfCores, int NumberOfEpochs, List<String> Labels){
+	public void setProperties(String Alphabet, int InputLength, int OutputLength, String NetworkSize){
 		
+		//Data information
+		this.alphabet = Alphabet;
+		this.inputLength = InputLength;
+		this.outputLength = OutputLength;
+		
+		this.encoder = InputManager.getInstance();
+		
+		//Network parameters
+		this.network = NeuralNetwork.getInstance();
+		network.setAlphabetSize(Alphabet.length());
+		network.setInputSize(InputLength);
+		network.setOutputSize(OutputLength);
+		network.setNetworkSize(NetworkSize);
+	}
+	
+	public boolean readData(String Path){
 		/* Structure of data must in the shape of:
 		 * 
 		 * Path => train	=> data.txt
@@ -78,71 +74,32 @@ public class NetworkFacade {
 		 * 		=> test		=> data.txt
 		 * 					=> labels.txt
 		 */
-		
-		this.path = Path;
-		this.inputLength = InputLength;
-		this.alphabet = Alphabet;
-		this.miniBatchSize = BatchSize;
-		this.nCores = NumberOfCores;
-		this.epochs = NumberOfEpochs;
-		this.labels = Labels;
-		//this.halfInit = epochs/10;
-	}
-	
-	public void train3DModel(){
-		this.use3D = true;
-	}
-	
-	public boolean readData(){
 		try{
-			InputManager encoder = InputManager.getInstance();
-			encoder.setLabels(this.labels);
 			encoder.setAlphabet(this.alphabet);
 			encoder.setInputLength(this.inputLength);
-			
-			if(this.use3D){
-				this.trainDataset = encoder.readFiles3DFlat(this.path+"train/");
-				this.testDataset = encoder.readFiles3DFlat(this.path+"test/");
-			}else{
-				this.trainDataset = encoder.readFiles2D(this.path+"train/");
-				this.testDataset = encoder.readFiles2D(this.path+"test/");
-			}
-
+			encoder.setNumberOfLabels(outputLength);
+			this.trainDataset = encoder.readFiles(Path+"train/");
+			this.testDataset = encoder.readFiles(Path+"test/");
 			return (this.trainDataset == null) ? false : true;
-			
 		}catch(Exception e){
 			e.printStackTrace();
 			return false;
 		}
 	}
 	
-	public void configNetwork(){
-		this.network = network.getInstance();
-		if(this.use3D){
-			this.network.setAlphabetSize(this.alphabet.length());
-			this.network.setupNetworkConfiguration3D();
-		}else{
-			this.network.setupNetworkConfiguration2D();
-		}
+	public void build(double learningRate, double momentum, double regularizationRate){
+		network.setLearningRate(learningRate);
+		network.setMomentum(momentum);
+		network.setRegularizationRate(regularizationRate);
+		this.network.setupNetworkConfiguration();
 	}
 	
-	public void trainNetwork(){
-		
-		System.out.println("rows " + trainDataset.getFeatures().size(0)); //number of Examples
-		System.out.println("columns: " + trainDataset.getFeatures().size(1)); //number of Characters
-		
-		this.network = network.getInstance();
-		trainIterator = new MultipleEpochsIterator(this.epochs, new ListDataSetIterator(trainDataset.asList(), this.miniBatchSize), this.nCores);
-		
-		System.out.println("total outcomes: " + trainIterator.totalOutcomes());
-		System.out.println("total examples: " + trainIterator.totalExamples());
-		
+	public void train(int Minibatch, int Epochs, int NumberOfCores){
+		trainIterator = new MultipleEpochsIterator(Epochs, new ListDataSetIterator(trainDataset.asList(), Minibatch), NumberOfCores);
 		network.run(trainIterator);
 	}
 	
-	public double testNetwork(){
-		this.network = network.getInstance();
-		testDataset = InputManager.getInstance().setTestLabelNames(testDataset);
+	public double test(){
 		return network.test(testDataset);
 	}
 }
