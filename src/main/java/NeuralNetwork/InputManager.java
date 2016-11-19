@@ -93,13 +93,19 @@ public class InputManager {
 				classes.putScalar(new int[] {lineCounter, labelIdx}, 1);
 				//Step over each character in features file
 				int totalPosCounter = 0;
+				outerloop:
 				for(int characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++){
 					char cI = InputLineI.charAt(characterCounter);
 					
 					//Step over each alphabet character per character in features file
 					for(int alphabetPosition = 0; alphabetPosition < alphabet.length; alphabetPosition++){
-						if(cI == alphabet[alphabetPosition])
+						if(cI == alphabet[alphabetPosition] && characterCounter < inputLength){
 							input.putScalar(new int[] {lineCounter, totalPosCounter}, 1);
+						}
+						else{
+							if(characterCounter >= inputLength)
+								break outerloop;
+						}
 						totalPosCounter++;
 					}
 				}

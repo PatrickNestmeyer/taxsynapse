@@ -127,13 +127,13 @@ public class Run {
 		int minibatch = 64;
 		String path_to_data = Config.PATH_TO_NETWORKDATA;
 		int cores = Runtime.getRuntime().availableProcessors();
-		int epochs = 1;
-		double leraningRate = 1e-3; //0.1 to 1e-6 || try 1e-1, 1e-3 and 1e-6
+		int epochs = 10;
+		double leraningRate = 0.01; //0.1 to 1e-6 || try 1e-1, 1e-3 and 1e-6
 		double regularization = 1e-6; //1e-3 to 1e-6
 		double momentum = 0.9; //common value is 0.9
 		
 		NetworkFacade networkManager = NetworkFacade.getInstance();
-		networkManager.setProperties(alphabet, inputLength, outputLength, "small");
+		networkManager.setProperties(alphabet, inputLength, outputLength, "medium");
 		if(networkManager.readData(path_to_data)){
 			networkManager.build(leraningRate, momentum, regularization);
 			networkManager.trainFixed(minibatch, epochs, cores);
