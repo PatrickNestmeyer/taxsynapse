@@ -125,7 +125,7 @@ public class Run {
 		int inputLength = 258;
 		int outputLength = 4;
 		int minibatch = 64;
-		String path_to_data = Config.PATH_TO_NETWORKDATA;
+		String path_to_data = Config.PATH_TO_NETWORK_DATA;
 		int cores = Runtime.getRuntime().availableProcessors();
 		int epochs = 10;
 		double leraningRate = 0.01; //0.1 to 1e-6 || try 1e-1, 1e-3 and 1e-6

@@ -16,7 +16,8 @@ public final class Config {
 	public static String PATH_TO_ZUGFERD_INVOICES = "./src/main/resources/input/invoices/zugferd";
 	public static String PATH_TO_JSON_INVOICES = "./src/main/resources/input/invoices/json";
 	public static String PATH_TO_VOUCHERS = "./src/main/resources/input/vouchers";
-	public static String PATH_TO_NETWORKDATA = "./src/main/resources/labeled";
+	public static String PATH_TO_NETWORK_OUTPUT = "./src/main/resources/output";
+	public static String PATH_TO_NETWORK_DATA = "./src/main/resources/labeled";
 	//public static String PATH_TO_NETWORKDATA = "./src/main/resources/labeled/other/names";
 	
 	/**

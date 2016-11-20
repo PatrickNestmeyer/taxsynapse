@@ -1,5 +1,8 @@
 package NeuralNetwork;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.deeplearning4j.datasets.iterator.MultipleEpochsIterator;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
@@ -17,6 +20,8 @@ import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 
+import Application.Config;
+
 public class NeuralNetwork {
 	
 	/**
@@ -26,6 +31,8 @@ public class NeuralNetwork {
 	private MultiLayerConfiguration conf;
 	
 	private MultiLayerNetwork network;
+	
+	private ExportManager manager;
 	
 	/**
 	 * Properties for size and dimension of NN
@@ -100,7 +107,9 @@ public class NeuralNetwork {
 		}
 		return uniqueInstance;
 	}
-	private NeuralNetwork(){}
+	private NeuralNetwork(){
+		manager = ExportManager.getInstance();
+	}
 	
 	public void setAlphabetSize(int size){
 		this.alphabetSize = size;
@@ -211,10 +220,27 @@ public class NeuralNetwork {
 	}
 	
 	public void run(MultipleEpochsIterator iterator){
+		
+		List<String> metadata = new ArrayList<String>();
+		metadata.add("Size of alphabet: " + this.alphabetSize);
+		metadata.add("Number of Inputs: " + this.numberOfInputs);
+		metadata.add("Number of feature maps: " + this.numberOfFeatureMaps);
+		metadata.add("Number of Outputs: " + this.numberOfOutputs);
+		metadata.add("Lerning rate: " + this.learningRate);
+		metadata.add("Momentum: " + this.momentum);
+		metadata.add("Regularization: " + this.regularizationRate);
+		
+		String PATH_OF_CURRENT_RUN = manager.createNetworkSettingFolder(Config.PATH_TO_NETWORK_OUTPUT);
+		
 		network.init();
 		network.setListeners(new ScoreIterationListener(1));
 		//network.setListeners(new FlowIterationListener(1));
+		
+		manager.saveNetworkInitialSettings(PATH_OF_CURRENT_RUN, network, metadata);
+		
 		network.fit(iterator);
+		
+		manager.saveNetworkEpochSetting(PATH_OF_CURRENT_RUN, network, 1);
 	}
 	
 	public void run(int maxEpochs, int miniBatch, int cores, double StoppingCriteria){
