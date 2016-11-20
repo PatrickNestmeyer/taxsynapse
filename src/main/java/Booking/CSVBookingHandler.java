@@ -1,15 +1,18 @@
 package Booking;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
+import com.beust.jcommander.internal.Lists;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 
@@ -166,8 +169,8 @@ public class CSVBookingHandler {
 	 * @param Seperator
 	 * @throws IOException
 	 */
-	public void printLabelList(List<Label> LabelList, String Path, char Seperator) throws IOException
-	{
+	
+	public void printLabeledSingleFile(List<Label> LabelList, String Path, char Seperator) throws IOException{
 		CSVWriter writer = new CSVWriter(new FileWriter(Path), Seperator);
 		String outStream = "";
 		outStream += Config.VOUCHER_ID + Seperator
@@ -194,6 +197,66 @@ public class CSVBookingHandler {
 		writer.close();
 	}
 	
+	public void printLabeledOutputStructure(List<Label> LabelList, String Path, boolean shuffle) throws IOException{
+		File trainFolderPath = new File(Path + "/train");
+		File testFolderPath = new File(Path + "/test");
+		
+		if(!trainFolderPath.exists()){
+			try{
+				trainFolderPath.mkdir();
+			}catch(Exception e){
+				System.out.println("Could not create train folder");
+			}
+		}
+		if(!testFolderPath.exists()){
+			try{
+				testFolderPath.mkdir();
+			}catch(Exception e){
+				System.out.println("Could not create test folder");
+			}
+		}
+		
+		if(shuffle)
+			Collections.shuffle(LabelList);
+		
+		int splitPoint = (LabelList.size() - LabelList.size() / 10);
+		List<Label> trainList = LabelList.subList(0, splitPoint);
+		List<Label> testList = LabelList.subList(splitPoint, LabelList.size());
+		
+		this.writeLabeledDataToFileStructure(trainList, trainFolderPath.getPath());
+		this.writeLabeledDataToFileStructure(testList, testFolderPath.getPath());
+	}
+	
+	private void writeLabeledDataToFileStructure(List<Label> labelList, String path) throws IOException{
+		File dataOut = new File(path + "/data.txt");
+		File labelsOut = new File(path + "/labels.txt");
+		dataOut.createNewFile();
+		labelsOut.createNewFile();
+		
+		FileWriter dataWriter = new FileWriter(dataOut);
+		FileWriter labelsWriter = new FileWriter(labelsOut);
+		
+		String lineBreak = System.getProperty("line.separator");
+		
+		for(int i = 0; i < labelList.size(); i++){
+			
+			for(int j = 0; j < labelList.get(i).getDescriptionSize(); j++){
+				
+				dataWriter.write(labelList.get(i).getDescription(j));
+				labelsWriter.write(Integer.toString(labelList.get(i).getPosition(j)));
+				
+				//If not the last line to print
+				if(!((j == labelList.get(i).getDescriptionSize()-1) && i == (labelList.size()-1))){
+					dataWriter.write(lineBreak);
+					labelsWriter.write(lineBreak);
+				}
+			}
+		}
+		
+		dataWriter.close();
+		labelsWriter.close();
+	}
+	
 	/**
 	 * 
 	 * @param ReducedInvoiceList
@@ -206,30 +269,6 @@ public class CSVBookingHandler {
 		List<Label> LabelList = new ArrayList<Label>();
 		Label temp;
 		
-		//This implementation walks for each invoice over each voucher not the other way
-		
-		for (AInvoice invoice : ReducedInvoiceList) {
-			Voucher linkedVoucher = null;
-			for (Voucher voucher : VoucherList) {
-				if(invoice.getBeleglink().equals(voucher.getVoucherID()))
-					linkedVoucher = voucher;
-			}
-			if(linkedVoucher != null){
-				temp = fast_rando_recounstruct_voucher(invoice, linkedVoucher, 100);
-				if(temp.getBeleglink() != null)
-					LabelList.add(temp);
-				else
-					LabelList.add(reconstruct_voucher(invoice, linkedVoucher));
-			}else{
-				System.out.println("There is no accounting for invoice: " + invoice.getBeleglink());
-			}
-		}
-		if(RemoveLabelError == true)
-		{
-			RemoveLabel(LabelList);
-		}
-		
-		/*
 		int ReducedInvoiceListItem = 0;
 		for (int i = 0; i < VoucherList.size();i++)
 		{
@@ -247,7 +286,7 @@ public class CSVBookingHandler {
 					LabelList.add(reconstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i)));
 				}
 			}
-		}*/
+		}
 		
 		return LabelList;
 	}

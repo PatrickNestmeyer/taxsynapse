@@ -1,0 +1,5 @@
+Kleinmaterial (Öl, Schauben, Entsorgung von	1	5,30	5,30
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Anfahrtspauschale für 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00

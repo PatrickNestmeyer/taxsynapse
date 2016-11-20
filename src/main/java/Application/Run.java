@@ -73,18 +73,11 @@ public class Run {
 			//Creates a List with both information voucher and invoice 
 			LabelList = bHandler.createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList, true);
 			
-			//Uncomment this if data prparation is in test
+			//Uncomment this if data preparation is in test
 			//bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList,Config.PATH_TO_VOUCHER_TEST_DUMP, Config.VOUCHER_CSV_SEPERATOR);
 			
-			/**
-			 * TODO: This has to be changed by the following: 
-			 * TODO: 1. scramble the list => Something with List.shuffle()
-			 * TODO: 2. Divide the list 9:1 into two list
-			 * TODO: 3. print the greater list as training data and the smaller list as testdata
-			 * TODO: 4. print two diffrent files of same length for each of training and test, 
-			 *          one for the labels and one for the descriptions. This Makes in total 4 files.
-			 */
-			bHandler.printLabelList(LabelList, Config.PATH_TO_LABEL_TESTLIST, Config.VOUCHER_CSV_SEPERATOR);
+			//Print the test and training data in demanded folder and file structure to the desired folder
+			bHandler.printLabeledOutputStructure(LabelList, Config.PATH_TO_LABEL_TESTLIST, Config.SHUFFLE_NETWORKDATA);
 		}
 		catch(Exception e)
 		{

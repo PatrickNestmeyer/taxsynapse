@@ -19,6 +19,10 @@ public class Label
 		description = new ArrayList<String>();
 	}
 	
+	public int getNumberOfPositions(){
+		return position_number.size();
+	}
+	
 	public void setlabel_ID(String label_ID)
 	{
 		this.label_ID = label_ID;

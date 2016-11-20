@@ -31,7 +31,7 @@ public final class Config {
 	/**
 	 * Test Files Parameter
 	 */
-	public static String PATH_TO_LABEL_TESTLIST = "./src/main/resources/labeled_test/labeled.csv";
+	public static String PATH_TO_LABEL_TESTLIST = "./src/main/resources/labeled_test/output";
 	public static String PATH_TO_VOUCHER_TEST_DUMP = "./src/main/resources/labeled_test/VoucherTestDump.csv";
 	
 	/**
@@ -45,6 +45,7 @@ public final class Config {
 	public static char VOUCHER_CSV_SEPERATOR = ';';
 	public static char VOUCHER_CSV_REPLACEMENT = ',';
 	
+	public static boolean SHUFFLE_NETWORKDATA = false;
 	
 	public static String PATH_TO_LABELED_DATA = "./src/main/resources/labeled_test/testDataset_%d.csv";
 }
