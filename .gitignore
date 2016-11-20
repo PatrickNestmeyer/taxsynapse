@@ -10,6 +10,9 @@ local.properties
 .loadpath
 .recommenders
 
+# Output of Neural Network Evaluation - because its too much data
+/src/main/resources/output
+
 # Eclipse Core
 .project
 
