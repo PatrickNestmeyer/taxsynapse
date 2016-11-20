@@ -78,14 +78,14 @@ public class Run {
 			bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList,Config.PATH_TO_VOUCHER_TEST_DUMP, Config.VOUCHER_CSV_SEPERATOR);
 			
 			/**
-			 * TODO: This has to be changed by the following:
-			 * TODO: 1. scramble the list
+			 * TODO: This has to be changed by the following: 
+			 * TODO: 1. scramble the list => Something with List.shuffle()
 			 * TODO: 2. Divide the list 9:1 into two list
 			 * TODO: 3. print the greater list as training data and the smaller list as testdata
 			 * TODO: 4. print two diffrent files of same length for each of training and test, 
 			 *          one for the labels and one for the descriptions. This Makes in total 4 files.
 			 */
-			bHandler.printLabelList(LabelList, Config.PATH_TO_LABEL_LIST, Config.VOUCHER_CSV_SEPERATOR);
+			bHandler.printLabelList(LabelList, Config.PATH_TO_LABEL_TESTLIST, Config.VOUCHER_CSV_SEPERATOR);
 		}
 		catch(Exception e)
 		{
@@ -117,11 +117,9 @@ public class Run {
 	 * The core call functions of the neural network
 	 */
 	
-	//TODO: Use independent data of DBPedia to evaluate network
-	
 	public static void runNetwork()
 	{
-		String alphabet = "abcdefghijklmnopqrstuvwxyz0123456789 @ï¿½!\"ï¿½$%&/()=?+-#<>.,;:_'*ï¿½{[]}";
+		String alphabet = "abcdefghijklmnopqrstuvwxyz0123456789 @€!\"$%&/()=?+-#<>.,;:_-'*+#{[]}";
 		int inputLength = 258;
 		int outputLength = 4;
 		int minibatch = 64;

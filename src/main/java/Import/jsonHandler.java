@@ -74,7 +74,7 @@ public class jsonHandler
 					System.out.println("test");
 				}
 				else
-				{	
+				{
 					if(Files.isRegularFile(elem))
 					{
 						if(fileName.toLowerCase().contains(".json"))

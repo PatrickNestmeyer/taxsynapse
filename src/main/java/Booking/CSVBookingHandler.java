@@ -61,6 +61,7 @@ public class CSVBookingHandler {
 						{
 							String PathToFile = Path + "/" + fileName;
 							returnValue.addAll(this.getVoucherInfoFromFile(PathToFile, volumeKey, debitAccountKey, taxKey, idKey, Seperator));
+							System.out.println("csv completely readed");
 						}
 					}
 				}

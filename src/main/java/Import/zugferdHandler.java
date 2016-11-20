@@ -107,7 +107,7 @@ public class zugferdHandler {
 			}catch(Exception e){
 				if(setLogging){ 
 					System.out.println(fileName + " caused an Exception.");
-					System.out.println("Message: " + e.getMessage());
+					System.out.println(fileName + " caused an Exception.");
 				}
 			}
 		});
