@@ -70,12 +70,11 @@ public class Run {
 			//Read vouchers 
 			VoucherList = bHandler.getVoucherInfoFromFolder(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
 			
-			//Creates a List with both information voucher and invoice
-			//TODO: The createReducedInvoiceVoucherList fails 
+			//Creates a List with both information voucher and invoice 
 			LabelList = bHandler.createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList, true);
 			
-			//TODO: This file is probably not necessary
-			bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList,Config.PATH_TO_VOUCHER_TEST_DUMP, Config.VOUCHER_CSV_SEPERATOR);
+			//Uncomment this if data prparation is in test
+			//bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList,Config.PATH_TO_VOUCHER_TEST_DUMP, Config.VOUCHER_CSV_SEPERATOR);
 			
 			/**
 			 * TODO: This has to be changed by the following: 

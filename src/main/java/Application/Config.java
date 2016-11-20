@@ -31,7 +31,7 @@ public final class Config {
 	/**
 	 * Test Files Parameter
 	 */
-	public static String PATH_TO_LABEL_TESTLIST = "./src/main/resources/input/labeled_test/labeled.csv";
+	public static String PATH_TO_LABEL_TESTLIST = "./src/main/resources/labeled_test/labeled.csv";
 	public static String PATH_TO_VOUCHER_TEST_DUMP = "./src/main/resources/labeled_test/VoucherTestDump.csv";
 	
 	/**
@@ -39,7 +39,7 @@ public final class Config {
 	 */
 	public static String VOUCHER_ID = "Beleglink";
 	public static String VOLUME_ID = "Umsatz (ohne Soll/Haben-Kz)";
-	public static String DEBIT_ACCOUNT_ID = "Gegenkonto (ohne BU-Schlüssel)";
+	public static String DEBIT_ACCOUNT_ID = "Konto";
 	public static String TAX_KEY_ID = "BU-Schlüssel";
 	public static String BOOKING_NOTE = "Buchungstext";
 	public static char VOUCHER_CSV_SEPERATOR = ';';

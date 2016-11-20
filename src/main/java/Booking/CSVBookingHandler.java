@@ -61,7 +61,8 @@ public class CSVBookingHandler {
 						{
 							String PathToFile = Path + "/" + fileName;
 							returnValue.addAll(this.getVoucherInfoFromFile(PathToFile, volumeKey, debitAccountKey, taxKey, idKey, Seperator));
-							System.out.println("csv completely readed");
+							List<Voucher> x = returnValue;
+							System.out.println("ho");
 						}
 					}
 				}
@@ -91,27 +92,33 @@ public class CSVBookingHandler {
 		List<Voucher> returnValue = new ArrayList<Voucher>();
 		int volumeID = -1;
 		int debitAccountID = -1;
-		int taxkID = -1;
+		int taxID = -1;
 		int idID = -1;
 		
 		CSVReader cReader = new CSVReader(new FileReader(Path), Seperator);
 		while((Line = cReader.readNext()) != null){
-			
 			for(int i = 0; i < Line.length; i++){
 				if(Line[i].equals(volumeKey))
 					volumeID = i;
 				if(Line[i].equals(debitAccountKey))
 					debitAccountID = i;
 				if(Line[i].equals(taxkKey))
-					taxkID = i;
+					taxID = i;
 				if(Line[i].equals(idKey))
 					idID = i;
 			}
-			if(volumeID > -1 && debitAccountID > -1 && taxkID > -1 && idID > -1)
+			//Is every value in each line AND is every Value at Index 0+
+			if(debitAccountID > volumeID && taxID > volumeID && idID > volumeID && volumeID > -1 && debitAccountID > -1 && taxID > -1 && idID > -1)
 				break;
 		}
 		while((Line = cReader.readNext()) != null){
-			returnValue.add(new Voucher(Line[debitAccountID], Line[volumeID], Line[taxkID], Line[idID]));
+			returnValue.add(
+					new Voucher( 
+							this.transformDebitAccount(Line[debitAccountID]), 
+							Line[volumeID], 
+							this.transformTaxKey(Line[taxID]), 
+							this.transformVoucherID(Line[idID])
+									));
 		}
 		return returnValue;
 	}
@@ -194,30 +201,53 @@ public class CSVBookingHandler {
 	 * @param LabelError 
 	 * @return
 	 */
-	public static List<Label> createReducedInvoiceVoucherList(List<AInvoice> ReducedInvoiceList, List<Voucher> VoucherList, boolean RemoveLabelError)
+	public List<Label> createReducedInvoiceVoucherList(List<AInvoice> ReducedInvoiceList, List<Voucher> VoucherList, boolean RemoveLabelError)
 	{
 		List<Label> LabelList = new ArrayList<Label>();
 		Label temp;
 		
-		int ReducedInvoiceListItem = 0;
-		for (int i = 0; i < VoucherList.size();i++)
-		{
-			ReducedInvoiceListItem = searchReducedInvoiceListItem(ReducedInvoiceList,VoucherList.get(i).getVoucherID());
-			System.out.println("Buchung " + i); // Laufzeit
-			temp = fast_rando_recounstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i),100);
-			if(temp.getBeleglink() != null)
-			{
-				LabelList.add(temp);
+		//This implementation walks for each invoice over each voucher not the other way
+		
+		for (AInvoice invoice : ReducedInvoiceList) {
+			Voucher linkedVoucher = null;
+			for (Voucher voucher : VoucherList) {
+				if(invoice.getBeleglink().equals(voucher.getVoucherID()))
+					linkedVoucher = voucher;
 			}
-			else
-			{
-				LabelList.add(reconstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i)));
+			if(linkedVoucher != null){
+				temp = fast_rando_recounstruct_voucher(invoice, linkedVoucher, 100);
+				if(temp.getBeleglink() != null)
+					LabelList.add(temp);
+				else
+					LabelList.add(reconstruct_voucher(invoice, linkedVoucher));
+			}else{
+				System.out.println("There is no accounting for invoice: " + invoice.getBeleglink());
 			}
 		}
 		if(RemoveLabelError == true)
 		{
 			RemoveLabel(LabelList);
 		}
+		
+		/*
+		int ReducedInvoiceListItem = 0;
+		for (int i = 0; i < VoucherList.size();i++)
+		{
+			ReducedInvoiceListItem = searchReducedInvoiceListItem(ReducedInvoiceList,VoucherList.get(i).getVoucherID());
+			System.out.println("Buchung " + i); // Laufzeit
+			if(ReducedInvoiceListItem > 0)
+			{
+				temp = fast_rando_recounstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i),100);
+				if(temp.getBeleglink() != null)
+				{
+					LabelList.add(temp);
+				}
+				else
+				{
+					LabelList.add(reconstruct_voucher(ReducedInvoiceList.get(ReducedInvoiceListItem),VoucherList.get(i)));
+				}
+			}
+		}*/
 		
 		return LabelList;
 	}
@@ -227,7 +257,7 @@ public class CSVBookingHandler {
 	 * 
 	 * @param LabelList
 	 */
-	public static void RemoveLabel(List<Label> LabelList)
+	public void RemoveLabel(List<Label> LabelList)
 	{
 		for(int i = 0; i < LabelList.size(); i++)
 		{
@@ -244,7 +274,7 @@ public class CSVBookingHandler {
 	 * @param voucher
 	 * @return
 	 */
-	public static Label reconstruct_voucher(AInvoice invoice, Voucher voucher)
+	public Label reconstruct_voucher(AInvoice invoice, Voucher voucher)
 	{
 		Label returnValue = null;
 		float BuchungsUmsatz;
@@ -285,7 +315,7 @@ public class CSVBookingHandler {
 	 * @param c
 	 * @return
 	 */
-	public static Label rando_reconstruct_voucher(AInvoice invoice, Voucher voucher, int c)
+	public Label rando_reconstruct_voucher(AInvoice invoice, Voucher voucher, int c)
 	{
 		List<Integer> steuerklasse = new ArrayList<Integer>();
 		float BuchungsUmsatz = rounding(Float.parseFloat(voucher.getVolume().replace(",", ".")));
@@ -333,7 +363,7 @@ public class CSVBookingHandler {
 	 * @param c boost the probability to find the valid accounting record
 	 * @return
 	 */
-	public static Label fast_rando_recounstruct_voucher(AInvoice invoice, Voucher voucher, int c)
+	public Label fast_rando_recounstruct_voucher(AInvoice invoice, Voucher voucher, int c)
 	{
 		List<Integer> steuerklasse = new ArrayList<Integer>();
 		List<Integer> temp = new ArrayList<Integer>();
@@ -400,7 +430,7 @@ public class CSVBookingHandler {
 	 * @param source the source
 	 * @param clone the copy of the source
 	 */
-	public static int copyArrayList(List<Integer> source, List <Integer> clone)
+	public int copyArrayList(List<Integer> source, List <Integer> clone)
 	{
 		clone.clear();
 		int i = 0;
@@ -417,7 +447,7 @@ public class CSVBookingHandler {
 	 * @param VoucherID
 	 * @return
 	 */
-	public static int searchReducedInvoiceListItem(List<AInvoice> ReducedInvoiceList, String VoucherID)
+	public int searchReducedInvoiceListItem(List<AInvoice> ReducedInvoiceList, String VoucherID)
 	{
 		for(int i = 0; i < ReducedInvoiceList.size(); i++)
 		{
@@ -435,10 +465,23 @@ public class CSVBookingHandler {
 	 * @param max
 	 * @return
 	 */
-	private static int randInt(int min, int max) 
+	private int randInt(int min, int max) 
 	{
 		Random r = new Random();
 		return r.nextInt((max - min) + 1) + min;
+	}
+	
+	private String transformDebitAccount(String account){
+		return account.substring(0, 1);
+	}
+	
+	private String transformTaxKey(String key){
+		return key;
+	}
+	
+	private String transformVoucherID(String vID){
+		//TODO: Remove unnecessary characters from ID
+		return vID;
 	}
 	
 	/**
@@ -446,7 +489,7 @@ public class CSVBookingHandler {
 	 * @param value
 	 * @return
 	 */
-	public static float rounding(float value)
+	public float rounding(float value)
 	{
 		if(((value*1000) % 10) > 4 )
 		{
