@@ -126,7 +126,8 @@ public class Run {
 		networkManager.setProperties(alphabet, inputLength, outputLength, "medium");
 		if(networkManager.readData(path_to_data)){
 			networkManager.build(leraningRate, momentum, regularization);
-			networkManager.trainFixed(minibatch, epochs, cores);
+			//networkManager.trainFixed(minibatch, epochs, cores);
+			networkManager.trainArbitary(minibatch, epochs, 5.00, cores);
 			System.out.println(networkManager.test());
 		}
 	}

@@ -2,8 +2,20 @@ package NeuralNetwork;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import org.apache.commons.io.FilenameUtils;
+import org.deeplearning4j.datasets.iterator.DataSetIterator;
 import org.deeplearning4j.datasets.iterator.MultipleEpochsIterator;
+import org.deeplearning4j.earlystopping.EarlyStoppingConfiguration;
+import org.deeplearning4j.earlystopping.EarlyStoppingModelSaver;
+import org.deeplearning4j.earlystopping.EarlyStoppingResult;
+import org.deeplearning4j.earlystopping.listener.EarlyStoppingListener;
+import org.deeplearning4j.earlystopping.saver.LocalFileModelSaver;
+import org.deeplearning4j.earlystopping.scorecalc.DataSetLossCalculator;
+import org.deeplearning4j.earlystopping.termination.MaxEpochsTerminationCondition;
+import org.deeplearning4j.earlystopping.termination.MaxScoreIterationTerminationCondition;
+import org.deeplearning4j.earlystopping.trainer.EarlyStoppingTrainer;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
@@ -221,14 +233,7 @@ public class NeuralNetwork {
 	
 	public void run(MultipleEpochsIterator iterator){
 		
-		List<String> metadata = new ArrayList<String>();
-		metadata.add("Size of alphabet: " + this.alphabetSize);
-		metadata.add("Number of Inputs: " + this.numberOfInputs);
-		metadata.add("Number of feature maps: " + this.numberOfFeatureMaps);
-		metadata.add("Number of Outputs: " + this.numberOfOutputs);
-		metadata.add("Lerning rate: " + this.learningRate);
-		metadata.add("Momentum: " + this.momentum);
-		metadata.add("Regularization: " + this.regularizationRate);
+		List<String> metadata = this.getMetadata();
 		
 		String PATH_OF_CURRENT_RUN = manager.createNetworkSettingFolder(Config.PATH_TO_NETWORK_OUTPUT);
 		
@@ -243,9 +248,60 @@ public class NeuralNetwork {
 		manager.saveNetworkEpochSetting(PATH_OF_CURRENT_RUN, network, 1);
 	}
 	
-	public void run(int maxEpochs, int miniBatch, int cores, double StoppingCriteria){
-		//TODO: Implement early stopping
+	public Map<Integer, Double> run(int maxEpochs, double maxScore, int miniBatch, int cores, org.nd4j.linalg.dataset.api.iterator.DataSetIterator train, org.nd4j.linalg.dataset.api.iterator.DataSetIterator test){
+		
+		List<String> metadata = this.getMetadata();
+		String PATH_OF_CURRENT_RUN = manager.createNetworkSettingFolder(Config.PATH_TO_NETWORK_OUTPUT);
+		
+		//Maybe worn package imported
+        String directory = FilenameUtils.concat(PATH_OF_CURRENT_RUN, "DL4JEarlyStoppingExample/");
+        EarlyStoppingModelSaver saver = new LocalFileModelSaver(directory);
+		
+		EarlyStoppingConfiguration esConf = new EarlyStoppingConfiguration.Builder()
+				.epochTerminationConditions(new MaxEpochsTerminationCondition(maxEpochs))
+				.evaluateEveryNEpochs(1)
+				.iterationTerminationConditions(new MaxScoreIterationTerminationCondition(maxScore))
+				.scoreCalculator(new DataSetLossCalculator(test, true))
+				.modelSaver(saver)
+				.build();
+				
+		EarlyStoppingTrainer trainer = new EarlyStoppingTrainer(esConf, conf, train);
+		
+		trainer.setListener(new EarlyStoppingListener<MultiLayerNetwork>(){
+
+			@Override
+			public void onStart(EarlyStoppingConfiguration<MultiLayerNetwork> esConfig, MultiLayerNetwork net) {
+				System.out.println("Start early stopping run");
+			}
+			
+			@Override
+			public void onEpoch(int epochNum, double score, EarlyStoppingConfiguration<MultiLayerNetwork> esConfig,
+					MultiLayerNetwork net) {
+				System.out.println("Epoch No. " + epochNum + " completed:");
+				System.out.println("Score is " + score);
+			}
+
+			@Override
+			public void onCompletion(EarlyStoppingResult<MultiLayerNetwork> esResult) {
+				System.out.println("Termination reason: " + esResult.getTerminationReason());
+				System.out.println("Termination details: " + esResult.getTerminationDetails());
+				System.out.println("Total epochs: " + esResult.getTotalEpochs());
+				System.out.println("Best epoch number: " + esResult.getBestModelEpoch());
+				System.out.println("Score at best epoch: " + esResult.getBestModelScore());
+			}
+		});
+		
+		//manager.saveNetworkInitialSettings(PATH_OF_CURRENT_RUN, network, metadata);
+		
+		EarlyStoppingResult result = trainer.fit();
+		
+		List<String> criterias = new ArrayList<String>();
+		
+		manager.saveEvaluation(PATH_OF_CURRENT_RUN, criterias);
+		
+		return result.getScoreVsEpoch();
 	}
+
 	
 	public void saveNetworkParameters(){
 		//TODO: Create folder output in resources
@@ -272,6 +328,18 @@ public class NeuralNetwork {
 		double returnValue = hit / testSet.numExamples(); 
 			
 		return returnValue;
+	}
+	
+	private List<String> getMetadata(){
+		List<String> metadata = new ArrayList<String>();
+		metadata.add("Size of alphabet: " + this.alphabetSize);
+		metadata.add("Number of Inputs: " + this.numberOfInputs);
+		metadata.add("Number of feature maps: " + this.numberOfFeatureMaps);
+		metadata.add("Number of Outputs: " + this.numberOfOutputs);
+		metadata.add("Lerning rate: " + this.learningRate);
+		metadata.add("Momentum: " + this.momentum);
+		metadata.add("Regularization: " + this.regularizationRate);
+		return metadata;
 	}
 	
 	private ConvolutionLayer createConvolutionLayer(String Name, int KernelSize, int Stride, int In, int Out, int Depth){

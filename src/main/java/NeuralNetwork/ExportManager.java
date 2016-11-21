@@ -85,7 +85,6 @@ static private ExportManager uniqueInstance = null;
 	
 	private void saveNetwork(File FileToSave, MultiLayerNetwork net) throws IOException {
 		ModelSerializer.writeModel(net, FileToSave, false);
-		
 	}
 	
 	public MultiLayerNetwork loadNetworInitialSettings(String timestampPath){

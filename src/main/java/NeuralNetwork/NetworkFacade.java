@@ -96,8 +96,8 @@ public class NetworkFacade {
 		network.run( new MultipleEpochsIterator(Epochs, new ListDataSetIterator(trainDataset.asList(), Minibatch), NumberOfCores));
 	}
 	
-	public void trainArbitary(int Minibatch, int maxEpochs, int NumberOfCores, double stoppingCriteria){
-		network.run(maxEpochs, Minibatch, NumberOfCores, stoppingCriteria);
+	public void trainArbitary(int Minibatch, int maxEpochs, double abortCriteria, int NumberOfCores){
+		network.run(maxEpochs, abortCriteria, Minibatch, NumberOfCores, new ListDataSetIterator(trainDataset.asList(), Minibatch), new ListDataSetIterator(testDataset.asList()));
 	}
 	
 	public double test(){
