@@ -71,11 +71,11 @@ public class InvoiceReducer {
 	 * @return
 	 */
 	@SuppressWarnings("deprecation")
-	public void AddMetaInformation(Invoice invoice, RInvoice returnValue, String Beleglink)
+	public void AddMetaInformation(Invoice invoice, RInvoice returnValue, String VoucherID)
 	{
 		try
 		{
-			returnValue.setBeleglink(Beleglink);
+			returnValue.setVoucherID(VoucherID);
 			if(invoice.getHeader().getIssued() != null)
 			{
 				returnValue.setInvoiceDate(new Date(

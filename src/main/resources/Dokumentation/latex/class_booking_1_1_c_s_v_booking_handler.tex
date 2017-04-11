@@ -1,93 +1,99 @@
-\hypertarget{class_booking_1_1_c_s_v_booking_handler}{\section{Booking.\-C\-S\-V\-Booking\-Handler Class Reference}
-\label{class_booking_1_1_c_s_v_booking_handler}\index{Booking.\-C\-S\-V\-Booking\-Handler@{Booking.\-C\-S\-V\-Booking\-Handler}}
-}
+\hypertarget{class_booking_1_1_c_s_v_booking_handler}{}\section{Booking.\+C\+S\+V\+Booking\+Handler Class Reference}
+\label{class_booking_1_1_c_s_v_booking_handler}\index{Booking.\+C\+S\+V\+Booking\+Handler@{Booking.\+C\+S\+V\+Booking\+Handler}}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-List$<$ \hyperlink{class_booking_1_1_voucher}{Voucher} $>$ \hyperlink{class_booking_1_1_c_s_v_booking_handler_ad9ffa72c3554080d3b2383805116ca29}{get\-Voucher\-Info\-From\-File} (String Path, String volume\-Key, String debit\-Account\-Key, String taxk\-Key, String id\-Key, char Seperator)  throws I\-O\-Exception
+List$<$ \hyperlink{class_booking_1_1_voucher}{Voucher} $>$ \hyperlink{class_booking_1_1_c_s_v_booking_handler_abb5b11ba019f5f4ec36cc05e080bdf4a}{get\+Voucher\+Info\+From\+Folder} (String Path, String volume\+Key, String debit\+Account\+Key, String tax\+Key, String id\+Key, char Seperator)  throws I\+O\+Exception
 \item 
-void \hyperlink{class_booking_1_1_c_s_v_booking_handler_a3b41f3fe1db25cbf010da6c04d25bb35}{print\-Voucher\-List\-Without\-Debit\-Account} (List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\-Invoice} $>$ a\-List, char Seperator)  throws I\-O\-Exception 	
+List$<$ \hyperlink{class_booking_1_1_voucher}{Voucher} $>$ \hyperlink{class_booking_1_1_c_s_v_booking_handler_ad9ffa72c3554080d3b2383805116ca29}{get\+Voucher\+Info\+From\+File} (String Path, String volume\+Key, String debit\+Account\+Key, String taxk\+Key, String id\+Key, char Seperator)  throws I\+O\+Exception
 \item 
-void \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563a54e00f279113be2c5dac7df48b2c}{print\-Label\-List} (List$<$ \hyperlink{class_booking_1_1_label}{Label} $>$ Label\-List, char Seperator)  throws I\-O\-Exception 	
+void \hyperlink{class_booking_1_1_c_s_v_booking_handler_a54cdf709488d718eea5b239033b0deaa}{print\+Voucher\+List\+Without\+Debit\+Account} (List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} $>$ a\+List, String Path, char Seperator)  throws I\+O\+Exception 	
+\item 
+void \hyperlink{class_booking_1_1_c_s_v_booking_handler_a3af1a9ce4819c6ea1f22a9010c803c72}{print\+Labeled\+Single\+File} (List$<$ \hyperlink{class_booking_1_1_label}{Label} $>$ Label\+List, String Path, char Seperator)  throws I\+O\+Exception
+\item 
+void \hyperlink{class_booking_1_1_c_s_v_booking_handler_ad5b394199d9f3ef0478393b7fa139d16}{print\+Error\+Voucher\+List} (List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} $>$ error\+\_\+list, String path)
+\item 
+void \hyperlink{class_booking_1_1_c_s_v_booking_handler_af00a4ebc544ce72dfddbda38218a12cb}{write\+Voucher\+Error\+List} (List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} $>$ error\+\_\+list, String path)
+\item 
+void \hyperlink{class_booking_1_1_c_s_v_booking_handler_af66a291077abb9531add6cbc94b0075a}{print\+Labeled\+Output\+Structure} (List$<$ \hyperlink{class_booking_1_1_label}{Label} $>$ Label\+List, String Path, boolean shuffle)  throws I\+O\+Exception
+\item 
+List$<$ \hyperlink{class_booking_1_1_label}{Label} $>$ \hyperlink{class_booking_1_1_c_s_v_booking_handler_a9766d7d29aeb5b2fbf6a70616e0bcd15}{create\+Reduced\+Invoice\+Voucher\+List} (List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} $>$ Reduced\+Invoice\+List, List$<$ \hyperlink{class_booking_1_1_voucher}{Voucher} $>$ Voucher\+List)
+\item 
+\hyperlink{class_booking_1_1_label}{Label} \hyperlink{class_booking_1_1_c_s_v_booking_handler_a2df02bd1c70d30d48a113aadc025fece}{fast\+\_\+rando\+\_\+recounstruct\+\_\+voucher} (\hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} invoice, \hyperlink{class_booking_1_1_voucher}{Voucher} voucher, int c)
+\item 
+int \hyperlink{class_booking_1_1_c_s_v_booking_handler_afdcd7e2d786948b378e23ea65dce0be2}{copy\+Array\+List} (List$<$ Integer $>$ source, List$<$ Integer $>$ clone)
+\item 
+int \hyperlink{class_booking_1_1_c_s_v_booking_handler_a9748f34b648b985b61b702176a9d509f}{search\+Reduced\+Invoice\+List\+Item} (List$<$ \hyperlink{class_booking_1_1_voucher}{Voucher} $>$ voucher\+List, String Voucher\+ID)
+\item 
+float \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding} (float value)
+\item 
+\hyperlink{class_booking_1_1_label}{Label} \hyperlink{class_booking_1_1_c_s_v_booking_handler_ab783364b26723a898cf9cd8f339416a9}{reconstruct\+\_\+voucher} (\hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} invoice, \hyperlink{class_booking_1_1_voucher}{Voucher} voucher)
+\item 
+\hyperlink{class_booking_1_1_label}{Label} \hyperlink{class_booking_1_1_c_s_v_booking_handler_a70179f1ecdc401d5ea5aa612541acd9b}{rando\+\_\+reconstruct\+\_\+voucher} (\hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} invoice, \hyperlink{class_booking_1_1_voucher}{Voucher} voucher, int c)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{class_booking_1_1_c_s_v_booking_handler}{C\-S\-V\-Booking\-Handler} \hyperlink{class_booking_1_1_c_s_v_booking_handler_a7b9f19a1917141d43d2eadf01f4c51e8}{get\-Instance} ()
+static \hyperlink{class_booking_1_1_c_s_v_booking_handler}{C\+S\+V\+Booking\+Handler} \hyperlink{class_booking_1_1_c_s_v_booking_handler_a7b9f19a1917141d43d2eadf01f4c51e8}{get\+Instance} ()
 \item 
-static List$<$ \hyperlink{class_booking_1_1_label}{Label} $>$ \hyperlink{class_booking_1_1_c_s_v_booking_handler_a59a6d5c68cd719b28d0bf9cfda594164}{create\-Reduced\-Invoice\-Voucher\-List} (List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\-Invoice} $>$ Reduced\-Invoice\-List, List$<$ \hyperlink{class_booking_1_1_voucher}{Voucher} $>$ Voucher\-List, boolean Remove\-Label\-Error)
-\item 
-static void \hyperlink{class_booking_1_1_c_s_v_booking_handler_a43243d8ea72c777f226baa60b75ee102}{Remove\-Label} (List$<$ \hyperlink{class_booking_1_1_label}{Label} $>$ Label\-List)
-\item 
-static \hyperlink{class_booking_1_1_label}{Label} \hyperlink{class_booking_1_1_c_s_v_booking_handler_ab6b151e44447a19940eaf8d8ecb21ff1}{reconstruct\-\_\-voucher} (\hyperlink{class_reduced_invoice_1_1_a_invoice}{A\-Invoice} invoice, \hyperlink{class_booking_1_1_voucher}{Voucher} voucher)
-\item 
-static \hyperlink{class_booking_1_1_label}{Label} \hyperlink{class_booking_1_1_c_s_v_booking_handler_acd6464594c9e2884793759b64dca19fe}{rando\-\_\-reconstruct\-\_\-voucher} (\hyperlink{class_reduced_invoice_1_1_a_invoice}{A\-Invoice} invoice, \hyperlink{class_booking_1_1_voucher}{Voucher} voucher, int c)
-\item 
-static \hyperlink{class_booking_1_1_label}{Label} \hyperlink{class_booking_1_1_c_s_v_booking_handler_a36b17f5e4a9d318065623d447e39e306}{fast\-\_\-rando\-\_\-recounstruct\-\_\-voucher} (\hyperlink{class_reduced_invoice_1_1_a_invoice}{A\-Invoice} invoice, \hyperlink{class_booking_1_1_voucher}{Voucher} voucher, int c)
-\item 
-static int \hyperlink{class_booking_1_1_c_s_v_booking_handler_ac4bf4e2b7b6a51ff0f9d84b1cc842e38}{copy\-Array\-List} (List$<$ Integer $>$ a, List$<$ Integer $>$ b)
-\item 
-static int \hyperlink{class_booking_1_1_c_s_v_booking_handler_ada6c5254b798825b0baca4fc91aa5277}{search\-Reduced\-Invoice\-List\-Item} (List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\-Invoice} $>$ Reduced\-Invoice\-List, String Voucher\-I\-D)
-\item 
-static float \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding} (float value)
+static List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} $>$ \hyperlink{class_booking_1_1_c_s_v_booking_handler_aad41d29904adc3b78ad132e6ba6ee9df}{get\+Failed\+Voucher\+List} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 17 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 22 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_ac4bf4e2b7b6a51ff0f9d84b1cc842e38}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!copy\-Array\-List@{copy\-Array\-List}}
-\index{copy\-Array\-List@{copy\-Array\-List}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{copy\-Array\-List}]{\setlength{\rightskip}{0pt plus 5cm}static int Booking.\-C\-S\-V\-Booking\-Handler.\-copy\-Array\-List (
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!copy\+Array\+List@{copy\+Array\+List}}
+\index{copy\+Array\+List@{copy\+Array\+List}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{copy\+Array\+List(\+List$<$ Integer $>$ source, List$<$ Integer $>$ clone)}{copyArrayList(List< Integer > source, List< Integer > clone)}}]{\setlength{\rightskip}{0pt plus 5cm}int Booking.\+C\+S\+V\+Booking\+Handler.\+copy\+Array\+List (
 \begin{DoxyParamCaption}
-\item[{List$<$ Integer $>$}]{a, }
-\item[{List$<$ Integer $>$}]{b}
+\item[{List$<$ Integer $>$}]{source, }
+\item[{List$<$ Integer $>$}]{clone}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_booking_1_1_c_s_v_booking_handler_ac4bf4e2b7b6a51ff0f9d84b1cc842e38}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_afdcd7e2d786948b378e23ea65dce0be2}{}\label{class_booking_1_1_c_s_v_booking_handler_afdcd7e2d786948b378e23ea65dce0be2}
 
 \begin{DoxyParams}{Parameters}
-{\em a} & \\
+{\em source} & the source \\
 \hline
-{\em b} & \\
+{\em clone} & the copy of the source \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 365 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 475 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 \begin{DoxyCode}
-366     \{
-367         b.clear();
-368         \textcolor{keywordtype}{int} i = 0;
-369         \textcolor{keywordflow}{for}(; i < a.size(); i++)
-370         \{
-371             b.add(a.get(i));
-372         \}
-373         \textcolor{keywordflow}{return} i;
-374     \}
+476     \{
+477         clone.clear();
+478         \textcolor{keywordtype}{int} i = 0;
+479         \textcolor{keywordflow}{for}(; i < source.size(); i++)
+480         \{
+481             clone.add(source.get(i));
+482         \}
+483         \textcolor{keywordflow}{return} i;
+484     \}
 \end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_a59a6d5c68cd719b28d0bf9cfda594164}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!create\-Reduced\-Invoice\-Voucher\-List@{create\-Reduced\-Invoice\-Voucher\-List}}
-\index{create\-Reduced\-Invoice\-Voucher\-List@{create\-Reduced\-Invoice\-Voucher\-List}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{create\-Reduced\-Invoice\-Voucher\-List}]{\setlength{\rightskip}{0pt plus 5cm}static List$<${\bf Label}$>$ Booking.\-C\-S\-V\-Booking\-Handler.\-create\-Reduced\-Invoice\-Voucher\-List (
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!create\+Reduced\+Invoice\+Voucher\+List@{create\+Reduced\+Invoice\+Voucher\+List}}
+\index{create\+Reduced\+Invoice\+Voucher\+List@{create\+Reduced\+Invoice\+Voucher\+List}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{create\+Reduced\+Invoice\+Voucher\+List(\+List$<$ A\+Invoice $>$ Reduced\+Invoice\+List, List$<$ Voucher $>$ Voucher\+List)}{createReducedInvoiceVoucherList(List< AInvoice > ReducedInvoiceList, List< Voucher > VoucherList)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Label}$>$ Booking.\+C\+S\+V\+Booking\+Handler.\+create\+Reduced\+Invoice\+Voucher\+List (
 \begin{DoxyParamCaption}
-\item[{List$<$ {\bf A\-Invoice} $>$}]{Reduced\-Invoice\-List, }
-\item[{List$<$ {\bf Voucher} $>$}]{Voucher\-List, }
-\item[{boolean}]{Remove\-Label\-Error}
+\item[{List$<$ {\bf A\+Invoice} $>$}]{Reduced\+Invoice\+List, }
+\item[{List$<$ {\bf Voucher} $>$}]{Voucher\+List}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_booking_1_1_c_s_v_booking_handler_a59a6d5c68cd719b28d0bf9cfda594164}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_a9766d7d29aeb5b2fbf6a70616e0bcd15}{}\label{class_booking_1_1_c_s_v_booking_handler_a9766d7d29aeb5b2fbf6a70616e0bcd15}
 
 \begin{DoxyParams}{Parameters}
-{\em Reduced\-Invoice\-List} & \\
+{\em Reduced\+Invoice\+List} & \\
 \hline
-{\em Voucher\-List} & \\
+{\em Voucher\+List} & \\
 \hline
-{\em Label\-Error} & \\
+{\em Label\+Error} & \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -95,49 +101,59 @@ Definition at line 365 of file C\-S\-V\-Booking\-Handler.\-java.
 \end{DoxyReturn}
 
 
-Definition at line 159 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 362 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 \begin{DoxyCode}
-160     \{
-161         List<Label> LabelList = \textcolor{keyword}{new} ArrayList<Label>();
-162         Label temp;
-163         
-164         \textcolor{keywordtype}{int} ReducedInvoiceListItem = 0;
-165         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < VoucherList.size();i++)
-166         \{
-167             ReducedInvoiceListItem = \hyperlink{class_booking_1_1_c_s_v_booking_handler_ada6c5254b798825b0baca4fc91aa5277}{searchReducedInvoiceListItem}(
-      ReducedInvoiceList,VoucherList.get(i).getVoucherID());
-168             System.out.println(\textcolor{stringliteral}{"Buchung "} + i); \textcolor{comment}{// Laufzeit}
-169             temp = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a36b17f5e4a9d318065623d447e39e306}{fast\_rando\_recounstruct\_voucher}(ReducedInvoiceList.get(
-      ReducedInvoiceListItem),VoucherList.get(i),100);
-170             \textcolor{keywordflow}{if}(temp.getBeleglink() != null)
-171             \{
-172                 LabelList.add(temp);
-173             \}
-174             \textcolor{keywordflow}{else}
-175             \{
-176                 LabelList.add(\hyperlink{class_booking_1_1_c_s_v_booking_handler_ab6b151e44447a19940eaf8d8ecb21ff1}{reconstruct\_voucher}(ReducedInvoiceList.get(
-      ReducedInvoiceListItem),VoucherList.get(i)));
-177             \}
-178         \}
-179         \textcolor{keywordflow}{if}(RemoveLabelError == \textcolor{keyword}{true})
-180         \{
-181             \hyperlink{class_booking_1_1_c_s_v_booking_handler_a43243d8ea72c777f226baa60b75ee102}{RemoveLabel}(LabelList);
-182         \}
-183         
-184         \textcolor{keywordflow}{return} LabelList;
-185     \}
+363     \{
+364         Label temp;
+365         \textcolor{keywordtype}{int} ReducedInvoiceListItem = 0;
+366         List<Label> LabelList = \textcolor{keyword}{new} ArrayList<Label>();
+367         \textcolor{comment}{//List<AInvoice> FailedVoucherIDList = new ArrayList<AInvoice>();}
+368         \textcolor{comment}{//List<AInvoice> FailedReconstructVoucherList = new ArrayList<AInvoice>();}
+369         
+370         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < ReducedInvoiceList.size();i++)
+371         \{
+372             ReducedInvoiceListItem = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a9748f34b648b985b61b702176a9d509f}{searchReducedInvoiceListItem}(VoucherList,
+      ReducedInvoiceList.get(i).getVoucherID());
+373             \textcolor{comment}{//System.out.println("Buchung " + i); // Laufzeit}
+374             \textcolor{keywordflow}{if}(ReducedInvoiceListItem > 0)
+375             \{
+376                 temp = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a2df02bd1c70d30d48a113aadc025fece}{fast\_rando\_recounstruct\_voucher}(ReducedInvoiceList.
+      get(i),VoucherList.get(ReducedInvoiceListItem),100);
+377                 \textcolor{keywordflow}{if}(temp.getBeleglink() == null)
+378                 \{
+379                     ReducedInvoiceList.get(i).setInvoiceError\_RECONSTRUCT\_ERROR();
+380                     FailedVoucherList.add(ReducedInvoiceList.get(i));
+381                 \}
+382                 \textcolor{keywordflow}{else}
+383                 \{
+384                     LabelList.add(temp);
+385                 \}
+386                 
+387             \}
+388             \textcolor{keywordflow}{else}
+389             \{
+390                 ReducedInvoiceList.get(i).setInvoiceError\_VOUCHER\_ID\_ERROR();
+391                 FailedVoucherList.add(ReducedInvoiceList.get(i));
+392             \}
+393         \}
+394         
+395         \hyperlink{class_booking_1_1_c_s_v_booking_handler_ad5b394199d9f3ef0478393b7fa139d16}{printErrorVoucherList}(FailedVoucherList, Config.PATH\_TO\_FAILED\_VOUCHER);
+396         System.out.println(FailedVoucherList.size() + \textcolor{stringliteral}{" Invoices could not be used for network data"});
+397         
+398         \textcolor{keywordflow}{return} LabelList;
+399     \}   
 \end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_a36b17f5e4a9d318065623d447e39e306}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!fast\-\_\-rando\-\_\-recounstruct\-\_\-voucher@{fast\-\_\-rando\-\_\-recounstruct\-\_\-voucher}}
-\index{fast\-\_\-rando\-\_\-recounstruct\-\_\-voucher@{fast\-\_\-rando\-\_\-recounstruct\-\_\-voucher}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{fast\-\_\-rando\-\_\-recounstruct\-\_\-voucher}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Label} Booking.\-C\-S\-V\-Booking\-Handler.\-fast\-\_\-rando\-\_\-recounstruct\-\_\-voucher (
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!fast\+\_\+rando\+\_\+recounstruct\+\_\+voucher@{fast\+\_\+rando\+\_\+recounstruct\+\_\+voucher}}
+\index{fast\+\_\+rando\+\_\+recounstruct\+\_\+voucher@{fast\+\_\+rando\+\_\+recounstruct\+\_\+voucher}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{fast\+\_\+rando\+\_\+recounstruct\+\_\+voucher(\+A\+Invoice invoice, Voucher voucher, int c)}{fast_rando_recounstruct_voucher(AInvoice invoice, Voucher voucher, int c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Label} Booking.\+C\+S\+V\+Booking\+Handler.\+fast\+\_\+rando\+\_\+recounstruct\+\_\+voucher (
 \begin{DoxyParamCaption}
-\item[{{\bf A\-Invoice}}]{invoice, }
+\item[{{\bf A\+Invoice}}]{invoice, }
 \item[{{\bf Voucher}}]{voucher, }
 \item[{int}]{c}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_booking_1_1_c_s_v_booking_handler_a36b17f5e4a9d318065623d447e39e306}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_a2df02bd1c70d30d48a113aadc025fece}{}\label{class_booking_1_1_c_s_v_booking_handler_a2df02bd1c70d30d48a113aadc025fece}
 
 \begin{DoxyParams}{Parameters}
 {\em invoice} & \\
@@ -152,123 +168,144 @@ Definition at line 159 of file C\-S\-V\-Booking\-Handler.\-java.
 \end{DoxyReturn}
 
 
-Definition at line 298 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 408 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 \begin{DoxyCode}
-299     \{
-300         List<Integer> steuerklasse = \textcolor{keyword}{new} ArrayList<Integer>();
-301         List<Integer> temp = \textcolor{keyword}{new} ArrayList<Integer>();
-302         \textcolor{keywordtype}{float} BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
-303         Label returnValue = \textcolor{keyword}{new} Label();
-304         \textcolor{keywordtype}{int} rand = 0;
-305         \textcolor{keywordtype}{int} count = 0;
-306         
-307         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < invoice.getPositionsLength(); i++)
-308         \{
-309             \textcolor{keywordflow}{if}(Float.parseFloat(voucher.getTaxKey()) == ((\textcolor{keywordtype}{float}) invoice.getPosition(i).getTaxrate()))
-310             \{
-311                 steuerklasse.add(i);
-312                 temp.add(i);
-313             \}
-314         \}
-315         
-316         \textcolor{keywordtype}{int} wiederholungen = 2 * steuerklasse.size() * steuerklasse.size() * c;
-317         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < wiederholungen; i++)
-318         \{
-319             \textcolor{keywordflow}{if}(temp.size() <= 0)
-320             \{
-321                 returnValue = \textcolor{keyword}{new} Label();
-322                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
-323                 \hyperlink{class_booking_1_1_c_s_v_booking_handler_ac4bf4e2b7b6a51ff0f9d84b1cc842e38}{copyArrayList}(steuerklasse, temp);
-324                 
-325                 rand = randInt(0, temp.size()-1);
-326                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(\hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(BuchungsUmsatz) - 
-      \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(invoice.getPosition(temp.get(rand)).getPositionPrice().getBrutto()));
-327                 
-328                 returnValue.addPosition(temp.get(rand));
-329                 returnValue.addDescription(invoice.getPosition(temp.get(rand)).getDescription());
-330                 temp.remove(rand);
-331             \}
-332             \textcolor{keywordflow}{else}
-333             \{
-334                 rand = randInt(0, temp.size()-1);
-335                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(\hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(BuchungsUmsatz) - 
-      \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(invoice.getPosition(temp.get(rand)).getPositionPrice().getBrutto()));
-336                 
-337                 returnValue.addPosition(temp.get(rand));
-338                 returnValue.addDescription(invoice.getPosition(temp.get(rand)).getDescription());
-339                 temp.remove(rand);
-340             \}
-341             count++;
-342             
-343             \textcolor{keywordflow}{if}(BuchungsUmsatz < 0.00)
-344             \{
-345                 returnValue = \textcolor{keyword}{new} Label();
-346                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
-347                 \hyperlink{class_booking_1_1_c_s_v_booking_handler_ac4bf4e2b7b6a51ff0f9d84b1cc842e38}{copyArrayList}(steuerklasse, temp);
-348             \}
-349             \textcolor{keywordflow}{if}(BuchungsUmsatz == 0.00)
-350             \{
-351                 returnValue.setlabel\_ID(voucher.getDebitAccount());
-352                 returnValue.setBeleglink(voucher.getVoucherID());
-353                 \textcolor{keywordflow}{break};
-354             \}
-355         \}
-356         System.out.println(\textcolor{stringliteral}{"New Rando Algo Iteration: "}+ count + \textcolor{stringliteral}{"\(\backslash\)n"}); \textcolor{comment}{// Iteration}
-357         \textcolor{keywordflow}{return} returnValue;
-358     \}
+409     \{
+410         List<Integer> steuerklasse = \textcolor{keyword}{new} ArrayList<Integer>();
+411         List<Integer> temp = \textcolor{keyword}{new} ArrayList<Integer>();
+412         \textcolor{keywordtype}{float} BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
+413         Label returnValue = \textcolor{keyword}{new} Label();
+414         \textcolor{keywordtype}{int} rand = 0;
+415         \textcolor{comment}{//int count = 0;}
+416         
+417         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < invoice.getPositionsLength(); i++)
+418         \{
+419             \textcolor{keywordflow}{if}(Float.parseFloat(voucher.getTaxKey()) == ((\textcolor{keywordtype}{float}) invoice.getPosition(i).getTaxrate()))
+420             \{
+421                 steuerklasse.add(i);
+422                 temp.add(i);
+423             \}
+424         \}
+425         
+426         \textcolor{keywordtype}{int} wiederholungen = 2 * steuerklasse.size() * steuerklasse.size() * c;
+427         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < wiederholungen; i++)
+428         \{
+429             \textcolor{keywordflow}{if}(temp.size() <= 0)
+430             \{
+431                 returnValue = \textcolor{keyword}{new} Label();
+432                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
+433                 \hyperlink{class_booking_1_1_c_s_v_booking_handler_afdcd7e2d786948b378e23ea65dce0be2}{copyArrayList}(steuerklasse, temp);
+434                 
+435                 rand = randInt(0, temp.size()-1);
+436                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(\hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(BuchungsUmsatz) - 
+      \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(invoice.getPosition(temp.get(rand)).getPositionPrice().getBrutto()));
+437                 
+438                 returnValue.addPosition(temp.get(rand));
+439                 returnValue.addDescription(invoice.getPosition(temp.get(rand)).getDescription());
+440                 temp.remove(rand);
+441             \}
+442             \textcolor{keywordflow}{else}
+443             \{
+444                 rand = randInt(0, temp.size()-1);
+445                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(\hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(BuchungsUmsatz) - 
+      \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(invoice.getPosition(temp.get(rand)).getPositionPrice().getBrutto()));
+446                 
+447                 returnValue.addPosition(temp.get(rand));
+448                 returnValue.addDescription(invoice.getPosition(temp.get(rand)).getDescription());
+449                 temp.remove(rand);
+450             \}
+451             \textcolor{comment}{//count++;}
+452             
+453             \textcolor{keywordflow}{if}(BuchungsUmsatz < 0.00)
+454             \{
+455                 returnValue = \textcolor{keyword}{new} Label();
+456                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
+457                 \hyperlink{class_booking_1_1_c_s_v_booking_handler_afdcd7e2d786948b378e23ea65dce0be2}{copyArrayList}(steuerklasse, temp);
+458             \}
+459             \textcolor{keywordflow}{if}(BuchungsUmsatz == 0.00)
+460             \{
+461                 returnValue.setlabel\_ID(voucher.getDebitAccount());
+462                 returnValue.setBeleglink(voucher.getVoucherID());
+463                 \textcolor{keywordflow}{break};
+464             \}
+465         \}
+466         \textcolor{comment}{//System.out.println("New Rando Algo Iteration: "+ count + "\(\backslash\)n"); // Iteration}
+467         \textcolor{keywordflow}{return} returnValue;
+468     \}
 \end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_a7b9f19a1917141d43d2eadf01f4c51e8}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!get\-Instance@{get\-Instance}}
-\index{get\-Instance@{get\-Instance}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf C\-S\-V\-Booking\-Handler} Booking.\-C\-S\-V\-Booking\-Handler.\-get\-Instance (
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!get\+Failed\+Voucher\+List@{get\+Failed\+Voucher\+List}}
+\index{get\+Failed\+Voucher\+List@{get\+Failed\+Voucher\+List}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Failed\+Voucher\+List()}{getFailedVoucherList()}}]{\setlength{\rightskip}{0pt plus 5cm}static List$<${\bf A\+Invoice}$>$ Booking.\+C\+S\+V\+Booking\+Handler.\+get\+Failed\+Voucher\+List (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_booking_1_1_c_s_v_booking_handler_a7b9f19a1917141d43d2eadf01f4c51e8}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_aad41d29904adc3b78ad132e6ba6ee9df}{}\label{class_booking_1_1_c_s_v_booking_handler_aad41d29904adc3b78ad132e6ba6ee9df}
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
 
 
-Definition at line 27 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 50 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 \begin{DoxyCode}
-28     \{
-29         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
-30             \textcolor{keyword}{synchronized}(CSVBookingHandler.class)\{
-31                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
-32                     uniqueInstance = \textcolor{keyword}{new} CSVBookingHandler();
-33                 \}
-34             \}
-35         \}
-36         \textcolor{keywordflow}{return} uniqueInstance;
-37     \}
+51     \{
+52         \textcolor{keywordflow}{return} FailedVoucherList;
+53     \}
 \end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_ad9ffa72c3554080d3b2383805116ca29}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!get\-Voucher\-Info\-From\-File@{get\-Voucher\-Info\-From\-File}}
-\index{get\-Voucher\-Info\-From\-File@{get\-Voucher\-Info\-From\-File}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{get\-Voucher\-Info\-From\-File}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Voucher}$>$ Booking.\-C\-S\-V\-Booking\-Handler.\-get\-Voucher\-Info\-From\-File (
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf C\+S\+V\+Booking\+Handler} Booking.\+C\+S\+V\+Booking\+Handler.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_a7b9f19a1917141d43d2eadf01f4c51e8}{}\label{class_booking_1_1_c_s_v_booking_handler_a7b9f19a1917141d43d2eadf01f4c51e8}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 33 of file C\+S\+V\+Booking\+Handler.\+java.
+
+
+\begin{DoxyCode}
+34     \{
+35         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
+36             \textcolor{keyword}{synchronized}(CSVBookingHandler.class)\{
+37                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
+38                     uniqueInstance = \textcolor{keyword}{new} CSVBookingHandler();
+39                     FailedVoucherList = \textcolor{keyword}{new} ArrayList<AInvoice>();
+40                 \}
+41             \}
+42         \}
+43         \textcolor{keywordflow}{return} uniqueInstance;
+44     \}
+\end{DoxyCode}
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!get\+Voucher\+Info\+From\+File@{get\+Voucher\+Info\+From\+File}}
+\index{get\+Voucher\+Info\+From\+File@{get\+Voucher\+Info\+From\+File}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Voucher\+Info\+From\+File(\+String Path, String volume\+Key, String debit\+Account\+Key, String taxk\+Key, String id\+Key, char Seperator)}{getVoucherInfoFromFile(String Path, String volumeKey, String debitAccountKey, String taxkKey, String idKey, char Seperator)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Voucher}$>$ Booking.\+C\+S\+V\+Booking\+Handler.\+get\+Voucher\+Info\+From\+File (
 \begin{DoxyParamCaption}
 \item[{String}]{Path, }
-\item[{String}]{volume\-Key, }
-\item[{String}]{debit\-Account\-Key, }
-\item[{String}]{taxk\-Key, }
-\item[{String}]{id\-Key, }
+\item[{String}]{volume\+Key, }
+\item[{String}]{debit\+Account\+Key, }
+\item[{String}]{taxk\+Key, }
+\item[{String}]{id\+Key, }
 \item[{char}]{Seperator}
 \end{DoxyParamCaption}
-) throws I\-O\-Exception\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_booking_1_1_c_s_v_booking_handler_ad9ffa72c3554080d3b2383805116ca29}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_ad9ffa72c3554080d3b2383805116ca29}{}\label{class_booking_1_1_c_s_v_booking_handler_ad9ffa72c3554080d3b2383805116ca29}
 
 \begin{DoxyParams}{Parameters}
 {\em Path} & \\
 \hline
-{\em volume\-Key} & \\
+{\em volume\+Key} & \\
 \hline
-{\em debit\-Account\-Key} & \\
+{\em debit\+Account\+Key} & \\
 \hline
-{\em taxk\-Key} & \\
+{\em taxk\+Key} & \\
 \hline
-{\em id\-Key} & \\
+{\em id\+Key} & \\
 \hline
 {\em Seperator} & \\
 \hline
@@ -278,168 +315,355 @@ Definition at line 27 of file C\-S\-V\-Booking\-Handler.\-java.
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em I\-O\-Exception} & \\
+{\em I\+O\+Exception} & \\
 \hline
 \end{DoxyExceptions}
 
 
-Definition at line 50 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 112 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 \begin{DoxyCode}
-50                                                                                                            
+112                                                                                                            
                                                                   \{
-51         
-52         String[] Line;
-53         List<Voucher> returnValue = \textcolor{keyword}{new} ArrayList<Voucher>();
-54         \textcolor{keywordtype}{int} volumeID = -1;
-55         \textcolor{keywordtype}{int} debitAccountID = -1;
-56         \textcolor{keywordtype}{int} taxkID = -1;
-57         \textcolor{keywordtype}{int} idID = -1;
-58         
-59         CSVReader cReader = \textcolor{keyword}{new} CSVReader(\textcolor{keyword}{new} FileReader(Path), Seperator);
-60         \textcolor{keywordflow}{while}((Line = cReader.readNext()) != null)\{
-61             
-62             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < Line.length; i++)\{
-63                 \textcolor{keywordflow}{if}(Line[i].equals(volumeKey))
-64                     volumeID = i;
-65                 \textcolor{keywordflow}{if}(Line[i].equals(debitAccountKey))
-66                     debitAccountID = i;
-67                 \textcolor{keywordflow}{if}(Line[i].equals(taxkKey))
-68                     taxkID = i;
-69                 \textcolor{keywordflow}{if}(Line[i].equals(idKey))
-70                     idID = i;
-71             \}
-72             \textcolor{keywordflow}{if}(volumeID > -1 && debitAccountID > -1 && taxkID > -1 && idID > -1)
-73                 \textcolor{keywordflow}{break};
-74         \}
-75         \textcolor{keywordflow}{while}((Line = cReader.readNext()) != null)\{
-76             returnValue.add(\textcolor{keyword}{new} Voucher(Line[debitAccountID], Line[volumeID], Line[taxkID], Line[idID]));
-77         \}
-78         \textcolor{keywordflow}{return} returnValue;
-79     \}
-\end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_a563a54e00f279113be2c5dac7df48b2c}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!print\-Label\-List@{print\-Label\-List}}
-\index{print\-Label\-List@{print\-Label\-List}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{print\-Label\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Booking.\-C\-S\-V\-Booking\-Handler.\-print\-Label\-List (
-\begin{DoxyParamCaption}
-\item[{List$<$ {\bf Label} $>$}]{Label\-List, }
-\item[{char}]{Seperator}
-\end{DoxyParamCaption}
-) throws I\-O\-Exception\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_booking_1_1_c_s_v_booking_handler_a563a54e00f279113be2c5dac7df48b2c}
-Print Label\-List
-
-
-\begin{DoxyParams}{Parameters}
-{\em Label\-List} & \\
-\hline
-{\em Seperator} & \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em I\-O\-Exception} & \\
-\hline
-\end{DoxyExceptions}
-
-
-Definition at line 124 of file C\-S\-V\-Booking\-Handler.\-java.
-
-
-\begin{DoxyCode}
-125     \{
-126         CSVWriter writer = \textcolor{keyword}{new} CSVWriter(\textcolor{keyword}{new} FileWriter(Config.PATH\_TO\_LABEL\_LIST), Seperator);
-127         String outStream = \textcolor{stringliteral}{""};
-128         outStream += Config.VOUCHER\_ID + Seperator
-129                 +Config.TAX\_KEY\_ID + Seperator
-130                 +\hyperlink{class_application_1_1_config_af36c5093a9318a856a14130b0a839c8f}{Config.BOOKING\_NOTE};
-131                 
-132         String[] entries = outStream.split(Character.toString(Seperator));
-133         writer.writeNext(entries);
-134         
-135         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < LabelList.size(); i++)
-136         \{
-137             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < LabelList.get(i).getDescriptionSize(); j++)
-138             \{
-139                 outStream = \textcolor{stringliteral}{""};
-140                 outStream += LabelList.get(i).getBeleglink() + Seperator;
-141                 outStream += LabelList.get(i).getlabel\_ID() + Seperator;
-142                 outStream += LabelList.get(i).getDescription(j) + Seperator;
-143                 
-144                 entries = outStream.split(Character.toString(Seperator));
-145                 writer.writeNext(entries);
-146             \}
-147         \}
-148         
-149         writer.close();
-150     \}
-\end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_a3b41f3fe1db25cbf010da6c04d25bb35}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!print\-Voucher\-List\-Without\-Debit\-Account@{print\-Voucher\-List\-Without\-Debit\-Account}}
-\index{print\-Voucher\-List\-Without\-Debit\-Account@{print\-Voucher\-List\-Without\-Debit\-Account}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{print\-Voucher\-List\-Without\-Debit\-Account}]{\setlength{\rightskip}{0pt plus 5cm}void Booking.\-C\-S\-V\-Booking\-Handler.\-print\-Voucher\-List\-Without\-Debit\-Account (
-\begin{DoxyParamCaption}
-\item[{List$<$ {\bf A\-Invoice} $>$}]{a\-List, }
-\item[{char}]{Seperator}
-\end{DoxyParamCaption}
-) throws I\-O\-Exception\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_booking_1_1_c_s_v_booking_handler_a3b41f3fe1db25cbf010da6c04d25bb35}
-
-\begin{DoxyParams}{Parameters}
-{\em a\-List} & \\
-\hline
-{\em Seperator} & \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em I\-O\-Exception} & \\
-\hline
-\end{DoxyExceptions}
-
-
-Definition at line 87 of file C\-S\-V\-Booking\-Handler.\-java.
-
-
-\begin{DoxyCode}
-88     \{
-89         CSVWriter writer = \textcolor{keyword}{new} CSVWriter(\textcolor{keyword}{new} FileWriter(Config.PATH\_TO\_VOUCHER\_TEST\_DUMP), Seperator);
-90         String outStream = \textcolor{stringliteral}{""};
-91         outStream += Config.VOLUME\_ID + Seperator
-92                 + Config.DEBIT\_ACCOUNT\_ID + Seperator
-93                 + Config.TAX\_KEY\_ID + Seperator
-94                 +Config.BOOKING\_NOTE + Seperator
-95                 +\hyperlink{class_application_1_1_config_addfac1a6727d1d065ad3ccf88ed8a043}{Config.VOUCHER\_ID};
-96         String[] entries = outStream.split(Character.toString(Seperator));
-97         writer.writeNext(entries);
-98         
-99         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < aList.size(); i++)\{
-100             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < aList.get(i).getPositionsLength(); j++)\{
-101                 
-102                 outStream = \textcolor{stringliteral}{""};
-103                 outStream += Float.toString(aList.get(i).getPosition(j).getPositionPrice().getBrutto()).
-      replace(\textcolor{stringliteral}{"."}, \textcolor{stringliteral}{","}) + Seperator;
-104                 outStream += Seperator;
-105                 outStream += Float.toString(aList.get(i).getPosition(j).getTaxrate()) + Seperator;
-106                 outStream += aList.get(i).getPosition(j).getDescription().replace(Seperator, Config.
-      VOUCHER\_CSV\_REPLACEMENT) + Seperator;
-107                 outStream += aList.get(i).getBeleglink();
-108                 
-109                 entries = outStream.split(Character.toString(Seperator));
-110                 writer.writeNext(entries);
-111             \}
-112         \}
 113         
-114         writer.close();
-115     \}
+114         String[] Line;
+115         List<Voucher> returnValue = \textcolor{keyword}{new} ArrayList<Voucher>();
+116         \textcolor{keywordtype}{int} volumeID = -1;
+117         \textcolor{keywordtype}{int} debitAccountID = -1;
+118         \textcolor{keywordtype}{int} taxID = -1;
+119         \textcolor{keywordtype}{int} idID = -1;
+120         
+121         CSVReader cReader = \textcolor{keyword}{new} CSVReader(\textcolor{keyword}{new} FileReader(Path), Seperator);
+122         \textcolor{keywordflow}{while}((Line = cReader.readNext()) != null)\{
+123             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < Line.length; i++)\{
+124                 \textcolor{keywordflow}{if}(Line[i].equals(volumeKey))
+125                     volumeID = i;
+126                 \textcolor{keywordflow}{if}(Line[i].equals(debitAccountKey))
+127                     debitAccountID = i;
+128                 \textcolor{keywordflow}{if}(Line[i].equals(taxkKey))
+129                     taxID = i;
+130                 \textcolor{keywordflow}{if}(Line[i].equals(idKey))
+131                     idID = i;
+132             \}
+133             \textcolor{comment}{//Is every value in each line AND is every Value at Index 0+}
+134             \textcolor{keywordflow}{if}(debitAccountID > volumeID && taxID > volumeID && idID > volumeID && volumeID > -1 && 
+      debitAccountID > -1 && taxID > -1 && idID > -1)
+135                 \textcolor{keywordflow}{break};
+136         \}
+137         \textcolor{keywordflow}{while}((Line = cReader.readNext()) != null)\{
+138             returnValue.add(
+139                     \textcolor{keyword}{new} Voucher( 
+140                             this.transformDebitAccount(Line[debitAccountID]), 
+141                             Line[volumeID], 
+142                             this.transformTaxKey(Line[taxID]), 
+143                             this.transformVoucherID(Line[idID])
+144                                     ));
+145         \}
+146         \textcolor{keywordflow}{return} returnValue;
+147     \}
 \end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_acd6464594c9e2884793759b64dca19fe}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!rando\-\_\-reconstruct\-\_\-voucher@{rando\-\_\-reconstruct\-\_\-voucher}}
-\index{rando\-\_\-reconstruct\-\_\-voucher@{rando\-\_\-reconstruct\-\_\-voucher}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{rando\-\_\-reconstruct\-\_\-voucher}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Label} Booking.\-C\-S\-V\-Booking\-Handler.\-rando\-\_\-reconstruct\-\_\-voucher (
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!get\+Voucher\+Info\+From\+Folder@{get\+Voucher\+Info\+From\+Folder}}
+\index{get\+Voucher\+Info\+From\+Folder@{get\+Voucher\+Info\+From\+Folder}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Voucher\+Info\+From\+Folder(\+String Path, String volume\+Key, String debit\+Account\+Key, String tax\+Key, String id\+Key, char Seperator)}{getVoucherInfoFromFolder(String Path, String volumeKey, String debitAccountKey, String taxKey, String idKey, char Seperator)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Voucher}$>$ Booking.\+C\+S\+V\+Booking\+Handler.\+get\+Voucher\+Info\+From\+Folder (
 \begin{DoxyParamCaption}
-\item[{{\bf A\-Invoice}}]{invoice, }
+\item[{String}]{Path, }
+\item[{String}]{volume\+Key, }
+\item[{String}]{debit\+Account\+Key, }
+\item[{String}]{tax\+Key, }
+\item[{String}]{id\+Key, }
+\item[{char}]{Seperator}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_abb5b11ba019f5f4ec36cc05e080bdf4a}{}\label{class_booking_1_1_c_s_v_booking_handler_abb5b11ba019f5f4ec36cc05e080bdf4a}
+
+\begin{DoxyParams}{Parameters}
+{\em Path} & \\
+\hline
+{\em volume\+Key} & \\
+\hline
+{\em debit\+Account\+Key} & \\
+\hline
+{\em tax\+Key} & \\
+\hline
+{\em id\+Key} & \\
+\hline
+{\em Seperator} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 66 of file C\+S\+V\+Booking\+Handler.\+java.
+
+
+\begin{DoxyCode}
+66                                                                                                            
+                                                                   \{
+67         
+68         List<Voucher> returnValue = \textcolor{keyword}{new} ArrayList<Voucher>();
+69         
+70         \textcolor{comment}{//Rekursive => elem can be a folder or a file }
+71         Files.walk(Paths.get(Path)).forEach(elem ->
+72         \{
+73             String fileName = elem.getFileName().toString();
+74             String path = elem.toString();
+75             \textcolor{keywordflow}{try}
+76             \{
+77                 \textcolor{keywordflow}{if} (Files.isDirectory(elem))
+78                 \{
+79                     
+80                 \}
+81                 \textcolor{keywordflow}{else}
+82                 \{   
+83                     \textcolor{keywordflow}{if}(Files.isRegularFile(elem))
+84                     \{
+85                         \textcolor{keywordflow}{if}(fileName.toLowerCase().contains(\textcolor{stringliteral}{".csv"}))
+86                         \{
+87                             String PathToFile = Path + \textcolor{stringliteral}{"/"} + fileName;
+88                             returnValue.addAll(this.\hyperlink{class_booking_1_1_c_s_v_booking_handler_ad9ffa72c3554080d3b2383805116ca29}{getVoucherInfoFromFile}(PathToFile
+      , volumeKey, debitAccountKey, taxKey, idKey, Seperator));
+89                             List<Voucher> x = returnValue;
+90                         \}
+91                     \}
+92                 \}
+93             \}\textcolor{keywordflow}{catch}(Exception e)\{
+94                 System.out.println(fileName + \textcolor{stringliteral}{" caused an Exception."});
+95                 System.out.println(\textcolor{stringliteral}{"Message: "} + e.getMessage());
+96             \}
+97         \});
+98         
+99         \textcolor{keywordflow}{return} returnValue;
+100     \}
+\end{DoxyCode}
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!print\+Error\+Voucher\+List@{print\+Error\+Voucher\+List}}
+\index{print\+Error\+Voucher\+List@{print\+Error\+Voucher\+List}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{print\+Error\+Voucher\+List(\+List$<$ A\+Invoice $>$ error\+\_\+list, String path)}{printErrorVoucherList(List< AInvoice > error_list, String path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Booking.\+C\+S\+V\+Booking\+Handler.\+print\+Error\+Voucher\+List (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf A\+Invoice} $>$}]{error\+\_\+list, }
+\item[{String}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_ad5b394199d9f3ef0478393b7fa139d16}{}\label{class_booking_1_1_c_s_v_booking_handler_ad5b394199d9f3ef0478393b7fa139d16}
+
+\begin{DoxyParams}{Parameters}
+{\em error\+\_\+list} & \\
+\hline
+{\em path} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 224 of file C\+S\+V\+Booking\+Handler.\+java.
+
+
+\begin{DoxyCode}
+225     \{
+226         File errorFolderPath = \textcolor{keyword}{new} File(path + \textcolor{stringliteral}{"/voucher\_error"});
+227         
+228         \textcolor{keywordflow}{if}(!errorFolderPath.exists())
+229         \{
+230             \textcolor{keywordflow}{try}
+231             \{
+232                 errorFolderPath.mkdir();
+233             \}
+234             \textcolor{keywordflow}{catch}(Exception e)
+235             \{
+236                 System.out.println(\textcolor{stringliteral}{"Could not create error folder"});
+237             \}
+238         \}
+239         \hyperlink{class_booking_1_1_c_s_v_booking_handler_af00a4ebc544ce72dfddbda38218a12cb}{writeVoucherErrorList}(error\_list, errorFolderPath.getPath());
+240     \}
+\end{DoxyCode}
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!print\+Labeled\+Output\+Structure@{print\+Labeled\+Output\+Structure}}
+\index{print\+Labeled\+Output\+Structure@{print\+Labeled\+Output\+Structure}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{print\+Labeled\+Output\+Structure(\+List$<$ Label $>$ Label\+List, String Path, boolean shuffle)}{printLabeledOutputStructure(List< Label > LabelList, String Path, boolean shuffle)}}]{\setlength{\rightskip}{0pt plus 5cm}void Booking.\+C\+S\+V\+Booking\+Handler.\+print\+Labeled\+Output\+Structure (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Label} $>$}]{Label\+List, }
+\item[{String}]{Path, }
+\item[{boolean}]{shuffle}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_af66a291077abb9531add6cbc94b0075a}{}\label{class_booking_1_1_c_s_v_booking_handler_af66a291077abb9531add6cbc94b0075a}
+
+\begin{DoxyParams}{Parameters}
+{\em Label\+List} & \\
+\hline
+{\em Path} & \\
+\hline
+{\em shuffle} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 289 of file C\+S\+V\+Booking\+Handler.\+java.
+
+
+\begin{DoxyCode}
+289                                                                                                            
+              \{
+290         File trainFolderPath = \textcolor{keyword}{new} File(Path + \textcolor{stringliteral}{"/train"});
+291         File testFolderPath = \textcolor{keyword}{new} File(Path + \textcolor{stringliteral}{"/test"});
+292         
+293         \textcolor{keywordflow}{if}(!trainFolderPath.exists())\{
+294             \textcolor{keywordflow}{try}\{
+295                 trainFolderPath.mkdir();
+296             \}\textcolor{keywordflow}{catch}(Exception e)\{
+297                 System.out.println(\textcolor{stringliteral}{"Could not create train folder"});
+298             \}
+299         \}
+300         \textcolor{keywordflow}{if}(!testFolderPath.exists())\{
+301             \textcolor{keywordflow}{try}\{
+302                 testFolderPath.mkdir();
+303             \}\textcolor{keywordflow}{catch}(Exception e)\{
+304                 System.out.println(\textcolor{stringliteral}{"Could not create test folder"});
+305             \}
+306         \}
+307         
+308         \textcolor{keywordflow}{if}(shuffle)
+309             Collections.shuffle(LabelList);
+310         
+311         \textcolor{keywordtype}{int} splitPoint = (LabelList.size() - LabelList.size() / 10);
+312         List<Label> trainList = LabelList.subList(0, splitPoint);
+313         List<Label> testList = LabelList.subList(splitPoint, LabelList.size());
+314         
+315         this.writeLabeledDataToFileStructure(trainList, trainFolderPath.getPath());
+316         this.writeLabeledDataToFileStructure(testList, testFolderPath.getPath());
+317     \}
+\end{DoxyCode}
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!print\+Labeled\+Single\+File@{print\+Labeled\+Single\+File}}
+\index{print\+Labeled\+Single\+File@{print\+Labeled\+Single\+File}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{print\+Labeled\+Single\+File(\+List$<$ Label $>$ Label\+List, String Path, char Seperator)}{printLabeledSingleFile(List< Label > LabelList, String Path, char Seperator)}}]{\setlength{\rightskip}{0pt plus 5cm}void Booking.\+C\+S\+V\+Booking\+Handler.\+print\+Labeled\+Single\+File (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Label} $>$}]{Label\+List, }
+\item[{String}]{Path, }
+\item[{char}]{Seperator}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_a3af1a9ce4819c6ea1f22a9010c803c72}{}\label{class_booking_1_1_c_s_v_booking_handler_a3af1a9ce4819c6ea1f22a9010c803c72}
+Print Label\+List
+
+
+\begin{DoxyParams}{Parameters}
+{\em Label\+List} & \\
+\hline
+{\em Seperator} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 192 of file C\+S\+V\+Booking\+Handler.\+java.
+
+
+\begin{DoxyCode}
+192                                                                                                            
+        \{
+193         CSVWriter writer = \textcolor{keyword}{new} CSVWriter(\textcolor{keyword}{new} FileWriter(Path), Seperator);
+194         String outStream = \textcolor{stringliteral}{""};
+195         outStream += Config.VOUCHER\_ID + Seperator
+196                 +Config.TAX\_KEY\_ID + Seperator
+197                 +Config.BOOKING\_NOTE;
+198                 
+199         String[] entries = outStream.split(Character.toString(Seperator));
+200         writer.writeNext(entries);
+201         
+202         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < LabelList.size(); i++)
+203         \{
+204             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < LabelList.get(i).getDescriptionSize(); j++)
+205             \{
+206                 outStream = \textcolor{stringliteral}{""};
+207                 outStream += LabelList.get(i).getBeleglink() + Seperator;
+208                 outStream += LabelList.get(i).getlabel\_ID() + Seperator;
+209                 outStream += LabelList.get(i).getDescription(j) + Seperator;
+210                 
+211                 entries = outStream.split(Character.toString(Seperator));
+212                 writer.writeNext(entries);
+213             \}
+214         \}
+215         
+216         writer.close();
+217     \}
+\end{DoxyCode}
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!print\+Voucher\+List\+Without\+Debit\+Account@{print\+Voucher\+List\+Without\+Debit\+Account}}
+\index{print\+Voucher\+List\+Without\+Debit\+Account@{print\+Voucher\+List\+Without\+Debit\+Account}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{print\+Voucher\+List\+Without\+Debit\+Account(\+List$<$ A\+Invoice $>$ a\+List, String Path, char Seperator)}{printVoucherListWithoutDebitAccount(List< AInvoice > aList, String Path, char Seperator)}}]{\setlength{\rightskip}{0pt plus 5cm}void Booking.\+C\+S\+V\+Booking\+Handler.\+print\+Voucher\+List\+Without\+Debit\+Account (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf A\+Invoice} $>$}]{a\+List, }
+\item[{String}]{Path, }
+\item[{char}]{Seperator}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_a54cdf709488d718eea5b239033b0deaa}{}\label{class_booking_1_1_c_s_v_booking_handler_a54cdf709488d718eea5b239033b0deaa}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+List} & \\
+\hline
+{\em Seperator} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 155 of file C\+S\+V\+Booking\+Handler.\+java.
+
+
+\begin{DoxyCode}
+156     \{
+157         CSVWriter writer = \textcolor{keyword}{new} CSVWriter(\textcolor{keyword}{new} FileWriter(Path), Seperator);
+158         String outStream = \textcolor{stringliteral}{""};
+159         outStream += Config.VOLUME\_ID + Seperator
+160                 + Config.DEBIT\_ACCOUNT\_ID + Seperator
+161                 + Config.TAX\_KEY\_ID + Seperator
+162                 +Config.BOOKING\_NOTE + Seperator
+163                 +Config.VOUCHER\_ID;
+164         String[] entries = outStream.split(Character.toString(Seperator));
+165         writer.writeNext(entries);
+166         
+167         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < aList.size(); i++)\{
+168             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < aList.get(i).getPositionsLength(); j++)\{
+169                 
+170                 outStream = \textcolor{stringliteral}{""};
+171                 outStream += Float.toString(aList.get(i).getPosition(j).getPositionPrice().getBrutto()).
+      replace(\textcolor{stringliteral}{"."}, \textcolor{stringliteral}{","}) + Seperator;
+172                 outStream += Seperator;
+173                 outStream += Float.toString(aList.get(i).getPosition(j).getTaxrate()) + Seperator;
+174                 outStream += aList.get(i).getPosition(j).getDescription().replace(Seperator, Config.
+      VOUCHER\_CSV\_REPLACEMENT) + Seperator;
+175                 outStream += aList.get(i).getVoucherID();
+176                 
+177                 entries = outStream.split(Character.toString(Seperator));
+178                 writer.writeNext(entries);
+179             \}
+180         \}
+181         
+182         writer.close();
+183     \}
+\end{DoxyCode}
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!rando\+\_\+reconstruct\+\_\+voucher@{rando\+\_\+reconstruct\+\_\+voucher}}
+\index{rando\+\_\+reconstruct\+\_\+voucher@{rando\+\_\+reconstruct\+\_\+voucher}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{rando\+\_\+reconstruct\+\_\+voucher(\+A\+Invoice invoice, Voucher voucher, int c)}{rando_reconstruct_voucher(AInvoice invoice, Voucher voucher, int c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Label} Booking.\+C\+S\+V\+Booking\+Handler.\+rando\+\_\+reconstruct\+\_\+voucher (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+Invoice}}]{invoice, }
 \item[{{\bf Voucher}}]{voucher, }
 \item[{int}]{c}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_booking_1_1_c_s_v_booking_handler_acd6464594c9e2884793759b64dca19fe}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_a70179f1ecdc401d5ea5aa612541acd9b}{}\label{class_booking_1_1_c_s_v_booking_handler_a70179f1ecdc401d5ea5aa612541acd9b}
 veraltet
 
 
@@ -456,59 +680,61 @@ veraltet
 \end{DoxyReturn}
 
 
-Definition at line 250 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 608 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 \begin{DoxyCode}
-251     \{
-252         List<Integer> steuerklasse = \textcolor{keyword}{new} ArrayList<Integer>();
-253         \textcolor{keywordtype}{float} BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
-254         Label returnValue = \textcolor{keyword}{new} Label();
-255         \textcolor{keywordtype}{int} rand = 0;
-256         \textcolor{keywordtype}{int} count = 0;
-257         
-258         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < invoice.getPositionsLength(); i++)
-259         \{
-260             \textcolor{keywordflow}{if}(Float.parseFloat(voucher.getTaxKey()) == ((\textcolor{keywordtype}{float}) invoice.getPosition(i).getTaxrate()))
-261             \{
-262                 steuerklasse.add(i);
-263             \}
-264         \}
-265         
-266         \textcolor{keywordtype}{int} wiederholungen = 2 * steuerklasse.size() * steuerklasse.size() * c;
-267         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < wiederholungen; i++)
-268         \{
-269             rand = randInt(0, steuerklasse.size()-1);
-270             BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(\hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(BuchungsUmsatz) - 
-      \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(invoice.getPosition(steuerklasse.get(rand)).getPositionPrice().getBrutto()));
-271             
-272             returnValue.addPosition(steuerklasse.get(rand));
-273             returnValue.addDescription(invoice.getPosition(steuerklasse.get(rand)).getDescription());
-274             count++;
-275             \textcolor{keywordflow}{if}(BuchungsUmsatz < 0.00)
-276             \{
-277                 returnValue = \textcolor{keyword}{new} Label();
-278                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
-279             \}
-280             \textcolor{keywordflow}{if}(BuchungsUmsatz == 0.00)
-281             \{
-282                 returnValue.setlabel\_ID(voucher.getDebitAccount());
-283                 returnValue.setBeleglink(voucher.getVoucherID());
-284                 \textcolor{keywordflow}{break};
-285             \}
-286         \}
-287         System.out.println(\textcolor{stringliteral}{"Old Rando Algo Iteration: "}+ count); \textcolor{comment}{// Iteration}
-288         \textcolor{keywordflow}{return} returnValue;
-289     \}
+609     \{
+610         List<Integer> steuerklasse = \textcolor{keyword}{new} ArrayList<Integer>();
+611         \textcolor{keywordtype}{float} BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
+612         Label returnValue = \textcolor{keyword}{new} Label();
+613         \textcolor{keywordtype}{int} rand = 0;
+614         \textcolor{keywordtype}{int} count = 0;
+615         
+616         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < invoice.getPositionsLength(); i++)
+617         \{
+618             \textcolor{keywordflow}{if}(Float.parseFloat(voucher.getTaxKey()) == ((\textcolor{keywordtype}{float}) invoice.getPosition(i).getTaxrate()))
+619             \{
+620                 steuerklasse.add(i);
+621             \}
+622         \}
+623         
+624         \textcolor{keywordtype}{int} wiederholungen = 2 * steuerklasse.size() * steuerklasse.size() * c;
+625         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < wiederholungen; i++)
+626         \{
+627             rand = randInt(0, steuerklasse.size()-1);
+628             BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(\hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(BuchungsUmsatz) - 
+      \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(invoice.getPosition(steuerklasse.get(rand)).getPositionPrice().getBrutto()));
+629             
+630             returnValue.addPosition(steuerklasse.get(rand));
+631             returnValue.addDescription(invoice.getPosition(steuerklasse.get(rand)).getDescription());
+632             count++;
+633             \textcolor{keywordflow}{if}(BuchungsUmsatz < 0.00)
+634             \{
+635                 returnValue = \textcolor{keyword}{new} Label();
+636                 BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."})));
+637             \}
+638             \textcolor{keywordflow}{if}(BuchungsUmsatz == 0.00)
+639             \{
+640                 returnValue.setlabel\_ID(voucher.getDebitAccount());
+641                 returnValue.setBeleglink(voucher.getVoucherID());
+642                 \textcolor{keywordflow}{break};
+643             \}
+644         \}
+645         System.out.println(\textcolor{stringliteral}{"Old Rando Algo Iteration: "}+ count); \textcolor{comment}{// Iteration}
+646         \textcolor{keywordflow}{return} returnValue;
+647     \}
 \end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_ab6b151e44447a19940eaf8d8ecb21ff1}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!reconstruct\-\_\-voucher@{reconstruct\-\_\-voucher}}
-\index{reconstruct\-\_\-voucher@{reconstruct\-\_\-voucher}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{reconstruct\-\_\-voucher}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Label} Booking.\-C\-S\-V\-Booking\-Handler.\-reconstruct\-\_\-voucher (
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!reconstruct\+\_\+voucher@{reconstruct\+\_\+voucher}}
+\index{reconstruct\+\_\+voucher@{reconstruct\+\_\+voucher}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{reconstruct\+\_\+voucher(\+A\+Invoice invoice, Voucher voucher)}{reconstruct_voucher(AInvoice invoice, Voucher voucher)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Label} Booking.\+C\+S\+V\+Booking\+Handler.\+reconstruct\+\_\+voucher (
 \begin{DoxyParamCaption}
-\item[{{\bf A\-Invoice}}]{invoice, }
+\item[{{\bf A\+Invoice}}]{invoice, }
 \item[{{\bf Voucher}}]{voucher}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_booking_1_1_c_s_v_booking_handler_ab6b151e44447a19940eaf8d8ecb21ff1}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_ab783364b26723a898cf9cd8f339416a9}{}\label{class_booking_1_1_c_s_v_booking_handler_ab783364b26723a898cf9cd8f339416a9}
+veraltet
+
 
 \begin{DoxyParams}{Parameters}
 {\em invoice} & \\
@@ -521,80 +747,50 @@ Definition at line 250 of file C\-S\-V\-Booking\-Handler.\-java.
 \end{DoxyReturn}
 
 
-Definition at line 209 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 567 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 \begin{DoxyCode}
-210     \{
-211         Label returnValue = null;
-212         \textcolor{keywordtype}{float} BuchungsUmsatz;
-213         \textcolor{keywordtype}{boolean} Rückrechnung = \textcolor{keyword}{false};
-214         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < invoice.getPositionsLength(); i++)
-215         \{
-216             returnValue = \textcolor{keyword}{new} Label();
-217             BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."}))); 
-218             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = i; j < invoice.getPositionsLength(); j++ )
-219             \{
-220                 \textcolor{keywordflow}{if}(Float.parseFloat(voucher.getTaxKey()) == ((\textcolor{keywordtype}{float}) invoice.getPosition(j).getTaxrate()))
-221                 \{
-222                     BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(BuchungsUmsatz) - \hyperlink{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{rounding}(invoice.
+568     \{
+569         Label returnValue = null;
+570         \textcolor{keywordtype}{float} BuchungsUmsatz;
+571         \textcolor{keywordtype}{boolean} Ruckrechnung = \textcolor{keyword}{false};
+572         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < invoice.getPositionsLength(); i++)
+573         \{
+574             returnValue = \textcolor{keyword}{new} Label();
+575             BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(Float.parseFloat(voucher.getVolume().replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{"."}))); 
+576             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = i; j < invoice.getPositionsLength(); j++ )
+577             \{
+578                 \textcolor{keywordflow}{if}(Float.parseFloat(voucher.getTaxKey()) == ((\textcolor{keywordtype}{float}) invoice.getPosition(j).getTaxrate()))
+579                 \{
+580                     BuchungsUmsatz = \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(BuchungsUmsatz) - \hyperlink{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{rounding}(invoice.
       getPosition(j).getPositionPrice().getBrutto());
-223                     returnValue.addPosition(j);
-224                     returnValue.addDescription(invoice.getPosition(j).getDescription());
-225                     \textcolor{keywordflow}{if}(BuchungsUmsatz == 0.00)
-226                     \{
-227                         returnValue.setlabel\_ID(voucher.getDebitAccount());
-228                         returnValue.setBeleglink(voucher.getVoucherID());
-229                         Rückrechnung = \textcolor{keyword}{true};
-230                         \textcolor{keywordflow}{break};
-231                     \}
-232                 \}
-233             \}
-234             \textcolor{keywordflow}{if}(Rückrechnung == \textcolor{keyword}{true})
-235             \{
-236                 \textcolor{keywordflow}{break};
-237             \}
-238         \}   
-239         \textcolor{keywordflow}{return} returnValue;
-240     \}
+581                     returnValue.addPosition(j);
+582                     returnValue.addDescription(invoice.getPosition(j).getDescription());
+583                     \textcolor{keywordflow}{if}(BuchungsUmsatz == 0.00)
+584                     \{
+585                         returnValue.setlabel\_ID(voucher.getDebitAccount());
+586                         returnValue.setBeleglink(voucher.getVoucherID());
+587                         Ruckrechnung = \textcolor{keyword}{true};
+588                         \textcolor{keywordflow}{break};
+589                     \}
+590                 \}
+591             \}
+592             \textcolor{keywordflow}{if}(Ruckrechnung == \textcolor{keyword}{true})
+593             \{
+594                 \textcolor{keywordflow}{break};
+595             \}
+596         \}   
+597         \textcolor{keywordflow}{return} returnValue;
+598     \}
 \end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_a43243d8ea72c777f226baa60b75ee102}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!Remove\-Label@{Remove\-Label}}
-\index{Remove\-Label@{Remove\-Label}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{Remove\-Label}]{\setlength{\rightskip}{0pt plus 5cm}static void Booking.\-C\-S\-V\-Booking\-Handler.\-Remove\-Label (
-\begin{DoxyParamCaption}
-\item[{List$<$ {\bf Label} $>$}]{Label\-List}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_booking_1_1_c_s_v_booking_handler_a43243d8ea72c777f226baa60b75ee102}
-Remove the Labels which could not be reconstructed
-
-
-\begin{DoxyParams}{Parameters}
-{\em Label\-List} & \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 192 of file C\-S\-V\-Booking\-Handler.\-java.
-
-
-\begin{DoxyCode}
-193     \{
-194         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < LabelList.size(); i++)
-195         \{
-196             \textcolor{keywordflow}{if}(LabelList.get(i).getBeleglink() == null)
-197             \{
-198                 LabelList.remove(i);
-199             \}
-200         \}
-201     \}
-\end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!rounding@{rounding}}
-\index{rounding@{rounding}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{rounding}]{\setlength{\rightskip}{0pt plus 5cm}static float Booking.\-C\-S\-V\-Booking\-Handler.\-rounding (
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!rounding@{rounding}}
+\index{rounding@{rounding}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{rounding(float value)}{rounding(float value)}}]{\setlength{\rightskip}{0pt plus 5cm}float Booking.\+C\+S\+V\+Booking\+Handler.\+rounding (
 \begin{DoxyParamCaption}
 \item[{float}]{value}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_booking_1_1_c_s_v_booking_handler_a563405ddd25caf5c2fcf65c5543c8543}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}{}\label{class_booking_1_1_c_s_v_booking_handler_acbde555759b0d5d7b8dd07b6da253083}
 
 \begin{DoxyParams}{Parameters}
 {\em value} & \\
@@ -605,35 +801,35 @@ Definition at line 192 of file C\-S\-V\-Booking\-Handler.\-java.
 \end{DoxyReturn}
 
 
-Definition at line 411 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 547 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 \begin{DoxyCode}
-412     \{
-413         \textcolor{keywordflow}{if}(((value*1000) % 10) > 4 )
-414         \{
-415             value = (float)((\textcolor{keywordtype}{int})(value*100+1))/100; 
-416         \}
-417         \textcolor{keywordflow}{else}
-418         \{
-419             value = (float)((\textcolor{keywordtype}{int})(value*100))/100; 
-420         \}
-421         \textcolor{keywordflow}{return} value;
-422     \}
+548     \{
+549         \textcolor{keywordflow}{if}(((value*1000) % 10) > 4 )
+550         \{
+551             value = (float)((\textcolor{keywordtype}{int})(value*100+1))/100; 
+552         \}
+553         \textcolor{keywordflow}{else}
+554         \{
+555             value = (float)((\textcolor{keywordtype}{int})(value*100))/100; 
+556         \}
+557         \textcolor{keywordflow}{return} value;
+558     \}
 \end{DoxyCode}
-\hypertarget{class_booking_1_1_c_s_v_booking_handler_ada6c5254b798825b0baca4fc91aa5277}{\index{Booking\-::\-C\-S\-V\-Booking\-Handler@{Booking\-::\-C\-S\-V\-Booking\-Handler}!search\-Reduced\-Invoice\-List\-Item@{search\-Reduced\-Invoice\-List\-Item}}
-\index{search\-Reduced\-Invoice\-List\-Item@{search\-Reduced\-Invoice\-List\-Item}!Booking::CSVBookingHandler@{Booking\-::\-C\-S\-V\-Booking\-Handler}}
-\subsubsection[{search\-Reduced\-Invoice\-List\-Item}]{\setlength{\rightskip}{0pt plus 5cm}static int Booking.\-C\-S\-V\-Booking\-Handler.\-search\-Reduced\-Invoice\-List\-Item (
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!search\+Reduced\+Invoice\+List\+Item@{search\+Reduced\+Invoice\+List\+Item}}
+\index{search\+Reduced\+Invoice\+List\+Item@{search\+Reduced\+Invoice\+List\+Item}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{search\+Reduced\+Invoice\+List\+Item(\+List$<$ Voucher $>$ voucher\+List, String Voucher\+I\+D)}{searchReducedInvoiceListItem(List< Voucher > voucherList, String VoucherID)}}]{\setlength{\rightskip}{0pt plus 5cm}int Booking.\+C\+S\+V\+Booking\+Handler.\+search\+Reduced\+Invoice\+List\+Item (
 \begin{DoxyParamCaption}
-\item[{List$<$ {\bf A\-Invoice} $>$}]{Reduced\-Invoice\-List, }
-\item[{String}]{Voucher\-I\-D}
+\item[{List$<$ {\bf Voucher} $>$}]{voucher\+List, }
+\item[{String}]{Voucher\+ID}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_booking_1_1_c_s_v_booking_handler_ada6c5254b798825b0baca4fc91aa5277}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_a9748f34b648b985b61b702176a9d509f}{}\label{class_booking_1_1_c_s_v_booking_handler_a9748f34b648b985b61b702176a9d509f}
 
 \begin{DoxyParams}{Parameters}
-{\em Reduced\-Invoice\-List} & \\
+{\em voucher\+List} & \\
 \hline
-{\em Voucher\-I\-D} & \\
+{\em Voucher\+ID} & \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -641,23 +837,78 @@ Definition at line 411 of file C\-S\-V\-Booking\-Handler.\-java.
 \end{DoxyReturn}
 
 
-Definition at line 382 of file C\-S\-V\-Booking\-Handler.\-java.
+Definition at line 492 of file C\+S\+V\+Booking\+Handler.\+java.
 
 
 \begin{DoxyCode}
-383     \{
-384         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < ReducedInvoiceList.size(); i++)
-385         \{
-386             \textcolor{keywordflow}{if}(VoucherID.equals(ReducedInvoiceList.get(i).getBeleglink()))
-387             \{
-388                 \textcolor{keywordflow}{return} i;
-389             \}
-390         \}
-391         \textcolor{keywordflow}{return} 0;
-392     \}
+493     \{
+494         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < voucherList.size(); i++)
+495         \{
+496             \textcolor{keywordflow}{if}(VoucherID.equals(voucherList.get(i).getVoucherID()))
+497             \{
+498                 \textcolor{keywordflow}{return} i;
+499             \}
+500         \}
+501         \textcolor{keywordflow}{return} 0;
+502     \}
+\end{DoxyCode}
+\index{Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}!write\+Voucher\+Error\+List@{write\+Voucher\+Error\+List}}
+\index{write\+Voucher\+Error\+List@{write\+Voucher\+Error\+List}!Booking\+::\+C\+S\+V\+Booking\+Handler@{Booking\+::\+C\+S\+V\+Booking\+Handler}}
+\subsubsection[{\texorpdfstring{write\+Voucher\+Error\+List(\+List$<$ A\+Invoice $>$ error\+\_\+list, String path)}{writeVoucherErrorList(List< AInvoice > error_list, String path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Booking.\+C\+S\+V\+Booking\+Handler.\+write\+Voucher\+Error\+List (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf A\+Invoice} $>$}]{error\+\_\+list, }
+\item[{String}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_booking_1_1_c_s_v_booking_handler_af00a4ebc544ce72dfddbda38218a12cb}{}\label{class_booking_1_1_c_s_v_booking_handler_af00a4ebc544ce72dfddbda38218a12cb}
+
+\begin{DoxyParams}{Parameters}
+{\em error\+\_\+list} & \\
+\hline
+{\em path} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 247 of file C\+S\+V\+Booking\+Handler.\+java.
+
+
+\begin{DoxyCode}
+248     \{
+249         File dataOut = \textcolor{keyword}{new} File(path + \textcolor{stringliteral}{"/voucher\_error.txt"});
+250         \textcolor{keywordflow}{try}
+251         \{
+252         dataOut.createNewFile();
+253         
+254         FileWriter dataWriter = \textcolor{keyword}{new} FileWriter(dataOut);
+255         
+256         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < error\_list.size(); i++)
+257         \{
+258             \textcolor{keywordflow}{if}(error\_list.get(i).checkVoucherIDError())
+259             \{
+260                 dataWriter.write(error\_list.get(i).getVoucherID() +\textcolor{stringliteral}{" - VOUCHER ID NOT FOUND\(\backslash\)n"});
+261             \}
+262             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(error\_list.get(i).checkReconstructVoucherError())
+263             \{
+264                 dataWriter.write(error\_list.get(i).getVoucherID() + \textcolor{stringliteral}{" - COULD NOT RECONSTRUCT VOUCHER\(\backslash\)n"});
+265             \}
+266             
+267             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < error\_list.get(i).getPositionsLength(); j++)
+268             \{
+269                 dataWriter.write(error\_list.get(i).getPosition(j).getDescription() + \textcolor{stringliteral}{"\(\backslash\)n"});
+270             \}
+271             dataWriter.write(\textcolor{stringliteral}{"\(\backslash\)n"});
+272         \}
+273         
+274         dataWriter.close();
+275         \}
+276         \textcolor{keywordflow}{catch}(Exception e)
+277         \{
+278             
+279         \}
+280     \}
 \end{DoxyCode}
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-H\-:/\-Programmierungen/\-Java/taxsynapse/src/main/java/\-Booking/\hyperlink{_c_s_v_booking_handler_8java}{C\-S\-V\-Booking\-Handler.\-java}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Booking/\hyperlink{_c_s_v_booking_handler_8java}{C\+S\+V\+Booking\+Handler.\+java}\end{DoxyCompactItemize}

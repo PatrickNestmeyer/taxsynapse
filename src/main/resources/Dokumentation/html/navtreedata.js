@@ -1,10 +1,8 @@
 var NAVTREE =
 [
   [ "KÃ¼nstliche neuronale Netze", "index.html", [
-    [ "Framework Deeplearning4j", "Framework.html", [
-      [ "Überschrift 1", "Framework.html#a", null ]
-    ] ],
     [ "Arbeitsweise", "Arbeitsweise.html", "Arbeitsweise" ],
+    [ "Trainingsdaten", "Trainingsdaten.html", "Trainingsdaten" ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ]

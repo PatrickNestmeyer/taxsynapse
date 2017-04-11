@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reducedinvoice',['ReducedInvoice',['../namespace_reduced_invoice.html',1,'']]]
+  ['neuralnetwork',['NeuralNetwork',['../namespace_neural_network.html',1,'']]]
 ];

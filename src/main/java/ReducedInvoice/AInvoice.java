@@ -5,13 +5,13 @@ import java.util.List;
 
 public abstract class AInvoice {
 	
-	public enum Error {PRICE_ERROR, NO_ERROR}; 
+	public enum Error {PRICE_ERROR, NO_ERROR, VOUCHER_ID_ERROR, RECONSTRUCT_ERROR }; 
 	
 	//Date
 	private Date invoiceDate;
 	
 	//Beleglink
-	private String Beleglink;
+	private String VoucherID;
 	
 	//Number
 	private String invoiceNumber;
@@ -73,14 +73,14 @@ public abstract class AInvoice {
 	
 	public abstract int getPositionsLength();
 	
-	public String getBeleglink()
+	public String getVoucherID()
 	{
-		return Beleglink;
+		return VoucherID;
 	}
 	
-	public void setBeleglink(String Beleglink)
+	public void setVoucherID(String VoucherID)
 	{
-		this.Beleglink = Beleglink;
+		this.VoucherID = VoucherID;
 	}
 
 	public Date getInvoiceDate() {
@@ -127,6 +127,32 @@ public abstract class AInvoice {
 	public void setInvoiceError(Error invoiceerror)
 	{
 		InvoiceError = invoiceerror;
+	}
+	
+	public void setInvoiceError_VOUCHER_ID_ERROR()
+	{
+		InvoiceError = Error.VOUCHER_ID_ERROR;
+	}
+	
+	public void setInvoiceError_RECONSTRUCT_ERROR()
+	{
+		InvoiceError = Error.RECONSTRUCT_ERROR;
+	}
+	
+	public boolean checkVoucherIDError()
+	{
+		if(InvoiceError == Error.VOUCHER_ID_ERROR)
+			return true;
+		else
+			return false;
+	}
+	
+	public boolean checkReconstructVoucherError()
+	{
+		if(InvoiceError == Error.RECONSTRUCT_ERROR)
+			return true;
+		else
+			return false;
 	}
 
 	public Metadata getMetaData() {

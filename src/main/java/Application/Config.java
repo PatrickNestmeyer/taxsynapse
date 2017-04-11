@@ -9,30 +9,53 @@ public final class Config {
 	 */
 	public static boolean LOG_SINGLE_STEPS = true;
 	public static boolean SUPRESS_INVALID_INVOICES = false;
+	public static boolean COPY_TRAIN_DATA = false;
+	public static int COPY_TRAIN_DATA_SIZE = 20;
+	// Falls Echtdaten verwendet werden Datei nach der Auswertung der Fehler löschen
+	public static boolean LOG_INVOICE_AND_VOUCHER_ERROR = true;
 	
 	/**
-	 * Input Location Parameters
+	 * Data Input and Output Location Parameters
 	 */
-	public static String PATH_TO_ZUGFERD_INVOICES = "./src/main/resources/input/invoices/zugferd";
-	public static String PATH_TO_JSON_INVOICES = "./src/main/resources/input/invoices/json";
 	public static String PATH_TO_VOUCHERS = "./src/main/resources/input/vouchers";
+	public static String PATH_TO_JSON_INVOICES = "./src/main/resources/input/invoices/json";
+	public static String PATH_TO_ZUGFERD_INVOICES = "./src/main/resources/input/invoices/zugferd";
+	public static String PATH_TO_LABELS = "./src/main/resources/labeled_test/output";
+	
+	/**
+	 * Error in Data Input Parameters
+	 */
+	public static String PATH_TO_FAILED_VOUCHER = "./src/main/resources/labeled_test/output";	
+		
+	/**
+	 * Network Input and Output Parameters
+	 */
+	public static String PATH_TO_NETWORK_DATA = "./src/main/resources/labeled_test/output";
 	public static String PATH_TO_NETWORK_OUTPUT = "./src/main/resources/output";
-	public static String PATH_TO_NETWORK_DATA = "./src/main/resources/labeled";
 	
 	/**
 	 * Other Test Data
 	 */
-	
 	//public static String PATH_TO_NETWORK_DATA = "./src/main/resources/labeled/other/amazon";
 	//public static String PATH_TO_NETWORK_DATA = "./src/main/resources/labeled/other/imdb";
 	//public static String PATH_TO_NETWORK_DATA = "./src/main/resources/labeled/other/names";
 	//public static String PATH_TO_NETWORK_DATA = "./src/main/resources/labeled/other/yelp";
 	
+	
 	/**
-	 * Test Files Parameter
+	 * Network Parameters
 	 */
-	public static String PATH_TO_LABEL_TESTLIST = "./src/main/resources/labeled_test/output";
-	public static String PATH_TO_VOUCHER_TEST_DUMP = "./src/main/resources/labeled_test/VoucherTestDump.csv";
+	public static String NETWORK_ALPHABET = "abcdefghijklmnopqrstuvwxyz0123456789 @€!\"$%&/()=?+-#<>.,;:_-'*+#{[]}";
+	public static int NETWORK_INPUT_LENGHT = 258;
+	public static int NETWORK_OUTPUT_LENGTH = 4;
+	public static int NETWORK_MINIBATCH = 64;
+	public static String NETWORK_PATH_TO_DATA = Config.PATH_TO_NETWORK_DATA;
+	public static int NETWORK_CORES = Runtime.getRuntime().availableProcessors();
+	public static int NETWORK_EPOCHS = 1;
+	public static double NETWORK_LEARNING_RATE = 1e-1; //0.1 to 1e-6 || try 1e-1, 1e-3 and 1e-6
+	public static double NETWORK_REGULARIZATION = 1e-3; //1e-3 to 1e-6
+	public static double NETWORK_MOMENTUM = 0.1; //common value is 0.9
+	
 	
 	/**
 	 * CSV-Handling Parameters

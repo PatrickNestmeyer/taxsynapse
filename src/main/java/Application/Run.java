@@ -34,6 +34,10 @@ public class Run {
 		case "network":
 			runNetwork();
 			break;
+		case "data_network":
+			runDataPreprocessing();
+			runNetwork();
+			break;
 		default:
 			System.out.println("The command " + args[0] + " was not found.");
 			System.out.println("Please check for typo.");
@@ -57,8 +61,7 @@ public class Run {
 		List<AInvoice> ReducedInvoiceList = new ArrayList<AInvoice>();
 		List<Voucher> VoucherList = new ArrayList<Voucher>();
 		List<Label> LabelList;
-		
-		
+				
 		//read ZUGFERDs, reduce them to necessary informations and add them to the List
 		readInvoicesFromFiles(ReducedInvoiceList);
 		
@@ -71,13 +74,13 @@ public class Run {
 			VoucherList = bHandler.getVoucherInfoFromFolder(Config.PATH_TO_VOUCHERS, Config.VOLUME_ID, Config.DEBIT_ACCOUNT_ID, Config.TAX_KEY_ID, Config.VOUCHER_ID, Config.VOUCHER_CSV_SEPERATOR);
 			
 			//Creates a List with both information voucher and invoice 
-			LabelList = bHandler.createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList, true);
-			
+			LabelList = bHandler.createReducedInvoiceVoucherList(ReducedInvoiceList,VoucherList);
+						
 			//Uncomment this if data preparation is in test
 			//bHandler.printVoucherListWithoutDebitAccount(ReducedInvoiceList,Config.PATH_TO_VOUCHER_TEST_DUMP, Config.VOUCHER_CSV_SEPERATOR);
-			
+
 			//Print the test and training data in demanded folder and file structure to the desired folder
-			bHandler.printLabeledOutputStructure(LabelList, Config.PATH_TO_LABEL_TESTLIST, Config.SHUFFLE_NETWORKDATA);
+			bHandler.printLabeledOutputStructure(LabelList, Config.PATH_TO_LABELS, Config.SHUFFLE_NETWORKDATA);
 		}
 		catch(Exception e)
 		{
@@ -108,26 +111,27 @@ public class Run {
 	/**
 	 * The core call functions of the neural network
 	 */
-	
 	public static void runNetwork()
 	{
+		/**
 		String alphabet = "abcdefghijklmnopqrstuvwxyz0123456789 @€!\"$%&/()=?+-#<>.,;:_-'*+#{[]}";
 		int inputLength = 258;
 		int outputLength = 4;
-		int minibatch = 64;
+		int minibatch = 32;
 		String path_to_data = Config.PATH_TO_NETWORK_DATA;
 		int cores = Runtime.getRuntime().availableProcessors();
-		int epochs = 10;
-		double leraningRate = 0.01; //0.1 to 1e-6 || try 1e-1, 1e-3 and 1e-6
-		double regularization = 1e-6; //1e-3 to 1e-6
-		double momentum = 0.9; //common value is 0.9
+		int epochs = 2;
+		double leraningRate = 1e-1; //0.1 to 1e-6 || try 1e-1, 1e-3 and 1e-6
+		double regularization = 1e-3; //1e-3 to 1e-6
+		double momentum = 0.1; //common value is 0.9 */
 		
 		NetworkFacade networkManager = NetworkFacade.getInstance();
-		networkManager.setProperties(alphabet, inputLength, outputLength, "medium");
-		if(networkManager.readData(path_to_data)){
-			networkManager.build(leraningRate, momentum, regularization);
-			//networkManager.trainFixed(minibatch, epochs, cores);
-			networkManager.trainArbitary(minibatch, epochs, 5.00, cores);
+		
+		networkManager.setProperties(Config.NETWORK_ALPHABET, Config.NETWORK_INPUT_LENGHT, Config.NETWORK_OUTPUT_LENGTH, "default");
+		if(networkManager.readData(Config.NETWORK_PATH_TO_DATA)){
+			networkManager.build(Config.NETWORK_LEARNING_RATE, Config.NETWORK_MOMENTUM, Config.NETWORK_REGULARIZATION);
+			networkManager.trainFixed(Config.NETWORK_MINIBATCH, Config.NETWORK_EPOCHS, Config.NETWORK_CORES);
+			//networkManager.trainArbitary(minibatch, epochs, 5.00, cores);
 			System.out.println(networkManager.test());
 		}
 	}

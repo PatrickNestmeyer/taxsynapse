@@ -1,7 +1,10 @@
 var dir_932e753222cd826297315a661ec9eac4 =
 [
-    [ "LabeledInputSeries.java", "_labeled_input_series_8java.html", [
-      [ "LabeledInputSeries", "class_neural_network_1_1_labeled_input_series.html", "class_neural_network_1_1_labeled_input_series" ]
+    [ "ExportManager.java", "_export_manager_8java.html", [
+      [ "ExportManager", "class_neural_network_1_1_export_manager.html", "class_neural_network_1_1_export_manager" ]
+    ] ],
+    [ "InputManager.java", "_input_manager_8java.html", [
+      [ "InputManager", "class_neural_network_1_1_input_manager.html", "class_neural_network_1_1_input_manager" ]
     ] ],
     [ "NetworkFacade.java", "_network_facade_8java.html", [
       [ "NetworkFacade", "class_neural_network_1_1_network_facade.html", "class_neural_network_1_1_network_facade" ]

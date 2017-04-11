@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['validateinvoice',['validateInvoice',['../class_reduced_invoice_1_1_invoice_reducer.html#a47e121912714be2caea8d2619c10a2f0',1,'ReducedInvoice::InvoiceReducer']]],
-  ['volume_5fid',['VOLUME_ID',['../class_application_1_1_config.html#a98245bf73e483f8b9e7205b902b8efe2',1,'Application::Config']]],
-  ['voucher',['Voucher',['../class_booking_1_1_voucher.html#a881680476cac22ad99e26c52193a4f5c',1,'Booking::Voucher']]],
-  ['voucher',['Voucher',['../class_booking_1_1_voucher.html',1,'Booking']]],
-  ['voucher_2ejava',['Voucher.java',['../_voucher_8java.html',1,'']]],
-  ['voucher_5fcsv_5freplacement',['VOUCHER_CSV_REPLACEMENT',['../class_application_1_1_config.html#a084313563b62becd51383c5bca447c37',1,'Application::Config']]],
-  ['voucher_5fcsv_5fseperator',['VOUCHER_CSV_SEPERATOR',['../class_application_1_1_config.html#a6baf30990200df3d72d4b04672d3dff2',1,'Application::Config']]],
-  ['voucher_5fid',['VOUCHER_ID',['../class_application_1_1_config.html#addfac1a6727d1d065ad3ccf88ed8a043',1,'Application::Config']]]
+  ['tax_5fkey_5fid',['TAX_KEY_ID',['../class_application_1_1_config.html#ab18380be887bad8de5dd50d47677a1d1',1,'Application::Config']]],
+  ['test',['test',['../class_neural_network_1_1_network_facade.html#a9f455c7791931ec34143a68756a29c85',1,'NeuralNetwork.NetworkFacade.test()'],['../class_neural_network_1_1_neural_network.html#a66774dd8ee622aca4275c19524802726',1,'NeuralNetwork.NeuralNetwork.test()']]],
+  ['todo_20list',['Todo List',['../todo.html',1,'']]],
+  ['totalprice',['TotalPrice',['../class_reduced_invoice_1_1_a_invoice.html#a72b831e7ee0b4501fc949f61aecdd498',1,'ReducedInvoice::AInvoice']]],
+  ['trainarbitary',['trainArbitary',['../class_neural_network_1_1_network_facade.html#a8495ce69d130995501b9007cd9b2f522',1,'NeuralNetwork::NetworkFacade']]],
+  ['trainfixed',['trainFixed',['../class_neural_network_1_1_network_facade.html#aed33ade47d951c3d8959658c265e34c2',1,'NeuralNetwork::NetworkFacade']]],
+  ['trainingsdaten',['Trainingsdaten',['../Trainingsdaten.html',1,'']]],
+  ['trainingsdaten_20layer_201_20_5cn',['Trainingsdaten Layer 1 \n',['../Trainingsdaten_Layer_1.html',1,'Trainingsdaten']]]
 ];

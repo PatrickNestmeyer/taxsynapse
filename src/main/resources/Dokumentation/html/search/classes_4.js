@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['metadata',['Metadata',['../class_reduced_invoice_1_1_metadata.html',1,'ReducedInvoice']]]
+  ['jsonhandler',['jsonHandler',['../class_import_1_1json_handler.html',1,'Import']]]
 ];

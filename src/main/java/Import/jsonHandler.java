@@ -71,7 +71,7 @@ public class jsonHandler
 			try{
 				if (Files.isDirectory(elem))
 				{
-					System.out.println("test");
+					
 				}
 				else
 				{
@@ -84,7 +84,7 @@ public class jsonHandler
 							Object object = parser.parse(new FileReader(path));
 							JSONObject root = (JSONObject) object;
 							
-							returnValue.setBeleglink(fileName);
+							returnValue.setVoucherID(fileName);
 							returnValue.setInvoiceNumber( (String) ((JSONObject) root.get("invoice_number")).get("value"));
 							returnValue.setTotalPrice(new Price(
 									(float) ((double) ((JSONObject) root.get("total_gross_amount")).get("value")),

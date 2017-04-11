@@ -2,6 +2,7 @@ var class_reduced_invoice_1_1_r_invoice =
 [
     [ "RInvoice", "class_reduced_invoice_1_1_r_invoice.html#a382c34ce7698a3e5cc9301c8cc3a5828", null ],
     [ "addPosition", "class_reduced_invoice_1_1_r_invoice.html#ae51bf96a9fc6c76ba5d79a813f4a1da0", null ],
+    [ "addPosition", "class_reduced_invoice_1_1_r_invoice.html#aac8d8e74616bac5d81e446d47b31d5e7", null ],
     [ "addPosition", "class_reduced_invoice_1_1_r_invoice.html#ac851aecb0cdd4da309d203f0dfc4b55f", null ],
     [ "getPosition", "class_reduced_invoice_1_1_r_invoice.html#a552d88c5808181f8fe3ca72772b5aff6", null ],
     [ "getPositions", "class_reduced_invoice_1_1_r_invoice.html#a55b11262453617b33490afbc040761f6", null ],

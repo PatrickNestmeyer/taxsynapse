@@ -1,0 +1,27 @@
+2015_02_DIBU_ER_Farben.ZUGFeRD.pdf - COULD NOT RECONSTRUCT VOUCHER
+Holzschutzlasur, Palisander
+Brutto: 128.52 Steuer: 19.0 Netto: 108.0
+Holzschutzlasur, Teak
+Brutto: 128.52 Steuer: 19.0 Netto: 108.0
+Holzschutzlasur, Eiche
+Brutto: 2451.4001 Steuer: 19.0 Netto: 2060.0
+Buchungsbetrag: 2708,44
+
+2016-03-31 Rechnung Mustervorlage Posten.pdf - COULD NOT RECONSTRUCT VOUCHER
+Musterposten CIB001
+Brutto: 0.0 Steuer: 0.0 Netto: 0.0
+Musterposten CIB002
+Brutto: 0.0 Steuer: 0.0 Netto: 0.0
+Buchungsbetrag: 1844,5
+
+ZUGFeRD_1p0_COMFORT_Haftpflichtversicherung_Versicherungssteuer.pdf - COULD NOT RECONSTRUCT VOUCHER
+Privathaftpflicht
+Brutto: 59.5 Steuer: 19.0 Netto: 50.0
+Lebensgefährte/in zur Privathaftpflicht
+Brutto: 0.0 Steuer: 19.0 Netto: 0.0
+Buchungsbetrag: 220
+
+ZUGFeRD_1p0_COMFORT_Kraftfahrversicherung_Bruttopreise.pdf - VOUCHER ID NOT FOUND
+Kfz-Haftpflicht SF25 (30 %) Typkl. 18 Regio R9
+Vollkasko SF25 (30 %) Typkl. 21 Regio R4
+

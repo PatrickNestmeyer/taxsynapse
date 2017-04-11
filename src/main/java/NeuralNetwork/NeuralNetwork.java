@@ -150,8 +150,8 @@ public class NeuralNetwork {
 			break;
 		default:
 			this.normalDistributionUpper = 0.05;
-			this.numberOfFeatureMaps = 256;
-			this.secondFully = 1024;
+			this.numberOfFeatureMaps = 50;
+			this.secondFully = 256;
 			break;
 		}
 		this.firstFully = ((this.numberOfInputs-96)/27)*this.numberOfFeatureMaps;
@@ -183,7 +183,7 @@ public class NeuralNetwork {
 		
 		conf = new NeuralNetConfiguration.Builder()
 				.seed(this.seed)
-				.weightInit(WeightInit.DISTRIBUTION)
+				.weightInit(WeightInit.XAVIER)
 				.dist(new NormalDistribution(this.normalDistributionLower, this.normalDistributionUpper))
 				.activation(this.activationFunction)
 				.updater(Updater.NESTEROVS)
@@ -309,18 +309,21 @@ public class NeuralNetwork {
 		//TODO: Inside: Create a txt-file with metadata (learning parameters, results and duration of training) and a xml with the serialization of the network after each epoch.
 	}
 	
-	public double test(DataSet testSet){
+	public double test(DataSet testSet)
+	{
+		INDArray n = network.getOutputLayer().params();
 		
 		double hit = 0;
 		INDArray realLabelOneHot = testSet.getLabels();
 		for(int i = 0; i < testSet.numExamples(); i++){
 			int realLabel = 0;
 			int predict = network.predict(testSet.getFeatures().getRow(i))[0];
+			INDArray output = network.output(testSet.getFeatures().getRow(i));
 			for(int j = 0; j < realLabelOneHot.getRow(i).length(); j++){
 				if(realLabelOneHot.getDouble(i, j) == 1.00)
 					realLabel = j;
 			}
-			//System.out.println("For Input " + i + ", " + predict + " was predicted. The real label is " + realLabel);
+			System.out.println("For Input " + (i+1) + ", " + predict + " was predicted. The real label is " + realLabel);
 			if(realLabel == predict)
 				hit++;
 		}

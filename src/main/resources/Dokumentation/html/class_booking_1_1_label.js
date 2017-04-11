@@ -7,6 +7,7 @@ var class_booking_1_1_label =
     [ "getDescription", "class_booking_1_1_label.html#a3223f20d68a3ac41afa92c39a9bf652a", null ],
     [ "getDescriptionSize", "class_booking_1_1_label.html#a3462c235882d7fcbf385aa65055f3716", null ],
     [ "getlabel_ID", "class_booking_1_1_label.html#a46dcc1ddc8ffc895f6f49b3fbc7bff9a", null ],
+    [ "getNumberOfPositions", "class_booking_1_1_label.html#a229dcc8da3134cae1526c9ae3ffaa048", null ],
     [ "getPosition", "class_booking_1_1_label.html#a93c786152ce21835d719a6360e2a549a", null ],
     [ "setBeleglink", "class_booking_1_1_label.html#a2bab5fca7c127202fc64417b9cc3a2d1", null ],
     [ "setlabel_ID", "class_booking_1_1_label.html#a714cff6c53d7ede37910689f94498f70", null ]

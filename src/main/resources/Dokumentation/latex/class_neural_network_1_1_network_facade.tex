@@ -1,126 +1,209 @@
-\hypertarget{class_neural_network_1_1_network_facade}{\section{Neural\-Network.\-Network\-Facade Class Reference}
-\label{class_neural_network_1_1_network_facade}\index{Neural\-Network.\-Network\-Facade@{Neural\-Network.\-Network\-Facade}}
-}
+\hypertarget{class_neural_network_1_1_network_facade}{}\section{Neural\+Network.\+Network\+Facade Class Reference}
+\label{class_neural_network_1_1_network_facade}\index{Neural\+Network.\+Network\+Facade@{Neural\+Network.\+Network\+Facade}}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{class_neural_network_1_1_network_facade_a085af14f6e052bde8fb603c55304a23d}{set\-Configuration\-Parameters} (String Features\-Path, String Labels\-Path, int Frame\-Length, String Alphabet, int Batch\-Size)
+void \hyperlink{class_neural_network_1_1_network_facade_ab16cbf46d8ed3e7979c23733e2dbff69}{set\+Properties} (String Alphabet, int Input\+Length, int Output\+Length, String Network\+Size)
 \item 
-boolean \hyperlink{class_neural_network_1_1_network_facade_a53cd343b6ac5a9fd35f90ae9222fe4b9}{read\-Data} ()
+boolean \hyperlink{class_neural_network_1_1_network_facade_aa27e6b956cc087c91f201ad517dee617}{read\+Data} (String Path)
 \item 
-void \hyperlink{class_neural_network_1_1_network_facade_a1985a91f9886211228b927bca7c20f41}{run\-Network} ()
+void \hyperlink{class_neural_network_1_1_network_facade_ac192d414646236c0208553e650f99c50}{build} (double learning\+Rate, double momentum, double regularization\+Rate)
+\item 
+void \hyperlink{class_neural_network_1_1_network_facade_aed33ade47d951c3d8959658c265e34c2}{train\+Fixed} (int Minibatch, int Epochs, int Number\+Of\+Cores)
+\item 
+void \hyperlink{class_neural_network_1_1_network_facade_a8495ce69d130995501b9007cd9b2f522}{train\+Arbitary} (int Minibatch, int max\+Epochs, double abort\+Criteria, int Number\+Of\+Cores)
+\item 
+double \hyperlink{class_neural_network_1_1_network_facade_a9f455c7791931ec34143a68756a29c85}{test} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{class_neural_network_1_1_network_facade}{Network\-Facade} \hyperlink{class_neural_network_1_1_network_facade_a60976bf6c0ef88c147e2bc4dbc68230f}{get\-Instance} ()
+static \hyperlink{class_neural_network_1_1_network_facade}{Network\+Facade} \hyperlink{class_neural_network_1_1_network_facade_a60976bf6c0ef88c147e2bc4dbc68230f}{get\+Instance} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 6 of file Network\-Facade.\-java.
+Definition at line 12 of file Network\+Facade.\+java.
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_neural_network_1_1_network_facade_a60976bf6c0ef88c147e2bc4dbc68230f}{\index{Neural\-Network\-::\-Network\-Facade@{Neural\-Network\-::\-Network\-Facade}!get\-Instance@{get\-Instance}}
-\index{get\-Instance@{get\-Instance}!NeuralNetwork::NetworkFacade@{Neural\-Network\-::\-Network\-Facade}}
-\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Network\-Facade} Neural\-Network.\-Network\-Facade.\-get\-Instance (
+\index{Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}!build@{build}}
+\index{build@{build}!Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}}
+\subsubsection[{\texorpdfstring{build(double learning\+Rate, double momentum, double regularization\+Rate)}{build(double learningRate, double momentum, double regularizationRate)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Network\+Facade.\+build (
 \begin{DoxyParamCaption}
-{}
+\item[{double}]{learning\+Rate, }
+\item[{double}]{momentum, }
+\item[{double}]{regularization\+Rate}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_neural_network_1_1_network_facade_a60976bf6c0ef88c147e2bc4dbc68230f}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_network_facade_ac192d414646236c0208553e650f99c50}{}\label{class_neural_network_1_1_network_facade_ac192d414646236c0208553e650f99c50}
 
 
-Definition at line 27 of file Network\-Facade.\-java.
+Definition at line 88 of file Network\+Facade.\+java.
 
 
 \begin{DoxyCode}
-27                                              \{
-28         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
-29             \textcolor{keyword}{synchronized}(NetworkFacade.class)\{
-30                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
-31                     uniqueInstance = \textcolor{keyword}{new} NetworkFacade();
-32                 \}
-33             \}
-34         \}
-35         \textcolor{keywordflow}{return} uniqueInstance;
-36     \}
+88                                                                                       \{
+89         network.\hyperlink{class_neural_network_1_1_neural_network_a6ea743619d1ba6147f888ba5924e585b}{setLearningRate}(learningRate);
+90         network.\hyperlink{class_neural_network_1_1_neural_network_ae1a126eb205b6d240dac3ac7aded9fb1}{setMomentum}(momentum);
+91         network.\hyperlink{class_neural_network_1_1_neural_network_ae1573444e1108f1d821a53816d98e6af}{setRegularizationRate}(regularizationRate);
+92         this.network.\hyperlink{class_neural_network_1_1_neural_network_a646f8b0673607cf99746f17a70e3f8ed}{setupNetworkConfiguration}();
+93     \}
 \end{DoxyCode}
-\hypertarget{class_neural_network_1_1_network_facade_a53cd343b6ac5a9fd35f90ae9222fe4b9}{\index{Neural\-Network\-::\-Network\-Facade@{Neural\-Network\-::\-Network\-Facade}!read\-Data@{read\-Data}}
-\index{read\-Data@{read\-Data}!NeuralNetwork::NetworkFacade@{Neural\-Network\-::\-Network\-Facade}}
-\subsubsection[{read\-Data}]{\setlength{\rightskip}{0pt plus 5cm}boolean Neural\-Network.\-Network\-Facade.\-read\-Data (
+\index{Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Network\+Facade} Neural\+Network.\+Network\+Facade.\+get\+Instance (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_network_facade_a53cd343b6ac5a9fd35f90ae9222fe4b9}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_neural_network_1_1_network_facade_a60976bf6c0ef88c147e2bc4dbc68230f}{}\label{class_neural_network_1_1_network_facade_a60976bf6c0ef88c147e2bc4dbc68230f}
 
 
-Definition at line 61 of file Network\-Facade.\-java.
+Definition at line 37 of file Network\+Facade.\+java.
 
 
 \begin{DoxyCode}
-61                              \{
-62         input = LabeledInputSeries.getInstance();
-63         input.setAlphabet(this.alphabet);
-64         \textcolor{keywordflow}{if}(input.\hyperlink{class_neural_network_1_1_labeled_input_series_a652c8a3f24b3a5df6f44ff27f2c15118}{readFiles}(\textcolor{keyword}{this}.featuresPath, \textcolor{keyword}{this}.labelsPath, \textcolor{keyword}{this}.frameLength))
-65         \{
-66             this.iterator = input.giveInputAsDataSetIterator(this.batchSize);
-67             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-68         \}
-69         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-70     \}
+37                                              \{
+38         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
+39             \textcolor{keyword}{synchronized}(NetworkFacade.class)\{
+40                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
+41                     uniqueInstance = \textcolor{keyword}{new} NetworkFacade();
+42                 \}
+43             \}
+44         \}
+45         \textcolor{keywordflow}{return} uniqueInstance;
+46     \}
 \end{DoxyCode}
-\hypertarget{class_neural_network_1_1_network_facade_a1985a91f9886211228b927bca7c20f41}{\index{Neural\-Network\-::\-Network\-Facade@{Neural\-Network\-::\-Network\-Facade}!run\-Network@{run\-Network}}
-\index{run\-Network@{run\-Network}!NeuralNetwork::NetworkFacade@{Neural\-Network\-::\-Network\-Facade}}
-\subsubsection[{run\-Network}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-Network.\-Network\-Facade.\-run\-Network (
+\index{Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}!read\+Data@{read\+Data}}
+\index{read\+Data@{read\+Data}!Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}}
+\subsubsection[{\texorpdfstring{read\+Data(\+String Path)}{readData(String Path)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Neural\+Network.\+Network\+Facade.\+read\+Data (
 \begin{DoxyParamCaption}
-{}
+\item[{String}]{Path}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_network_facade_a1985a91f9886211228b927bca7c20f41}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_network_facade_aa27e6b956cc087c91f201ad517dee617}{}\label{class_neural_network_1_1_network_facade_aa27e6b956cc087c91f201ad517dee617}
 
 
-Definition at line 72 of file Network\-Facade.\-java.
+Definition at line 66 of file Network\+Facade.\+java.
 
 
 \begin{DoxyCode}
-72                             \{
-73         this.network = NeuralNetwork.getInstance();
-74         \textcolor{comment}{//System.out.println(iterator);}
-75         \textcolor{comment}{//network.setupNetworkConfigurationReduced();}
-76         \textcolor{comment}{//network.run(iterator);}
-77     \}
+66                                         \{
+67         \textcolor{comment}{/* Structure of data must in the shape of:}
+68 \textcolor{comment}{         * }
+69 \textcolor{comment}{         * Path => train    => data.txt}
+70 \textcolor{comment}{         *                  => labels.txt}
+71 \textcolor{comment}{         * }
+72 \textcolor{comment}{         *      => test     => data.txt}
+73 \textcolor{comment}{         *                  => labels.txt}
+74 \textcolor{comment}{         */}
+75         \textcolor{keywordflow}{try}\{
+76             encoder.\hyperlink{class_neural_network_1_1_input_manager_af1faef52d6e409ce5ba4ac3f9b23113f}{setAlphabet}(this.alphabet);
+77             encoder.\hyperlink{class_neural_network_1_1_input_manager_a144c13f4c35429d6a9b95f18907ef81a}{setInputLength}(this.inputLength);
+78             encoder.\hyperlink{class_neural_network_1_1_input_manager_afaa90882f9b1ab55d837095bcfed3a12}{setNumberOfLabels}(outputLength);
+79             this.trainDataset = encoder.\hyperlink{class_neural_network_1_1_input_manager_a3c6bb32b37ed752f221856f66f9560dc}{readFiles}(Path+\textcolor{stringliteral}{"/train"});
+80             this.testDataset = encoder.\hyperlink{class_neural_network_1_1_input_manager_a3c6bb32b37ed752f221856f66f9560dc}{readFiles}(Path+\textcolor{stringliteral}{"/test"});
+81             \textcolor{keywordflow}{return} (this.trainDataset == null) ? \textcolor{keyword}{false} : \textcolor{keyword}{true};
+82         \}\textcolor{keywordflow}{catch}(Exception e)\{
+83             e.printStackTrace();
+84             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+85         \}
+86     \}
 \end{DoxyCode}
-\hypertarget{class_neural_network_1_1_network_facade_a085af14f6e052bde8fb603c55304a23d}{\index{Neural\-Network\-::\-Network\-Facade@{Neural\-Network\-::\-Network\-Facade}!set\-Configuration\-Parameters@{set\-Configuration\-Parameters}}
-\index{set\-Configuration\-Parameters@{set\-Configuration\-Parameters}!NeuralNetwork::NetworkFacade@{Neural\-Network\-::\-Network\-Facade}}
-\subsubsection[{set\-Configuration\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-Network.\-Network\-Facade.\-set\-Configuration\-Parameters (
+\index{Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}!set\+Properties@{set\+Properties}}
+\index{set\+Properties@{set\+Properties}!Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}}
+\subsubsection[{\texorpdfstring{set\+Properties(\+String Alphabet, int Input\+Length, int Output\+Length, String Network\+Size)}{setProperties(String Alphabet, int InputLength, int OutputLength, String NetworkSize)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Network\+Facade.\+set\+Properties (
 \begin{DoxyParamCaption}
-\item[{String}]{Features\-Path, }
-\item[{String}]{Labels\-Path, }
-\item[{int}]{Frame\-Length, }
 \item[{String}]{Alphabet, }
-\item[{int}]{Batch\-Size}
+\item[{int}]{Input\+Length, }
+\item[{int}]{Output\+Length, }
+\item[{String}]{Network\+Size}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_network_facade_a085af14f6e052bde8fb603c55304a23d}
-T\-O\-D\-O\-: Change to Builder Pattern 
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_network_facade_ab16cbf46d8ed3e7979c23733e2dbff69}{}\label{class_neural_network_1_1_network_facade_ab16cbf46d8ed3e7979c23733e2dbff69}
 
-Definition at line 53 of file Network\-Facade.\-java.
+
+Definition at line 49 of file Network\+Facade.\+java.
 
 
 \begin{DoxyCode}
-53                                                                                                            
-                              \{
-54         this.featuresPath = FeaturesPath;
-55         this.labelsPath = LabelsPath;
-56         this.frameLength = FrameLength;
-57         this.alphabet = Alphabet;
-58         this.batchSize = BatchSize;
-59     \}
+49                                                                                                      \{
+50         
+51         \textcolor{comment}{//Data information}
+52         this.alphabet = Alphabet;
+53         this.inputLength = InputLength;
+54         this.outputLength = OutputLength;
+55         
+56         this.encoder = InputManager.\hyperlink{class_neural_network_1_1_input_manager_ab0178c083635bc42930695d5f5200a6c}{getInstance}();
+57         
+58         \textcolor{comment}{//Network parameters}
+59         this.network = \hyperlink{namespace_neural_network}{NeuralNetwork}.getInstance();
+60         network.\hyperlink{class_neural_network_1_1_neural_network_a4142c49f189728d8cb872bdf3fabd609}{setAlphabetSize}(Alphabet.length());
+61         network.\hyperlink{class_neural_network_1_1_neural_network_a27eefccc0cee9d7e594d59ea04028395}{setInputSize}(InputLength);
+62         network.\hyperlink{class_neural_network_1_1_neural_network_a95f6363eed82945458fc9c8ec1f3db83}{setOutputSize}(OutputLength);
+63         network.\hyperlink{class_neural_network_1_1_neural_network_ad14d8b4bd87dfe446ea3f40f44433e51}{setNetworkSize}(NetworkSize);
+64     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}!test@{test}}
+\index{test@{test}!Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}}
+\subsubsection[{\texorpdfstring{test()}{test()}}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\+Network.\+Network\+Facade.\+test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_network_facade_a9f455c7791931ec34143a68756a29c85}{}\label{class_neural_network_1_1_network_facade_a9f455c7791931ec34143a68756a29c85}
+
+
+Definition at line 103 of file Network\+Facade.\+java.
+
+
+\begin{DoxyCode}
+103                         \{
+104         \textcolor{keywordflow}{return} network.\hyperlink{class_neural_network_1_1_neural_network_a66774dd8ee622aca4275c19524802726}{test}(testDataset);
+105     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}!train\+Arbitary@{train\+Arbitary}}
+\index{train\+Arbitary@{train\+Arbitary}!Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}}
+\subsubsection[{\texorpdfstring{train\+Arbitary(int Minibatch, int max\+Epochs, double abort\+Criteria, int Number\+Of\+Cores)}{trainArbitary(int Minibatch, int maxEpochs, double abortCriteria, int NumberOfCores)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Network\+Facade.\+train\+Arbitary (
+\begin{DoxyParamCaption}
+\item[{int}]{Minibatch, }
+\item[{int}]{max\+Epochs, }
+\item[{double}]{abort\+Criteria, }
+\item[{int}]{Number\+Of\+Cores}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_network_facade_a8495ce69d130995501b9007cd9b2f522}{}\label{class_neural_network_1_1_network_facade_a8495ce69d130995501b9007cd9b2f522}
+
+
+Definition at line 99 of file Network\+Facade.\+java.
+
+
+\begin{DoxyCode}
+99                                                                                                     \{
+100         network.\hyperlink{class_neural_network_1_1_neural_network_aaba587c903d93ae817db303eb9ab0ac9}{run}(maxEpochs, abortCriteria, Minibatch, NumberOfCores, \textcolor{keyword}{new} ListDataSetIterator(
+      trainDataset.asList(), Minibatch), \textcolor{keyword}{new} ListDataSetIterator(testDataset.asList()));
+101     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}!train\+Fixed@{train\+Fixed}}
+\index{train\+Fixed@{train\+Fixed}!Neural\+Network\+::\+Network\+Facade@{Neural\+Network\+::\+Network\+Facade}}
+\subsubsection[{\texorpdfstring{train\+Fixed(int Minibatch, int Epochs, int Number\+Of\+Cores)}{trainFixed(int Minibatch, int Epochs, int NumberOfCores)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Network\+Facade.\+train\+Fixed (
+\begin{DoxyParamCaption}
+\item[{int}]{Minibatch, }
+\item[{int}]{Epochs, }
+\item[{int}]{Number\+Of\+Cores}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_network_facade_aed33ade47d951c3d8959658c265e34c2}{}\label{class_neural_network_1_1_network_facade_aed33ade47d951c3d8959658c265e34c2}
+
+
+Definition at line 95 of file Network\+Facade.\+java.
+
+
+\begin{DoxyCode}
+95                                                                         \{
+96         network.\hyperlink{class_neural_network_1_1_neural_network_aaba587c903d93ae817db303eb9ab0ac9}{run}( \textcolor{keyword}{new} MultipleEpochsIterator(Epochs, \textcolor{keyword}{new} ListDataSetIterator(trainDataset.asList(), 
+      Minibatch), NumberOfCores));
+97     \}
 \end{DoxyCode}
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-H\-:/\-Programmierungen/\-Java/taxsynapse/src/main/java/\-Neural\-Network/\hyperlink{_network_facade_8java}{Network\-Facade.\-java}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Neural\+Network/\hyperlink{_network_facade_8java}{Network\+Facade.\+java}\end{DoxyCompactItemize}

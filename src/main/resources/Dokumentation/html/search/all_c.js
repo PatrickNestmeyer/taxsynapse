@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['no_5ferror',['NO_ERROR',['../enum_reduced_invoice_1_1_a_invoice_1_1_error.html#ab758351b18ce3163abca9924287fc6df',1,'ReducedInvoice::AInvoice::Error']]]
+  ['main',['main',['../class_application_1_1_run.html#a57a17174b40d7c0feba22e460fa6158c',1,'Application::Run']]],
+  ['mainpage_2etxt',['mainpage.txt',['../mainpage_8txt.html',1,'']]],
+  ['metadata',['Metadata',['../class_reduced_invoice_1_1_metadata.html',1,'ReducedInvoice']]],
+  ['metadata_2ejava',['Metadata.java',['../_metadata_8java.html',1,'']]]
 ];
