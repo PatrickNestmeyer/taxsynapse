@@ -9,8 +9,8 @@ public final class Config {
 	 */
 	public static boolean LOG_SINGLE_STEPS = true;
 	public static boolean SUPRESS_INVALID_INVOICES = false;
-	public static boolean COPY_TRAIN_DATA = false;
-	public static int COPY_TRAIN_DATA_SIZE = 20;
+	public static boolean COPY_TRAIN_DATA = true;
+	public static int COPY_TRAIN_DATA_SIZE = 100;
 	// Falls Echtdaten verwendet werden Datei nach der Auswertung der Fehler löschen
 	public static boolean LOG_INVOICE_AND_VOUCHER_ERROR = true;
 	
@@ -51,7 +51,7 @@ public final class Config {
 	public static int NETWORK_MINIBATCH = 64;
 	public static String NETWORK_PATH_TO_DATA = Config.PATH_TO_NETWORK_DATA;
 	public static int NETWORK_CORES = Runtime.getRuntime().availableProcessors();
-	public static int NETWORK_EPOCHS = 1;
+	public static int NETWORK_EPOCHS = 2;
 	public static double NETWORK_LEARNING_RATE = 1e-1; //0.1 to 1e-6 || try 1e-1, 1e-3 and 1e-6
 	public static double NETWORK_REGULARIZATION = 1e-3; //1e-3 to 1e-6
 	public static double NETWORK_MOMENTUM = 0.1; //common value is 0.9

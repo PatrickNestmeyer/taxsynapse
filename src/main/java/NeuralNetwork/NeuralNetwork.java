@@ -235,17 +235,17 @@ public class NeuralNetwork {
 		
 		List<String> metadata = this.getMetadata();
 		
-		String PATH_OF_CURRENT_RUN = manager.createNetworkSettingFolder(Config.PATH_TO_NETWORK_OUTPUT);
+		//String PATH_OF_CURRENT_RUN = manager.createNetworkSettingFolder(Config.PATH_TO_NETWORK_OUTPUT);
 		
 		network.init();
 		network.setListeners(new ScoreIterationListener(1));
 		//network.setListeners(new FlowIterationListener(1));
 		
-		manager.saveNetworkInitialSettings(PATH_OF_CURRENT_RUN, network, metadata);
+		//manager.saveNetworkInitialSettings(PATH_OF_CURRENT_RUN, network, metadata);
 		
 		network.fit(iterator);
 		
-		manager.saveNetworkEpochSetting(PATH_OF_CURRENT_RUN, network, 1);
+		//manager.saveNetworkEpochSetting(PATH_OF_CURRENT_RUN, network, 1);
 	}
 	
 	public Map<Integer, Double> run(int maxEpochs, double maxScore, int miniBatch, int cores, org.nd4j.linalg.dataset.api.iterator.DataSetIterator train, org.nd4j.linalg.dataset.api.iterator.DataSetIterator test){

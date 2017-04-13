@@ -1,78 +1,7000 @@
-Furnier Eiche 200 cm Länge
 Furnier Eiche 150 cm Länge
-Furnier Eiche 50 cm Länge
 Furnier Eiche 100 cm Länge
-Superdrachen
-Sturzflug-Geier
-Adler
-Storch
-Kostenlose Zugabe
-Turbo Flyer
-Eisvogel
-Furnier kanad. Ahorn 50 cm
-Furnier Kirschbau 50 cm
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
 Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
 Dekorplatte Buche, beschichtet
 Platte Echtholz Ahorn, beschichtet
-Schweinesteak
-Mineralwasser Medium 12 x 1,0l PET
-Pfand
-Kunstrasen grün 3m breit
 Wirkarbeit HT
-Kommissionierer 1250032 D. Muster
 Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
 FALTENBEUTEL 16x6x28 CM
 Kopierpapier A4
-Bierbrau Pils 20/0500
-Leergutpfand 20 x 0,5l
 Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
 Gelierzucker Extra 250g
 Mischpalette Joghurt Karton 3 x 20
-Jährlicher Nutzungspreis Umsatzstufe 1
-Bereitstellungspreis für 7-stellige Basisnummer
-Beschreibung Artikel 2
-Beschreibung Artikel 1
 Musterposten 2 CIB doXisafe
 Musterposten 1 CIB workbench
-Kommissionierer 1250032 D. Muster
+Kopierpapier A4
 Wirkarbeit HT
 FALTENBEUTEL 16x6x28 CM
-Kopierpapier A4
 Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
 Zitronensäure 100ml
-Bierbrau Pils 20/0500
 Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
 Gelierzucker Extra 250g
 Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
 Druck-Einzelleistung
 Abrechnungsgrundpreis
-DATEVnet Plus Einzelplatz
-251 - 500 Arbeitnehmer
-251 - 500 Arbeitnehmer
-Abrechnungsgrundpreis
-DATEVasp Verb.-Geb.Telearbeitsplatz
-Lohn-Archiv Jahres-CD Erstabruf
-251 - 500 Arbeitnehmer
-Druck-Einzelleistung
 1 - 250 Arbeitnehmer
-Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
 DATEV online-Gebühr
-Abrechnungsgrundpreis
-Mandantengrundgebühr ANLAG
-1 - 250 Arbeitnehmer
 DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
 Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
 Druck-Einzelleistung
-ESt classic
-Rechnungsein-/ ausgangbuch Int.
-Sem.OPOS Neueinst.2Tage
-Miete m DATEVnet Einzelp
-Handbuch FIBU II m.Ordner
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
 DATEVnet Plus Netz
 Abrechnungsgrundpreis
-ESt classic
-DATEVnet Einzelplatz WBS
-Auftragsvers. an AN Porto 20g(LOHN)
+Handbuch FIBU II m.Ordner
 DATEVnet Netz
-LOVOR Internet
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
 PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2
+Furnier Eiche 150 cm Länge
+Furnier Eiche 100 cm Länge
+Furnier Eiche 200 cm Länge
+Furnier Eiche 50 cm Länge
+Echtholzfurnierkante Esche 12 mm
+Furnier Kirschbau 50 cm
+Furnier kanad. Ahorn 50 cm
+Dekorplatte Buche, beschichtet
+Platte Echtholz Ahorn, beschichtet
+Wirkarbeit HT
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+FALTENBEUTEL 16x6x28 CM
+Kopierpapier A4
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Musterposten 2 CIB doXisafe
+Musterposten 1 CIB workbench
+Kopierpapier A4
+Wirkarbeit HT
+FALTENBEUTEL 16x6x28 CM
+Ökosteuer Lieferant
+Kommissionierer 1250032 D. Muster
+Zitronensäure 100ml
+Leergutpfand 20 x 0,5l
+Bierbrau Pils 20/0500
+Gelierzucker Extra 250g
+Mischpalette Joghurt Karton 3 x 20
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+Druck-Einzelleistung
+Abrechnungsgrundpreis
+1 - 250 Arbeitnehmer
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+DATEV online-Gebühr
+DATEV-WEB-Dresser f. Kammern (Netz)
+DATEVasp Verb.-Geb.Telearbeitsplatz
+1 - 250 Arbeitnehmer
+Mandantengrundgebühr ANLAG
+251 - 500 Arbeitnehmer
+1 - 250 Arbeitnehmer
+DATEVnet Plus Einzelplatz
+Abrechnungsgrundpreis
+Abrechnungsgrundpreis
+251 - 500 Arbeitnehmer
+Druck-Einzelleistung
+Lohn-Archiv Jahres-CD Erstabruf
+DATEVnet Einzelplatz WBS
+LOVOR Internet
+DATEVnet Plus Netz
+Abrechnungsgrundpreis
+Handbuch FIBU II m.Ordner
+DATEVnet Netz
+Sem.OPOS Neueinst.2Tage
+ESt classic
+Miete m DATEVnet Einzelp
+ESt classic
+Rechnungsein-/ ausgangbuch Int.
+Auftragsvers. an AN Porto 20g(LOHN)
+PI 3/2 Gebühr Kammer e:secure Erst
+Anfahrtspauschale fÃ¼r 2 Monteure	1	25,00	25,00
+Arbeitszeit	5	50,00	250,00
+Alu- Rollopanzer; Sondermodell	5,11	159,00	812,49
+Entsorgung von Altpanzer pauschal	1	25,00	25,00
+Kleinmaterial (Ã–l, Schauben, Entsorgung von	1	5,30	5,30
+Kundendienst Firmenwagen 2

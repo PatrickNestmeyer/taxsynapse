@@ -1,0 +1,456 @@
+\hypertarget{class_neural_network_1_1_neural_network}{}\section{Neural\+Network.\+Neural\+Network Class Reference}
+\label{class_neural_network_1_1_neural_network}\index{Neural\+Network.\+Neural\+Network@{Neural\+Network.\+Neural\+Network}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_a4142c49f189728d8cb872bdf3fabd609}{set\+Alphabet\+Size} (int size)
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_a95f6363eed82945458fc9c8ec1f3db83}{set\+Output\+Size} (int size)
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_a27eefccc0cee9d7e594d59ea04028395}{set\+Input\+Size} (int size)
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_ad14d8b4bd87dfe446ea3f40f44433e51}{set\+Network\+Size} (String dim)
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_a6ea743619d1ba6147f888ba5924e585b}{set\+Learning\+Rate} (double Learning\+Rate)
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_ae1a126eb205b6d240dac3ac7aded9fb1}{set\+Momentum} (double Momentum)
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_ae1573444e1108f1d821a53816d98e6af}{set\+Regularization\+Rate} (double Rate)
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_a646f8b0673607cf99746f17a70e3f8ed}{setup\+Network\+Configuration} ()
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_aaba587c903d93ae817db303eb9ab0ac9}{run} (Multiple\+Epochs\+Iterator iterator)
+\item 
+Map$<$ Integer, Double $>$ \hyperlink{class_neural_network_1_1_neural_network_af9fb6bf62b81865fbdc35f9e0cafa638}{run} (int max\+Epochs, double max\+Score, int mini\+Batch, int cores, org.\+nd4j.\+linalg.\+dataset.\+api.\+iterator.\+Data\+Set\+Iterator train, org.\+nd4j.\+linalg.\+dataset.\+api.\+iterator.\+Data\+Set\+Iterator \hyperlink{class_neural_network_1_1_neural_network_a66774dd8ee622aca4275c19524802726}{test})
+\item 
+void \hyperlink{class_neural_network_1_1_neural_network_a3a37941eb4cccd5ee66bcd0c38adac03}{save\+Network\+Parameters} ()
+\item 
+double \hyperlink{class_neural_network_1_1_neural_network_a66774dd8ee622aca4275c19524802726}{test} (Data\+Set test\+Set)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_neural_network_1_1_neural_network}{Neural\+Network} \hyperlink{class_neural_network_1_1_neural_network_a3644b86f84197b1acd2660e63f0b4da3}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 37 of file Neural\+Network.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Neural\+Network} Neural\+Network.\+Neural\+Network.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_neural_network_1_1_neural_network_a3644b86f84197b1acd2660e63f0b4da3}{}\label{class_neural_network_1_1_neural_network_a3644b86f84197b1acd2660e63f0b4da3}
+
+
+Definition at line 112 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+112                                              \{
+113         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
+114             \textcolor{keyword}{synchronized}(\hyperlink{namespace_neural_network}{NeuralNetwork}.class)\{
+115                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
+116                     uniqueInstance = \textcolor{keyword}{new} \hyperlink{namespace_neural_network}{NeuralNetwork}();
+117                 \}
+118             \}
+119         \}
+120         \textcolor{keywordflow}{return} uniqueInstance;
+121     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!run@{run}}
+\index{run@{run}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{run(\+Multiple\+Epochs\+Iterator iterator)}{run(MultipleEpochsIterator iterator)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+run (
+\begin{DoxyParamCaption}
+\item[{Multiple\+Epochs\+Iterator}]{iterator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_aaba587c903d93ae817db303eb9ab0ac9}{}\label{class_neural_network_1_1_neural_network_aaba587c903d93ae817db303eb9ab0ac9}
+
+
+Definition at line 234 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+234                                                     \{
+235         
+236         List<String> metadata = this.getMetadata();
+237         
+238         String PATH\_OF\_CURRENT\_RUN = manager.\hyperlink{class_neural_network_1_1_export_manager_a682b8d0267d006c5e1c149a09fdd20a7}{createNetworkSettingFolder}(Config.
+      PATH\_TO\_NETWORK\_OUTPUT);
+239         
+240         network.init();
+241         network.setListeners(\textcolor{keyword}{new} ScoreIterationListener(1));
+242         \textcolor{comment}{//network.setListeners(new FlowIterationListener(1));}
+243         
+244         manager.\hyperlink{class_neural_network_1_1_export_manager_a83f29a395f51f0b21ca3a092917b5dbc}{saveNetworkInitialSettings}(PATH\_OF\_CURRENT\_RUN, network, metadata
+      );
+245         
+246         network.fit(iterator);
+247         
+248         manager.\hyperlink{class_neural_network_1_1_export_manager_ab7753bc20aeee9b9bae9876e54cf3499}{saveNetworkEpochSetting}(PATH\_OF\_CURRENT\_RUN, network, 1);
+249     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!run@{run}}
+\index{run@{run}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{run(int max\+Epochs, double max\+Score, int mini\+Batch, int cores, org.\+nd4j.\+linalg.\+dataset.\+api.\+iterator.\+Data\+Set\+Iterator train, org.\+nd4j.\+linalg.\+dataset.\+api.\+iterator.\+Data\+Set\+Iterator test)}{run(int maxEpochs, double maxScore, int miniBatch, int cores, org.nd4j.linalg.dataset.api.iterator.DataSetIterator train, org.nd4j.linalg.dataset.api.iterator.DataSetIterator test)}}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$Integer, Double$>$ Neural\+Network.\+Neural\+Network.\+run (
+\begin{DoxyParamCaption}
+\item[{int}]{max\+Epochs, }
+\item[{double}]{max\+Score, }
+\item[{int}]{mini\+Batch, }
+\item[{int}]{cores, }
+\item[{org.\+nd4j.\+linalg.\+dataset.\+api.\+iterator.\+Data\+Set\+Iterator}]{train, }
+\item[{org.\+nd4j.\+linalg.\+dataset.\+api.\+iterator.\+Data\+Set\+Iterator}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_af9fb6bf62b81865fbdc35f9e0cafa638}{}\label{class_neural_network_1_1_neural_network_af9fb6bf62b81865fbdc35f9e0cafa638}
+
+
+Definition at line 251 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+251                                                                                                            
+                                                                                                               \{
+252         
+253         List<String> metadata = this.getMetadata();
+254         String PATH\_OF\_CURRENT\_RUN = manager.\hyperlink{class_neural_network_1_1_export_manager_a682b8d0267d006c5e1c149a09fdd20a7}{createNetworkSettingFolder}(Config.
+      PATH\_TO\_NETWORK\_OUTPUT);
+255         
+256         \textcolor{comment}{//Maybe worn package imported}
+257         String directory = FilenameUtils.concat(PATH\_OF\_CURRENT\_RUN, \textcolor{stringliteral}{"DL4JEarlyStoppingExample/"});
+258         EarlyStoppingModelSaver saver = \textcolor{keyword}{new} LocalFileModelSaver(directory);
+259         
+260         EarlyStoppingConfiguration esConf = \textcolor{keyword}{new} EarlyStoppingConfiguration.Builder()
+261                 .epochTerminationConditions(\textcolor{keyword}{new} MaxEpochsTerminationCondition(maxEpochs))
+262                 .evaluateEveryNEpochs(1)
+263                 .iterationTerminationConditions(\textcolor{keyword}{new} MaxScoreIterationTerminationCondition(maxScore))
+264                 .scoreCalculator(\textcolor{keyword}{new} DataSetLossCalculator(\hyperlink{class_neural_network_1_1_neural_network_a66774dd8ee622aca4275c19524802726}{test}, \textcolor{keyword}{true}))
+265                 .modelSaver(saver)
+266                 .build();
+267                 
+268         EarlyStoppingTrainer trainer = \textcolor{keyword}{new} EarlyStoppingTrainer(esConf, conf, train);
+269         
+270         trainer.setListener(\textcolor{keyword}{new} EarlyStoppingListener<MultiLayerNetwork>()\{
+271 
+272             @Override
+273             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onStart(EarlyStoppingConfiguration<MultiLayerNetwork> esConfig, MultiLayerNetwork 
+      net) \{
+274                 System.out.println(\textcolor{stringliteral}{"Start early stopping run"});
+275             \}
+276             
+277             @Override
+278             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onEpoch(\textcolor{keywordtype}{int} epochNum, \textcolor{keywordtype}{double} score, EarlyStoppingConfiguration<MultiLayerNetwork> 
+      esConfig,
+279                     MultiLayerNetwork net) \{
+280                 System.out.println(\textcolor{stringliteral}{"Epoch No. "} + epochNum + \textcolor{stringliteral}{" completed:"});
+281                 System.out.println(\textcolor{stringliteral}{"Score is "} + score);
+282             \}
+283 
+284             @Override
+285             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onCompletion(EarlyStoppingResult<MultiLayerNetwork> esResult) \{
+286                 System.out.println(\textcolor{stringliteral}{"Termination reason: "} + esResult.getTerminationReason());
+287                 System.out.println(\textcolor{stringliteral}{"Termination details: "} + esResult.getTerminationDetails());
+288                 System.out.println(\textcolor{stringliteral}{"Total epochs: "} + esResult.getTotalEpochs());
+289                 System.out.println(\textcolor{stringliteral}{"Best epoch number: "} + esResult.getBestModelEpoch());
+290                 System.out.println(\textcolor{stringliteral}{"Score at best epoch: "} + esResult.getBestModelScore());
+291             \}
+292         \});
+293         
+294         \textcolor{comment}{//manager.saveNetworkInitialSettings(PATH\_OF\_CURRENT\_RUN, network, metadata);}
+295         
+296         EarlyStoppingResult result = trainer.fit();
+297         
+298         List<String> criterias = \textcolor{keyword}{new} ArrayList<String>();
+299         
+300         manager.\hyperlink{class_neural_network_1_1_export_manager_ae962981da22f49058ad6c1ebe8a3f2ac}{saveEvaluation}(PATH\_OF\_CURRENT\_RUN, criterias);
+301         
+302         \textcolor{keywordflow}{return} result.getScoreVsEpoch();
+303     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!save\+Network\+Parameters@{save\+Network\+Parameters}}
+\index{save\+Network\+Parameters@{save\+Network\+Parameters}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{save\+Network\+Parameters()}{saveNetworkParameters()}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+save\+Network\+Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_a3a37941eb4cccd5ee66bcd0c38adac03}{}\label{class_neural_network_1_1_neural_network_a3a37941eb4cccd5ee66bcd0c38adac03}
+
+
+Definition at line 306 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+306                                        \{
+307         \textcolor{comment}{//TODO: Create folder output in resources}
+308         \textcolor{comment}{//TODO: Create folder structure: for each run a folder with timestamp}
+309         \textcolor{comment}{//TODO: Inside: Create a txt-file with metadata (learning parameters, results and duration of
+       training) and a xml with the serialization of the network after each epoch.}
+310     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!set\+Alphabet\+Size@{set\+Alphabet\+Size}}
+\index{set\+Alphabet\+Size@{set\+Alphabet\+Size}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{set\+Alphabet\+Size(int size)}{setAlphabetSize(int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+set\+Alphabet\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_a4142c49f189728d8cb872bdf3fabd609}{}\label{class_neural_network_1_1_neural_network_a4142c49f189728d8cb872bdf3fabd609}
+
+
+Definition at line 126 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+126                                          \{
+127         this.alphabetSize = size;
+128     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!set\+Input\+Size@{set\+Input\+Size}}
+\index{set\+Input\+Size@{set\+Input\+Size}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{set\+Input\+Size(int size)}{setInputSize(int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+set\+Input\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_a27eefccc0cee9d7e594d59ea04028395}{}\label{class_neural_network_1_1_neural_network_a27eefccc0cee9d7e594d59ea04028395}
+
+
+Definition at line 134 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+134                                       \{
+135         this.numberOfInputs = size;
+136     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!set\+Learning\+Rate@{set\+Learning\+Rate}}
+\index{set\+Learning\+Rate@{set\+Learning\+Rate}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{set\+Learning\+Rate(double Learning\+Rate)}{setLearningRate(double LearningRate)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+set\+Learning\+Rate (
+\begin{DoxyParamCaption}
+\item[{double}]{Learning\+Rate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_a6ea743619d1ba6147f888ba5924e585b}{}\label{class_neural_network_1_1_neural_network_a6ea743619d1ba6147f888ba5924e585b}
+
+
+Definition at line 160 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+160                                                     \{
+161         this.learningRate = LearningRate;
+162         \textcolor{keywordflow}{if}(LearningRate > 1.0)
+163             this.learningRate = 1.0;
+164         \textcolor{keywordflow}{if}(LearningRate < 0.00)
+165             this.learningRate = 0.00;
+166     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!set\+Momentum@{set\+Momentum}}
+\index{set\+Momentum@{set\+Momentum}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{set\+Momentum(double Momentum)}{setMomentum(double Momentum)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+set\+Momentum (
+\begin{DoxyParamCaption}
+\item[{double}]{Momentum}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_ae1a126eb205b6d240dac3ac7aded9fb1}{}\label{class_neural_network_1_1_neural_network_ae1a126eb205b6d240dac3ac7aded9fb1}
+
+
+Definition at line 168 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+168                                             \{
+169         this.momentum = Momentum;
+170         \textcolor{keywordflow}{if}(Momentum > 1.0)
+171             this.momentum = 1.0;
+172         \textcolor{keywordflow}{if}(Momentum < 0.00)
+173             this.momentum = 0.00;
+174     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!set\+Network\+Size@{set\+Network\+Size}}
+\index{set\+Network\+Size@{set\+Network\+Size}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{set\+Network\+Size(\+String dim)}{setNetworkSize(String dim)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+set\+Network\+Size (
+\begin{DoxyParamCaption}
+\item[{String}]{dim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_ad14d8b4bd87dfe446ea3f40f44433e51}{}\label{class_neural_network_1_1_neural_network_ad14d8b4bd87dfe446ea3f40f44433e51}
+
+
+Definition at line 138 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+138                                           \{
+139         this.normalDistributionLower = 0.0;
+140         \textcolor{keywordflow}{switch} (dim) \{
+141         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"large"}:
+142             this.normalDistributionUpper = 0.02;
+143             this.numberOfFeatureMaps = 1024;
+144             this.secondFully = 2048;
+145             \textcolor{keywordflow}{break};
+146         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"medium"}:
+147             this.normalDistributionUpper = 0.035;
+148             this.numberOfFeatureMaps = 512;
+149             this.secondFully = 1536;
+150             \textcolor{keywordflow}{break};
+151         \textcolor{keywordflow}{default}:
+152             this.normalDistributionUpper = 0.05;
+153             this.numberOfFeatureMaps = 256;
+154             this.secondFully = 1024;
+155             \textcolor{keywordflow}{break};
+156         \}
+157         this.firstFully = ((this.numberOfInputs-96)/27)*this.numberOfFeatureMaps;
+158     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!set\+Output\+Size@{set\+Output\+Size}}
+\index{set\+Output\+Size@{set\+Output\+Size}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{set\+Output\+Size(int size)}{setOutputSize(int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+set\+Output\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_a95f6363eed82945458fc9c8ec1f3db83}{}\label{class_neural_network_1_1_neural_network_a95f6363eed82945458fc9c8ec1f3db83}
+
+
+Definition at line 130 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+130                                        \{
+131         this.numberOfOutputs = size;
+132     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!set\+Regularization\+Rate@{set\+Regularization\+Rate}}
+\index{set\+Regularization\+Rate@{set\+Regularization\+Rate}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{set\+Regularization\+Rate(double Rate)}{setRegularizationRate(double Rate)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+set\+Regularization\+Rate (
+\begin{DoxyParamCaption}
+\item[{double}]{Rate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_ae1573444e1108f1d821a53816d98e6af}{}\label{class_neural_network_1_1_neural_network_ae1573444e1108f1d821a53816d98e6af}
+
+
+Definition at line 176 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+176                                                   \{
+177         this.regularizationRate = Rate;
+178         \textcolor{keywordflow}{if}(Rate >= 0)
+179             this.regularizationRate = 1e-3;
+180     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!setup\+Network\+Configuration@{setup\+Network\+Configuration}}
+\index{setup\+Network\+Configuration@{setup\+Network\+Configuration}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{setup\+Network\+Configuration()}{setupNetworkConfiguration()}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Neural\+Network.\+setup\+Network\+Configuration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_a646f8b0673607cf99746f17a70e3f8ed}{}\label{class_neural_network_1_1_neural_network_a646f8b0673607cf99746f17a70e3f8ed}
+
+
+Definition at line 182 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+182                                            \{
+183         
+184         conf = \textcolor{keyword}{new} NeuralNetConfiguration.Builder()
+185                 .seed(this.seed)
+186                 .weightInit(WeightInit.DISTRIBUTION)
+187                 .dist(\textcolor{keyword}{new} NormalDistribution(this.normalDistributionLower, this.normalDistributionUpper))
+188                 .activation(this.activationFunction)
+189                 .updater(Updater.NESTEROVS)
+190                 .iterations(this.iterations)
+191                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC\_GRADIENT\_DESCENT)
+192                 \textcolor{comment}{//TODO: start learning rate and momentum. Half it every three epochs but not implemented
+       yet}
+193                 .learningRate(this.learningRate)
+194                 .momentum(this.momentum)
+195                 .regularization(this.regularization)
+196                 .l2(this.regularizationRate)
+197                 .list()
+198                 \textcolor{comment}{// 258 - 7 + 1 = 252}
+199                 .layer(0, this.createConvolutionLayer(\textcolor{stringliteral}{"Conv1"}, this.convBigKernel, this.convStride, this.
+      nChannels, this.numberOfFeatureMaps, this.alphabetSize))
+200                 \textcolor{comment}{// 252 : 3 = 84}
+201                 .layer(1, this.createPoolingLayer(\textcolor{stringliteral}{"Pool1"}, this.poolKernel, this.poolStride, this.depth))
+202                 
+203                 \textcolor{comment}{// 84 - 7 + 1 = 78}
+204                 .layer(2, this.createConvolutionLayer(\textcolor{stringliteral}{"Conv2"}, this.convBigKernel, this.convStride, this.
+      numberOfFeatureMaps, this.numberOfFeatureMaps, this.depth))
+205                 \textcolor{comment}{// 78 : 3 = 26}
+206                 .layer(3, this.createPoolingLayer(\textcolor{stringliteral}{"Pool2"}, this.poolKernel, this.poolStride, this.depth))
+207                 
+208                 \textcolor{comment}{// 26 - 3 + 1 = 24}
+209                 .layer(4, this.createConvolutionLayer(\textcolor{stringliteral}{"Conv3"}, this.convSmallKernel, this.convStride, this.
+      numberOfFeatureMaps, this.numberOfFeatureMaps, this.depth))
+210                 
+211                 \textcolor{comment}{// 24 - 3 + 1 = 22}
+212                 .layer(5, this.createConvolutionLayer(\textcolor{stringliteral}{"Conv4"}, this.convSmallKernel, this.convStride, this.
+      numberOfFeatureMaps, this.numberOfFeatureMaps, this.depth))
+213                 \textcolor{comment}{// 22 - 3 + 1 = 20}
+214                 .layer(6, this.createConvolutionLayer(\textcolor{stringliteral}{"Conv5"}, this.convSmallKernel, this.convStride, this.
+      numberOfFeatureMaps, this.numberOfFeatureMaps, this.depth))
+215                 \textcolor{comment}{// 20 - 3 + 1 = 18}
+216                 .layer(7, this.createConvolutionLayer(\textcolor{stringliteral}{"Conv6"}, this.convSmallKernel, this.convStride, this.
+      numberOfFeatureMaps, this.numberOfFeatureMaps, this.depth))
+217                 
+218                 \textcolor{comment}{// 18 : 3 = 6}
+219                 .layer(8, this.createPoolingLayer(\textcolor{stringliteral}{"Pool3"}, this.poolKernel, this.poolStride, this.depth))
+220                 
+221                 \textcolor{comment}{//(258-96)/27 = 6}
+222                 .layer(9, this.createFullyConnectedLayer(\textcolor{stringliteral}{"Fully1"}, this.firstFully, this.dropOut))
+223                 .layer(10, this.createFullyConnectedLayer(\textcolor{stringliteral}{"Fully2"}, this.secondFully, this.dropOut))
+224                 
+225                 .layer(11, this.createOutputLayer(\textcolor{stringliteral}{"Output"}, this.secondFully, this.numberOfOutputs))
+226                 .backprop(\textcolor{keyword}{true})
+227                 .pretrain(\textcolor{keyword}{false})
+228                 .setInputType(InputType.convolutionalFlat(\textcolor{keyword}{this}.alphabetSize, \textcolor{keyword}{this}.numberOfInputs, \textcolor{keyword}{this}.
+      depth))
+229                 .build();
+230         
+231         this.network = \textcolor{keyword}{new} MultiLayerNetwork(conf);
+232     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}!test@{test}}
+\index{test@{test}!Neural\+Network\+::\+Neural\+Network@{Neural\+Network\+::\+Neural\+Network}}
+\subsubsection[{\texorpdfstring{test(\+Data\+Set test\+Set)}{test(DataSet testSet)}}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\+Network.\+Neural\+Network.\+test (
+\begin{DoxyParamCaption}
+\item[{Data\+Set}]{test\+Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_neural_network_a66774dd8ee622aca4275c19524802726}{}\label{class_neural_network_1_1_neural_network_a66774dd8ee622aca4275c19524802726}
+
+
+Definition at line 312 of file Neural\+Network.\+java.
+
+
+\begin{DoxyCode}
+312                                        \{
+313         
+314         \textcolor{keywordtype}{double} hit = 0;
+315         INDArray realLabelOneHot = testSet.getLabels();
+316         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < testSet.numExamples(); i++)\{
+317             \textcolor{keywordtype}{int} realLabel = 0;
+318             \textcolor{keywordtype}{int} predict = network.predict(testSet.getFeatures().getRow(i))[0];
+319             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < realLabelOneHot.getRow(i).length(); j++)\{
+320                 \textcolor{keywordflow}{if}(realLabelOneHot.getDouble(i, j) == 1.00)
+321                     realLabel = j;
+322             \}
+323             \textcolor{comment}{//System.out.println("For Input " + i + ", " + predict + " was predicted. The real label is " +
+       realLabel);}
+324             \textcolor{keywordflow}{if}(realLabel == predict)
+325                 hit++;
+326         \}
+327         
+328         \textcolor{keywordtype}{double} returnValue = hit / testSet.numExamples(); 
+329             
+330         \textcolor{keywordflow}{return} returnValue;
+331     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Neural\+Network/\hyperlink{_neural_network_8java}{Neural\+Network.\+java}\end{DoxyCompactItemize}

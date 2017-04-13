@@ -1,0 +1,39 @@
+/**
+ * \mainpage
+ *
+ *	test
+ * \image html Neuronales_Netz.jpg "funktioniert"
+ *
+ *
+ */
+  
+ /**
+  *
+  * \page Arbeitsweise Arbeitsweise
+  * Stichpunkte Aufgaben:
+  * 1. Eingabedaten
+  * 2. Klassifizierung der Eingabedaten
+  *
+  * \subpage Eingabedaten \n
+  * \subpage Klassifizierung \n
+  *
+  *
+  * \page Eingabedaten Eingabedaten
+  * Die Eingabedaten Zugferd-Dateien.
+  *
+  * \page Klassifizierung Klassifizierung der Eingabedaten
+  *	Abbildung zeigt wie die Eingabedaten vom neuronalen Netz verarbeitet werden sollen.
+  * \image html Buchungssatz.jpg "Klassifizierung der Eingabedaten"
+  *
+  */
+
+  /**
+   * \page Trainingsdaten Trainingsdaten
+   * 
+   *
+   * \subpage Trainingsdaten_Layer_1 \n
+   *
+   * \page Trainingsdaten_Layer_1 Trainingsdaten Layer 1 \n
+   * \image html Trainingsdaten_Layer_1.jpg
+   *
+   */

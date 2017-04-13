@@ -1,0 +1,165 @@
+\hypertarget{class_neural_network_1_1_labeled_input_series}{\section{Neural\-Network.\-Labeled\-Input\-Series Class Reference}
+\label{class_neural_network_1_1_labeled_input_series}\index{Neural\-Network.\-Labeled\-Input\-Series@{Neural\-Network.\-Labeled\-Input\-Series}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_neural_network_1_1_labeled_input_series_acfa2f62f401fc35e0e68def77f1eb8c3}{set\-Alphabet} (String alphabet)
+\item 
+void \hyperlink{class_neural_network_1_1_labeled_input_series_a4bcb87e2d1987026794bbb0cc815a746}{set\-Alphabet} (char\mbox{[}$\,$\mbox{]} alphabet)
+\item 
+char\mbox{[}$\,$\mbox{]} \hyperlink{class_neural_network_1_1_labeled_input_series_a73f92e2bf99d4ae9c7c5411fb9a68502}{get\-Alphabet} ()
+\item 
+boolean \hyperlink{class_neural_network_1_1_labeled_input_series_a652c8a3f24b3a5df6f44ff27f2c15118}{read\-Files} (String Path\-To\-Input\-File, String Path\-To\-Labels, int Frame\-Length)
+\item 
+Data\-Set\-Iterator \hyperlink{class_neural_network_1_1_labeled_input_series_a13938702aff3425e171505b42b802cad}{give\-Input\-As\-Data\-Set\-Iterator} (int batch\-Size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_neural_network_1_1_labeled_input_series}{Labeled\-Input\-Series} \hyperlink{class_neural_network_1_1_labeled_input_series_a10c978482422d530a020f914bf08584a}{get\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file Labeled\-Input\-Series.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_network_1_1_labeled_input_series_a73f92e2bf99d4ae9c7c5411fb9a68502}{\index{Neural\-Network\-::\-Labeled\-Input\-Series@{Neural\-Network\-::\-Labeled\-Input\-Series}!get\-Alphabet@{get\-Alphabet}}
+\index{get\-Alphabet@{get\-Alphabet}!NeuralNetwork::LabeledInputSeries@{Neural\-Network\-::\-Labeled\-Input\-Series}}
+\subsubsection[{get\-Alphabet}]{\setlength{\rightskip}{0pt plus 5cm}char \mbox{[}$\,$\mbox{]} Neural\-Network.\-Labeled\-Input\-Series.\-get\-Alphabet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_labeled_input_series_a73f92e2bf99d4ae9c7c5411fb9a68502}
+
+
+Definition at line 50 of file Labeled\-Input\-Series.\-java.
+
+
+\begin{DoxyCode}
+50                                \{
+51         \textcolor{keywordflow}{return} this.alphabet;
+52     \}
+\end{DoxyCode}
+\hypertarget{class_neural_network_1_1_labeled_input_series_a10c978482422d530a020f914bf08584a}{\index{Neural\-Network\-::\-Labeled\-Input\-Series@{Neural\-Network\-::\-Labeled\-Input\-Series}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!NeuralNetwork::LabeledInputSeries@{Neural\-Network\-::\-Labeled\-Input\-Series}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Labeled\-Input\-Series} Neural\-Network.\-Labeled\-Input\-Series.\-get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_neural_network_1_1_labeled_input_series_a10c978482422d530a020f914bf08584a}
+
+
+Definition at line 23 of file Labeled\-Input\-Series.\-java.
+
+
+\begin{DoxyCode}
+23                                                   \{
+24         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
+25             \textcolor{keyword}{synchronized}(LabeledInputSeries.class)\{
+26                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
+27                     uniqueInstance = \textcolor{keyword}{new} LabeledInputSeries();
+28                 \}
+29             \}
+30         \}
+31         \textcolor{keywordflow}{return} uniqueInstance;
+32     \}
+\end{DoxyCode}
+\hypertarget{class_neural_network_1_1_labeled_input_series_a13938702aff3425e171505b42b802cad}{\index{Neural\-Network\-::\-Labeled\-Input\-Series@{Neural\-Network\-::\-Labeled\-Input\-Series}!give\-Input\-As\-Data\-Set\-Iterator@{give\-Input\-As\-Data\-Set\-Iterator}}
+\index{give\-Input\-As\-Data\-Set\-Iterator@{give\-Input\-As\-Data\-Set\-Iterator}!NeuralNetwork::LabeledInputSeries@{Neural\-Network\-::\-Labeled\-Input\-Series}}
+\subsubsection[{give\-Input\-As\-Data\-Set\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}Data\-Set\-Iterator Neural\-Network.\-Labeled\-Input\-Series.\-give\-Input\-As\-Data\-Set\-Iterator (
+\begin{DoxyParamCaption}
+\item[{int}]{batch\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_labeled_input_series_a13938702aff3425e171505b42b802cad}
+
+
+Definition at line 89 of file Labeled\-Input\-Series.\-java.
+
+
+\begin{DoxyCode}
+89                                                                     \{
+90         System.out.println(Arrays.toString(input.shape()));
+91         DataSet dataSet = \textcolor{keyword}{new} DataSet(this.input, this.labels);
+92         \textcolor{comment}{//System.out.println(dataSet);}
+93         \textcolor{keywordflow}{return} \textcolor{keyword}{new} ListDataSetIterator(dataSet.asList(), batchSize);
+94     \}
+\end{DoxyCode}
+\hypertarget{class_neural_network_1_1_labeled_input_series_a652c8a3f24b3a5df6f44ff27f2c15118}{\index{Neural\-Network\-::\-Labeled\-Input\-Series@{Neural\-Network\-::\-Labeled\-Input\-Series}!read\-Files@{read\-Files}}
+\index{read\-Files@{read\-Files}!NeuralNetwork::LabeledInputSeries@{Neural\-Network\-::\-Labeled\-Input\-Series}}
+\subsubsection[{read\-Files}]{\setlength{\rightskip}{0pt plus 5cm}boolean Neural\-Network.\-Labeled\-Input\-Series.\-read\-Files (
+\begin{DoxyParamCaption}
+\item[{String}]{Path\-To\-Input\-File, }
+\item[{String}]{Path\-To\-Labels, }
+\item[{int}]{Frame\-Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_labeled_input_series_a652c8a3f24b3a5df6f44ff27f2c15118}
+
+
+Definition at line 54 of file Labeled\-Input\-Series.\-java.
+
+
+\begin{DoxyCode}
+54                                                                                           \{
+55         \textcolor{keywordflow}{try}\{
+56             \textcolor{keywordtype}{int} InputFileLength = this.countLines(PathToInputFile);
+57             \textcolor{keywordtype}{int} LabelFileLength = this.countLines(PathToLabels);
+58             \textcolor{keywordflow}{if}(InputFileLength == this.countLines(PathToLabels))\{
+59                 input = Nd4j.zeros(InputFileLength, FrameLength);
+60                 labels = Nd4j.zeros(InputFileLength, 1);
+61                 this.transformInputToINDArray(PathToInputFile, PathToLabels, InputFileLength);
+62                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+63             \}\textcolor{keywordflow}{else}\{
+64                 System.out.println(\textcolor{stringliteral}{"Failed to load data"});
+65                 System.out.println(\textcolor{stringliteral}{"Inputfile and labelfile has different lengths."});
+66             \}
+67         \}\textcolor{keywordflow}{catch}(IOException e)\{
+68             System.out.println(e.getMessage());
+69         \}
+70         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+71     \}
+\end{DoxyCode}
+\hypertarget{class_neural_network_1_1_labeled_input_series_acfa2f62f401fc35e0e68def77f1eb8c3}{\index{Neural\-Network\-::\-Labeled\-Input\-Series@{Neural\-Network\-::\-Labeled\-Input\-Series}!set\-Alphabet@{set\-Alphabet}}
+\index{set\-Alphabet@{set\-Alphabet}!NeuralNetwork::LabeledInputSeries@{Neural\-Network\-::\-Labeled\-Input\-Series}}
+\subsubsection[{set\-Alphabet}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-Network.\-Labeled\-Input\-Series.\-set\-Alphabet (
+\begin{DoxyParamCaption}
+\item[{String}]{alphabet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_labeled_input_series_acfa2f62f401fc35e0e68def77f1eb8c3}
+
+
+Definition at line 42 of file Labeled\-Input\-Series.\-java.
+
+
+\begin{DoxyCode}
+42                                             \{
+43         this.alphabet = alphabet.toCharArray();
+44     \}
+\end{DoxyCode}
+\hypertarget{class_neural_network_1_1_labeled_input_series_a4bcb87e2d1987026794bbb0cc815a746}{\index{Neural\-Network\-::\-Labeled\-Input\-Series@{Neural\-Network\-::\-Labeled\-Input\-Series}!set\-Alphabet@{set\-Alphabet}}
+\index{set\-Alphabet@{set\-Alphabet}!NeuralNetwork::LabeledInputSeries@{Neural\-Network\-::\-Labeled\-Input\-Series}}
+\subsubsection[{set\-Alphabet}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-Network.\-Labeled\-Input\-Series.\-set\-Alphabet (
+\begin{DoxyParamCaption}
+\item[{char\mbox{[}$\,$\mbox{]}}]{alphabet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_neural_network_1_1_labeled_input_series_a4bcb87e2d1987026794bbb0cc815a746}
+
+
+Definition at line 46 of file Labeled\-Input\-Series.\-java.
+
+
+\begin{DoxyCode}
+46                                             \{
+47         this.alphabet = alphabet;
+48     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+H\-:/\-Programmierungen/\-Java/taxsynapse/src/main/java/\-Neural\-Network/\hyperlink{_labeled_input_series_8java}{Labeled\-Input\-Series.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,222 @@
+\hypertarget{class_neural_network_1_1_export_manager}{}\section{Neural\+Network.\+Export\+Manager Class Reference}
+\label{class_neural_network_1_1_export_manager}\index{Neural\+Network.\+Export\+Manager@{Neural\+Network.\+Export\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{class_neural_network_1_1_export_manager_a682b8d0267d006c5e1c149a09fdd20a7}{create\+Network\+Setting\+Folder} (String output\+Path)
+\item 
+void \hyperlink{class_neural_network_1_1_export_manager_a83f29a395f51f0b21ca3a092917b5dbc}{save\+Network\+Initial\+Settings} (String timestamp\+Path, Multi\+Layer\+Network net, List$<$ String $>$ metadata)
+\item 
+void \hyperlink{class_neural_network_1_1_export_manager_ab7753bc20aeee9b9bae9876e54cf3499}{save\+Network\+Epoch\+Setting} (String timestamp\+Path, Multi\+Layer\+Network net, int epoch)
+\item 
+void \hyperlink{class_neural_network_1_1_export_manager_ae962981da22f49058ad6c1ebe8a3f2ac}{save\+Evaluation} (String timestamp\+Path, List$<$ String $>$ epochs\+With\+Scores)
+\item 
+Multi\+Layer\+Network \hyperlink{class_neural_network_1_1_export_manager_ab52eaee01d618d77fd5f4d48e98a77a0}{load\+Networ\+Initial\+Settings} (String timestamp\+Path)
+\item 
+Multi\+Layer\+Network \hyperlink{class_neural_network_1_1_export_manager_a4309073b42021506bef9d60ac1a57b4b}{load\+Network\+Settings\+After\+Epoch} (String timestamp\+Path, int epoch)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_neural_network_1_1_export_manager}{Export\+Manager} \hyperlink{class_neural_network_1_1_export_manager_a0cde5bd623fcaba7372e271388f1d554}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Export\+Manager.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}!create\+Network\+Setting\+Folder@{create\+Network\+Setting\+Folder}}
+\index{create\+Network\+Setting\+Folder@{create\+Network\+Setting\+Folder}!Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}}
+\subsubsection[{\texorpdfstring{create\+Network\+Setting\+Folder(\+String output\+Path)}{createNetworkSettingFolder(String outputPath)}}]{\setlength{\rightskip}{0pt plus 5cm}String Neural\+Network.\+Export\+Manager.\+create\+Network\+Setting\+Folder (
+\begin{DoxyParamCaption}
+\item[{String}]{output\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_export_manager_a682b8d0267d006c5e1c149a09fdd20a7}{}\label{class_neural_network_1_1_export_manager_a682b8d0267d006c5e1c149a09fdd20a7}
+
+
+Definition at line 34 of file Export\+Manager.\+java.
+
+
+\begin{DoxyCode}
+34                                                                \{
+35         Date date = \textcolor{keyword}{new} Date();
+36         String timeStamp = \textcolor{keyword}{new} SimpleDateFormat(\textcolor{stringliteral}{"dd\_MM\_yyy\_HH\_mm\_ss"}).format(date);
+37         \textcolor{keywordtype}{boolean} createFolderSucess = (\textcolor{keyword}{new} File(outputPath + \textcolor{stringliteral}{"/"} + timeStamp)).mkdirs();
+38         \textcolor{keywordflow}{if}(createFolderSucess)\{
+39             \textcolor{keywordflow}{return} outputPath + \textcolor{stringliteral}{"/"} + timeStamp;
+40         \}\textcolor{keywordflow}{else}\{
+41             String failure = \textcolor{stringliteral}{"Folder with timestamp could not be generated"};
+42             System.out.println(failure);
+43             \textcolor{keywordflow}{return} failure;
+44         \}
+45     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Export\+Manager} Neural\+Network.\+Export\+Manager.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_neural_network_1_1_export_manager_a0cde5bd623fcaba7372e271388f1d554}{}\label{class_neural_network_1_1_export_manager_a0cde5bd623fcaba7372e271388f1d554}
+Singleton Properties 
+
+Definition at line 22 of file Export\+Manager.\+java.
+
+
+\begin{DoxyCode}
+22                                              \{
+23         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
+24             \textcolor{keyword}{synchronized}(ExportManager.class)\{
+25                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
+26                     uniqueInstance = \textcolor{keyword}{new} ExportManager();
+27                 \}
+28             \}
+29         \}
+30         \textcolor{keywordflow}{return} uniqueInstance;
+31     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}!load\+Networ\+Initial\+Settings@{load\+Networ\+Initial\+Settings}}
+\index{load\+Networ\+Initial\+Settings@{load\+Networ\+Initial\+Settings}!Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}}
+\subsubsection[{\texorpdfstring{load\+Networ\+Initial\+Settings(\+String timestamp\+Path)}{loadNetworInitialSettings(String timestampPath)}}]{\setlength{\rightskip}{0pt plus 5cm}Multi\+Layer\+Network Neural\+Network.\+Export\+Manager.\+load\+Networ\+Initial\+Settings (
+\begin{DoxyParamCaption}
+\item[{String}]{timestamp\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_export_manager_ab52eaee01d618d77fd5f4d48e98a77a0}{}\label{class_neural_network_1_1_export_manager_ab52eaee01d618d77fd5f4d48e98a77a0}
+
+
+Definition at line 90 of file Export\+Manager.\+java.
+
+
+\begin{DoxyCode}
+90                                                                             \{
+91         
+92         \textcolor{keywordflow}{try} \{
+93             \textcolor{keywordflow}{return} ModelSerializer.restoreMultiLayerNetwork(timestampPath+\textcolor{stringliteral}{"/initial\_model.zip"});
+94         \}\textcolor{keywordflow}{catch} (FileNotFoundException fe)\{
+95             System.out.println(\textcolor{stringliteral}{"The initial file for the given timestamp could not get found."});
+96             \textcolor{keywordflow}{return} null;
+97         \} 
+98         \textcolor{keywordflow}{catch} (IOException e) \{
+99             System.out.println(\textcolor{stringliteral}{"Exception while loading initial network settings"});
+100             System.out.println(\textcolor{stringliteral}{"Details:"});
+101             e.printStackTrace();
+102             \textcolor{keywordflow}{return} null;
+103         \}
+104     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}!load\+Network\+Settings\+After\+Epoch@{load\+Network\+Settings\+After\+Epoch}}
+\index{load\+Network\+Settings\+After\+Epoch@{load\+Network\+Settings\+After\+Epoch}!Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}}
+\subsubsection[{\texorpdfstring{load\+Network\+Settings\+After\+Epoch(\+String timestamp\+Path, int epoch)}{loadNetworkSettingsAfterEpoch(String timestampPath, int epoch)}}]{\setlength{\rightskip}{0pt plus 5cm}Multi\+Layer\+Network Neural\+Network.\+Export\+Manager.\+load\+Network\+Settings\+After\+Epoch (
+\begin{DoxyParamCaption}
+\item[{String}]{timestamp\+Path, }
+\item[{int}]{epoch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_export_manager_a4309073b42021506bef9d60ac1a57b4b}{}\label{class_neural_network_1_1_export_manager_a4309073b42021506bef9d60ac1a57b4b}
+
+
+Definition at line 106 of file Export\+Manager.\+java.
+
+
+\begin{DoxyCode}
+106                                                                                            \{
+107         \textcolor{keywordflow}{try} \{
+108             \textcolor{keywordflow}{return} ModelSerializer.restoreMultiLayerNetwork(timestampPath+\textcolor{stringliteral}{"/epoch"}+epoch+\textcolor{stringliteral}{".zip"});
+109         \}\textcolor{keywordflow}{catch} (FileNotFoundException fe)\{
+110             System.out.println(\textcolor{stringliteral}{"The file to the given timestamp at epoch "} + epoch + \textcolor{stringliteral}{"could not get found."}
+      );
+111             \textcolor{keywordflow}{return} null;
+112         \} 
+113         \textcolor{keywordflow}{catch} (IOException e) \{
+114             System.out.println(\textcolor{stringliteral}{"Exception while loading network settings at epoch "} + epoch);
+115             System.out.println(\textcolor{stringliteral}{"Details:"});
+116             e.printStackTrace();
+117             \textcolor{keywordflow}{return} null;
+118         \}
+119     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}!save\+Evaluation@{save\+Evaluation}}
+\index{save\+Evaluation@{save\+Evaluation}!Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}}
+\subsubsection[{\texorpdfstring{save\+Evaluation(\+String timestamp\+Path, List$<$ String $>$ epochs\+With\+Scores)}{saveEvaluation(String timestampPath, List< String > epochsWithScores)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Export\+Manager.\+save\+Evaluation (
+\begin{DoxyParamCaption}
+\item[{String}]{timestamp\+Path, }
+\item[{List$<$ String $>$}]{epochs\+With\+Scores}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_export_manager_ae962981da22f49058ad6c1ebe8a3f2ac}{}\label{class_neural_network_1_1_export_manager_ae962981da22f49058ad6c1ebe8a3f2ac}
+
+
+Definition at line 68 of file Export\+Manager.\+java.
+
+
+\begin{DoxyCode}
+68                                                                                    \{
+69         \textcolor{keywordflow}{try}\{
+70             this.saveList(\textcolor{keyword}{new} File(timestampPath + \textcolor{stringliteral}{"/evaluation.txt"}), epochsWithScores);
+71         \}\textcolor{keywordflow}{catch}(Exception e)\{
+72             System.out.println(\textcolor{stringliteral}{"Exception while saving evaluation."});
+73             System.out.println(\textcolor{stringliteral}{"Details:"});
+74             e.printStackTrace();
+75         \}   
+76     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}!save\+Network\+Epoch\+Setting@{save\+Network\+Epoch\+Setting}}
+\index{save\+Network\+Epoch\+Setting@{save\+Network\+Epoch\+Setting}!Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}}
+\subsubsection[{\texorpdfstring{save\+Network\+Epoch\+Setting(\+String timestamp\+Path, Multi\+Layer\+Network net, int epoch)}{saveNetworkEpochSetting(String timestampPath, MultiLayerNetwork net, int epoch)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Export\+Manager.\+save\+Network\+Epoch\+Setting (
+\begin{DoxyParamCaption}
+\item[{String}]{timestamp\+Path, }
+\item[{Multi\+Layer\+Network}]{net, }
+\item[{int}]{epoch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_export_manager_ab7753bc20aeee9b9bae9876e54cf3499}{}\label{class_neural_network_1_1_export_manager_ab7753bc20aeee9b9bae9876e54cf3499}
+
+
+Definition at line 58 of file Export\+Manager.\+java.
+
+
+\begin{DoxyCode}
+58                                                                                                \{
+59         \textcolor{keywordflow}{try}\{
+60             this.saveNetwork(\textcolor{keyword}{new} File(timestampPath+\textcolor{stringliteral}{"/epoch"}+epoch+\textcolor{stringliteral}{".zip"}), net);
+61         \}\textcolor{keywordflow}{catch}(Exception e)\{
+62             System.out.print(\textcolor{stringliteral}{"Exception while saving initial settings."});
+63             System.out.println(\textcolor{stringliteral}{"Details:"});
+64             e.printStackTrace();
+65         \}
+66     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}!save\+Network\+Initial\+Settings@{save\+Network\+Initial\+Settings}}
+\index{save\+Network\+Initial\+Settings@{save\+Network\+Initial\+Settings}!Neural\+Network\+::\+Export\+Manager@{Neural\+Network\+::\+Export\+Manager}}
+\subsubsection[{\texorpdfstring{save\+Network\+Initial\+Settings(\+String timestamp\+Path, Multi\+Layer\+Network net, List$<$ String $>$ metadata)}{saveNetworkInitialSettings(String timestampPath, MultiLayerNetwork net, List< String > metadata)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Export\+Manager.\+save\+Network\+Initial\+Settings (
+\begin{DoxyParamCaption}
+\item[{String}]{timestamp\+Path, }
+\item[{Multi\+Layer\+Network}]{net, }
+\item[{List$<$ String $>$}]{metadata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_export_manager_a83f29a395f51f0b21ca3a092917b5dbc}{}\label{class_neural_network_1_1_export_manager_a83f29a395f51f0b21ca3a092917b5dbc}
+
+
+Definition at line 47 of file Export\+Manager.\+java.
+
+
+\begin{DoxyCode}
+47                                                                                                            
+         \{
+48         \textcolor{keywordflow}{try}\{
+49             this.saveList(\textcolor{keyword}{new} File(timestampPath + \textcolor{stringliteral}{"/metadata.txt"}), metadata);
+50             this.saveNetwork(\textcolor{keyword}{new} File(timestampPath+\textcolor{stringliteral}{"/initial\_model.zip"}), net);
+51         \}\textcolor{keywordflow}{catch}(Exception e)\{
+52             System.out.println(\textcolor{stringliteral}{"Exception while saving initial settings."});
+53             System.out.println(\textcolor{stringliteral}{"Details:"});
+54             e.printStackTrace();
+55         \}
+56     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Neural\+Network/\hyperlink{_export_manager_8java}{Export\+Manager.\+java}\end{DoxyCompactItemize}

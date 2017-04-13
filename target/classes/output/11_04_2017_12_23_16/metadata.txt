@@ -1,0 +1,7 @@
+Size of alphabet: 68
+Number of Inputs: 258
+Number of feature maps: 20
+Number of Outputs: 4
+Lerning rate: 0.1
+Momentum: 0.1
+Regularization: 0.001

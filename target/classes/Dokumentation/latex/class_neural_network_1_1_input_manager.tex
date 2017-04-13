@@ -1,0 +1,208 @@
+\hypertarget{class_neural_network_1_1_input_manager}{}\section{Neural\+Network.\+Input\+Manager Class Reference}
+\label{class_neural_network_1_1_input_manager}\index{Neural\+Network.\+Input\+Manager@{Neural\+Network.\+Input\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_neural_network_1_1_input_manager_afaa90882f9b1ab55d837095bcfed3a12}{set\+Number\+Of\+Labels} (int size)
+\item 
+void \hyperlink{class_neural_network_1_1_input_manager_af1faef52d6e409ce5ba4ac3f9b23113f}{set\+Alphabet} (String alphabet)
+\item 
+void \hyperlink{class_neural_network_1_1_input_manager_ad5ead3a963e98ab2136c0443c4d033a6}{set\+Alphabet} (char\mbox{[}$\,$\mbox{]} alphabet)
+\item 
+char\mbox{[}$\,$\mbox{]} \hyperlink{class_neural_network_1_1_input_manager_a803237466867b60777e9910fddecccae}{get\+Alphabet} ()
+\item 
+void \hyperlink{class_neural_network_1_1_input_manager_a144c13f4c35429d6a9b95f18907ef81a}{set\+Input\+Length} (int frame\+Length)
+\item 
+Data\+Set \hyperlink{class_neural_network_1_1_input_manager_a3c6bb32b37ed752f221856f66f9560dc}{read\+Files} (String Path)  throws I\+O\+Exception
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_neural_network_1_1_input_manager}{Input\+Manager} \hyperlink{class_neural_network_1_1_input_manager_ab0178c083635bc42930695d5f5200a6c}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Input\+Manager.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}!get\+Alphabet@{get\+Alphabet}}
+\index{get\+Alphabet@{get\+Alphabet}!Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Alphabet()}{getAlphabet()}}]{\setlength{\rightskip}{0pt plus 5cm}char \mbox{[}$\,$\mbox{]} Neural\+Network.\+Input\+Manager.\+get\+Alphabet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_input_manager_a803237466867b60777e9910fddecccae}{}\label{class_neural_network_1_1_input_manager_a803237466867b60777e9910fddecccae}
+
+
+Definition at line 65 of file Input\+Manager.\+java.
+
+
+\begin{DoxyCode}
+65                                \{
+66         \textcolor{keywordflow}{return} this.alphabet;
+67     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Input\+Manager} Neural\+Network.\+Input\+Manager.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_neural_network_1_1_input_manager_ab0178c083635bc42930695d5f5200a6c}{}\label{class_neural_network_1_1_input_manager_ab0178c083635bc42930695d5f5200a6c}
+
+
+Definition at line 26 of file Input\+Manager.\+java.
+
+
+\begin{DoxyCode}
+26                                             \{
+27         \textcolor{keywordflow}{if}(uniqueInstance == null) \{
+28             \textcolor{keyword}{synchronized}(InputManager.class)\{
+29                 \textcolor{keywordflow}{if}(uniqueInstance == null)\{
+30                     uniqueInstance = \textcolor{keyword}{new} InputManager();
+31                 \}
+32             \}
+33         \}
+34         \textcolor{keywordflow}{return} uniqueInstance;
+35     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}!read\+Files@{read\+Files}}
+\index{read\+Files@{read\+Files}!Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}}
+\subsubsection[{\texorpdfstring{read\+Files(\+String Path)}{readFiles(String Path)}}]{\setlength{\rightskip}{0pt plus 5cm}Data\+Set Neural\+Network.\+Input\+Manager.\+read\+Files (
+\begin{DoxyParamCaption}
+\item[{String}]{Path}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_input_manager_a3c6bb32b37ed752f221856f66f9560dc}{}\label{class_neural_network_1_1_input_manager_a3c6bb32b37ed752f221856f66f9560dc}
+
+
+Definition at line 73 of file Input\+Manager.\+java.
+
+
+\begin{DoxyCode}
+73                                                             \{
+74         
+75         String PathToInputFile = Path + \textcolor{stringliteral}{"/data.txt"};
+76         String PathToLabels = Path + \textcolor{stringliteral}{"/labels.txt"};
+77         \textcolor{keywordtype}{int} InputFileLength = this.countLines(PathToInputFile);
+78         \textcolor{keywordtype}{int} LabelFileLength = this.countLines(PathToLabels);
+79         \textcolor{keywordflow}{if}(InputFileLength == LabelFileLength)\{
+80             BufferedReader brI = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} FileReader(\textcolor{keyword}{new} File(PathToInputFile)));
+81             BufferedReader brL = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} FileReader(\textcolor{keyword}{new} File(PathToLabels)));
+82             INDArray input = Nd4j.zeros(InputFileLength, (this.inputLength * this.alphabet.length));
+83             INDArray classes = Nd4j.zeros(InputFileLength, this.numberOfLabels);            
+84             \textcolor{comment}{//Step over each example}
+85             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} lineCounter = 0; lineCounter < InputFileLength; lineCounter++)\{
+86                 \textcolor{comment}{//Feature}
+87                 String InputLineI = brI.readLine().toLowerCase();
+88                 \textcolor{comment}{//Label}
+89                 String InputLineL = brL.readLine().toLowerCase();
+90                 \textcolor{comment}{//Put character at the first position in labels file. It represents the class (0-4)}
+91                 \textcolor{keywordtype}{int} labelIdx = Character.getNumericValue(InputLineL.charAt(0));
+92                 \textcolor{comment}{//Put a 1 at the index of the line and the index of the label}
+93                 classes.putScalar(\textcolor{keyword}{new} \textcolor{keywordtype}{int}[] \{lineCounter, labelIdx\}, 1);
+94                 \textcolor{comment}{//Step over each character in features file}
+95                 \textcolor{keywordtype}{int} totalPosCounter = 0;
+96                 outerloop:
+97                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} characterCounter = 0; characterCounter < InputLineI.length(); characterCounter++)\{
+98                     \textcolor{keywordtype}{char} cI = InputLineI.charAt(characterCounter);
+99                     
+100                     \textcolor{comment}{//Step over each alphabet character per character in features file}
+101                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} alphabetPosition = 0; alphabetPosition < alphabet.length; alphabetPosition++)\{
+102                         \textcolor{keywordflow}{if}(cI == alphabet[alphabetPosition] && characterCounter < inputLength)\{
+103                             input.putScalar(\textcolor{keyword}{new} \textcolor{keywordtype}{int}[] \{lineCounter, totalPosCounter\}, 1);
+104                         \}
+105                         \textcolor{keywordflow}{else}\{
+106                             \textcolor{keywordflow}{if}(characterCounter >= inputLength)
+107                                 \textcolor{keywordflow}{break} outerloop;
+108                         \}
+109                         totalPosCounter++;
+110                     \}
+111                 \}
+112             \}
+113             brI.close();
+114             brL.close();
+115             \textcolor{keywordflow}{return} \textcolor{keyword}{new} DataSet(input, classes);
+116             
+117         \}\textcolor{keywordflow}{else}\{
+118             \textcolor{keywordflow}{return} null;
+119         \}
+120     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}!set\+Alphabet@{set\+Alphabet}}
+\index{set\+Alphabet@{set\+Alphabet}!Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Alphabet(\+String alphabet)}{setAlphabet(String alphabet)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Input\+Manager.\+set\+Alphabet (
+\begin{DoxyParamCaption}
+\item[{String}]{alphabet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_input_manager_af1faef52d6e409ce5ba4ac3f9b23113f}{}\label{class_neural_network_1_1_input_manager_af1faef52d6e409ce5ba4ac3f9b23113f}
+
+
+Definition at line 57 of file Input\+Manager.\+java.
+
+
+\begin{DoxyCode}
+57                                             \{
+58         this.alphabet = alphabet.toCharArray();
+59     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}!set\+Alphabet@{set\+Alphabet}}
+\index{set\+Alphabet@{set\+Alphabet}!Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Alphabet(char[] alphabet)}{setAlphabet(char[] alphabet)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Input\+Manager.\+set\+Alphabet (
+\begin{DoxyParamCaption}
+\item[{char\mbox{[}$\,$\mbox{]}}]{alphabet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_input_manager_ad5ead3a963e98ab2136c0443c4d033a6}{}\label{class_neural_network_1_1_input_manager_ad5ead3a963e98ab2136c0443c4d033a6}
+
+
+Definition at line 61 of file Input\+Manager.\+java.
+
+
+\begin{DoxyCode}
+61                                             \{
+62         this.alphabet = alphabet;
+63     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}!set\+Input\+Length@{set\+Input\+Length}}
+\index{set\+Input\+Length@{set\+Input\+Length}!Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Input\+Length(int frame\+Length)}{setInputLength(int frameLength)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Input\+Manager.\+set\+Input\+Length (
+\begin{DoxyParamCaption}
+\item[{int}]{frame\+Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_input_manager_a144c13f4c35429d6a9b95f18907ef81a}{}\label{class_neural_network_1_1_input_manager_a144c13f4c35429d6a9b95f18907ef81a}
+
+
+Definition at line 69 of file Input\+Manager.\+java.
+
+
+\begin{DoxyCode}
+69                                                \{
+70         this.inputLength = frameLength;
+71     \}
+\end{DoxyCode}
+\index{Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}!set\+Number\+Of\+Labels@{set\+Number\+Of\+Labels}}
+\index{set\+Number\+Of\+Labels@{set\+Number\+Of\+Labels}!Neural\+Network\+::\+Input\+Manager@{Neural\+Network\+::\+Input\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Number\+Of\+Labels(int size)}{setNumberOfLabels(int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\+Network.\+Input\+Manager.\+set\+Number\+Of\+Labels (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_neural_network_1_1_input_manager_afaa90882f9b1ab55d837095bcfed3a12}{}\label{class_neural_network_1_1_input_manager_afaa90882f9b1ab55d837095bcfed3a12}
+Getter and Setter 
+
+Definition at line 53 of file Input\+Manager.\+java.
+
+
+\begin{DoxyCode}
+53                                            \{
+54         this.numberOfLabels = size;
+55     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Neural\+Network/\hyperlink{_input_manager_8java}{Input\+Manager.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,154 @@
+\hypertarget{class_import_1_1json_handler}{}\section{Import.\+json\+Handler Class Reference}
+\label{class_import_1_1json_handler}\index{Import.\+json\+Handler@{Import.\+json\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Invoice \hyperlink{class_import_1_1json_handler_afb0a4443a822ed65f4ebcb6f75daa032}{read\+Reduced\+Invoice} (String Path)  throws I\+O\+Exception 	
+\item 
+void \hyperlink{class_import_1_1json_handler_a680276d77a445fefe8aac811904c3b08}{read\+Reduced\+Invoice} (String Path, List$<$ \hyperlink{class_reduced_invoice_1_1_a_invoice}{A\+Invoice} $>$ Reduced\+Invoice\+List)  throws Exception 	
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_import_1_1json_handler}{json\+Handler} \hyperlink{class_import_1_1json_handler_a5cc5af75b5f475793f99439969d61150}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file json\+Handler.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{Import\+::json\+Handler@{Import\+::json\+Handler}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Import\+::json\+Handler@{Import\+::json\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf json\+Handler} Import.\+json\+Handler.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_import_1_1json_handler_a5cc5af75b5f475793f99439969d61150}{}\label{class_import_1_1json_handler_a5cc5af75b5f475793f99439969d61150}
+
+
+Definition at line 34 of file json\+Handler.\+java.
+
+
+\begin{DoxyCode}
+35     \{
+36         \textcolor{keywordflow}{if}(uniqueInstance == null) 
+37         \{
+38             \textcolor{keyword}{synchronized}(jsonHandler.class)
+39             \{
+40                 \textcolor{keywordflow}{if}(uniqueInstance == null)
+41                 \{
+42                     uniqueInstance = \textcolor{keyword}{new} jsonHandler();
+43                 \}
+44             \}
+45         \}
+46         \textcolor{keywordflow}{return} uniqueInstance;
+47     \}
+\end{DoxyCode}
+\index{Import\+::json\+Handler@{Import\+::json\+Handler}!read\+Reduced\+Invoice@{read\+Reduced\+Invoice}}
+\index{read\+Reduced\+Invoice@{read\+Reduced\+Invoice}!Import\+::json\+Handler@{Import\+::json\+Handler}}
+\subsubsection[{\texorpdfstring{read\+Reduced\+Invoice(\+String Path)}{readReducedInvoice(String Path)}}]{\setlength{\rightskip}{0pt plus 5cm}Invoice Import.\+json\+Handler.\+read\+Reduced\+Invoice (
+\begin{DoxyParamCaption}
+\item[{String}]{Path}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1json_handler_afb0a4443a822ed65f4ebcb6f75daa032}{}\label{class_import_1_1json_handler_afb0a4443a822ed65f4ebcb6f75daa032}
+
+
+Definition at line 49 of file json\+Handler.\+java.
+
+
+\begin{DoxyCode}
+50     \{
+51         
+52         PdfHandler handler = \textcolor{keyword}{new} PdfHandler();
+53         
+54         FileInputStream input = \textcolor{keyword}{new} FileInputStream(\textcolor{keyword}{new} File(Path));
+55         
+56         Invoice invoice = handler.extractInvoice(input);
+57         
+58         \textcolor{keywordflow}{if}(invoice != null)
+59             \textcolor{keywordflow}{return} invoice;
+60         \textcolor{keywordflow}{else}
+61             \textcolor{keywordflow}{return} null;
+62     \}
+\end{DoxyCode}
+\index{Import\+::json\+Handler@{Import\+::json\+Handler}!read\+Reduced\+Invoice@{read\+Reduced\+Invoice}}
+\index{read\+Reduced\+Invoice@{read\+Reduced\+Invoice}!Import\+::json\+Handler@{Import\+::json\+Handler}}
+\subsubsection[{\texorpdfstring{read\+Reduced\+Invoice(\+String Path, List$<$ A\+Invoice $>$ Reduced\+Invoice\+List)}{readReducedInvoice(String Path, List< AInvoice > ReducedInvoiceList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Import.\+json\+Handler.\+read\+Reduced\+Invoice (
+\begin{DoxyParamCaption}
+\item[{String}]{Path, }
+\item[{List$<$ {\bf A\+Invoice} $>$}]{Reduced\+Invoice\+List}
+\end{DoxyParamCaption}
+) throws Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_import_1_1json_handler_a680276d77a445fefe8aac811904c3b08}{}\label{class_import_1_1json_handler_a680276d77a445fefe8aac811904c3b08}
+
+
+Definition at line 64 of file json\+Handler.\+java.
+
+
+\begin{DoxyCode}
+65     \{
+66         \textcolor{comment}{//Recursive => elem can be a folder or a file }
+67         Files.walk(Paths.get(Path)).forEach(elem ->
+68         \{
+69             String fileName = elem.getFileName().toString();
+70             String path = elem.toString();
+71             \textcolor{keywordflow}{try}\{
+72                 \textcolor{keywordflow}{if} (Files.isDirectory(elem))
+73                 \{
+74                     
+75                 \}
+76                 \textcolor{keywordflow}{else}
+77                 \{
+78                     \textcolor{keywordflow}{if}(Files.isRegularFile(elem))
+79                     \{
+80                         \textcolor{keywordflow}{if}(fileName.toLowerCase().contains(\textcolor{stringliteral}{".json"}))
+81                         \{
+82                             RInvoice returnValue = \textcolor{keyword}{new} RInvoice(); 
+83                             JSONParser parser = \textcolor{keyword}{new} JSONParser();
+84                             Object \textcolor{keywordtype}{object} = parser.parse(\textcolor{keyword}{new} FileReader(path));
+85                             JSONObject root = (JSONObject) \textcolor{keywordtype}{object};
+86                             
+87                             returnValue.setVoucherID(fileName);
+88                             returnValue.setInvoiceNumber( (String) ((JSONObject) root.get(\textcolor{stringliteral}{"invoice\_number"})
+      ).\textcolor{keyword}{get}(\textcolor{stringliteral}{"value"}));
+89                             returnValue.setTotalPrice(\textcolor{keyword}{new} Price(
+90                                     (\textcolor{keywordtype}{float}) ((\textcolor{keywordtype}{double}) ((JSONObject) root.get(\textcolor{stringliteral}{"total\_gross\_amount"})).\textcolor{keyword}{get}(\textcolor{stringliteral}{"
+      value"})),
+91                                     (\textcolor{keywordtype}{float}) ((double) ((JSONObject) root.get(\textcolor{stringliteral}{"total\_net\_amount"})).\textcolor{keyword}{get}(\textcolor{stringliteral}{"
+      value"})),
+92                                     19));           
+93                             
+94                             JSONArray arr = (JSONArray) root.get(\textcolor{stringliteral}{"line\_items"});
+95                             JSONObject temp;
+96                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < arr.size(); i++)
+97                             \{
+98                                 temp = (JSONObject) arr.get(i);
+99                                 returnValue.addPosition((String)temp.get(\textcolor{stringliteral}{"text"}), 
+100                                         \textcolor{keyword}{new} Price((\textcolor{keywordtype}{float}) ((\textcolor{keywordtype}{double}) temp.get(\textcolor{stringliteral}{"line\_amount"})*1.19), (float) 
+      (((\textcolor{keywordtype}{double}) temp.get(\textcolor{stringliteral}{"line\_amount"}))),19)
+101                                         , \textcolor{stringliteral}{""}
+102                                         , (\textcolor{keywordtype}{int}) ((double) temp.get(\textcolor{stringliteral}{"line\_quantity"}))
+103                                         , 19);                          
+104                             \}
+105                             ReducedInvoiceList.add(returnValue);
+106                             System.out.println(\textcolor{stringliteral}{"json invoice added"});
+107                         \}
+108                     \}
+109                 \}
+110             \}
+111             \textcolor{keywordflow}{catch}(Exception e)
+112             \{
+113                 System.out.println(e.getMessage());
+114             \}
+115         \});
+116     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Denis/workspace/taxsynapse/src/main/java/\+Import/\hyperlink{json_handler_8java}{json\+Handler.\+java}\end{DoxyCompactItemize}
